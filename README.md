@@ -274,8 +274,7 @@ QALIS/
 │   └── survey_instruments/     
 │
 ├── notebooks/                 
-├── tests/                      
-├── .github/workflows/           
+├── tests/                               
 ├── docs/                      
 ├── pyproject.toml
 └── requirements.txt
