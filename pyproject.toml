@@ -37,7 +37,6 @@ full = [
     "torch>=2.0.0",
     "sentence-transformers>=2.2.0",
     "openai>=1.3.0",
-    "anthropic>=0.7.0",
     "fastapi>=0.104.0",
     "uvicorn>=0.24.0",
     "prometheus-client>=0.18.0",
