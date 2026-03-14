@@ -1,0 +1,38 @@
+{
+  "experiment_id": "exp_rq1_001",
+  "name": "Dimension Independence Test",
+  "research_question": "RQ1",
+  "hypothesis": "QALIS dimensions are non-redundant",
+  "date": "2025-01-08",
+  "status": "completed",
+  "methodology": {
+    "test": "Pearson correlation between monthly dimension mean scores",
+    "n_observations": 3400,
+    "n_systems": 4,
+    "study_period": "2024-10-01 to 2024-12-31"
+  },
+  "results": {
+    "inter_dimension_correlations": {
+      "FC_RO": 0.28,
+      "FC_SF": 0.34,
+      "FC_SS": 0.21,
+      "FC_TI": 0.19,
+      "FC_IQ": 0.31,
+      "RO_SF": 0.33,
+      "RO_SS": 0.27,
+      "RO_TI": 0.22,
+      "RO_IQ": 0.18,
+      "SF_SS": 0.29,
+      "SF_TI": 0.35,
+      "SF_IQ": 0.24,
+      "SS_TI": 0.31,
+      "SS_IQ": 0.26,
+      "TI_IQ": 0.38
+    },
+    "median_abs_r": 0.31,
+    "max_abs_r": 0.38,
+    "min_abs_r": 0.18,
+    "hypothesis_supported": true,
+    "note": "No pair exceeds r=0.50 \u2014 all dimensions contribute unique variance"
+  }
+}

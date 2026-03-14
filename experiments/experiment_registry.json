@@ -1,0 +1,90 @@
+{
+  "total_experiments": 13,
+  "study": "QALIS",
+  "experiments": [
+    {
+      "id": "exp_rq1_001",
+      "category": "rq1",
+      "status": "completed",
+      "paper_section": "6.1"
+    },
+    {
+      "id": "exp_rq1_002",
+      "category": "rq1",
+      "status": "completed",
+      "paper_section": "6.1"
+    },
+    {
+      "id": "exp_rq2_001",
+      "category": "rq2",
+      "status": "completed",
+      "paper_section": "6.2"
+    },
+    {
+      "id": "exp_rq2_002",
+      "category": "rq2",
+      "status": "completed",
+      "paper_section": "4.4"
+    },
+    {
+      "id": "exp_rq2_003",
+      "category": "rq2",
+      "status": "completed",
+      "paper_section": "4.3"
+    },
+    {
+      "id": "exp_rq3_001",
+      "category": "rq3",
+      "status": "completed",
+      "paper_section": "6.3"
+    },
+    {
+      "id": "exp_rq3_002",
+      "category": "rq3",
+      "status": "completed",
+      "paper_section": "6.3"
+    },
+    {
+      "id": "exp_rq3_003",
+      "category": "rq3",
+      "status": "completed",
+      "paper_section": "6.3"
+    },
+    {
+      "id": "exp_abl_001",
+      "category": "ablation",
+      "status": "completed",
+      "paper_section": "7"
+    },
+    {
+      "id": "exp_abl_002",
+      "category": "ablation",
+      "status": "completed",
+      "paper_section": "4.2"
+    },
+    {
+      "id": "exp_abl_003",
+      "category": "ablation",
+      "status": "completed",
+      "paper_section": "4.5"
+    },
+    {
+      "id": "exp_thr_sf3_sweep",
+      "category": "threshold",
+      "status": "completed",
+      "paper_section": "3.3"
+    },
+    {
+      "id": "exp_thr_ro2_sweep",
+      "category": "threshold",
+      "status": "completed",
+      "paper_section": "3.3"
+    },
+    {
+      "id": "exp_thr_003",
+      "category": "threshold",
+      "status": "completed",
+      "paper_section": "3.3"
+    }
+  ]
+}

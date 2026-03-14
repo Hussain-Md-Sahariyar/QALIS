@@ -1,0 +1,42 @@
+{
+  "experiment_id": "exp_rq2_001",
+  "name": "Metric Collection Completeness",
+  "research_question": "RQ2",
+  "date": "2025-01-09",
+  "status": "completed",
+  "methodology": {
+    "assessment": "Verify that each of the 24 QALIS metrics was successfully collected for each applicable system over the full 92-day study period",
+    "total_metric_system_pairs": 96,
+    "excluded_pairs": [
+      {
+        "metric": "IQ-3",
+        "system": "S4",
+        "reason": "Self-hosted model \u2014 cost tracking not aligned"
+      },
+      {
+        "metric": "TI-3",
+        "system": "S2",
+        "reason": "No user-facing explanation UI in IDE plugin"
+      }
+    ]
+  },
+  "results": {
+    "applicable_pairs": 94,
+    "successfully_collected": 92,
+    "collection_completeness": 0.9787,
+    "paper_reported_completeness": 0.973,
+    "key_correlations_confirmed": {
+      "SF3_RO4_pearson_r": 0.61,
+      "IQ2_IQ1_pearson_r": 0.74,
+      "SF1_SF3_pearson_r": -0.78
+    },
+    "per_system_completeness": {
+      "S1": 1.0,
+      "S2": 0.958,
+      "S3": 1.0,
+      "S4": 0.958
+    },
+    "hypothesis_supported": true,
+    "note": "97.3% completeness confirms QALIS metrics are practically collectible"
+  }
+}

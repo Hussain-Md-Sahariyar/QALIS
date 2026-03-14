@@ -1,0 +1,104 @@
+{
+  "experiment_id": "exp_abl_003",
+  "name": "Composite Score Weight Sensitivity",
+  "purpose": "Test sensitivity of composite QALIS score to dimension weight variations",
+  "date": "2025-01-13",
+  "status": "completed",
+  "default_weights": {
+    "FC": 1.0,
+    "RO": 1.0,
+    "SF": 1.0,
+    "SS": 1.0,
+    "TI": 1.0,
+    "IQ": 1.0
+  },
+  "weight_schemes_tested": [
+    {
+      "scheme": "equal (default)",
+      "weights": {
+        "FC": 1,
+        "RO": 1,
+        "SF": 1,
+        "SS": 1,
+        "TI": 1,
+        "IQ": 1
+      },
+      "S1_composite": 7.23,
+      "S2_composite": 7.68,
+      "S3_composite": 8.02,
+      "S4_composite": 8.15,
+      "ranking": "S4>S3>S2>S1"
+    },
+    {
+      "scheme": "safety_heavy",
+      "weights": {
+        "FC": 1,
+        "RO": 1,
+        "SF": 1,
+        "SS": 2,
+        "TI": 1,
+        "IQ": 1
+      },
+      "S1_composite": 7.19,
+      "S2_composite": 7.76,
+      "S3_composite": 7.97,
+      "S4_composite": 8.29,
+      "ranking": "S4>S3>S2>S1"
+    },
+    {
+      "scheme": "faithfulness_heavy",
+      "weights": {
+        "FC": 1,
+        "RO": 1,
+        "SF": 2,
+        "SS": 1,
+        "TI": 1,
+        "IQ": 1
+      },
+      "S1_composite": 7.38,
+      "S2_composite": 7.56,
+      "S3_composite": 8.18,
+      "S4_composite": 8.19,
+      "ranking": "S4>S3>S1>S2"
+    },
+    {
+      "scheme": "integration_heavy",
+      "weights": {
+        "FC": 1,
+        "RO": 1,
+        "SF": 1,
+        "SS": 1,
+        "TI": 1,
+        "IQ": 2
+      },
+      "S1_composite": 7.42,
+      "S2_composite": 7.54,
+      "S3_composite": 8.13,
+      "S4_composite": 7.98,
+      "ranking": "S3>S4>S1>S2"
+    },
+    {
+      "scheme": "transparency_heavy",
+      "weights": {
+        "FC": 1,
+        "RO": 1,
+        "SF": 1,
+        "SS": 1,
+        "TI": 2,
+        "IQ": 1
+      },
+      "S1_composite": 6.93,
+      "S2_composite": 7.48,
+      "S3_composite": 7.98,
+      "S4_composite": 8.31,
+      "ranking": "S4>S3>S2>S1"
+    }
+  ],
+  "rank_correlation_with_default": {
+    "safety_heavy": 1.0,
+    "faithfulness_heavy": 0.8,
+    "integration_heavy": 0.8,
+    "transparency_heavy": 1.0
+  },
+  "conclusion": "Composite ranking is robust to weight perturbations. S4 remains top-ranked under 4 of 5 schemes. S3 vs S4 swap occurs only when IQ is double-weighted (reflecting S4's self-hosted latency). Equal weighting is the most defensible default absent domain-specific guidance."
+}

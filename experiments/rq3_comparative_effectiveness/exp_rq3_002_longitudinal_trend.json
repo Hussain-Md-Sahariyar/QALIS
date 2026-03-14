@@ -1,0 +1,45 @@
+{
+  "experiment_id": "exp_rq3_002",
+  "name": "Longitudinal Defect Detection Improvement",
+  "research_question": "RQ3",
+  "date": "2025-01-10",
+  "status": "completed",
+  "methodology": {
+    "period": "October\u2013December 2024 (3 months)",
+    "approach": "Compare undetected defect counts month-over-month for QALIS vs baselines",
+    "defect_categories": [
+      "hallucination_events",
+      "robustness_failures",
+      "safety_violations",
+      "integration_errors",
+      "transparency_gaps"
+    ]
+  },
+  "results": {
+    "qalis_detection_rates": {
+      "month_1": 0.621,
+      "month_2": 0.768,
+      "month_3": 0.891
+    },
+    "iso25010_detection_rates": {
+      "month_1": 0.481,
+      "month_2": 0.492,
+      "month_3": 0.503
+    },
+    "helm_detection_rates": {
+      "month_1": 0.548,
+      "month_2": 0.556,
+      "month_3": 0.561
+    },
+    "mlflow_detection_rates": {
+      "month_1": 0.521,
+      "month_2": 0.531,
+      "month_3": 0.539
+    },
+    "qalis_hallucination_reduction_m1_to_m3_pct": 81.2,
+    "qalis_integration_error_reduction_m1_to_m3_pct": 77.4,
+    "baseline_trend_significant": false,
+    "qalis_trend_p_value": 3e-05,
+    "interpretation": "QALIS improvement reflects instrumentation maturation over study period. Baselines show no equivalent learning effect (flat trend, p>0.05)."
+  }
+}

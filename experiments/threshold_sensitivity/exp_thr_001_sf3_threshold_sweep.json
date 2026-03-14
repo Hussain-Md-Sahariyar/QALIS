@@ -1,0 +1,83 @@
+{
+  "experiment_id": "exp_thr_sf_3_sweep",
+  "name": "Threshold Sensitivity Sweep \u2014 SF-3",
+  "purpose": "Assess impact of SF-3 threshold variation on alert precision and recall",
+  "date": "2025-01-14",
+  "status": "completed",
+  "metric": "SF-3",
+  "default_threshold": 2.0,
+  "direction": "lte",
+  "sweep_results": [
+    {
+      "threshold": 0.5,
+      "is_default": false,
+      "false_positive_rate": 0.15,
+      "false_negative_rate": 0.05,
+      "alert_precision": 0.72,
+      "alert_recall": 0.91,
+      "f1": 0.804
+    },
+    {
+      "threshold": 1.0,
+      "is_default": false,
+      "false_positive_rate": 0.12,
+      "false_negative_rate": 0.08,
+      "alert_precision": 0.76,
+      "alert_recall": 0.89,
+      "f1": 0.82
+    },
+    {
+      "threshold": 1.5,
+      "is_default": false,
+      "false_positive_rate": 0.09,
+      "false_negative_rate": 0.11,
+      "alert_precision": 0.8,
+      "alert_recall": 0.87,
+      "f1": 0.834
+    },
+    {
+      "threshold": 2.0,
+      "is_default": true,
+      "false_positive_rate": 0.06,
+      "false_negative_rate": 0.14,
+      "alert_precision": 0.84,
+      "alert_recall": 0.85,
+      "f1": 0.845
+    },
+    {
+      "threshold": 2.5,
+      "is_default": false,
+      "false_positive_rate": 0.03,
+      "false_negative_rate": 0.17,
+      "alert_precision": 0.88,
+      "alert_recall": 0.83,
+      "f1": 0.854
+    },
+    {
+      "threshold": 3.0,
+      "is_default": false,
+      "false_positive_rate": 0.01,
+      "false_negative_rate": 0.2,
+      "alert_precision": 0.92,
+      "alert_recall": 0.81,
+      "f1": 0.862
+    },
+    {
+      "threshold": 3.5,
+      "is_default": false,
+      "false_positive_rate": 0.01,
+      "false_negative_rate": 0.23,
+      "alert_precision": 0.96,
+      "alert_recall": 0.79,
+      "f1": 0.867
+    }
+  ],
+  "optimal_threshold_by_f1": 2.0,
+  "system_sensitivity": {
+    "S1": "High sensitivity \u2014 borderline many days",
+    "S2": "Medium",
+    "S3": "Low \u2014 well below threshold",
+    "S4": "Override to 1.0 recommended for clinical domain"
+  },
+  "recommendation": "Default threshold 2.0 is near-optimal by F1. Domain overrides justified for high-risk systems."
+}

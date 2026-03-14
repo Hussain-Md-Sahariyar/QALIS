@@ -1,0 +1,59 @@
+{
+  "experiment_id": "exp_abl_001",
+  "name": "Dimension Dropout Ablation",
+  "purpose": "Assess impact of removing each dimension on composite score validity and incident detection",
+  "date": "2025-01-12",
+  "status": "completed",
+  "methodology": "Re-compute composite QALIS scores excluding each dimension in turn. Measure correlation of resulting composite with ground-truth quality ranking and incident detection rate.",
+  "results": {
+    "full_qalis_incident_detection_rate": 0.891,
+    "full_qalis_ranking_spearman_r": 0.94,
+    "dropout_results": [
+      {
+        "excluded": "FC",
+        "detection_rate": 0.841,
+        "ranking_r": 0.88,
+        "delta_detection": -0.05,
+        "impact": "medium"
+      },
+      {
+        "excluded": "RO",
+        "detection_rate": 0.863,
+        "ranking_r": 0.9,
+        "delta_detection": -0.028,
+        "impact": "low"
+      },
+      {
+        "excluded": "SF",
+        "detection_rate": 0.802,
+        "ranking_r": 0.84,
+        "delta_detection": -0.089,
+        "impact": "high"
+      },
+      {
+        "excluded": "SS",
+        "detection_rate": 0.798,
+        "ranking_r": 0.83,
+        "delta_detection": -0.093,
+        "impact": "high"
+      },
+      {
+        "excluded": "TI",
+        "detection_rate": 0.869,
+        "ranking_r": 0.91,
+        "delta_detection": -0.022,
+        "impact": "low"
+      },
+      {
+        "excluded": "IQ",
+        "detection_rate": 0.851,
+        "ranking_r": 0.89,
+        "delta_detection": -0.04,
+        "impact": "medium"
+      }
+    ],
+    "most_impactful_dimension": "SS",
+    "least_impactful_dimension": "TI",
+    "conclusion": "All six dimensions contribute to composite validity. Removing SF or SS causes the largest drop in detection rate (>8 pp). Even TI removal (lowest impact) causes 2.2 pp drop, confirming all dimensions are necessary."
+  }
+}

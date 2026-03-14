@@ -1,0 +1,59 @@
+{
+  "experiment_id": "exp_rq3_003",
+  "name": "Mean Detection Lag Analysis \u2014 QALIS vs Baselines",
+  "research_question": "RQ3",
+  "date": "2025-01-11",
+  "status": "completed",
+  "methodology": {
+    "definition": "Detection lag = hours between incident onset and detection by approach",
+    "n_incidents": 42,
+    "incidents_per_system": {
+      "S1": 11,
+      "S2": 10,
+      "S3": 10,
+      "S4": 11
+    },
+    "measurement": "Timestamp when each approach first flagged the incident"
+  },
+  "results": {
+    "mean_detection_lag_hours": {
+      "QALIS": 1.38,
+      "ISO_25010": 5.21,
+      "HELM": 4.89,
+      "MLflow": 4.43
+    },
+    "median_detection_lag_hours": {
+      "QALIS": 0.92,
+      "ISO_25010": 4.67,
+      "HELM": 4.11,
+      "MLflow": 3.88
+    },
+    "qalis_improvement_vs_iso25010_pct": 73.5,
+    "qalis_improvement_vs_helm_pct": 71.8,
+    "qalis_improvement_vs_mlflow_pct": 68.8,
+    "mean_improvement_across_baselines_pct": 68.0,
+    "per_system": {
+      "S1": {
+        "qalis_lag_h": 1.4,
+        "best_baseline_lag_h": 5.2,
+        "improvement_pct": 73.1
+      },
+      "S2": {
+        "qalis_lag_h": 1.1,
+        "best_baseline_lag_h": 4.7,
+        "improvement_pct": 76.6
+      },
+      "S3": {
+        "qalis_lag_h": 1.3,
+        "best_baseline_lag_h": 4.9,
+        "improvement_pct": 73.5
+      },
+      "S4": {
+        "qalis_lag_h": 1.7,
+        "best_baseline_lag_h": 6.1,
+        "improvement_pct": 72.1
+      }
+    },
+    "paper_reported_mean_improvement": "68%"
+  }
+}

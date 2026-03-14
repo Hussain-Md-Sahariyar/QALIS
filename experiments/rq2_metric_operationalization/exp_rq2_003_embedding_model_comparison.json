@@ -1,0 +1,40 @@
+{
+  "experiment_id": "exp_rq2_003",
+  "name": "Embedding Model Comparison for RO Metrics",
+  "research_question": "RQ2",
+  "date": "2024-09-20",
+  "status": "completed",
+  "purpose": "Select optimal sentence embedding model for RO-3 (OOD) and RO-4 (semantic invariance)",
+  "models_evaluated": [
+    {
+      "model": "sentence-transformers/all-mpnet-base-v2",
+      "ood_auroc": 0.887,
+      "invariance_spearman_r": 0.821,
+      "selected": true
+    },
+    {
+      "model": "sentence-transformers/all-MiniLM-L6-v2",
+      "ood_auroc": 0.851,
+      "invariance_spearman_r": 0.793,
+      "selected": false
+    },
+    {
+      "model": "sentence-transformers/paraphrase-mpnet-base-v2",
+      "ood_auroc": 0.871,
+      "invariance_spearman_r": 0.834,
+      "selected": false
+    },
+    {
+      "model": "BAAI/bge-small-en-v1.5",
+      "ood_auroc": 0.863,
+      "invariance_spearman_r": 0.809,
+      "selected": false
+    }
+  ],
+  "evaluation_sets": {
+    "ood_eval": "300 in-distribution + 100 OOD samples (labelled during onboarding)",
+    "invariance_eval": "200 manually rated paraphrase pairs (Spearman correlation with human ratings)"
+  },
+  "selection_rationale": "all-mpnet-base-v2 selected for highest OOD AUROC (0.887). Truncated from 768 to 512 dims via PCA (99.1% variance retained).",
+  "pca_variance_retained": 0.991
+}

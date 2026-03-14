@@ -1,0 +1,72 @@
+{
+  "experiment_id": "exp_abl_002",
+  "name": "Metric Subset Ablation \u2014 FC Dimension",
+  "purpose": "Determine minimum viable metric set for FC dimension without significant validity loss",
+  "date": "2025-01-13",
+  "status": "completed",
+  "methodology": "Test all subsets of FC metrics {FC-1, FC-2, FC-3, FC-4} against full-dimension validity",
+  "results": {
+    "full_fc_validity": 1.0,
+    "subsets": [
+      {
+        "metrics": [
+          "FC-1"
+        ],
+        "validity": 0.81,
+        "cost_reduction_pct": 75,
+        "recommended": false
+      },
+      {
+        "metrics": [
+          "FC-1",
+          "FC-4"
+        ],
+        "validity": 0.91,
+        "cost_reduction_pct": 50,
+        "recommended": true,
+        "note": "Minimum recommended set for non-code systems"
+      },
+      {
+        "metrics": [
+          "FC-1",
+          "FC-3"
+        ],
+        "validity": 0.87,
+        "cost_reduction_pct": 50,
+        "recommended": false,
+        "note": "Code-generation systems only"
+      },
+      {
+        "metrics": [
+          "FC-1",
+          "FC-2",
+          "FC-4"
+        ],
+        "validity": 0.96,
+        "cost_reduction_pct": 25,
+        "recommended": true
+      },
+      {
+        "metrics": [
+          "FC-1",
+          "FC-3",
+          "FC-4"
+        ],
+        "validity": 0.95,
+        "cost_reduction_pct": 25,
+        "note": "Code systems \u2014 replace FC-2 with FC-3"
+      },
+      {
+        "metrics": [
+          "FC-1",
+          "FC-2",
+          "FC-3",
+          "FC-4"
+        ],
+        "validity": 1.0,
+        "cost_reduction_pct": 0
+      }
+    ],
+    "recommendation": "FC-1 + FC-4 is the minimum viable set for all non-code systems. FC-3 replaces FC-2 for code generation. Full set recommended for high-risk deployments."
+  }
+}

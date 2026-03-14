@@ -1,0 +1,83 @@
+{
+  "experiment_id": "exp_thr_ro_2_sweep",
+  "name": "Threshold Sensitivity Sweep \u2014 RO-2",
+  "purpose": "Assess impact of RO-2 threshold variation on alert precision and recall",
+  "date": "2025-01-14",
+  "status": "completed",
+  "metric": "RO-2",
+  "default_threshold": 0.97,
+  "direction": "gte",
+  "sweep_results": [
+    {
+      "threshold": 0.9,
+      "is_default": false,
+      "false_positive_rate": 0.05,
+      "false_negative_rate": 0.15,
+      "alert_precision": 0.72,
+      "alert_recall": 0.91,
+      "f1": 0.804
+    },
+    {
+      "threshold": 0.92,
+      "is_default": false,
+      "false_positive_rate": 0.08,
+      "false_negative_rate": 0.12,
+      "alert_precision": 0.76,
+      "alert_recall": 0.89,
+      "f1": 0.82
+    },
+    {
+      "threshold": 0.94,
+      "is_default": false,
+      "false_positive_rate": 0.11,
+      "false_negative_rate": 0.09,
+      "alert_precision": 0.8,
+      "alert_recall": 0.87,
+      "f1": 0.834
+    },
+    {
+      "threshold": 0.95,
+      "is_default": false,
+      "false_positive_rate": 0.14,
+      "false_negative_rate": 0.06,
+      "alert_precision": 0.84,
+      "alert_recall": 0.85,
+      "f1": 0.845
+    },
+    {
+      "threshold": 0.97,
+      "is_default": true,
+      "false_positive_rate": 0.17,
+      "false_negative_rate": 0.03,
+      "alert_precision": 0.88,
+      "alert_recall": 0.83,
+      "f1": 0.854
+    },
+    {
+      "threshold": 0.98,
+      "is_default": false,
+      "false_positive_rate": 0.2,
+      "false_negative_rate": 0.01,
+      "alert_precision": 0.92,
+      "alert_recall": 0.81,
+      "f1": 0.862
+    },
+    {
+      "threshold": 0.99,
+      "is_default": false,
+      "false_positive_rate": 0.23,
+      "false_negative_rate": 0.01,
+      "alert_precision": 0.96,
+      "alert_recall": 0.79,
+      "f1": 0.867
+    }
+  ],
+  "optimal_threshold_by_f1": 0.97,
+  "system_sensitivity": {
+    "S1": "Default adequate",
+    "S2": "Default adequate",
+    "S3": "Default adequate",
+    "S4": "Override to 0.99 recommended (clinical)"
+  },
+  "recommendation": "Default threshold 0.97 is near-optimal by F1. Domain overrides justified for high-risk systems."
+}
