@@ -1,0 +1,178 @@
+# Collection cadences
+cadences:
+  realtime:
+    interval_minutes: 5
+    metrics: [SS-1, SS-2, SS-3, IQ-1, IQ-2]
+    storage: "time_series_db"        
+
+  daily:
+    run_time_utc: "02:00"
+    metrics: [FC-1, SF-1, SF-2, SF-3, SS-4, TI-1, TI-4]
+    storage: "relational_db"
+
+  weekly:
+    run_day: Monday
+    run_time_utc: "03:00"
+    metrics: [FC-4, RO-1, RO-3, RO-4, RO-5, IQ-4]
+    storage: "relational_db"
+
+  biweekly:
+    run_day: [Monday]
+    run_weeks: [1, 3]                  
+    metrics: [RO-2]
+    storage: "relational_db"
+
+  per_release:
+    trigger: "model_deployment_event"
+    metrics: [FC-2, FC-3]
+    storage: "relational_db"
+
+  monthly:
+    run_day_of_month: 1
+    metrics: [TI-2, TI-3, IQ-3]
+    storage: "relational_db"
+
+  continuous:
+    resolution_seconds: 30
+    metrics: [IQ-1, IQ-2]
+    storage: "time_series_db"
+
+# Alert rules
+alert_rules:
+
+  critical:
+    channels: [pagerduty, slack_critical, email_oncall]
+    repeat_interval_minutes: 15
+    auto_create_incident: true
+    metrics:
+      - id: SS-1
+        condition: "value > 0.005"
+        message: "Toxicity rate threshold breached: {value:.4f} > 0.005"
+      - id: SS-2
+        condition: "value > 0.001"
+        message: "PII leakage detected: rate {value:.5f} > 0.001"
+      - id: SS-3
+        condition: "value > 0.02"
+        message: "Prompt injection attack succeeded: rate {value:.4f} > 0.02"
+      - id: IQ-1
+        condition: "value < 0.999"
+        message: "API availability SLA breach: {value:.4f} < 0.999"
+
+  high:
+    channels: [slack_alerts, email_team]
+    repeat_interval_minutes: 60
+    metrics:
+      - id: FC-1
+        condition: "value < 0.85 OR rolling_7d_drop > 0.05"
+        message: "Task accuracy degraded: {value:.3f} (threshold 0.85)"
+      - id: SF-3
+        condition: "value > 2.0"
+        message: "Hallucination rate elevated: {value:.2f}/1K tokens > 2.0"
+      - id: TI-4
+        condition: "value < 0.99"
+        message: "Audit trail incomplete: {value:.3f} < 0.99"
+      - id: IQ-2
+        condition: "value > 2500"
+        message: "P95 latency SLA breach: {value:.0f}ms > 2500ms"
+
+  medium:
+    channels: [slack_monitoring]
+    repeat_interval_minutes: 240
+    metrics:
+      - id: RO-1
+        condition: "value > 0.10"
+        message: "Perturbation sensitivity elevated: {value:.3f} > 0.10"
+      - id: SF-1
+        condition: "value < 0.88"
+        message: "Faithfulness score below threshold: {value:.3f} < 0.88"
+      - id: TI-1
+        condition: "value < 0.70"
+        message: "Explanation coverage low: {value:.3f} < 0.70"
+      - id: IQ-4
+        condition: "value < 0.90"
+        message: "Observability coverage degraded: {value:.3f} < 0.90"
+
+  low:
+    channels: [slack_monitoring]
+    repeat_interval_minutes: 1440     # Once per day max
+    metrics:
+      - id: TI-3
+        condition: "value < 3.8"
+        message: "User interpretability rating below threshold: {value:.2f}/5"
+
+# Cross-layer causal tracing
+causal_dependencies:
+  - symptom: SF-3 # Hallucination spike
+    likely_root_causes:
+      - metric: SF-1 # Low faithfulness
+        layer: 3
+        investigation: "Check NLI classifier logs for contradicted claims"
+      - metric: SF-2 # Low attribution coverage
+        layer: 3
+        investigation: "Check RAG retrieval relevance scores"
+      - metric: RO-4 # Low semantic invariance (r=0.61 correlation)
+        layer: 2
+        investigation: "Run paraphrase consistency test suite"
+    escalation_path: "Context retrieval pipeline to Prompt template to Model update"
+
+  - symptom: IQ-1 # Availability failure
+    likely_root_causes:
+      - metric: IQ-2 # Latency degradation (r=0.74 leading indicator)
+        layer: 4
+        investigation: "Check P95/P99 latency trends preceding the outage"
+    escalation_path: "Provider status page to Rate limit dashboard to Fallback model"
+
+  - symptom: FC-1 # Task accuracy drop
+    likely_root_causes:
+      - metric: RO-4 # Prompt template change to brittleness
+        layer: 2
+        investigation: "Check prompt template version change log"
+      - metric: SF-1 # Faithfulness issue
+        layer: 3
+        investigation: "Check if retrieval context quality degraded"
+    escalation_path: "Prompt template audit to Model version check to Eval suite run"
+
+# Dashboard settings
+dashboard:
+  refresh_interval_seconds: 60
+  default_time_range_hours: 24
+  panels:
+    - title: "Composite QALIS Score"
+      type: gauge
+      metrics: [all]
+      aggregation: mean
+
+    - title: "Safety Metrics (Real-time)"
+      type: timeseries
+      metrics: [SS-1, SS-2, SS-3]
+      time_range_hours: 6
+
+    - title: "Faithfulness & Hallucination"
+      type: timeseries
+      metrics: [SF-1, SF-3]
+      time_range_hours: 24
+
+    - title: "API Reliability"
+      type: timeseries
+      metrics: [IQ-1, IQ-2]
+      time_range_hours: 24
+
+    - title: "Quality Radar (6 Dimensions)"
+      type: radar
+      metrics: [FC, RO, SF, SS, TI, IQ]
+      aggregation: dimension_mean
+
+    - title: "Threshold Violations (7d)"
+      type: table
+      metrics: [all]
+      show_violations_only: true
+      time_range_hours: 168
+
+# Data retention
+retention:
+  realtime_raw_days: 90
+  daily_aggregates_days: 730
+  weekly_aggregates_days: 1825 # 5 years
+  monthly_reports_days: 3650 # 10 years
+  incident_records_days: 3650
+  audit_trail_days: 3650 # Regulatory compliance requirement

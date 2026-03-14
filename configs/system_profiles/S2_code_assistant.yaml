@@ -1,0 +1,73 @@
+system:
+  id: S2
+  name: "AI Code Assistant (IDE Plugin)"
+  domain: code_generation
+  deployment_type: production
+  study_role: "Case System 2 of 4 - highest FC score in study cohort"
+
+infrastructure:
+  llm_provider: anthropic
+  llm_model: "claude-3-5-sonnet-ft-v1.3"
+  context_window_tokens: 100000
+  streaming_enabled: true # Fill-in-the-middle streaming
+  rag_enabled: false
+  fim_mode: true # Fill-in-the-middle code completion
+  daily_active_users: 3200
+  peak_rps: 18
+  avg_completion_tokens: 120
+  team_size_dev: 7
+
+qalis_metric_applicability:
+  FC-1: true
+  FC-2: false # BERTScore not meaningful for code
+  FC-3: true  # Pass@k primary FC metric
+  FC-4: true  # Factual precision (library API accuracy)
+  RO-1: true
+  RO-2: true
+  RO-3: true
+  RO-4: true
+  RO-5: true
+  SF-1: true # Faithfulness to in-context code
+  SF-2: false # No RAG - attribution N/A
+  SF-3: true  # Hallucinated API calls / functions
+  SS-1: true
+  SS-2: true
+  SS-3: true
+  SS-4: true
+  TI-1: true
+  TI-2: true
+  TI-3: false # No user-facing explanation UI
+  TI-4: true
+  IQ-1: true
+  IQ-2: true
+  IQ-3: true
+  IQ-4: true
+
+metric_overrides:
+  FC-3:
+    k: 5
+    test_framework: pytest
+    execution_timeout_seconds: 10
+  IQ-2:
+    threshold: 1500 # Tighter: IDE requires fast completions
+  SF-3:
+    note: "Hallucination = hallucinated stdlib/library calls that don't exist"
+
+paper_reported_scores:
+  FC: 8.9 # Highest FC across all systems
+  RO: 7.8
+  SF: 7.3
+  SS: 8.8
+  TI: 6.2
+  IQ: 7.1
+  composite: 7.68
+
+key_incidents_study_period: 10
+qalis_detection_lag_mean_hours: 1.1
+baseline_detection_lag_mean_hours: 4.7
+
+notable_findings:
+  - "FC-3 (Pass@k=0.91) highest functional correctness in cohort"
+  - "SF-3 hallucination manifests as non-existent library function calls"
+  - "TI-3 not collected - plugin has no explanation UI surface"
+  - "IQ-3 excluded - self-managed fine-tuned model, cost tracking misaligned"

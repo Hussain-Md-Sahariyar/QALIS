@@ -1,0 +1,131 @@
+general:
+  annotation_platform: "custom_web_interface"  # Hosted internally
+  payment_model: "research_team" # Internal annotators for this study
+  training_required: true
+  training_materials: "supplementary/survey_instruments/annotator_training_guide.pdf"
+  pilot_annotation_size: 20 # Pre-study pilot before live annotation
+  iaa_check_frequency: 50 # Re-compute IAA every 50 items
+
+FC4_factual_precision:
+  metric_id: "FC-4"
+  description: "Assess the factual precision of LLM output claims against source evidence"
+  total_items: 800 # Paper: 800 claims across all systems
+  items_per_system: 200
+  annotators_per_item: 3
+  achieved_iaa_kappa: 0.76 # Fleiss κ achieved
+  iaa_target: 0.70
+
+  sampling:
+    strategy: random_stratified
+    stratify_by: [system_id, week]
+    sample_rate: 0.05 # 5% of weekly outputs sampled
+
+  annotation_schema:
+    label_set:
+      - value: "CORRECT"
+        description: "Claim is factually accurate and supported by available evidence"
+        example: "The return window is 30 days - correctly stated in policy doc"
+      - value: "INCORRECT"
+        description: "Claim is factually wrong or directly contradicts evidence"
+        example: "The return window is 60 days - policy doc says 30"
+      - value: "UNVERIFIABLE"
+        description: "Claim cannot be verified with available context"
+        example: "Industry average return rates - no source provided"
+
+    confidence_scale:
+      range: [1, 5]
+      anchors:
+        1: "Completely uncertain"
+        3: "Moderately confident"
+        5: "Completely certain"
+
+    required_fields:
+      - label
+      - confidence
+      - evidence_snippet # Quote from source that supports judgment
+
+    optional_fields:
+      - notes
+
+  adjudication:
+    method: majority_vote
+    tie_break: "flag_for_senior_review"
+    disagreement_threshold: 0.33 # If >33% disagreement, flag for discussion
+
+TI2_explanation_faithfulness:
+  metric_id: "TI-2"
+  description: "Assess whether the system's stated explanation faithfully reflects its output"
+  total_items: 500     
+  items_per_system: 125
+  annotators_per_item: 3
+  achieved_iaa_kappa: 0.71        
+  iaa_target: 0.70
+
+  sampling:
+    strategy: random_stratified
+    stratify_by: [system_id, explanation_type]
+    sample_rate: 0.03
+
+  annotation_schema:
+    label_set:
+      - value: "FAITHFUL"
+        description: "Explanation accurately describes why the system produced the output"
+      - value: "PARTIALLY_FAITHFUL"
+        description: "Explanation is partially accurate but omits key reasoning steps"
+      - value: "UNFAITHFUL"
+        description: "Explanation does not match the output or contains post-hoc rationalisation"
+
+    dimensions_to_rate:
+      - dimension: accuracy
+        question: "Does the explanation accurately describe the reasoning behind the output?"
+      - dimension: completeness
+        question: "Does the explanation cover all key reasoning steps?"
+      - dimension: no_post_hoc
+        question: "Is the explanation genuinely reflective (not invented after the fact)?"
+      - dimension: source_accuracy
+        question: "Are any cited sources accurately represented?"
+
+    confidence_scale:
+      range: [1, 5]
+
+TI3_user_interpretability:
+  metric_id: "TI-3"
+  description: "User-facing Likert survey measuring perceived explanation quality"
+  applicability_exclusions: [S2] # S2 has no explanation UI surface
+  target_responses_per_system: 400  
+  cronbach_alpha_target: 0.80
+  achieved_cronbach_alpha: 0.84
+
+  survey:
+    delivery: "in_app_post_interaction"
+    trigger: "after_every_5th_session"
+    max_daily_responses_per_user: 1
+    min_responses_for_valid_score: 50
+
+    questions:
+      - id: TI3_Q1
+        text: "How clearly did the system explain its answer?"
+        type: likert_5
+      - id: TI3_Q2
+        text: "How easy was it to understand why the system gave this response?"
+        type: likert_5
+      - id: TI3_Q3
+        text: "How much did you trust the explanation provided?"
+        type: likert_5
+      - id: TI3_Q4
+        text: "How useful was the explanation for your decision-making?"
+        type: likert_5
+      - id: TI3_Q5
+        text: "Overall, how satisfied are you with the system's transparency?"
+        type: likert_5
+
+    scoring:
+      composite: mean_of_all_questions
+      threshold: 3.8 
+
+qualitative_coding:
+  coders: 2
+  achieved_kappa: 0.81
+  codebook: "interviews/codebook/qalis_codebook_v2.json"
+  n_coded_excerpts: 52          
+  adjudication: "consensus_discussion"

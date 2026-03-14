@@ -1,0 +1,133 @@
+# Study metadata
+study:
+  study_id: "QALIS-2024"
+  study_period_start: "2024-10-01"
+  study_period_end:   "2024-12-31"
+  study_duration_days: 92
+  total_observations: 3400
+  onboarding_period_days: 14 # Two-week instrumentation validation window
+  random_seed: 42 # For reproducibility across all analyses
+
+# Systems under study
+systems:
+  S1:
+    name: "Customer Support Chatbot"
+    domain: customer_support
+    llm_provider: openai
+    llm_model: "gpt-4o-2024-08-06"
+    integration_pattern: "direct_api_rag"
+    context_window_tokens: 8192
+    daily_active_users: 8400
+    team_size_dev: 11
+    risk_level: medium
+    regulatory_context: []
+    rag_enabled: true
+    streaming_enabled: false
+    agentic: false
+
+  S2:
+    name: "AI Code Assistant (IDE Plugin)"
+    domain: code_generation
+    llm_provider: anthropic
+    llm_model: "claude-3-5-sonnet-ft-v1.3"
+    integration_pattern: "fim_streaming"
+    context_window_tokens: 100000
+    daily_active_users: 3200
+    team_size_dev: 7
+    risk_level: medium
+    regulatory_context: []
+    rag_enabled: false
+    streaming_enabled: true
+    agentic: false
+
+  S3:
+    name: "Document Summarization and QA"
+    domain: document_intelligence
+    llm_provider: google
+    llm_model: "gemini-1.5-pro-002"
+    integration_pattern: "long_context_rag"
+    context_window_tokens: 1000000
+    daily_active_users: 1900
+    team_size_dev: 5
+    risk_level: medium
+    regulatory_context: ["GDPR"]
+    rag_enabled: true
+    streaming_enabled: false
+    agentic: false
+
+  S4:
+    name: "Medical Triage Assistant"
+    domain: clinical_decision_support
+    llm_provider: self_hosted
+    llm_model: "llama-3.1-70b-instruct-q8"
+    integration_pattern: "agentic_tool_use"
+    context_window_tokens: 32768
+    daily_active_users: 620
+    team_size_dev: 14
+    risk_level: high
+    regulatory_context: ["HIPAA", "EU_AI_Act_high_risk"]
+    rag_enabled: false
+    streaming_enabled: false
+    agentic: true
+
+# Quality dimensions
+dimensions:
+  FC:
+    name: "Functional Correctness"
+    layer: 2
+    metrics: [FC-1, FC-2, FC-3, FC-4]
+    weight: 1.0
+    enabled: true
+
+  RO:
+    name: "Robustness"
+    layer: 2
+    metrics: [RO-1, RO-2, RO-3, RO-4, RO-5]
+    weight: 1.0
+    enabled: true
+
+  SF:
+    name: "Semantic Faithfulness"
+    layer: 3
+    metrics: [SF-1, SF-2, SF-3]
+    weight: 1.0
+    enabled: true
+
+  SS:
+    name: "Safety and Security"
+    layer: 3
+    metrics: [SS-1, SS-2, SS-3, SS-4]
+    weight: 1.0
+    enabled: true
+
+  TI:
+    name: "Transparency and Interpretability"
+    layer: 3
+    metrics: [TI-1, TI-2, TI-3, TI-4]
+    weight: 1.0
+    enabled: true
+
+  IQ:
+    name: "System Integration Quality"
+    layer: 4
+    metrics: [IQ-1, IQ-2, IQ-3, IQ-4]
+    weight: 1.0
+    enabled: true
+
+# Data paths
+paths:
+  data_root: "data/"
+  raw_data: "data/raw/"
+  processed_data: "data/processed/"
+  baselines: "baselines/"
+  analysis_output: "analysis/figures/"
+  supplementary: "supplementary/"
+  logs: "logs/"
+
+# Logging
+logging:
+  level: INFO                 
+  format: "%(asctime)s [%(levelname)s] %(name)s: %(message)s"
+  file: "logs/qalis.log"
+  rotate_mb: 100
+  backup_count: 5
