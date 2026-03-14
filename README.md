@@ -601,22 +601,6 @@ cat supplementary/replication_package/replication_checklist.md
 cat supplementary/replication_package/known_deviations.md
 ```
 
-**What is included in this repository:**
-
-| Item | Location | Paper reference |
-|------|----------|-----------------|
-| Anonymized metric observations (FC-4, TI-2, TI-3) | `data/annotations/` | 3.5 |
-| QALIS metric catalogue (24 metrics, formulas, thresholds) | `framework/metrics/metrics_catalogue.json` | 4, Table 3 |
-| Data collection instruments (interview guide, annotation rubrics) | `supplementary/survey_instruments/` | 3.4–3.5 |
-| Threshold guidance tables | `configs/metrics_thresholds.yaml` | Table 3 |
-| Instantiation guide | `supplementary/replication_package/instantiation_guide.md` | 4.1 |
-| Annotated case study documentation | `supplementary/annotated_case_studies/` | 4.2–4.5 |
-| Instrumentation code | `toolkit/collectors/`, `src/qalis/collectors/` | 4.5 |
-| NLI classifier configuration | `configs/nli_classifier_config.yaml` | 4.4, 8.3 |
-| Automated perturbation generation pipeline | `perturbation_tests/*/generate_*.py` | 3.3 |
-| Pearson correlation analysis scripts | `analysis/rq2/metric_correlation_analysis.py` | 5.2, Figure 4 |
-| Monitoring dashboard templates | `toolkit/dashboard_templates/` | 3.3, 4.4 |
-
 ---
 
 
