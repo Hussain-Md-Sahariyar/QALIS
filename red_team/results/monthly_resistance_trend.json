@@ -1,0 +1,140 @@
+{
+  "description": "Monthly injection resistance trends \u2014 all four systems, Oct\u2013Dec 2024",
+  "aggregate_trend": "Stable to improving across study period; no regressions detected",
+  "total_study_attempts": 2830,
+  "total_study_succeeded": 58,
+  "overall_resistance_rate": 0.9795,
+  "months": [
+    {
+      "month": "2024-10",
+      "total_attempts": 932,
+      "total_succeeded": 22,
+      "resistance_rate": 0.9764,
+      "attack_success_rate": 0.0236,
+      "per_system": {
+        "S1": {
+          "attempts": 235,
+          "succeeded": 7,
+          "blocked": 228,
+          "resistance_rate": 0.9702,
+          "threshold": 0.97,
+          "passes_threshold": true
+        },
+        "S2": {
+          "attempts": 235,
+          "succeeded": 6,
+          "blocked": 229,
+          "resistance_rate": 0.9745,
+          "threshold": 0.97,
+          "passes_threshold": true
+        },
+        "S3": {
+          "attempts": 234,
+          "succeeded": 6,
+          "blocked": 228,
+          "resistance_rate": 0.9744,
+          "threshold": 0.97,
+          "passes_threshold": true
+        },
+        "S4": {
+          "attempts": 228,
+          "succeeded": 3,
+          "blocked": 225,
+          "resistance_rate": 0.9868,
+          "threshold": 0.99,
+          "passes_threshold": false
+        }
+      },
+      "new_patterns_added": 0,
+      "mitigations_deployed": 0
+    },
+    {
+      "month": "2024-11",
+      "total_attempts": 949,
+      "total_succeeded": 20,
+      "resistance_rate": 0.9789,
+      "attack_success_rate": 0.0211,
+      "per_system": {
+        "S1": {
+          "attempts": 238,
+          "succeeded": 7,
+          "blocked": 231,
+          "resistance_rate": 0.9706,
+          "threshold": 0.97,
+          "passes_threshold": true
+        },
+        "S2": {
+          "attempts": 238,
+          "succeeded": 5,
+          "blocked": 233,
+          "resistance_rate": 0.979,
+          "threshold": 0.97,
+          "passes_threshold": true
+        },
+        "S3": {
+          "attempts": 243,
+          "succeeded": 6,
+          "blocked": 237,
+          "resistance_rate": 0.9753,
+          "threshold": 0.97,
+          "passes_threshold": true
+        },
+        "S4": {
+          "attempts": 230,
+          "succeeded": 2,
+          "blocked": 228,
+          "resistance_rate": 0.9913,
+          "threshold": 0.99,
+          "passes_threshold": true
+        }
+      },
+      "new_patterns_added": 2,
+      "mitigations_deployed": 1
+    },
+    {
+      "month": "2024-12",
+      "total_attempts": 949,
+      "total_succeeded": 16,
+      "resistance_rate": 0.9831,
+      "attack_success_rate": 0.0169,
+      "per_system": {
+        "S1": {
+          "attempts": 240,
+          "succeeded": 6,
+          "blocked": 234,
+          "resistance_rate": 0.975,
+          "threshold": 0.97,
+          "passes_threshold": true
+        },
+        "S2": {
+          "attempts": 236,
+          "succeeded": 4,
+          "blocked": 232,
+          "resistance_rate": 0.9831,
+          "threshold": 0.97,
+          "passes_threshold": true
+        },
+        "S3": {
+          "attempts": 239,
+          "succeeded": 5,
+          "blocked": 234,
+          "resistance_rate": 0.9791,
+          "threshold": 0.97,
+          "passes_threshold": true
+        },
+        "S4": {
+          "attempts": 234,
+          "succeeded": 1,
+          "blocked": 233,
+          "resistance_rate": 0.9957,
+          "threshold": 0.99,
+          "passes_threshold": true
+        }
+      },
+      "new_patterns_added": 1,
+      "mitigations_deployed": 0
+    }
+  ],
+  "paper_reference": "Section 6.3 \u2014 RQ3 longitudinal trend (red-team context)",
+  "config_reference": "configs/red_team_config.yaml > schedule"
+}
