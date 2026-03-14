@@ -1,0 +1,78 @@
+name: qalis-replication
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  # Python
+  - python=3.11.7
+
+  # Core scientific stack
+  - numpy=1.26.2
+  - pandas=2.1.4
+  - scipy=1.11.4
+  - scikit-learn=1.3.2
+  - statsmodels=0.14.1
+
+  # Visualisation
+  - matplotlib=3.8.2
+  - seaborn=0.13.0
+
+  # Jupyter (for notebooks)
+  - jupyterlab=4.0.10
+  - ipykernel=6.27.1
+
+  # NLP / embeddings
+  - pip
+
+  - pip:
+      # QALIS package (install from repo root)
+      - -e ../..
+
+      # NLP and embedding models
+      - transformers==4.36.2
+      - torch==2.1.2
+      - sentence-transformers==2.3.1
+      - rouge-score==0.1.2
+      - bert-score==0.3.13
+      - nltk==3.8.1
+
+      # LLM provider SDKs
+      - openai==1.6.1
+      - anthropic==0.8.1
+      - google-generativeai==0.3.2
+
+      # RAG / evaluation
+      - ragas==0.1.0rc1
+      - langchain==0.1.0
+
+      # Statistics & IAA
+      - pingouin==0.5.3
+      - krippendorff==0.6.1
+
+      # Monitoring / MLOps
+      - mlflow==2.9.2
+      - prometheus-client==0.19.0
+
+      # API / dashboard
+      - fastapi==0.108.0
+      - uvicorn==0.25.0
+      - pydantic==2.5.3
+
+      # Data formats
+      - pyyaml==6.0.1
+
+      # Testing
+      - pytest==7.4.4
+      - pytest-cov==4.1.0
+
+      # Code quality
+      - black==23.12.1
+      - ruff==0.1.9
+
+# Reproduce with:
+#   conda env create -f supplementary/replication_package/environment.yml
+#   conda activate qalis-replication
+#
+# Verify:
+#   python supplementary/replication_package/replicate_all_results.py --verify

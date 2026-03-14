@@ -1,0 +1,79 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2025-01-01",
+  "data_files": [
+    {
+      "file": "data/raw/S*/metric_snapshots/realtime_metrics.csv.gz",
+      "description": "5-minute interval real-time metric snapshots (IQ-1,IQ-2,SS-1,SS-2,SS-3)",
+      "rows_per_system": 26496,
+      "columns": 25,
+      "time_range": "2024-10-01 to 2024-12-31"
+    },
+    {
+      "file": "data/raw/S*/metric_snapshots/daily_metrics.csv",
+      "description": "Daily aggregated metrics (FC-1,SF-1,SF-2,SF-3,SS-4,TI-1,TI-4)",
+      "rows_per_system": 92,
+      "columns": 30
+    },
+    {
+      "file": "data/raw/S*/metric_snapshots/weekly_metrics.csv",
+      "description": "Weekly metrics (FC-4,RO-1,RO-3,RO-4,RO-5,IQ-4)",
+      "rows_per_system": 14,
+      "columns": 26
+    },
+    {
+      "file": "data/raw/S*/query_logs/query_response_log.jsonl.gz",
+      "description": "Query/response log with NLI labels and quality metadata",
+      "entries_per_system": 50000
+    },
+    {
+      "file": "data/raw/S*/query_logs/nli_analysis_log.jsonl",
+      "description": "Detailed NLI analysis with atomic claim verdicts",
+      "entries_per_system": 25000
+    },
+    {
+      "file": "data/raw/S*/embeddings/query_embeddings.npy",
+      "description": "512-dim sentence embeddings for all queries",
+      "shape": "50000 \u00d7 512",
+      "dtype": "float32"
+    },
+    {
+      "file": "data/raw/S*/embeddings/response_embeddings.npy",
+      "description": "512-dim sentence embeddings for all responses",
+      "shape": "50000 \u00d7 512",
+      "dtype": "float32"
+    },
+    {
+      "file": "data/raw/S*/annotation_samples/fc4_factual_precision_annotations.csv",
+      "description": "FC-4 human annotation panel data (3 annotators, Fleiss \u03ba=0.76)"
+    },
+    {
+      "file": "data/raw/S*/annotation_samples/ti2_explanation_faithfulness_annotations.csv",
+      "description": "TI-2 human annotation panel data (3 annotators, Fleiss \u03ba=0.71)"
+    },
+    {
+      "file": "perturbation_tests/typographical/typo_perturbation_dataset.csv",
+      "description": "5,000 typographical perturbation test cases for RO-1"
+    },
+    {
+      "file": "perturbation_tests/paraphrase/paraphrase_invariance_dataset.csv",
+      "description": "4,000 paraphrase pairs for RO-4 semantic invariance"
+    },
+    {
+      "file": "perturbation_tests/ood_detection/ood_detection_dataset.csv",
+      "description": "3,000 OOD detection test cases for RO-3"
+    },
+    {
+      "file": "red_team/injection_attempts/prompt_injection_corpus.csv.gz",
+      "description": "2,850 prompt injection attempts with success/failure labels"
+    },
+    {
+      "file": "interviews/transcripts/INT-*.txt",
+      "description": "14 anonymized practitioner interview transcripts (~58 min avg)"
+    },
+    {
+      "file": "baselines/comparative_analysis_full.csv",
+      "description": "QALIS vs ISO25010/HELM/MLflow comparative effectiveness data"
+    }
+  ]
+}
