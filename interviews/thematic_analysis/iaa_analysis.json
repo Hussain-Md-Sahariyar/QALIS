@@ -1,0 +1,23 @@
+{
+  "method": "Cohen's kappa for two-coder agreement on 237 excerpts",
+  "overall_kappa": 0.81,
+  "interpretation": "Substantial agreement (Landis & Koch, 1977 scale)",
+  "n_excerpts_coded": 237,
+  "n_coders": 2,
+  "n_agreements": 195,
+  "n_disagreements": 42,
+  "n_resolved_by_discussion": 42,
+  "per_theme_kappa": {
+    "TH1": 0.84,
+    "TH2": 0.79,
+    "TH3": 0.83,
+    "TH4": 0.82,
+    "TH5": 0.78,
+    "TH6": 0.8,
+    "TH7": 0.85,
+    "TH8": 0.77
+  },
+  "lowest_agreement_theme": "TH8",
+  "lowest_agreement_reason": "TH8 has only one code (C30) \u2014 disagreements arose from boundary with TH1 (tool inadequacy vs fragmentation)",
+  "resolution_protocol": "Joint review session; coder with higher confidence rating took precedence where agreement was not reached organically"
+}

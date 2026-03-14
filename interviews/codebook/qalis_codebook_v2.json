@@ -1,0 +1,345 @@
+{
+  "version": "2.0",
+  "last_updated": "2024-12-15",
+  "n_codes": 30,
+  "n_themes": 8,
+  "inter_rater_kappa": 0.81,
+  "coders": 2,
+  "n_coded_excerpts": 237,
+  "codes": {
+    "C01": {
+      "name": "Hallucination Instance",
+      "definition": "Model output contains a claim not entailed by provided context",
+      "example": "Participant described model fabricating legal citations",
+      "parent_theme": "TH2",
+      "subcodes": [
+        "factual_error",
+        "unsupported_claim",
+        "training_data_bleed"
+      ]
+    },
+    "C02": {
+      "name": "Threshold Calibration Challenge",
+      "definition": "Difficulty determining acceptable metric value for domain",
+      "example": "Participant described ad hoc threshold setting process",
+      "parent_theme": "TH5",
+      "subcodes": [
+        "empirical_calibration",
+        "expert_judgment",
+        "benchmark_gap"
+      ]
+    },
+    "C03": {
+      "name": "Explanation Opacity",
+      "definition": "Inability to provide interpretable reasoning for model output",
+      "example": "Participant described audit trail existing but unusable",
+      "parent_theme": "TH3",
+      "subcodes": [
+        "black_box",
+        "chain_of_thought",
+        "source_attribution"
+      ]
+    },
+    "C04": {
+      "name": "Prompt Template Brittleness",
+      "definition": "Quality degradation following prompt change",
+      "example": "Participant described accuracy drop after minor wording change",
+      "parent_theme": "TH6",
+      "subcodes": [
+        "prompt_sensitivity",
+        "version_management",
+        "regression"
+      ]
+    },
+    "C05": {
+      "name": "Existing Tool Inadequacy",
+      "definition": "Current QA tooling insufficient for LLM-specific failure modes",
+      "example": "Participant stated unit tests pass but hallucinations go undetected",
+      "parent_theme": "TH1",
+      "subcodes": [
+        "tool_gap",
+        "test_coverage",
+        "llm_specific"
+      ]
+    },
+    "C06": {
+      "name": "Ad Hoc Quality Assessment",
+      "definition": "Quality evaluation performed without systematic framework",
+      "example": "Team relies on manual spot-checks and user complaints",
+      "parent_theme": "TH1",
+      "subcodes": [
+        "informal_process",
+        "reactive",
+        "no_framework"
+      ]
+    },
+    "C07": {
+      "name": "Metric Proliferation",
+      "definition": "Excessive number of metrics without clear priority or aggregation",
+      "example": "Participant listed 15+ metrics tracked with no composite score",
+      "parent_theme": "TH1",
+      "subcodes": [
+        "metric_overload",
+        "dashboard_noise",
+        "unclear_priority"
+      ]
+    },
+    "C08": {
+      "name": "Benchmark Mismatch",
+      "definition": "Standard benchmarks do not reflect production quality concerns",
+      "example": "High HELM scores but poor user satisfaction in production",
+      "parent_theme": "TH1",
+      "subcodes": [
+        "benchmark_validity",
+        "production_gap",
+        "construct_validity"
+      ]
+    },
+    "C09": {
+      "name": "RAG Attribution Failure",
+      "definition": "Retrieval-augmented system cites incorrect or non-existent source",
+      "example": "Customer support bot cited non-existent policy clause",
+      "parent_theme": "TH2",
+      "subcodes": [
+        "rag",
+        "retrieval",
+        "citation"
+      ]
+    },
+    "C10": {
+      "name": "Confident Confabulation",
+      "definition": "Model asserts fabricated facts with high apparent confidence",
+      "example": "Medical assistant stated incorrect drug dosage without uncertainty",
+      "parent_theme": "TH2",
+      "subcodes": [
+        "confidence_calibration",
+        "overconfidence",
+        "safety"
+      ]
+    },
+    "C11": {
+      "name": "Context Boundary Violation",
+      "definition": "Model uses knowledge beyond provided context inappropriately",
+      "example": "Document QA system answered from training data not the uploaded doc",
+      "parent_theme": "TH2",
+      "subcodes": [
+        "context_grounding",
+        "training_bleed",
+        "faithfulness"
+      ]
+    },
+    "C12": {
+      "name": "Temporal Hallucination",
+      "definition": "Model generates outdated or time-inconsistent information",
+      "example": "System cited regulations superseded two years prior",
+      "parent_theme": "TH2",
+      "subcodes": [
+        "temporal_consistency",
+        "knowledge_cutoff",
+        "staleness"
+      ]
+    },
+    "C13": {
+      "name": "Audit Trail Deficiency",
+      "definition": "Insufficient logging to reconstruct model decision path",
+      "example": "Could not determine which prompt version caused incident",
+      "parent_theme": "TH3",
+      "subcodes": [
+        "logging",
+        "audit",
+        "traceability"
+      ]
+    },
+    "C14": {
+      "name": "User Trust Erosion",
+      "definition": "User confidence in system decreases due to opaque outputs",
+      "example": "Users stopped using recommendations they could not verify",
+      "parent_theme": "TH3",
+      "subcodes": [
+        "trust",
+        "adoption",
+        "user_experience"
+      ]
+    },
+    "C15": {
+      "name": "Regulatory Explanation Gap",
+      "definition": "System cannot produce explanations meeting regulatory requirements",
+      "example": "EU AI Act high-risk classification requires explainability not implemented",
+      "parent_theme": "TH3",
+      "subcodes": [
+        "regulation",
+        "compliance",
+        "eu_ai_act"
+      ]
+    },
+    "C16": {
+      "name": "Developer Interpretability Need",
+      "definition": "Engineering team cannot diagnose failure without explanation",
+      "example": "Root cause analysis required manual inspection of 10K logs",
+      "parent_theme": "TH3",
+      "subcodes": [
+        "debugging",
+        "root_cause",
+        "developer_tooling"
+      ]
+    },
+    "C17": {
+      "name": "Provider Dependency Risk",
+      "definition": "Over-reliance on single LLM provider creates availability risk",
+      "example": "GPT-4 outage caused complete product unavailability for 4 hours",
+      "parent_theme": "TH4",
+      "subcodes": [
+        "vendor_lock",
+        "availability",
+        "fallback"
+      ]
+    },
+    "C18": {
+      "name": "Latency SLA Breach",
+      "definition": "Response latency exceeds user experience threshold",
+      "example": "P95 latency spikes to 8s during peak load; threshold is 2s",
+      "parent_theme": "TH4",
+      "subcodes": [
+        "latency",
+        "sla",
+        "performance"
+      ]
+    },
+    "C19": {
+      "name": "Cost Quality Decoupling",
+      "definition": "API cost increases without corresponding quality improvement",
+      "example": "Moved to GPT-4 at 10x cost; quality improvement not measurable",
+      "parent_theme": "TH4",
+      "subcodes": [
+        "cost",
+        "roi",
+        "quality_economics"
+      ]
+    },
+    "C20": {
+      "name": "Integration Testing Gap",
+      "definition": "LLM integration not tested as component boundary",
+      "example": "Unit tests pass; integration fails due to context window truncation",
+      "parent_theme": "TH4",
+      "subcodes": [
+        "testing",
+        "integration",
+        "context_window"
+      ]
+    },
+    "C21": {
+      "name": "Domain Threshold Divergence",
+      "definition": "Industry-specific acceptable quality differs from generic defaults",
+      "example": "Medical team required 99%+ factual precision vs 85% default",
+      "parent_theme": "TH5",
+      "subcodes": [
+        "domain_adaptation",
+        "threshold",
+        "calibration"
+      ]
+    },
+    "C22": {
+      "name": "Threshold Instability",
+      "definition": "Acceptable quality thresholds change as system matures or regulations evolve",
+      "example": "EU AI Act passage required immediate threshold review",
+      "parent_theme": "TH5",
+      "subcodes": [
+        "threshold_evolution",
+        "regulation",
+        "drift"
+      ]
+    },
+    "C23": {
+      "name": "Missing Baseline Reference",
+      "definition": "No established industry baseline for LLM quality metrics",
+      "example": "Could not determine if 0.87 faithfulness score is good or bad",
+      "parent_theme": "TH5",
+      "subcodes": [
+        "benchmarking",
+        "baseline",
+        "reference_standard"
+      ]
+    },
+    "C24": {
+      "name": "Implicit Prompt Regression",
+      "definition": "Quality degradation from minor prompt wording changes",
+      "example": "Changing 'respond concisely' to 'be brief' increased hallucination rate",
+      "parent_theme": "TH6",
+      "subcodes": [
+        "prompt_regression",
+        "wording_sensitivity",
+        "testing"
+      ]
+    },
+    "C25": {
+      "name": "Prompt Version Control Absence",
+      "definition": "No systematic tracking of prompt template changes",
+      "example": "Team had no record of which prompt version was live during incident",
+      "parent_theme": "TH6",
+      "subcodes": [
+        "version_control",
+        "prompt_management",
+        "traceability"
+      ]
+    },
+    "C26": {
+      "name": "Cross-System Prompt Instability",
+      "definition": "Prompts tuned for one model degrade on another",
+      "example": "GPT-4 optimised prompt failed on Claude deployment",
+      "parent_theme": "TH6",
+      "subcodes": [
+        "model_portability",
+        "prompt_transfer",
+        "vendor_change"
+      ]
+    },
+    "C27": {
+      "name": "HIPAA Compliance Pressure",
+      "definition": "Healthcare data privacy requirements impose strict quality constraints",
+      "example": "PHI in model output triggered mandatory breach notification",
+      "parent_theme": "TH7",
+      "subcodes": [
+        "hipaa",
+        "healthcare",
+        "pii",
+        "privacy"
+      ]
+    },
+    "C28": {
+      "name": "EU AI Act Uncertainty",
+      "definition": "Evolving AI regulation creates compliance ambiguity",
+      "example": "High-risk classification unclear; team implemented precautionary measures",
+      "parent_theme": "TH7",
+      "subcodes": [
+        "eu_ai_act",
+        "regulation",
+        "compliance",
+        "uncertainty"
+      ]
+    },
+    "C29": {
+      "name": "Audit Evidence Gap",
+      "definition": "Cannot produce machine-readable audit evidence for regulators",
+      "example": "Financial regulator requested model decision logs; none existed",
+      "parent_theme": "TH7",
+      "subcodes": [
+        "audit",
+        "evidence",
+        "financial_regulation",
+        "logging"
+      ]
+    },
+    "C30": {
+      "name": "Multi-Tool Monitoring Burden",
+      "definition": "Quality monitoring requires integrating many disparate tools",
+      "example": "Team used Prometheus, Datadog, custom NLI scripts, and spreadsheets",
+      "parent_theme": "TH8",
+      "subcodes": [
+        "tooling",
+        "integration",
+        "fragmentation",
+        "overhead"
+      ]
+    }
+  }
+}

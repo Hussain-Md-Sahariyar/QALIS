@@ -1,0 +1,28 @@
+{
+  "theme_id": "TH3",
+  "name": "Transparency as underserved quality gap",
+  "n_excerpts": 48,
+  "codes": [
+    "C03",
+    "C13",
+    "C14",
+    "C15",
+    "C16"
+  ],
+  "description": "Participants consistently identified explanation quality and audit trail completeness as the most underserved dimension in their current tooling. This gap was felt acutely in regulated sectors.",
+  "key_evidence": [
+    "Audit trails exist but are unstructured and unqueryable (INT-01, INT-07, INT-13)",
+    "User trust erosion when outputs cannot be explained \u2014 users stop relying on the system (INT-04, INT-10)",
+    "Regulatory explanation gap: EU AI Act, HIPAA, and financial regulation all require explainability (INT-07, INT-08, INT-13, INT-14)"
+  ],
+  "significance_for_qalis": "Second most common theme (n=48). Paper finding: TI lowest-scoring QALIS dimension (mean 7.05). 11/14 participants cited transparency gap unprompted. Directly motivates TI dimension.",
+  "representative_quotes": [
+    "[Anonymised quote from a participant whose excerpt was coded C03]",
+    "[Anonymised quote from a participant whose excerpt was coded C16]"
+  ],
+  "sectors_most_represented": [
+    "Healthcare",
+    "Financial Services",
+    "Legal Tech"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "theme_id": "TH1",
+  "name": "Inadequacy of existing QA approaches for LLM systems",
+  "n_excerpts": 38,
+  "codes": [
+    "C05",
+    "C06",
+    "C07",
+    "C08"
+  ],
+  "description": "Participants described a systematic failure of existing quality assurance methods \u2014 unit tests, BLEU scores, and manual spot-checks \u2014 to detect LLM-specific failure modes, particularly hallucinations and robustness degradation.",
+  "key_evidence": [
+    "Unit tests pass but hallucinations go undetected in production (INT-01, INT-05, INT-11)",
+    "Benchmark scores (HELM, BLEU) do not correlate with user satisfaction (INT-03, INT-09, INT-10)",
+    "Ad hoc quality processes are reactive, triggered by user complaints not proactive monitoring (INT-04, INT-06, INT-12)"
+  ],
+  "significance_for_qalis": "Strongest theme by participant consensus. Present in all 14 interviews. Directly motivates QALIS design.",
+  "representative_quotes": [
+    "[Anonymised quote from a participant whose excerpt was coded C05]",
+    "[Anonymised quote from a participant whose excerpt was coded C08]"
+  ],
+  "sectors_most_represented": [
+    "All sectors"
+  ]
+}

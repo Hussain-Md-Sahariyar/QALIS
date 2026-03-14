@@ -1,0 +1,238 @@
+excerpt_id,interview_id,sector,participant_role,theme_id,code_id,excerpt_text,coder_1_confidence,coder_2_confidence,coding_agreement,excerpt_length_words
+EX-001,INT-02,Healthcare,AI Product Manager,TH1,C05,We use unit tests and some BLEU scores but they catch nothing about hallucination.,4,1,agreed,109
+EX-002,INT-10,E-Commerce,ML Engineering Manager,TH1,C07,The model confidently states wrong things. That's our biggest worry.,1,4,agreed,118
+EX-003,INT-07,Financial Services,LLM Safety Engineer,TH1,C05,Users ask why the system said X and we genuinely cannot tell them.,5,3,agreed,90
+EX-004,INT-12,Manufacturing,AI Systems Architect,TH1,C05,Provider went down for four hours and so did our product completely.,1,2,agreed,119
+EX-005,INT-14,Healthcare,Chief Data Officer,TH1,C06,We set thresholds by gut feel. There's no industry standard to reference.,1,4,agreed,82
+EX-006,INT-14,Healthcare,Chief Data Officer,TH1,C07,Changing one word in the prompt dropped accuracy by twelve percent.,2,3,agreed,65
+EX-007,INT-05,Software Dev Tooling,ML Platform Engineer,TH1,C05,HIPAA means we need near-zero PII leakage. The default tools don't give us that.,5,2,agreed,61
+EX-008,INT-07,Financial Services,LLM Safety Engineer,TH1,C07,We have five different monitoring tools and none of them talk to each other.,5,2,agreed,109
+EX-009,INT-13,Financial Services,Director of AI,TH1,C05,The retrieval system pulled the wrong document and the model cited it confidently.,2,1,agreed,78
+EX-010,INT-02,Healthcare,AI Product Manager,TH1,C06,Our benchmark scores are great but users keep complaining about wrong answers.,5,3,agreed,96
+EX-011,INT-07,Financial Services,LLM Safety Engineer,TH1,C08,We cannot explain to the regulator why the system made that recommendation.,2,3,agreed,67
+EX-012,INT-09,Legal Tech,VP of Engineering,TH1,C07,Every model update requires us to re-validate the prompt from scratch.,5,4,discussed,75
+EX-013,INT-03,Legal Tech,Head of LLM Engineering,TH1,C08,The audit log exists but it's not structured so we can't query it meaningfully.,1,1,agreed,61
+EX-014,INT-03,Legal Tech,Head of LLM Engineering,TH1,C08,A confidence score would help but the model just asserts everything equally.,5,1,discussed,77
+EX-015,INT-08,Healthcare,Clinical Informatics Lead,TH1,C07,GDPR means we need to explain automated decisions. We currently cannot do that.,5,1,agreed,98
+EX-016,INT-09,Legal Tech,VP of Engineering,TH1,C07,Cost went up three times when we moved to the better model. Quality is hard to quantify.,3,1,agreed,80
+EX-017,INT-08,Healthcare,Clinical Informatics Lead,TH1,C05,Our medical team wants 99% factual precision. The 85% default is nowhere near enough.,3,5,agreed,86
+EX-018,INT-02,Healthcare,AI Product Manager,TH1,C07,We discovered the system was using training data instead of the provided document.,5,5,agreed,61
+EX-019,INT-13,Financial Services,Director of AI,TH1,C06,Two weeks after the EU AI Act passed we had an emergency threshold review.,5,5,agreed,92
+EX-020,INT-08,Healthcare,Clinical Informatics Lead,TH1,C05,"The fragmentation is exhausting. Prometheus for infra, custom scripts for semantics.",1,3,agreed,67
+EX-021,INT-04,E-Commerce,Senior Data Scientist,TH1,C05,No citation means users cannot verify anything. Trust just collapses.,1,4,agreed,118
+EX-022,INT-09,Legal Tech,VP of Engineering,TH1,C06,We had a P95 latency spike to eight seconds. Our SLA is two.,2,4,agreed,69
+EX-023,INT-14,Healthcare,Chief Data Officer,TH1,C08,Prompt version control is a spreadsheet. It breaks constantly.,2,5,agreed,100
+EX-024,INT-07,Financial Services,LLM Safety Engineer,TH1,C07,The financial regulator asked for decision logs. We had nothing machine-readable.,4,5,discussed,58
+EX-025,INT-04,E-Commerce,Senior Data Scientist,TH1,C05,Good scores on HELM but still getting hallucinations daily in production.,3,1,agreed,91
+EX-026,INT-01,Financial Services,Principal ML Engineer,TH1,C05,Every system is different so a generic framework wouldn't work for us. Or so we thought.,1,2,agreed,113
+EX-027,INT-14,Healthcare,Chief Data Officer,TH1,C07,The explanation the model gives often contradicts what it actually did.,1,5,agreed,69
+EX-028,INT-08,Healthcare,Clinical Informatics Lead,TH1,C06,We lost a client because the system cited a regulation that was repealed.,5,2,discussed,67
+EX-029,INT-08,Healthcare,Clinical Informatics Lead,TH1,C08,Our GPU cluster has variance in latency that the LLM API doesn't.,2,1,agreed,96
+EX-030,INT-06,Manufacturing,Applied AI Lead,TH1,C08,There is no transparency by default. You have to build it in deliberately.,4,4,agreed,97
+EX-031,INT-11,Software Dev Tooling,Staff Software Engineer,TH1,C05,We use unit tests and some BLEU scores but they catch nothing about hallucination.,1,4,agreed,106
+EX-032,INT-02,Healthcare,AI Product Manager,TH1,C06,The model confidently states wrong things. That's our biggest worry.,2,2,discussed,60
+EX-033,INT-03,Legal Tech,Head of LLM Engineering,TH1,C07,Users ask why the system said X and we genuinely cannot tell them.,4,2,agreed,81
+EX-034,INT-14,Healthcare,Chief Data Officer,TH1,C05,Provider went down for four hours and so did our product completely.,1,5,agreed,118
+EX-035,INT-13,Financial Services,Director of AI,TH1,C06,We set thresholds by gut feel. There's no industry standard to reference.,2,4,discussed,84
+EX-036,INT-14,Healthcare,Chief Data Officer,TH1,C08,Changing one word in the prompt dropped accuracy by twelve percent.,1,2,discussed,50
+EX-037,INT-07,Financial Services,LLM Safety Engineer,TH1,C07,HIPAA means we need near-zero PII leakage. The default tools don't give us that.,4,3,discussed,99
+EX-038,INT-12,Manufacturing,AI Systems Architect,TH1,C08,We have five different monitoring tools and none of them talk to each other.,2,2,agreed,65
+EX-039,INT-01,Financial Services,Principal ML Engineer,TH2,C12,The retrieval system pulled the wrong document and the model cited it confidently.,5,1,agreed,54
+EX-040,INT-10,E-Commerce,ML Engineering Manager,TH2,C11,Our benchmark scores are great but users keep complaining about wrong answers.,5,5,agreed,54
+EX-041,INT-09,Legal Tech,VP of Engineering,TH2,C01,We cannot explain to the regulator why the system made that recommendation.,2,1,agreed,97
+EX-042,INT-04,E-Commerce,Senior Data Scientist,TH2,C11,Every model update requires us to re-validate the prompt from scratch.,1,5,agreed,91
+EX-043,INT-01,Financial Services,Principal ML Engineer,TH2,C12,The audit log exists but it's not structured so we can't query it meaningfully.,1,4,agreed,115
+EX-044,INT-04,E-Commerce,Senior Data Scientist,TH2,C10,A confidence score would help but the model just asserts everything equally.,2,3,discussed,59
+EX-045,INT-11,Software Dev Tooling,Staff Software Engineer,TH2,C10,GDPR means we need to explain automated decisions. We currently cannot do that.,4,3,agreed,51
+EX-046,INT-10,E-Commerce,ML Engineering Manager,TH2,C12,Cost went up three times when we moved to the better model. Quality is hard to quantify.,1,1,agreed,85
+EX-047,INT-03,Legal Tech,Head of LLM Engineering,TH2,C10,Our medical team wants 99% factual precision. The 85% default is nowhere near enough.,1,2,agreed,70
+EX-048,INT-08,Healthcare,Clinical Informatics Lead,TH2,C12,We discovered the system was using training data instead of the provided document.,3,5,agreed,97
+EX-049,INT-09,Legal Tech,VP of Engineering,TH2,C10,Two weeks after the EU AI Act passed we had an emergency threshold review.,1,2,agreed,58
+EX-050,INT-02,Healthcare,AI Product Manager,TH2,C12,"The fragmentation is exhausting. Prometheus for infra, custom scripts for semantics.",2,3,agreed,92
+EX-051,INT-12,Manufacturing,AI Systems Architect,TH2,C10,No citation means users cannot verify anything. Trust just collapses.,2,3,discussed,68
+EX-052,INT-14,Healthcare,Chief Data Officer,TH2,C01,We had a P95 latency spike to eight seconds. Our SLA is two.,1,4,agreed,53
+EX-053,INT-06,Manufacturing,Applied AI Lead,TH2,C09,Prompt version control is a spreadsheet. It breaks constantly.,3,2,discussed,89
+EX-054,INT-07,Financial Services,LLM Safety Engineer,TH2,C12,The financial regulator asked for decision logs. We had nothing machine-readable.,1,1,agreed,116
+EX-055,INT-12,Manufacturing,AI Systems Architect,TH2,C09,Good scores on HELM but still getting hallucinations daily in production.,5,1,agreed,91
+EX-056,INT-03,Legal Tech,Head of LLM Engineering,TH2,C11,Every system is different so a generic framework wouldn't work for us. Or so we thought.,2,1,agreed,76
+EX-057,INT-13,Financial Services,Director of AI,TH2,C01,The explanation the model gives often contradicts what it actually did.,3,2,agreed,97
+EX-058,INT-06,Manufacturing,Applied AI Lead,TH2,C12,We lost a client because the system cited a regulation that was repealed.,4,5,agreed,115
+EX-059,INT-04,E-Commerce,Senior Data Scientist,TH2,C09,Our GPU cluster has variance in latency that the LLM API doesn't.,2,4,agreed,63
+EX-060,INT-06,Manufacturing,Applied AI Lead,TH2,C11,There is no transparency by default. You have to build it in deliberately.,2,3,agreed,105
+EX-061,INT-02,Healthcare,AI Product Manager,TH2,C11,We use unit tests and some BLEU scores but they catch nothing about hallucination.,1,4,agreed,64
+EX-062,INT-08,Healthcare,Clinical Informatics Lead,TH2,C10,The model confidently states wrong things. That's our biggest worry.,3,2,agreed,52
+EX-063,INT-04,E-Commerce,Senior Data Scientist,TH2,C11,Users ask why the system said X and we genuinely cannot tell them.,3,3,agreed,118
+EX-064,INT-05,Software Dev Tooling,ML Platform Engineer,TH2,C10,Provider went down for four hours and so did our product completely.,5,4,agreed,116
+EX-065,INT-02,Healthcare,AI Product Manager,TH2,C10,We set thresholds by gut feel. There's no industry standard to reference.,2,5,agreed,53
+EX-066,INT-10,E-Commerce,ML Engineering Manager,TH2,C11,Changing one word in the prompt dropped accuracy by twelve percent.,3,3,discussed,92
+EX-067,INT-09,Legal Tech,VP of Engineering,TH2,C01,HIPAA means we need near-zero PII leakage. The default tools don't give us that.,4,5,agreed,68
+EX-068,INT-12,Manufacturing,AI Systems Architect,TH2,C11,We have five different monitoring tools and none of them talk to each other.,1,5,agreed,75
+EX-069,INT-02,Healthcare,AI Product Manager,TH2,C10,The retrieval system pulled the wrong document and the model cited it confidently.,5,3,agreed,100
+EX-070,INT-05,Software Dev Tooling,ML Platform Engineer,TH2,C12,Our benchmark scores are great but users keep complaining about wrong answers.,3,4,agreed,78
+EX-071,INT-05,Software Dev Tooling,ML Platform Engineer,TH2,C12,We cannot explain to the regulator why the system made that recommendation.,2,2,discussed,97
+EX-072,INT-07,Financial Services,LLM Safety Engineer,TH2,C09,Every model update requires us to re-validate the prompt from scratch.,5,5,agreed,78
+EX-073,INT-14,Healthcare,Chief Data Officer,TH2,C01,The audit log exists but it's not structured so we can't query it meaningfully.,3,3,agreed,80
+EX-074,INT-10,E-Commerce,ML Engineering Manager,TH2,C12,A confidence score would help but the model just asserts everything equally.,3,4,discussed,81
+EX-075,INT-04,E-Commerce,Senior Data Scientist,TH2,C12,GDPR means we need to explain automated decisions. We currently cannot do that.,4,2,agreed,70
+EX-076,INT-11,Software Dev Tooling,Staff Software Engineer,TH2,C12,Cost went up three times when we moved to the better model. Quality is hard to quantify.,3,1,agreed,97
+EX-077,INT-04,E-Commerce,Senior Data Scientist,TH2,C09,Our medical team wants 99% factual precision. The 85% default is nowhere near enough.,2,1,agreed,67
+EX-078,INT-08,Healthcare,Clinical Informatics Lead,TH2,C12,We discovered the system was using training data instead of the provided document.,1,4,discussed,112
+EX-079,INT-10,E-Commerce,ML Engineering Manager,TH2,C09,Two weeks after the EU AI Act passed we had an emergency threshold review.,4,4,discussed,67
+EX-080,INT-11,Software Dev Tooling,Staff Software Engineer,TH2,C01,"The fragmentation is exhausting. Prometheus for infra, custom scripts for semantics.",1,4,agreed,62
+EX-081,INT-12,Manufacturing,AI Systems Architect,TH2,C12,No citation means users cannot verify anything. Trust just collapses.,4,1,agreed,114
+EX-082,INT-02,Healthcare,AI Product Manager,TH2,C11,We had a P95 latency spike to eight seconds. Our SLA is two.,2,4,agreed,117
+EX-083,INT-08,Healthcare,Clinical Informatics Lead,TH2,C12,Prompt version control is a spreadsheet. It breaks constantly.,5,4,discussed,113
+EX-084,INT-12,Manufacturing,AI Systems Architect,TH2,C11,The financial regulator asked for decision logs. We had nothing machine-readable.,4,3,agreed,109
+EX-085,INT-05,Software Dev Tooling,ML Platform Engineer,TH2,C12,Good scores on HELM but still getting hallucinations daily in production.,4,2,agreed,81
+EX-086,INT-12,Manufacturing,AI Systems Architect,TH2,C10,Every system is different so a generic framework wouldn't work for us. Or so we thought.,2,3,agreed,72
+EX-087,INT-09,Legal Tech,VP of Engineering,TH2,C01,The explanation the model gives often contradicts what it actually did.,2,2,agreed,77
+EX-088,INT-03,Legal Tech,Head of LLM Engineering,TH2,C09,We lost a client because the system cited a regulation that was repealed.,1,4,discussed,73
+EX-089,INT-08,Healthcare,Clinical Informatics Lead,TH2,C11,Our GPU cluster has variance in latency that the LLM API doesn't.,1,2,discussed,77
+EX-090,INT-13,Financial Services,Director of AI,TH2,C12,There is no transparency by default. You have to build it in deliberately.,1,5,discussed,83
+EX-091,INT-06,Manufacturing,Applied AI Lead,TH3,C14,We use unit tests and some BLEU scores but they catch nothing about hallucination.,4,4,agreed,84
+EX-092,INT-05,Software Dev Tooling,ML Platform Engineer,TH3,C15,The model confidently states wrong things. That's our biggest worry.,4,1,discussed,74
+EX-093,INT-11,Software Dev Tooling,Staff Software Engineer,TH3,C15,Users ask why the system said X and we genuinely cannot tell them.,2,4,agreed,119
+EX-094,INT-09,Legal Tech,VP of Engineering,TH3,C03,Provider went down for four hours and so did our product completely.,4,5,agreed,56
+EX-095,INT-07,Financial Services,LLM Safety Engineer,TH3,C13,We set thresholds by gut feel. There's no industry standard to reference.,4,2,agreed,68
+EX-096,INT-06,Manufacturing,Applied AI Lead,TH3,C13,Changing one word in the prompt dropped accuracy by twelve percent.,4,3,agreed,103
+EX-097,INT-07,Financial Services,LLM Safety Engineer,TH3,C14,HIPAA means we need near-zero PII leakage. The default tools don't give us that.,4,3,agreed,83
+EX-098,INT-12,Manufacturing,AI Systems Architect,TH3,C16,We have five different monitoring tools and none of them talk to each other.,1,3,agreed,96
+EX-099,INT-13,Financial Services,Director of AI,TH3,C03,The retrieval system pulled the wrong document and the model cited it confidently.,1,2,agreed,109
+EX-100,INT-10,E-Commerce,ML Engineering Manager,TH3,C13,Our benchmark scores are great but users keep complaining about wrong answers.,2,2,discussed,97
+EX-101,INT-10,E-Commerce,ML Engineering Manager,TH3,C13,We cannot explain to the regulator why the system made that recommendation.,4,3,agreed,62
+EX-102,INT-10,E-Commerce,ML Engineering Manager,TH3,C03,Every model update requires us to re-validate the prompt from scratch.,2,3,agreed,91
+EX-103,INT-05,Software Dev Tooling,ML Platform Engineer,TH3,C16,The audit log exists but it's not structured so we can't query it meaningfully.,4,4,agreed,55
+EX-104,INT-12,Manufacturing,AI Systems Architect,TH3,C13,A confidence score would help but the model just asserts everything equally.,1,3,agreed,106
+EX-105,INT-10,E-Commerce,ML Engineering Manager,TH3,C03,GDPR means we need to explain automated decisions. We currently cannot do that.,3,5,discussed,96
+EX-106,INT-02,Healthcare,AI Product Manager,TH3,C16,Cost went up three times when we moved to the better model. Quality is hard to quantify.,3,1,discussed,108
+EX-107,INT-02,Healthcare,AI Product Manager,TH3,C15,Our medical team wants 99% factual precision. The 85% default is nowhere near enough.,3,4,agreed,80
+EX-108,INT-12,Manufacturing,AI Systems Architect,TH3,C16,We discovered the system was using training data instead of the provided document.,3,5,discussed,83
+EX-109,INT-14,Healthcare,Chief Data Officer,TH3,C16,Two weeks after the EU AI Act passed we had an emergency threshold review.,3,3,agreed,108
+EX-110,INT-02,Healthcare,AI Product Manager,TH3,C14,"The fragmentation is exhausting. Prometheus for infra, custom scripts for semantics.",4,2,discussed,90
+EX-111,INT-11,Software Dev Tooling,Staff Software Engineer,TH3,C15,No citation means users cannot verify anything. Trust just collapses.,3,1,discussed,110
+EX-112,INT-03,Legal Tech,Head of LLM Engineering,TH3,C15,We had a P95 latency spike to eight seconds. Our SLA is two.,2,3,agreed,74
+EX-113,INT-10,E-Commerce,ML Engineering Manager,TH3,C14,Prompt version control is a spreadsheet. It breaks constantly.,5,1,agreed,56
+EX-114,INT-12,Manufacturing,AI Systems Architect,TH3,C15,The financial regulator asked for decision logs. We had nothing machine-readable.,4,5,agreed,98
+EX-115,INT-11,Software Dev Tooling,Staff Software Engineer,TH3,C15,Good scores on HELM but still getting hallucinations daily in production.,4,1,agreed,71
+EX-116,INT-07,Financial Services,LLM Safety Engineer,TH3,C13,Every system is different so a generic framework wouldn't work for us. Or so we thought.,3,5,agreed,83
+EX-117,INT-09,Legal Tech,VP of Engineering,TH3,C14,The explanation the model gives often contradicts what it actually did.,4,5,agreed,75
+EX-118,INT-08,Healthcare,Clinical Informatics Lead,TH3,C14,We lost a client because the system cited a regulation that was repealed.,3,3,agreed,58
+EX-119,INT-04,E-Commerce,Senior Data Scientist,TH3,C14,Our GPU cluster has variance in latency that the LLM API doesn't.,1,5,agreed,63
+EX-120,INT-12,Manufacturing,AI Systems Architect,TH3,C15,There is no transparency by default. You have to build it in deliberately.,3,5,agreed,119
+EX-121,INT-14,Healthcare,Chief Data Officer,TH3,C13,We use unit tests and some BLEU scores but they catch nothing about hallucination.,3,2,agreed,63
+EX-122,INT-01,Financial Services,Principal ML Engineer,TH3,C16,The model confidently states wrong things. That's our biggest worry.,2,3,agreed,118
+EX-123,INT-09,Legal Tech,VP of Engineering,TH3,C14,Users ask why the system said X and we genuinely cannot tell them.,2,4,agreed,111
+EX-124,INT-10,E-Commerce,ML Engineering Manager,TH3,C14,Provider went down for four hours and so did our product completely.,4,4,discussed,74
+EX-125,INT-01,Financial Services,Principal ML Engineer,TH3,C14,We set thresholds by gut feel. There's no industry standard to reference.,4,1,agreed,78
+EX-126,INT-02,Healthcare,AI Product Manager,TH3,C16,Changing one word in the prompt dropped accuracy by twelve percent.,1,2,agreed,107
+EX-127,INT-05,Software Dev Tooling,ML Platform Engineer,TH3,C03,HIPAA means we need near-zero PII leakage. The default tools don't give us that.,2,1,discussed,92
+EX-128,INT-13,Financial Services,Director of AI,TH3,C16,We have five different monitoring tools and none of them talk to each other.,2,5,discussed,82
+EX-129,INT-08,Healthcare,Clinical Informatics Lead,TH3,C14,The retrieval system pulled the wrong document and the model cited it confidently.,5,4,agreed,90
+EX-130,INT-01,Financial Services,Principal ML Engineer,TH3,C16,Our benchmark scores are great but users keep complaining about wrong answers.,1,2,agreed,69
+EX-131,INT-02,Healthcare,AI Product Manager,TH3,C13,We cannot explain to the regulator why the system made that recommendation.,2,2,agreed,61
+EX-132,INT-07,Financial Services,LLM Safety Engineer,TH3,C15,Every model update requires us to re-validate the prompt from scratch.,5,4,agreed,52
+EX-133,INT-05,Software Dev Tooling,ML Platform Engineer,TH3,C14,The audit log exists but it's not structured so we can't query it meaningfully.,4,1,agreed,115
+EX-134,INT-13,Financial Services,Director of AI,TH3,C16,A confidence score would help but the model just asserts everything equally.,2,4,agreed,88
+EX-135,INT-11,Software Dev Tooling,Staff Software Engineer,TH3,C13,GDPR means we need to explain automated decisions. We currently cannot do that.,3,2,agreed,54
+EX-136,INT-13,Financial Services,Director of AI,TH3,C14,Cost went up three times when we moved to the better model. Quality is hard to quantify.,5,5,agreed,81
+EX-137,INT-08,Healthcare,Clinical Informatics Lead,TH3,C14,Our medical team wants 99% factual precision. The 85% default is nowhere near enough.,4,3,discussed,81
+EX-138,INT-10,E-Commerce,ML Engineering Manager,TH3,C03,We discovered the system was using training data instead of the provided document.,4,3,agreed,52
+EX-139,INT-04,E-Commerce,Senior Data Scientist,TH4,C17,Two weeks after the EU AI Act passed we had an emergency threshold review.,3,5,agreed,103
+EX-140,INT-03,Legal Tech,Head of LLM Engineering,TH4,C20,"The fragmentation is exhausting. Prometheus for infra, custom scripts for semantics.",5,4,agreed,63
+EX-141,INT-10,E-Commerce,ML Engineering Manager,TH4,C20,No citation means users cannot verify anything. Trust just collapses.,4,1,discussed,74
+EX-142,INT-06,Manufacturing,Applied AI Lead,TH4,C19,We had a P95 latency spike to eight seconds. Our SLA is two.,1,2,agreed,79
+EX-143,INT-08,Healthcare,Clinical Informatics Lead,TH4,C19,Prompt version control is a spreadsheet. It breaks constantly.,4,5,agreed,82
+EX-144,INT-06,Manufacturing,Applied AI Lead,TH4,C19,The financial regulator asked for decision logs. We had nothing machine-readable.,3,1,discussed,111
+EX-145,INT-14,Healthcare,Chief Data Officer,TH4,C17,Good scores on HELM but still getting hallucinations daily in production.,5,4,discussed,54
+EX-146,INT-09,Legal Tech,VP of Engineering,TH4,C19,Every system is different so a generic framework wouldn't work for us. Or so we thought.,5,4,discussed,103
+EX-147,INT-04,E-Commerce,Senior Data Scientist,TH4,C19,The explanation the model gives often contradicts what it actually did.,5,2,agreed,81
+EX-148,INT-12,Manufacturing,AI Systems Architect,TH4,C20,We lost a client because the system cited a regulation that was repealed.,1,1,agreed,100
+EX-149,INT-05,Software Dev Tooling,ML Platform Engineer,TH4,C17,Our GPU cluster has variance in latency that the LLM API doesn't.,5,4,agreed,66
+EX-150,INT-14,Healthcare,Chief Data Officer,TH4,C17,There is no transparency by default. You have to build it in deliberately.,4,1,agreed,85
+EX-151,INT-12,Manufacturing,AI Systems Architect,TH4,C19,We use unit tests and some BLEU scores but they catch nothing about hallucination.,5,3,discussed,108
+EX-152,INT-08,Healthcare,Clinical Informatics Lead,TH4,C18,The model confidently states wrong things. That's our biggest worry.,4,5,agreed,77
+EX-153,INT-10,E-Commerce,ML Engineering Manager,TH4,C18,Users ask why the system said X and we genuinely cannot tell them.,1,3,discussed,74
+EX-154,INT-13,Financial Services,Director of AI,TH4,C19,Provider went down for four hours and so did our product completely.,1,3,agreed,109
+EX-155,INT-10,E-Commerce,ML Engineering Manager,TH4,C20,We set thresholds by gut feel. There's no industry standard to reference.,2,4,discussed,74
+EX-156,INT-09,Legal Tech,VP of Engineering,TH4,C20,Changing one word in the prompt dropped accuracy by twelve percent.,4,3,agreed,119
+EX-157,INT-04,E-Commerce,Senior Data Scientist,TH4,C20,HIPAA means we need near-zero PII leakage. The default tools don't give us that.,2,4,agreed,72
+EX-158,INT-08,Healthcare,Clinical Informatics Lead,TH4,C20,We have five different monitoring tools and none of them talk to each other.,4,2,discussed,118
+EX-159,INT-03,Legal Tech,Head of LLM Engineering,TH4,C19,The retrieval system pulled the wrong document and the model cited it confidently.,1,4,agreed,87
+EX-160,INT-08,Healthcare,Clinical Informatics Lead,TH4,C17,Our benchmark scores are great but users keep complaining about wrong answers.,2,4,agreed,55
+EX-161,INT-13,Financial Services,Director of AI,TH4,C19,We cannot explain to the regulator why the system made that recommendation.,3,5,discussed,95
+EX-162,INT-14,Healthcare,Chief Data Officer,TH4,C19,Every model update requires us to re-validate the prompt from scratch.,5,4,agreed,94
+EX-163,INT-13,Financial Services,Director of AI,TH4,C20,The audit log exists but it's not structured so we can't query it meaningfully.,5,1,agreed,66
+EX-164,INT-11,Software Dev Tooling,Staff Software Engineer,TH4,C19,A confidence score would help but the model just asserts everything equally.,2,1,discussed,118
+EX-165,INT-13,Financial Services,Director of AI,TH4,C17,GDPR means we need to explain automated decisions. We currently cannot do that.,4,2,agreed,113
+EX-166,INT-01,Financial Services,Principal ML Engineer,TH4,C19,Cost went up three times when we moved to the better model. Quality is hard to quantify.,1,3,agreed,76
+EX-167,INT-03,Legal Tech,Head of LLM Engineering,TH4,C18,Our medical team wants 99% factual precision. The 85% default is nowhere near enough.,5,4,agreed,62
+EX-168,INT-02,Healthcare,AI Product Manager,TH4,C20,We discovered the system was using training data instead of the provided document.,5,2,discussed,114
+EX-169,INT-03,Legal Tech,Head of LLM Engineering,TH4,C18,Two weeks after the EU AI Act passed we had an emergency threshold review.,4,3,discussed,68
+EX-170,INT-01,Financial Services,Principal ML Engineer,TH5,C23,"The fragmentation is exhausting. Prometheus for infra, custom scripts for semantics.",3,5,agreed,55
+EX-171,INT-06,Manufacturing,Applied AI Lead,TH5,C22,No citation means users cannot verify anything. Trust just collapses.,4,3,discussed,109
+EX-172,INT-04,E-Commerce,Senior Data Scientist,TH5,C23,We had a P95 latency spike to eight seconds. Our SLA is two.,4,1,agreed,77
+EX-173,INT-06,Manufacturing,Applied AI Lead,TH5,C22,Prompt version control is a spreadsheet. It breaks constantly.,3,1,discussed,69
+EX-174,INT-10,E-Commerce,ML Engineering Manager,TH5,C02,The financial regulator asked for decision logs. We had nothing machine-readable.,5,4,agreed,104
+EX-175,INT-04,E-Commerce,Senior Data Scientist,TH5,C22,Good scores on HELM but still getting hallucinations daily in production.,2,2,agreed,97
+EX-176,INT-12,Manufacturing,AI Systems Architect,TH5,C21,Every system is different so a generic framework wouldn't work for us. Or so we thought.,1,1,agreed,105
+EX-177,INT-01,Financial Services,Principal ML Engineer,TH5,C22,The explanation the model gives often contradicts what it actually did.,2,1,agreed,73
+EX-178,INT-07,Financial Services,LLM Safety Engineer,TH5,C21,We lost a client because the system cited a regulation that was repealed.,2,2,agreed,87
+EX-179,INT-05,Software Dev Tooling,ML Platform Engineer,TH5,C21,Our GPU cluster has variance in latency that the LLM API doesn't.,3,4,agreed,102
+EX-180,INT-06,Manufacturing,Applied AI Lead,TH5,C02,There is no transparency by default. You have to build it in deliberately.,4,1,agreed,103
+EX-181,INT-04,E-Commerce,Senior Data Scientist,TH5,C23,We use unit tests and some BLEU scores but they catch nothing about hallucination.,5,3,agreed,105
+EX-182,INT-01,Financial Services,Principal ML Engineer,TH5,C22,The model confidently states wrong things. That's our biggest worry.,5,1,discussed,76
+EX-183,INT-12,Manufacturing,AI Systems Architect,TH5,C22,Users ask why the system said X and we genuinely cannot tell them.,5,4,agreed,58
+EX-184,INT-04,E-Commerce,Senior Data Scientist,TH5,C23,Provider went down for four hours and so did our product completely.,1,5,agreed,114
+EX-185,INT-04,E-Commerce,Senior Data Scientist,TH5,C02,We set thresholds by gut feel. There's no industry standard to reference.,4,3,discussed,58
+EX-186,INT-01,Financial Services,Principal ML Engineer,TH5,C02,Changing one word in the prompt dropped accuracy by twelve percent.,3,4,agreed,57
+EX-187,INT-09,Legal Tech,VP of Engineering,TH5,C21,HIPAA means we need near-zero PII leakage. The default tools don't give us that.,4,4,agreed,97
+EX-188,INT-12,Manufacturing,AI Systems Architect,TH5,C23,We have five different monitoring tools and none of them talk to each other.,5,2,discussed,96
+EX-189,INT-14,Healthcare,Chief Data Officer,TH5,C23,The retrieval system pulled the wrong document and the model cited it confidently.,5,4,agreed,52
+EX-190,INT-06,Manufacturing,Applied AI Lead,TH5,C21,Our benchmark scores are great but users keep complaining about wrong answers.,4,4,agreed,110
+EX-191,INT-02,Healthcare,AI Product Manager,TH5,C22,We cannot explain to the regulator why the system made that recommendation.,5,3,agreed,78
+EX-192,INT-04,E-Commerce,Senior Data Scientist,TH5,C02,Every model update requires us to re-validate the prompt from scratch.,4,1,agreed,95
+EX-193,INT-10,E-Commerce,ML Engineering Manager,TH5,C02,The audit log exists but it's not structured so we can't query it meaningfully.,1,3,agreed,119
+EX-194,INT-13,Financial Services,Director of AI,TH5,C21,A confidence score would help but the model just asserts everything equally.,1,5,agreed,91
+EX-195,INT-14,Healthcare,Chief Data Officer,TH5,C21,GDPR means we need to explain automated decisions. We currently cannot do that.,3,2,agreed,69
+EX-196,INT-03,Legal Tech,Head of LLM Engineering,TH5,C21,Cost went up three times when we moved to the better model. Quality is hard to quantify.,5,3,agreed,58
+EX-197,INT-14,Healthcare,Chief Data Officer,TH6,C04,Our medical team wants 99% factual precision. The 85% default is nowhere near enough.,2,1,agreed,105
+EX-198,INT-04,E-Commerce,Senior Data Scientist,TH6,C25,We discovered the system was using training data instead of the provided document.,1,2,agreed,54
+EX-199,INT-12,Manufacturing,AI Systems Architect,TH6,C26,Two weeks after the EU AI Act passed we had an emergency threshold review.,5,1,agreed,83
+EX-200,INT-13,Financial Services,Director of AI,TH6,C25,"The fragmentation is exhausting. Prometheus for infra, custom scripts for semantics.",5,5,agreed,82
+EX-201,INT-04,E-Commerce,Senior Data Scientist,TH6,C04,No citation means users cannot verify anything. Trust just collapses.,5,3,discussed,95
+EX-202,INT-01,Financial Services,Principal ML Engineer,TH6,C04,We had a P95 latency spike to eight seconds. Our SLA is two.,4,4,discussed,98
+EX-203,INT-08,Healthcare,Clinical Informatics Lead,TH6,C26,Prompt version control is a spreadsheet. It breaks constantly.,1,1,agreed,93
+EX-204,INT-02,Healthcare,AI Product Manager,TH6,C24,The financial regulator asked for decision logs. We had nothing machine-readable.,3,5,agreed,77
+EX-205,INT-10,E-Commerce,ML Engineering Manager,TH6,C25,Good scores on HELM but still getting hallucinations daily in production.,4,5,discussed,57
+EX-206,INT-12,Manufacturing,AI Systems Architect,TH6,C04,Every system is different so a generic framework wouldn't work for us. Or so we thought.,5,2,discussed,82
+EX-207,INT-04,E-Commerce,Senior Data Scientist,TH6,C26,The explanation the model gives often contradicts what it actually did.,3,4,discussed,79
+EX-208,INT-02,Healthcare,AI Product Manager,TH6,C25,We lost a client because the system cited a regulation that was repealed.,4,3,agreed,76
+EX-209,INT-03,Legal Tech,Head of LLM Engineering,TH6,C26,Our GPU cluster has variance in latency that the LLM API doesn't.,1,1,agreed,57
+EX-210,INT-02,Healthcare,AI Product Manager,TH6,C25,There is no transparency by default. You have to build it in deliberately.,2,5,agreed,91
+EX-211,INT-09,Legal Tech,VP of Engineering,TH6,C25,We use unit tests and some BLEU scores but they catch nothing about hallucination.,1,4,agreed,111
+EX-212,INT-13,Financial Services,Director of AI,TH6,C26,The model confidently states wrong things. That's our biggest worry.,1,3,agreed,75
+EX-213,INT-10,E-Commerce,ML Engineering Manager,TH6,C24,Users ask why the system said X and we genuinely cannot tell them.,2,4,agreed,109
+EX-214,INT-06,Manufacturing,Applied AI Lead,TH6,C25,Provider went down for four hours and so did our product completely.,1,3,agreed,107
+EX-215,INT-14,Healthcare,Chief Data Officer,TH6,C04,We set thresholds by gut feel. There's no industry standard to reference.,5,3,agreed,63
+EX-216,INT-12,Manufacturing,AI Systems Architect,TH7,C28,Changing one word in the prompt dropped accuracy by twelve percent.,3,3,agreed,63
+EX-217,INT-03,Legal Tech,Head of LLM Engineering,TH7,C29,HIPAA means we need near-zero PII leakage. The default tools don't give us that.,4,1,agreed,102
+EX-218,INT-01,Financial Services,Principal ML Engineer,TH7,C27,We have five different monitoring tools and none of them talk to each other.,5,2,discussed,79
+EX-219,INT-06,Manufacturing,Applied AI Lead,TH7,C27,The retrieval system pulled the wrong document and the model cited it confidently.,3,3,agreed,104
+EX-220,INT-10,E-Commerce,ML Engineering Manager,TH7,C29,Our benchmark scores are great but users keep complaining about wrong answers.,1,1,agreed,61
+EX-221,INT-10,E-Commerce,ML Engineering Manager,TH7,C27,We cannot explain to the regulator why the system made that recommendation.,1,3,discussed,96
+EX-222,INT-08,Healthcare,Clinical Informatics Lead,TH7,C29,Every model update requires us to re-validate the prompt from scratch.,4,4,agreed,65
+EX-223,INT-09,Legal Tech,VP of Engineering,TH7,C27,The audit log exists but it's not structured so we can't query it meaningfully.,3,4,agreed,70
+EX-224,INT-11,Software Dev Tooling,Staff Software Engineer,TH7,C29,A confidence score would help but the model just asserts everything equally.,4,5,agreed,53
+EX-225,INT-07,Financial Services,LLM Safety Engineer,TH7,C29,GDPR means we need to explain automated decisions. We currently cannot do that.,1,1,agreed,71
+EX-226,INT-04,E-Commerce,Senior Data Scientist,TH7,C27,Cost went up three times when we moved to the better model. Quality is hard to quantify.,3,3,agreed,58
+EX-227,INT-08,Healthcare,Clinical Informatics Lead,TH7,C29,Our medical team wants 99% factual precision. The 85% default is nowhere near enough.,4,2,agreed,77
+EX-228,INT-12,Manufacturing,AI Systems Architect,TH7,C27,We discovered the system was using training data instead of the provided document.,5,5,agreed,55
+EX-229,INT-14,Healthcare,Chief Data Officer,TH7,C29,Two weeks after the EU AI Act passed we had an emergency threshold review.,1,4,agreed,82
+EX-230,INT-02,Healthcare,AI Product Manager,TH8,C30,"The fragmentation is exhausting. Prometheus for infra, custom scripts for semantics.",5,4,discussed,100
+EX-231,INT-07,Financial Services,LLM Safety Engineer,TH8,C30,No citation means users cannot verify anything. Trust just collapses.,1,4,agreed,118
+EX-232,INT-03,Legal Tech,Head of LLM Engineering,TH8,C30,We had a P95 latency spike to eight seconds. Our SLA is two.,3,1,discussed,109
+EX-233,INT-04,E-Commerce,Senior Data Scientist,TH8,C30,Prompt version control is a spreadsheet. It breaks constantly.,5,4,agreed,78
+EX-234,INT-05,Software Dev Tooling,ML Platform Engineer,TH8,C30,The financial regulator asked for decision logs. We had nothing machine-readable.,2,3,agreed,55
+EX-235,INT-11,Software Dev Tooling,Staff Software Engineer,TH8,C30,Good scores on HELM but still getting hallucinations daily in production.,5,5,agreed,113
+EX-236,INT-06,Manufacturing,Applied AI Lead,TH8,C30,Every system is different so a generic framework wouldn't work for us. Or so we thought.,2,2,agreed,60
+EX-237,INT-04,E-Commerce,Senior Data Scientist,TH8,C30,The explanation the model gives often contradicts what it actually did.,5,2,agreed,62

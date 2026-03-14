@@ -1,0 +1,26 @@
+{
+  "theme_id": "TH6",
+  "name": "Prompt brittleness as robustness failure mode",
+  "n_excerpts": 19,
+  "codes": [
+    "C04",
+    "C24",
+    "C25",
+    "C26"
+  ],
+  "description": "Participants described a pattern of unexpected quality degradation following minor changes to prompt templates, and the absence of systematic prompt version control to detect and diagnose these regressions.",
+  "key_evidence": [
+    "Implicit prompt regression: single word changes caused measurable hallucination rate increases (INT-01, INT-03, INT-11)",
+    "Prompt version control absent or ad hoc (spreadsheets) \u2014 no regression detection capability (INT-05, INT-09, INT-11)",
+    "Cross-system prompt instability: prompts tuned for one model degrade on another (INT-05, INT-12)"
+  ],
+  "significance_for_qalis": "Motivates RO dimension, particularly RO-1 (perturbation sensitivity) and the CI/CD quality gate pipeline.",
+  "representative_quotes": [
+    "[Anonymised quote from a participant whose excerpt was coded C04]",
+    "[Anonymised quote from a participant whose excerpt was coded C26]"
+  ],
+  "sectors_most_represented": [
+    "Software Dev Tooling",
+    "Legal Tech"
+  ]
+}

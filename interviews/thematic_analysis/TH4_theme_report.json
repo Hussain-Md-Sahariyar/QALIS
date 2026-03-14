@@ -1,0 +1,27 @@
+{
+  "theme_id": "TH4",
+  "name": "Integration reliability distinct from model quality",
+  "n_excerpts": 31,
+  "codes": [
+    "C17",
+    "C18",
+    "C19",
+    "C20"
+  ],
+  "description": "Participants distinguished between model-level quality failures and system integration failures \u2014 latency, provider availability, and cost \u2014 arguing that these require separate monitoring instrumentation.",
+  "key_evidence": [
+    "Provider dependency risk: single-provider outages caused complete product unavailability (INT-01, INT-05, INT-07)",
+    "Latency SLA breaches occur independently of model output quality (INT-04, INT-10, INT-11)",
+    "Cost-quality decoupling: moving to premium models increases cost without measurable quality gain (INT-05, INT-06, INT-12)"
+  ],
+  "significance_for_qalis": "Motivates IQ dimension (IQ-1 through IQ-4). Participants in software tooling sector most vocal about latency SLA (INT-05, INT-11).",
+  "representative_quotes": [
+    "[Anonymised quote from a participant whose excerpt was coded C17]",
+    "[Anonymised quote from a participant whose excerpt was coded C20]"
+  ],
+  "sectors_most_represented": [
+    "Software Dev Tooling",
+    "E-Commerce",
+    "Manufacturing"
+  ]
+}

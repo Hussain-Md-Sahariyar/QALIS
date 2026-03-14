@@ -1,0 +1,24 @@
+{
+  "theme_id": "TH8",
+  "name": "Tooling fragmentation as adoption barrier",
+  "n_excerpts": 8,
+  "codes": [
+    "C30"
+  ],
+  "description": "Participants described the overhead of integrating multiple disparate monitoring tools as a significant barrier to comprehensive LLM quality monitoring, and expressed demand for unified frameworks.",
+  "key_evidence": [
+    "Teams use 3\u20135 separate tools: Prometheus/Datadog for infra, custom NLI scripts, human review spreadsheets (INT-01, INT-06, INT-12)",
+    "Tooling fragmentation creates blind spots at tool boundaries \u2014 IQ and SF often monitored by separate teams (INT-05, INT-10)",
+    "Demand for unified quality layer explicitly stated (INT-03, INT-09, INT-12, INT-13)"
+  ],
+  "significance_for_qalis": "Directly motivates the QALIS unified framework design goal. Validates practitioner demand for integrated assessment.",
+  "representative_quotes": [
+    "[Anonymised quote from a participant whose excerpt was coded C30]",
+    "[Anonymised quote from a participant whose excerpt was coded C30]"
+  ],
+  "sectors_most_represented": [
+    "Manufacturing",
+    "E-Commerce",
+    "Software Dev Tooling"
+  ]
+}
