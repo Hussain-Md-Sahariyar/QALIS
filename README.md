@@ -527,10 +527,8 @@ QALIS organizes quality concerns across a **four-layer architecture** mirroring 
 | 2 | **RO** | Robustness | RO-1 to RO-5 | Behavioral degradation under perturbation | 7.28 |
 | 3 | **SF** | Semantic Faithfulness | SF-1 to SF-3 | Hallucination, unsupported claims | 8.28 |
 | 4 | **SS** | Safety & Security | SS-1 to SS-4 | Toxicity, PII leakage, prompt injection | 8.33 |
-| 5 | **TI** | Transparency & Interpretability | TI-1 to TI-4 | Opaque reasoning, poor explanation quality | 7.05 ⚠️ |
+| 5 | **TI** | Transparency & Interpretability | TI-1 to TI-4 | Opaque reasoning, poor explanation quality | 7.05 |
 | 6 | **IQ** | System Integration Quality | IQ-1 to IQ-4 | API failures, latency SLA breaches | 7.70 |
-
-> ⚠️ **TI (Transparency)** was the lowest-scoring and highest-variance dimension across all four systems — identified as the most critical current quality gap.
 
 Full metric specifications: `framework/metrics/metrics_catalogue.json`  
 Threshold table: `configs/metrics_thresholds.yaml`  
