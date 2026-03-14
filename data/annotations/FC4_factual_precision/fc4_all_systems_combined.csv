@@ -1,0 +1,801 @@
+annotation_id,system_id,query_id,claim_text,annotator_1_judgment,annotator_2_judgment,annotator_3_judgment,majority_judgment,annotator_1_confidence,annotator_2_confidence,annotator_3_confidence,mean_confidence,evidence_snippet,fleiss_kappa_batch,annotation_date,adjudicated
+FC4-0001,S1,S1-Q27697,Sample claim 1 from Customer Support Chatbot output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,3,3,5,3.67,Evidence snippet supporting judgment for claim 1.,0.724,2024-11-13,0
+FC4-0002,S2,S2-Q06339,Sample claim 2 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,4,3.33,Evidence snippet supporting judgment for claim 2.,0.724,2024-11-15,0
+FC4-0003,S3,S3-Q08181,Sample claim 3 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,5,4.67,Evidence snippet supporting judgment for claim 3.,0.724,2024-11-18,0
+FC4-0004,S4,S4-Q46175,Sample claim 4 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,3,4.0,Evidence snippet supporting judgment for claim 4.,0.724,2024-10-09,0
+FC4-0005,S1,S1-Q24912,Sample claim 5 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,3,3.0,Evidence snippet supporting judgment for claim 5.,0.724,2024-11-05,0
+FC4-0006,S2,S2-Q17497,Sample claim 6 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,3,5,4.0,Evidence snippet supporting judgment for claim 6.,0.724,2024-12-29,0
+FC4-0007,S3,S3-Q16044,Sample claim 7 from Document Summarization and QA output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,3,5,5,4.33,Evidence snippet supporting judgment for claim 7.,0.724,2024-10-21,0
+FC4-0008,S4,S4-Q44867,Sample claim 8 from Medical Triage Assistant output.,CORRECT,CORRECT,INCORRECT,CORRECT,5,5,3,4.33,Evidence snippet supporting judgment for claim 8.,0.724,2024-11-11,0
+FC4-0009,S1,S1-Q17547,Sample claim 9 from Customer Support Chatbot output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,3,4,4,3.67,Evidence snippet supporting judgment for claim 9.,0.724,2024-10-09,0
+FC4-0010,S2,S2-Q32718,Sample claim 10 from AI Code Assistant IDE Plugin output.,CORRECT,INCORRECT,UNVERIFIABLE,INCORRECT,4,3,5,4.0,Evidence snippet supporting judgment for claim 10.,0.724,2024-11-20,1
+FC4-0011,S3,S3-Q36790,Sample claim 11 from Document Summarization and QA output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,3,3,5,3.67,Evidence snippet supporting judgment for claim 11.,0.724,2024-12-08,0
+FC4-0012,S4,S4-Q09066,Sample claim 12 from Medical Triage Assistant output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,4,4,3,3.67,Evidence snippet supporting judgment for claim 12.,0.724,2024-12-05,0
+FC4-0013,S1,S1-Q44597,Sample claim 13 from Customer Support Chatbot output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,3,5,3,3.67,Evidence snippet supporting judgment for claim 13.,0.724,2024-11-24,0
+FC4-0014,S2,S2-Q36257,Sample claim 14 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,4,4.33,Evidence snippet supporting judgment for claim 14.,0.724,2024-10-02,0
+FC4-0015,S3,S3-Q07311,Sample claim 15 from Document Summarization and QA output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,4,5,4,4.33,Evidence snippet supporting judgment for claim 15.,0.724,2024-11-07,0
+FC4-0016,S4,S4-Q49936,Sample claim 16 from Medical Triage Assistant output.,CORRECT,CORRECT,INCORRECT,CORRECT,5,4,5,4.67,Evidence snippet supporting judgment for claim 16.,0.724,2024-10-23,0
+FC4-0017,S1,S1-Q13036,Sample claim 17 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,5,5.0,Evidence snippet supporting judgment for claim 17.,0.724,2024-10-20,0
+FC4-0018,S2,S2-Q21244,Sample claim 18 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,INCORRECT,CORRECT,5,3,5,4.33,Evidence snippet supporting judgment for claim 18.,0.724,2024-12-02,0
+FC4-0019,S3,S3-Q15786,Sample claim 19 from Document Summarization and QA output.,CORRECT,UNVERIFIABLE,UNVERIFIABLE,UNVERIFIABLE,4,3,3,3.33,Evidence snippet supporting judgment for claim 19.,0.724,2024-12-12,0
+FC4-0020,S4,S4-Q08415,Sample claim 20 from Medical Triage Assistant output.,INCORRECT,CORRECT,CORRECT,CORRECT,3,5,3,3.67,Evidence snippet supporting judgment for claim 20.,0.724,2024-12-24,0
+FC4-0021,S1,S1-Q35344,Sample claim 21 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,3,4.0,Evidence snippet supporting judgment for claim 21.,0.724,2024-12-28,0
+FC4-0022,S2,S2-Q33920,Sample claim 22 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,INCORRECT,CORRECT,5,4,4,4.33,Evidence snippet supporting judgment for claim 22.,0.724,2024-11-27,0
+FC4-0023,S3,S3-Q38565,Sample claim 23 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,3,4.33,Evidence snippet supporting judgment for claim 23.,0.724,2024-10-29,0
+FC4-0024,S4,S4-Q04644,Sample claim 24 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,4,3.33,Evidence snippet supporting judgment for claim 24.,0.724,2024-12-05,0
+FC4-0025,S1,S1-Q37763,Sample claim 25 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,5,4.33,Evidence snippet supporting judgment for claim 25.,0.724,2024-11-30,0
+FC4-0026,S2,S2-Q28250,Sample claim 26 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,5,3.67,Evidence snippet supporting judgment for claim 26.,0.724,2024-11-15,0
+FC4-0027,S3,S3-Q06450,Sample claim 27 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,5,5.0,Evidence snippet supporting judgment for claim 27.,0.724,2024-10-08,0
+FC4-0028,S4,S4-Q35147,Sample claim 28 from Medical Triage Assistant output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,3,3,3,3.0,Evidence snippet supporting judgment for claim 28.,0.724,2024-11-27,0
+FC4-0029,S1,S1-Q06417,Sample claim 29 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,3,4,5,4.0,Evidence snippet supporting judgment for claim 29.,0.724,2024-10-07,0
+FC4-0030,S2,S2-Q26635,Sample claim 30 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,3,3.0,Evidence snippet supporting judgment for claim 30.,0.724,2024-12-02,0
+FC4-0031,S3,S3-Q25587,Sample claim 31 from Document Summarization and QA output.,CORRECT,UNVERIFIABLE,UNVERIFIABLE,UNVERIFIABLE,3,4,3,3.33,Evidence snippet supporting judgment for claim 31.,0.724,2024-11-03,0
+FC4-0032,S4,S4-Q43377,Sample claim 32 from Medical Triage Assistant output.,INCORRECT,CORRECT,CORRECT,CORRECT,5,5,5,5.0,Evidence snippet supporting judgment for claim 32.,0.724,2024-12-31,0
+FC4-0033,S1,S1-Q35534,Sample claim 33 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,5,4.33,Evidence snippet supporting judgment for claim 33.,0.724,2024-10-08,0
+FC4-0034,S2,S2-Q03728,Sample claim 34 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,3,4.33,Evidence snippet supporting judgment for claim 34.,0.724,2024-12-05,0
+FC4-0035,S3,S3-Q07857,Sample claim 35 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,4,4.0,Evidence snippet supporting judgment for claim 35.,0.724,2024-12-12,0
+FC4-0036,S4,S4-Q37043,Sample claim 36 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,5,4.67,Evidence snippet supporting judgment for claim 36.,0.724,2024-12-06,0
+FC4-0037,S1,S1-Q25939,Sample claim 37 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,4,3,4,3.67,Evidence snippet supporting judgment for claim 37.,0.724,2024-10-17,0
+FC4-0038,S2,S2-Q40709,Sample claim 38 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,4,3.33,Evidence snippet supporting judgment for claim 38.,0.724,2024-12-12,0
+FC4-0039,S3,S3-Q04509,Sample claim 39 from Document Summarization and QA output.,INCORRECT,CORRECT,CORRECT,CORRECT,4,3,4,3.67,Evidence snippet supporting judgment for claim 39.,0.724,2024-11-01,0
+FC4-0040,S4,S4-Q42859,Sample claim 40 from Medical Triage Assistant output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,5,4,5,4.67,Evidence snippet supporting judgment for claim 40.,0.724,2024-12-07,0
+FC4-0041,S1,S1-Q17333,Sample claim 41 from Customer Support Chatbot output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,5,3,3,3.67,Evidence snippet supporting judgment for claim 41.,0.724,2024-10-15,0
+FC4-0042,S2,S2-Q47030,Sample claim 42 from AI Code Assistant IDE Plugin output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,4,5,3,4.0,Evidence snippet supporting judgment for claim 42.,0.724,2024-11-13,0
+FC4-0043,S3,S3-Q06049,Sample claim 43 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,3,3.67,Evidence snippet supporting judgment for claim 43.,0.724,2024-12-21,0
+FC4-0044,S4,S4-Q10590,Sample claim 44 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,4,4.0,Evidence snippet supporting judgment for claim 44.,0.724,2024-11-26,0
+FC4-0045,S1,S1-Q35756,Sample claim 45 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,3,3.67,Evidence snippet supporting judgment for claim 45.,0.724,2024-10-05,0
+FC4-0046,S2,S2-Q23898,Sample claim 46 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,4,3.33,Evidence snippet supporting judgment for claim 46.,0.724,2024-10-06,0
+FC4-0047,S3,S3-Q26633,Sample claim 47 from Document Summarization and QA output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,3,4,5,4.0,Evidence snippet supporting judgment for claim 47.,0.724,2024-12-19,0
+FC4-0048,S4,S4-Q01625,Sample claim 48 from Medical Triage Assistant output.,CORRECT,INCORRECT,CORRECT,CORRECT,3,3,4,3.33,Evidence snippet supporting judgment for claim 48.,0.724,2024-10-23,0
+FC4-0049,S1,S1-Q17486,Sample claim 49 from Customer Support Chatbot output.,CORRECT,CORRECT,INCORRECT,CORRECT,5,5,3,4.33,Evidence snippet supporting judgment for claim 49.,0.724,2024-10-21,0
+FC4-0050,S2,S2-Q30167,Sample claim 50 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,4,3,3,3.33,Evidence snippet supporting judgment for claim 50.,0.724,2024-11-14,0
+FC4-0051,S3,S3-Q26114,Sample claim 51 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,3,3.67,Evidence snippet supporting judgment for claim 51.,0.723,2024-11-12,0
+FC4-0052,S4,S4-Q26194,Sample claim 52 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,5,4.67,Evidence snippet supporting judgment for claim 52.,0.723,2024-12-26,0
+FC4-0053,S1,S1-Q38050,Sample claim 53 from Customer Support Chatbot output.,INCORRECT,CORRECT,INCORRECT,INCORRECT,3,4,3,3.33,Evidence snippet supporting judgment for claim 53.,0.723,2024-11-03,0
+FC4-0054,S2,S2-Q33517,Sample claim 54 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,5,4.33,Evidence snippet supporting judgment for claim 54.,0.723,2024-10-15,0
+FC4-0055,S3,S3-Q34074,Sample claim 55 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,3,4.0,Evidence snippet supporting judgment for claim 55.,0.723,2024-12-08,0
+FC4-0056,S4,S4-Q04586,Sample claim 56 from Medical Triage Assistant output.,CORRECT,INCORRECT,CORRECT,CORRECT,3,4,4,3.67,Evidence snippet supporting judgment for claim 56.,0.723,2024-12-25,0
+FC4-0057,S1,S1-Q33235,Sample claim 57 from Customer Support Chatbot output.,INCORRECT,CORRECT,CORRECT,CORRECT,3,5,4,4.0,Evidence snippet supporting judgment for claim 57.,0.723,2024-11-09,0
+FC4-0058,S2,S2-Q27555,Sample claim 58 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,3,3.67,Evidence snippet supporting judgment for claim 58.,0.723,2024-12-25,0
+FC4-0059,S3,S3-Q26613,Sample claim 59 from Document Summarization and QA output.,INCORRECT,CORRECT,UNVERIFIABLE,INCORRECT,5,5,4,4.67,Evidence snippet supporting judgment for claim 59.,0.723,2024-12-10,1
+FC4-0060,S4,S4-Q21119,Sample claim 60 from Medical Triage Assistant output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,5,5,5,5.0,Evidence snippet supporting judgment for claim 60.,0.723,2024-11-29,0
+FC4-0061,S1,S1-Q05558,Sample claim 61 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,5,4.33,Evidence snippet supporting judgment for claim 61.,0.723,2024-11-06,0
+FC4-0062,S2,S2-Q14723,Sample claim 62 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,4,4.0,Evidence snippet supporting judgment for claim 62.,0.723,2024-10-26,0
+FC4-0063,S3,S3-Q27161,Sample claim 63 from Document Summarization and QA output.,CORRECT,CORRECT,INCORRECT,CORRECT,5,3,4,4.0,Evidence snippet supporting judgment for claim 63.,0.723,2024-12-20,0
+FC4-0064,S4,S4-Q42996,Sample claim 64 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,4,3,3,3.33,Evidence snippet supporting judgment for claim 64.,0.723,2024-12-28,0
+FC4-0065,S1,S1-Q11527,Sample claim 65 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,3,4,3,3.33,Evidence snippet supporting judgment for claim 65.,0.723,2024-12-29,0
+FC4-0066,S2,S2-Q30451,Sample claim 66 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,3,4,3,3.33,Evidence snippet supporting judgment for claim 66.,0.723,2024-12-25,0
+FC4-0067,S3,S3-Q33082,Sample claim 67 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,5,4.67,Evidence snippet supporting judgment for claim 67.,0.723,2024-11-24,0
+FC4-0068,S4,S4-Q16987,Sample claim 68 from Medical Triage Assistant output.,UNVERIFIABLE,CORRECT,UNVERIFIABLE,UNVERIFIABLE,5,4,4,4.33,Evidence snippet supporting judgment for claim 68.,0.723,2024-11-01,0
+FC4-0069,S1,S1-Q17997,Sample claim 69 from Customer Support Chatbot output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,4,5,3,4.0,Evidence snippet supporting judgment for claim 69.,0.723,2024-11-26,0
+FC4-0070,S2,S2-Q09069,Sample claim 70 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,3,4.0,Evidence snippet supporting judgment for claim 70.,0.723,2024-10-20,0
+FC4-0071,S3,S3-Q21685,Sample claim 71 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,4,4,3.67,Evidence snippet supporting judgment for claim 71.,0.723,2024-12-09,0
+FC4-0072,S4,S4-Q01281,Sample claim 72 from Medical Triage Assistant output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,4,5,5,4.67,Evidence snippet supporting judgment for claim 72.,0.723,2024-12-13,0
+FC4-0073,S1,S1-Q48990,Sample claim 73 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,5,4.33,Evidence snippet supporting judgment for claim 73.,0.723,2024-12-09,0
+FC4-0074,S2,S2-Q01903,Sample claim 74 from AI Code Assistant IDE Plugin output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,4,4,4,4.0,Evidence snippet supporting judgment for claim 74.,0.723,2024-11-19,0
+FC4-0075,S3,S3-Q40781,Sample claim 75 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,4,3,3.33,Evidence snippet supporting judgment for claim 75.,0.723,2024-12-08,0
+FC4-0076,S4,S4-Q28090,Sample claim 76 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,5,3.67,Evidence snippet supporting judgment for claim 76.,0.723,2024-10-18,0
+FC4-0077,S1,S1-Q21421,Sample claim 77 from Customer Support Chatbot output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,4,3,4,3.67,Evidence snippet supporting judgment for claim 77.,0.723,2024-11-13,0
+FC4-0078,S2,S2-Q30823,Sample claim 78 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,3,3.67,Evidence snippet supporting judgment for claim 78.,0.723,2024-10-03,0
+FC4-0079,S3,S3-Q42714,Sample claim 79 from Document Summarization and QA output.,CORRECT,CORRECT,INCORRECT,CORRECT,3,5,3,3.67,Evidence snippet supporting judgment for claim 79.,0.723,2024-10-06,0
+FC4-0080,S4,S4-Q15634,Sample claim 80 from Medical Triage Assistant output.,CORRECT,INCORRECT,CORRECT,CORRECT,3,5,3,3.67,Evidence snippet supporting judgment for claim 80.,0.723,2024-10-17,0
+FC4-0081,S1,S1-Q24176,Sample claim 81 from Customer Support Chatbot output.,CORRECT,CORRECT,INCORRECT,CORRECT,4,5,4,4.33,Evidence snippet supporting judgment for claim 81.,0.723,2024-10-22,0
+FC4-0082,S2,S2-Q37925,Sample claim 82 from AI Code Assistant IDE Plugin output.,CORRECT,INCORRECT,CORRECT,CORRECT,3,4,3,3.33,Evidence snippet supporting judgment for claim 82.,0.723,2024-10-04,0
+FC4-0083,S3,S3-Q12998,Sample claim 83 from Document Summarization and QA output.,UNVERIFIABLE,CORRECT,UNVERIFIABLE,UNVERIFIABLE,4,4,5,4.33,Evidence snippet supporting judgment for claim 83.,0.723,2024-10-10,0
+FC4-0084,S4,S4-Q39349,Sample claim 84 from Medical Triage Assistant output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,5,4,5,4.67,Evidence snippet supporting judgment for claim 84.,0.723,2024-10-16,0
+FC4-0085,S1,S1-Q24286,Sample claim 85 from Customer Support Chatbot output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,5,4,5,4.67,Evidence snippet supporting judgment for claim 85.,0.723,2024-10-09,0
+FC4-0086,S2,S2-Q23737,Sample claim 86 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,4,3,4,3.67,Evidence snippet supporting judgment for claim 86.,0.723,2024-12-21,0
+FC4-0087,S3,S3-Q42629,Sample claim 87 from Document Summarization and QA output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,3,5,5,4.33,Evidence snippet supporting judgment for claim 87.,0.723,2024-11-04,0
+FC4-0088,S4,S4-Q38829,Sample claim 88 from Medical Triage Assistant output.,CORRECT,INCORRECT,CORRECT,CORRECT,4,4,5,4.33,Evidence snippet supporting judgment for claim 88.,0.723,2024-11-04,0
+FC4-0089,S1,S1-Q49184,Sample claim 89 from Customer Support Chatbot output.,CORRECT,CORRECT,INCORRECT,CORRECT,4,4,3,3.67,Evidence snippet supporting judgment for claim 89.,0.723,2024-11-29,0
+FC4-0090,S2,S2-Q31953,Sample claim 90 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,3,3.67,Evidence snippet supporting judgment for claim 90.,0.723,2024-10-28,0
+FC4-0091,S3,S3-Q36425,Sample claim 91 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,4,4.67,Evidence snippet supporting judgment for claim 91.,0.723,2024-10-02,0
+FC4-0092,S4,S4-Q49688,Sample claim 92 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,5,4.33,Evidence snippet supporting judgment for claim 92.,0.723,2024-10-31,0
+FC4-0093,S1,S1-Q14523,Sample claim 93 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,4,3.33,Evidence snippet supporting judgment for claim 93.,0.723,2024-11-21,0
+FC4-0094,S2,S2-Q22529,Sample claim 94 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,5,4.67,Evidence snippet supporting judgment for claim 94.,0.723,2024-11-24,0
+FC4-0095,S3,S3-Q16476,Sample claim 95 from Document Summarization and QA output.,INCORRECT,CORRECT,CORRECT,CORRECT,4,4,4,4.0,Evidence snippet supporting judgment for claim 95.,0.723,2024-10-30,0
+FC4-0096,S4,S4-Q12553,Sample claim 96 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,3,4.33,Evidence snippet supporting judgment for claim 96.,0.723,2024-10-28,0
+FC4-0097,S1,S1-Q06589,Sample claim 97 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,4,4.67,Evidence snippet supporting judgment for claim 97.,0.723,2024-10-25,0
+FC4-0098,S2,S2-Q17978,Sample claim 98 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,3,4.33,Evidence snippet supporting judgment for claim 98.,0.723,2024-10-06,0
+FC4-0099,S3,S3-Q06724,Sample claim 99 from Document Summarization and QA output.,INCORRECT,CORRECT,CORRECT,CORRECT,3,5,4,4.0,Evidence snippet supporting judgment for claim 99.,0.723,2024-10-02,0
+FC4-0100,S4,S4-Q31309,Sample claim 100 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,4,3.33,Evidence snippet supporting judgment for claim 100.,0.723,2024-10-15,0
+FC4-0101,S1,S1-Q09944,Sample claim 101 from Customer Support Chatbot output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,5,5,3,4.33,Evidence snippet supporting judgment for claim 101.,0.726,2024-10-20,0
+FC4-0102,S2,S2-Q27275,Sample claim 102 from AI Code Assistant IDE Plugin output.,CORRECT,INCORRECT,CORRECT,CORRECT,3,3,5,3.67,Evidence snippet supporting judgment for claim 102.,0.726,2024-12-17,0
+FC4-0103,S3,S3-Q19488,Sample claim 103 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,4,4.0,Evidence snippet supporting judgment for claim 103.,0.726,2024-12-15,0
+FC4-0104,S4,S4-Q49987,Sample claim 104 from Medical Triage Assistant output.,INCORRECT,CORRECT,CORRECT,CORRECT,5,5,3,4.33,Evidence snippet supporting judgment for claim 104.,0.726,2024-10-27,0
+FC4-0105,S1,S1-Q04920,Sample claim 105 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,5,3.67,Evidence snippet supporting judgment for claim 105.,0.726,2024-10-21,0
+FC4-0106,S2,S2-Q18882,Sample claim 106 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,3,3,3.33,Evidence snippet supporting judgment for claim 106.,0.726,2024-12-30,0
+FC4-0107,S3,S3-Q38653,Sample claim 107 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,4,5,4.0,Evidence snippet supporting judgment for claim 107.,0.726,2024-12-24,0
+FC4-0108,S4,S4-Q17409,Sample claim 108 from Medical Triage Assistant output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,3,5,3,3.67,Evidence snippet supporting judgment for claim 108.,0.726,2024-10-19,0
+FC4-0109,S1,S1-Q28781,Sample claim 109 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,4,4.67,Evidence snippet supporting judgment for claim 109.,0.726,2024-10-16,0
+FC4-0110,S2,S2-Q32362,Sample claim 110 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,5,4.67,Evidence snippet supporting judgment for claim 110.,0.726,2024-11-26,0
+FC4-0111,S3,S3-Q01696,Sample claim 111 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,4,4.33,Evidence snippet supporting judgment for claim 111.,0.726,2024-10-12,0
+FC4-0112,S4,S4-Q17663,Sample claim 112 from Medical Triage Assistant output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,5,3,5,4.33,Evidence snippet supporting judgment for claim 112.,0.726,2024-12-13,0
+FC4-0113,S1,S1-Q11895,Sample claim 113 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,4,4.33,Evidence snippet supporting judgment for claim 113.,0.726,2024-12-14,0
+FC4-0114,S2,S2-Q21844,Sample claim 114 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,INCORRECT,CORRECT,4,4,4,4.0,Evidence snippet supporting judgment for claim 114.,0.726,2024-11-11,0
+FC4-0115,S3,S3-Q43424,Sample claim 115 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,4,4.33,Evidence snippet supporting judgment for claim 115.,0.726,2024-11-21,0
+FC4-0116,S4,S4-Q07598,Sample claim 116 from Medical Triage Assistant output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,4,4,4,4.0,Evidence snippet supporting judgment for claim 116.,0.726,2024-11-21,0
+FC4-0117,S1,S1-Q03553,Sample claim 117 from Customer Support Chatbot output.,UNVERIFIABLE,UNVERIFIABLE,CORRECT,UNVERIFIABLE,5,4,4,4.33,Evidence snippet supporting judgment for claim 117.,0.726,2024-10-25,0
+FC4-0118,S2,S2-Q17502,Sample claim 118 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,3,3,3.33,Evidence snippet supporting judgment for claim 118.,0.726,2024-12-10,0
+FC4-0119,S3,S3-Q41290,Sample claim 119 from Document Summarization and QA output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,4,3,3,3.33,Evidence snippet supporting judgment for claim 119.,0.726,2024-12-17,0
+FC4-0120,S4,S4-Q06109,Sample claim 120 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,4,4.0,Evidence snippet supporting judgment for claim 120.,0.726,2024-10-29,0
+FC4-0121,S1,S1-Q32662,Sample claim 121 from Customer Support Chatbot output.,INCORRECT,INCORRECT,CORRECT,INCORRECT,3,5,3,3.67,Evidence snippet supporting judgment for claim 121.,0.726,2024-12-31,0
+FC4-0122,S2,S2-Q29936,Sample claim 122 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,3,3.67,Evidence snippet supporting judgment for claim 122.,0.726,2024-12-10,0
+FC4-0123,S3,S3-Q18105,Sample claim 123 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,3,3.67,Evidence snippet supporting judgment for claim 123.,0.726,2024-11-23,0
+FC4-0124,S4,S4-Q19567,Sample claim 124 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,3,4,5,4.0,Evidence snippet supporting judgment for claim 124.,0.726,2024-12-15,0
+FC4-0125,S1,S1-Q22619,Sample claim 125 from Customer Support Chatbot output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,4,5,4,4.33,Evidence snippet supporting judgment for claim 125.,0.726,2024-11-12,0
+FC4-0126,S2,S2-Q15651,Sample claim 126 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,3,5,4.0,Evidence snippet supporting judgment for claim 126.,0.726,2024-12-13,0
+FC4-0127,S3,S3-Q46218,Sample claim 127 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,4,4.33,Evidence snippet supporting judgment for claim 127.,0.726,2024-11-18,0
+FC4-0128,S4,S4-Q08274,Sample claim 128 from Medical Triage Assistant output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,3,4,3,3.33,Evidence snippet supporting judgment for claim 128.,0.726,2024-12-04,0
+FC4-0129,S1,S1-Q29946,Sample claim 129 from Customer Support Chatbot output.,INCORRECT,CORRECT,CORRECT,CORRECT,4,3,5,4.0,Evidence snippet supporting judgment for claim 129.,0.726,2024-10-02,0
+FC4-0130,S2,S2-Q17369,Sample claim 130 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,4,3.33,Evidence snippet supporting judgment for claim 130.,0.726,2024-11-13,0
+FC4-0131,S3,S3-Q24905,Sample claim 131 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,5,4.67,Evidence snippet supporting judgment for claim 131.,0.726,2024-11-10,0
+FC4-0132,S4,S4-Q04485,Sample claim 132 from Medical Triage Assistant output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,5,3,5,4.33,Evidence snippet supporting judgment for claim 132.,0.726,2024-10-31,0
+FC4-0133,S1,S1-Q06452,Sample claim 133 from Customer Support Chatbot output.,CORRECT,INCORRECT,INCORRECT,INCORRECT,5,3,4,4.0,Evidence snippet supporting judgment for claim 133.,0.726,2024-12-21,0
+FC4-0134,S2,S2-Q21259,Sample claim 134 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,3,3,3.33,Evidence snippet supporting judgment for claim 134.,0.726,2024-10-08,0
+FC4-0135,S3,S3-Q44683,Sample claim 135 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,5,4.67,Evidence snippet supporting judgment for claim 135.,0.726,2024-10-24,0
+FC4-0136,S4,S4-Q32616,Sample claim 136 from Medical Triage Assistant output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,5,5,3,4.33,Evidence snippet supporting judgment for claim 136.,0.726,2024-12-14,0
+FC4-0137,S1,S1-Q30491,Sample claim 137 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,3,4.0,Evidence snippet supporting judgment for claim 137.,0.726,2024-11-06,0
+FC4-0138,S2,S2-Q41874,Sample claim 138 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,4,4.33,Evidence snippet supporting judgment for claim 138.,0.726,2024-11-24,0
+FC4-0139,S3,S3-Q15546,Sample claim 139 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,3,3.67,Evidence snippet supporting judgment for claim 139.,0.726,2024-11-18,0
+FC4-0140,S4,S4-Q25940,Sample claim 140 from Medical Triage Assistant output.,CORRECT,CORRECT,INCORRECT,CORRECT,4,3,5,4.0,Evidence snippet supporting judgment for claim 140.,0.726,2024-11-05,0
+FC4-0141,S1,S1-Q32554,Sample claim 141 from Customer Support Chatbot output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,3,5,5,4.33,Evidence snippet supporting judgment for claim 141.,0.726,2024-11-06,0
+FC4-0142,S2,S2-Q40691,Sample claim 142 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,3,3.67,Evidence snippet supporting judgment for claim 142.,0.726,2024-11-02,0
+FC4-0143,S3,S3-Q41122,Sample claim 143 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,3,3.67,Evidence snippet supporting judgment for claim 143.,0.726,2024-12-22,0
+FC4-0144,S4,S4-Q05907,Sample claim 144 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,3,4.0,Evidence snippet supporting judgment for claim 144.,0.726,2024-11-07,0
+FC4-0145,S1,S1-Q32886,Sample claim 145 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,5,4.67,Evidence snippet supporting judgment for claim 145.,0.726,2024-11-04,0
+FC4-0146,S2,S2-Q22199,Sample claim 146 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,5,4.33,Evidence snippet supporting judgment for claim 146.,0.726,2024-10-15,0
+FC4-0147,S3,S3-Q44198,Sample claim 147 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,5,4.33,Evidence snippet supporting judgment for claim 147.,0.726,2024-11-20,0
+FC4-0148,S4,S4-Q35165,Sample claim 148 from Medical Triage Assistant output.,INCORRECT,UNVERIFIABLE,CORRECT,INCORRECT,4,3,4,3.67,Evidence snippet supporting judgment for claim 148.,0.726,2024-10-16,1
+FC4-0149,S1,S1-Q24345,Sample claim 149 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,5,4.67,Evidence snippet supporting judgment for claim 149.,0.726,2024-10-14,0
+FC4-0150,S2,S2-Q14508,Sample claim 150 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,5,4.67,Evidence snippet supporting judgment for claim 150.,0.726,2024-12-22,0
+FC4-0151,S3,S3-Q07647,Sample claim 151 from Document Summarization and QA output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,4,5,4,4.33,Evidence snippet supporting judgment for claim 151.,0.758,2024-10-18,0
+FC4-0152,S4,S4-Q35229,Sample claim 152 from Medical Triage Assistant output.,CORRECT,CORRECT,INCORRECT,CORRECT,3,3,3,3.0,Evidence snippet supporting judgment for claim 152.,0.758,2024-10-18,0
+FC4-0153,S1,S1-Q38492,Sample claim 153 from Customer Support Chatbot output.,CORRECT,CORRECT,INCORRECT,CORRECT,5,5,4,4.67,Evidence snippet supporting judgment for claim 153.,0.758,2024-10-20,0
+FC4-0154,S2,S2-Q02145,Sample claim 154 from AI Code Assistant IDE Plugin output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,5,4,4,4.33,Evidence snippet supporting judgment for claim 154.,0.758,2024-12-28,0
+FC4-0155,S3,S3-Q24074,Sample claim 155 from Document Summarization and QA output.,CORRECT,CORRECT,INCORRECT,CORRECT,4,3,5,4.0,Evidence snippet supporting judgment for claim 155.,0.758,2024-12-09,0
+FC4-0156,S4,S4-Q29801,Sample claim 156 from Medical Triage Assistant output.,INCORRECT,CORRECT,CORRECT,CORRECT,4,3,3,3.33,Evidence snippet supporting judgment for claim 156.,0.758,2024-10-12,0
+FC4-0157,S1,S1-Q15963,Sample claim 157 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,4,3.33,Evidence snippet supporting judgment for claim 157.,0.758,2024-10-17,0
+FC4-0158,S2,S2-Q14153,Sample claim 158 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,5,4.33,Evidence snippet supporting judgment for claim 158.,0.758,2024-10-30,0
+FC4-0159,S3,S3-Q08520,Sample claim 159 from Document Summarization and QA output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,3,4,3,3.33,Evidence snippet supporting judgment for claim 159.,0.758,2024-12-09,0
+FC4-0160,S4,S4-Q23478,Sample claim 160 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,3,3.0,Evidence snippet supporting judgment for claim 160.,0.758,2024-10-31,0
+FC4-0161,S1,S1-Q34478,Sample claim 161 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,4,4.0,Evidence snippet supporting judgment for claim 161.,0.758,2024-10-15,0
+FC4-0162,S2,S2-Q29623,Sample claim 162 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,3,4.33,Evidence snippet supporting judgment for claim 162.,0.758,2024-12-04,0
+FC4-0163,S3,S3-Q30019,Sample claim 163 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,4,4.67,Evidence snippet supporting judgment for claim 163.,0.758,2024-12-22,0
+FC4-0164,S4,S4-Q07076,Sample claim 164 from Medical Triage Assistant output.,INCORRECT,CORRECT,CORRECT,CORRECT,4,4,5,4.33,Evidence snippet supporting judgment for claim 164.,0.758,2024-12-02,0
+FC4-0165,S1,S1-Q04305,Sample claim 165 from Customer Support Chatbot output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,4,5,3,4.0,Evidence snippet supporting judgment for claim 165.,0.758,2024-10-17,0
+FC4-0166,S2,S2-Q34771,Sample claim 166 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,5,4.33,Evidence snippet supporting judgment for claim 166.,0.758,2024-11-07,0
+FC4-0167,S3,S3-Q42659,Sample claim 167 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,5,4.33,Evidence snippet supporting judgment for claim 167.,0.758,2024-12-10,0
+FC4-0168,S4,S4-Q29721,Sample claim 168 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,3,4,4,3.67,Evidence snippet supporting judgment for claim 168.,0.758,2024-11-21,0
+FC4-0169,S1,S1-Q10004,Sample claim 169 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,4,4.33,Evidence snippet supporting judgment for claim 169.,0.758,2024-12-27,0
+FC4-0170,S2,S2-Q48798,Sample claim 170 from AI Code Assistant IDE Plugin output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,3,4,3,3.33,Evidence snippet supporting judgment for claim 170.,0.758,2024-11-17,0
+FC4-0171,S3,S3-Q43910,Sample claim 171 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,4,4.67,Evidence snippet supporting judgment for claim 171.,0.758,2024-10-16,0
+FC4-0172,S4,S4-Q18851,Sample claim 172 from Medical Triage Assistant output.,CORRECT,UNVERIFIABLE,INCORRECT,UNVERIFIABLE,4,5,3,4.0,Evidence snippet supporting judgment for claim 172.,0.758,2024-12-16,1
+FC4-0173,S1,S1-Q14697,Sample claim 173 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,4,4.0,Evidence snippet supporting judgment for claim 173.,0.758,2024-10-14,0
+FC4-0174,S2,S2-Q28123,Sample claim 174 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,3,4.0,Evidence snippet supporting judgment for claim 174.,0.758,2024-12-11,0
+FC4-0175,S3,S3-Q39912,Sample claim 175 from Document Summarization and QA output.,INCORRECT,CORRECT,CORRECT,CORRECT,5,5,3,4.33,Evidence snippet supporting judgment for claim 175.,0.758,2024-12-24,0
+FC4-0176,S4,S4-Q23005,Sample claim 176 from Medical Triage Assistant output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,5,4,4,4.33,Evidence snippet supporting judgment for claim 176.,0.758,2024-10-01,0
+FC4-0177,S1,S1-Q41496,Sample claim 177 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,5,3.67,Evidence snippet supporting judgment for claim 177.,0.758,2024-10-04,0
+FC4-0178,S2,S2-Q24252,Sample claim 178 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,3,3.67,Evidence snippet supporting judgment for claim 178.,0.758,2024-11-09,0
+FC4-0179,S3,S3-Q10317,Sample claim 179 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,3,3.0,Evidence snippet supporting judgment for claim 179.,0.758,2024-12-19,0
+FC4-0180,S4,S4-Q28970,Sample claim 180 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,5,4.33,Evidence snippet supporting judgment for claim 180.,0.758,2024-11-23,0
+FC4-0181,S1,S1-Q44448,Sample claim 181 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,4,3,4,3.67,Evidence snippet supporting judgment for claim 181.,0.758,2024-12-26,0
+FC4-0182,S2,S2-Q03591,Sample claim 182 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,3,4,5,4.0,Evidence snippet supporting judgment for claim 182.,0.758,2024-10-01,0
+FC4-0183,S3,S3-Q07864,Sample claim 183 from Document Summarization and QA output.,CORRECT,INCORRECT,CORRECT,CORRECT,4,4,4,4.0,Evidence snippet supporting judgment for claim 183.,0.758,2024-10-01,0
+FC4-0184,S4,S4-Q32786,Sample claim 184 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,3,4.33,Evidence snippet supporting judgment for claim 184.,0.758,2024-12-11,0
+FC4-0185,S1,S1-Q01229,Sample claim 185 from Customer Support Chatbot output.,UNVERIFIABLE,UNVERIFIABLE,CORRECT,UNVERIFIABLE,5,3,4,4.0,Evidence snippet supporting judgment for claim 185.,0.758,2024-11-28,0
+FC4-0186,S2,S2-Q41953,Sample claim 186 from AI Code Assistant IDE Plugin output.,UNVERIFIABLE,UNVERIFIABLE,CORRECT,UNVERIFIABLE,5,4,5,4.67,Evidence snippet supporting judgment for claim 186.,0.758,2024-11-23,0
+FC4-0187,S3,S3-Q45195,Sample claim 187 from Document Summarization and QA output.,CORRECT,CORRECT,INCORRECT,CORRECT,3,5,4,4.0,Evidence snippet supporting judgment for claim 187.,0.758,2024-11-16,0
+FC4-0188,S4,S4-Q05155,Sample claim 188 from Medical Triage Assistant output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,5,4,5,4.67,Evidence snippet supporting judgment for claim 188.,0.758,2024-11-20,0
+FC4-0189,S1,S1-Q41500,Sample claim 189 from Customer Support Chatbot output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,3,3,5,3.67,Evidence snippet supporting judgment for claim 189.,0.758,2024-10-15,0
+FC4-0190,S2,S2-Q09680,Sample claim 190 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,5,4.67,Evidence snippet supporting judgment for claim 190.,0.758,2024-10-31,0
+FC4-0191,S3,S3-Q11610,Sample claim 191 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,3,3.67,Evidence snippet supporting judgment for claim 191.,0.758,2024-12-20,0
+FC4-0192,S4,S4-Q42140,Sample claim 192 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,5,4.67,Evidence snippet supporting judgment for claim 192.,0.758,2024-12-21,0
+FC4-0193,S1,S1-Q04476,Sample claim 193 from Customer Support Chatbot output.,INCORRECT,CORRECT,INCORRECT,INCORRECT,4,3,4,3.67,Evidence snippet supporting judgment for claim 193.,0.758,2024-11-30,0
+FC4-0194,S2,S2-Q04863,Sample claim 194 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,3,4,5,4.0,Evidence snippet supporting judgment for claim 194.,0.758,2024-11-09,0
+FC4-0195,S3,S3-Q05918,Sample claim 195 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,4,3,5,4.0,Evidence snippet supporting judgment for claim 195.,0.758,2024-12-18,0
+FC4-0196,S4,S4-Q37465,Sample claim 196 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,4,4.0,Evidence snippet supporting judgment for claim 196.,0.758,2024-12-23,0
+FC4-0197,S1,S1-Q22508,Sample claim 197 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,3,4,3,3.33,Evidence snippet supporting judgment for claim 197.,0.758,2024-12-31,0
+FC4-0198,S2,S2-Q34346,Sample claim 198 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,4,4.33,Evidence snippet supporting judgment for claim 198.,0.758,2024-12-06,0
+FC4-0199,S3,S3-Q44493,Sample claim 199 from Document Summarization and QA output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,4,4,4,4.0,Evidence snippet supporting judgment for claim 199.,0.758,2024-12-16,0
+FC4-0200,S4,S4-Q44459,Sample claim 200 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,4,3,5,4.0,Evidence snippet supporting judgment for claim 200.,0.758,2024-11-19,0
+FC4-0201,S1,S1-Q05342,Sample claim 201 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,4,4.0,Evidence snippet supporting judgment for claim 201.,0.725,2024-12-14,0
+FC4-0202,S2,S2-Q25688,Sample claim 202 from AI Code Assistant IDE Plugin output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,5,5,5,5.0,Evidence snippet supporting judgment for claim 202.,0.725,2024-10-17,0
+FC4-0203,S3,S3-Q08376,Sample claim 203 from Document Summarization and QA output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,4,5,4,4.33,Evidence snippet supporting judgment for claim 203.,0.725,2024-12-25,0
+FC4-0204,S4,S4-Q43940,Sample claim 204 from Medical Triage Assistant output.,CORRECT,INCORRECT,INCORRECT,INCORRECT,5,3,5,4.33,Evidence snippet supporting judgment for claim 204.,0.725,2024-11-24,0
+FC4-0205,S1,S1-Q12584,Sample claim 205 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,3,4,4,3.67,Evidence snippet supporting judgment for claim 205.,0.725,2024-10-29,0
+FC4-0206,S2,S2-Q48408,Sample claim 206 from AI Code Assistant IDE Plugin output.,INCORRECT,CORRECT,CORRECT,CORRECT,3,5,5,4.33,Evidence snippet supporting judgment for claim 206.,0.725,2024-12-07,0
+FC4-0207,S3,S3-Q10110,Sample claim 207 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,4,4.0,Evidence snippet supporting judgment for claim 207.,0.725,2024-10-21,0
+FC4-0208,S4,S4-Q02864,Sample claim 208 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,4,4.0,Evidence snippet supporting judgment for claim 208.,0.725,2024-11-22,0
+FC4-0209,S1,S1-Q29421,Sample claim 209 from Customer Support Chatbot output.,CORRECT,CORRECT,INCORRECT,CORRECT,5,4,5,4.67,Evidence snippet supporting judgment for claim 209.,0.725,2024-10-30,0
+FC4-0210,S2,S2-Q44454,Sample claim 210 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,3,4,3.67,Evidence snippet supporting judgment for claim 210.,0.725,2024-12-13,0
+FC4-0211,S3,S3-Q27438,Sample claim 211 from Document Summarization and QA output.,INCORRECT,CORRECT,CORRECT,CORRECT,4,5,5,4.67,Evidence snippet supporting judgment for claim 211.,0.725,2024-10-21,0
+FC4-0212,S4,S4-Q31496,Sample claim 212 from Medical Triage Assistant output.,UNVERIFIABLE,UNVERIFIABLE,CORRECT,UNVERIFIABLE,4,3,5,4.0,Evidence snippet supporting judgment for claim 212.,0.725,2024-11-17,0
+FC4-0213,S1,S1-Q10507,Sample claim 213 from Customer Support Chatbot output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,3,4,3,3.33,Evidence snippet supporting judgment for claim 213.,0.725,2024-11-04,0
+FC4-0214,S2,S2-Q22911,Sample claim 214 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,4,3.33,Evidence snippet supporting judgment for claim 214.,0.725,2024-10-04,0
+FC4-0215,S3,S3-Q14716,Sample claim 215 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,4,3,4,3.67,Evidence snippet supporting judgment for claim 215.,0.725,2024-10-04,0
+FC4-0216,S4,S4-Q02511,Sample claim 216 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,4,3,3,3.33,Evidence snippet supporting judgment for claim 216.,0.725,2024-11-06,0
+FC4-0217,S1,S1-Q40328,Sample claim 217 from Customer Support Chatbot output.,INCORRECT,CORRECT,UNVERIFIABLE,INCORRECT,5,4,4,4.33,Evidence snippet supporting judgment for claim 217.,0.725,2024-10-01,1
+FC4-0218,S2,S2-Q39904,Sample claim 218 from AI Code Assistant IDE Plugin output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,3,5,5,4.33,Evidence snippet supporting judgment for claim 218.,0.725,2024-12-07,0
+FC4-0219,S3,S3-Q27514,Sample claim 219 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,3,3.0,Evidence snippet supporting judgment for claim 219.,0.725,2024-12-21,0
+FC4-0220,S4,S4-Q01078,Sample claim 220 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,5,4.67,Evidence snippet supporting judgment for claim 220.,0.725,2024-12-20,0
+FC4-0221,S1,S1-Q23123,Sample claim 221 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,4,3,5,4.0,Evidence snippet supporting judgment for claim 221.,0.725,2024-10-31,0
+FC4-0222,S2,S2-Q34476,Sample claim 222 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,3,4.0,Evidence snippet supporting judgment for claim 222.,0.725,2024-12-09,0
+FC4-0223,S3,S3-Q41660,Sample claim 223 from Document Summarization and QA output.,CORRECT,INCORRECT,CORRECT,CORRECT,4,4,3,3.67,Evidence snippet supporting judgment for claim 223.,0.725,2024-11-19,0
+FC4-0224,S4,S4-Q48035,Sample claim 224 from Medical Triage Assistant output.,INCORRECT,CORRECT,CORRECT,CORRECT,3,4,3,3.33,Evidence snippet supporting judgment for claim 224.,0.725,2024-12-24,0
+FC4-0225,S1,S1-Q23089,Sample claim 225 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,4,3,3,3.33,Evidence snippet supporting judgment for claim 225.,0.725,2024-12-09,0
+FC4-0226,S2,S2-Q31362,Sample claim 226 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,5,4.67,Evidence snippet supporting judgment for claim 226.,0.725,2024-12-20,0
+FC4-0227,S3,S3-Q13212,Sample claim 227 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,4,3,4,3.67,Evidence snippet supporting judgment for claim 227.,0.725,2024-10-06,0
+FC4-0228,S4,S4-Q35589,Sample claim 228 from Medical Triage Assistant output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,4,5,4,4.33,Evidence snippet supporting judgment for claim 228.,0.725,2024-11-30,0
+FC4-0229,S1,S1-Q21754,Sample claim 229 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,4,3,5,4.0,Evidence snippet supporting judgment for claim 229.,0.725,2024-11-04,0
+FC4-0230,S2,S2-Q22220,Sample claim 230 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,5,4,4,4.33,Evidence snippet supporting judgment for claim 230.,0.725,2024-10-24,0
+FC4-0231,S3,S3-Q47651,Sample claim 231 from Document Summarization and QA output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,5,4,3,4.0,Evidence snippet supporting judgment for claim 231.,0.725,2024-11-24,0
+FC4-0232,S4,S4-Q06724,Sample claim 232 from Medical Triage Assistant output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,5,4,4,4.33,Evidence snippet supporting judgment for claim 232.,0.725,2024-10-11,0
+FC4-0233,S1,S1-Q45205,Sample claim 233 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,3,4.0,Evidence snippet supporting judgment for claim 233.,0.725,2024-11-26,0
+FC4-0234,S2,S2-Q17994,Sample claim 234 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,4,5,4,4.33,Evidence snippet supporting judgment for claim 234.,0.725,2024-12-21,0
+FC4-0235,S3,S3-Q33626,Sample claim 235 from Document Summarization and QA output.,INCORRECT,INCORRECT,CORRECT,INCORRECT,5,4,4,4.33,Evidence snippet supporting judgment for claim 235.,0.725,2024-12-26,0
+FC4-0236,S4,S4-Q08273,Sample claim 236 from Medical Triage Assistant output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,5,4,3,4.0,Evidence snippet supporting judgment for claim 236.,0.725,2024-10-09,0
+FC4-0237,S1,S1-Q10056,Sample claim 237 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,5,4.33,Evidence snippet supporting judgment for claim 237.,0.725,2024-12-26,0
+FC4-0238,S2,S2-Q34699,Sample claim 238 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,3,3.67,Evidence snippet supporting judgment for claim 238.,0.725,2024-11-16,0
+FC4-0239,S3,S3-Q12193,Sample claim 239 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,5,3.67,Evidence snippet supporting judgment for claim 239.,0.725,2024-12-03,0
+FC4-0240,S4,S4-Q14063,Sample claim 240 from Medical Triage Assistant output.,CORRECT,INCORRECT,CORRECT,CORRECT,4,5,4,4.33,Evidence snippet supporting judgment for claim 240.,0.725,2024-12-18,0
+FC4-0241,S1,S1-Q29626,Sample claim 241 from Customer Support Chatbot output.,CORRECT,INCORRECT,CORRECT,CORRECT,3,3,3,3.0,Evidence snippet supporting judgment for claim 241.,0.725,2024-10-23,0
+FC4-0242,S2,S2-Q22769,Sample claim 242 from AI Code Assistant IDE Plugin output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,5,4,5,4.67,Evidence snippet supporting judgment for claim 242.,0.725,2024-12-30,0
+FC4-0243,S3,S3-Q45890,Sample claim 243 from Document Summarization and QA output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,3,5,5,4.33,Evidence snippet supporting judgment for claim 243.,0.725,2024-12-21,0
+FC4-0244,S4,S4-Q32377,Sample claim 244 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,3,3.0,Evidence snippet supporting judgment for claim 244.,0.725,2024-10-04,0
+FC4-0245,S1,S1-Q05651,Sample claim 245 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,5,4.33,Evidence snippet supporting judgment for claim 245.,0.725,2024-10-09,0
+FC4-0246,S2,S2-Q37677,Sample claim 246 from AI Code Assistant IDE Plugin output.,CORRECT,INCORRECT,CORRECT,CORRECT,5,4,4,4.33,Evidence snippet supporting judgment for claim 246.,0.725,2024-10-10,0
+FC4-0247,S3,S3-Q22579,Sample claim 247 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,5,4.67,Evidence snippet supporting judgment for claim 247.,0.725,2024-10-17,0
+FC4-0248,S4,S4-Q32956,Sample claim 248 from Medical Triage Assistant output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,3,3,4,3.33,Evidence snippet supporting judgment for claim 248.,0.725,2024-10-08,0
+FC4-0249,S1,S1-Q14777,Sample claim 249 from Customer Support Chatbot output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,3,4,5,4.0,Evidence snippet supporting judgment for claim 249.,0.725,2024-11-14,0
+FC4-0250,S2,S2-Q41620,Sample claim 250 from AI Code Assistant IDE Plugin output.,INCORRECT,CORRECT,CORRECT,CORRECT,3,4,3,3.33,Evidence snippet supporting judgment for claim 250.,0.725,2024-12-10,0
+FC4-0251,S3,S3-Q11052,Sample claim 251 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,5,4.33,Evidence snippet supporting judgment for claim 251.,0.67,2024-12-15,0
+FC4-0252,S4,S4-Q36938,Sample claim 252 from Medical Triage Assistant output.,INCORRECT,CORRECT,CORRECT,CORRECT,5,5,4,4.67,Evidence snippet supporting judgment for claim 252.,0.67,2024-10-06,0
+FC4-0253,S1,S1-Q42673,Sample claim 253 from Customer Support Chatbot output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,5,5,4,4.67,Evidence snippet supporting judgment for claim 253.,0.67,2024-10-27,0
+FC4-0254,S2,S2-Q18984,Sample claim 254 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,5,4.67,Evidence snippet supporting judgment for claim 254.,0.67,2024-12-22,0
+FC4-0255,S3,S3-Q29724,Sample claim 255 from Document Summarization and QA output.,INCORRECT,CORRECT,CORRECT,CORRECT,5,4,4,4.33,Evidence snippet supporting judgment for claim 255.,0.67,2024-10-10,0
+FC4-0256,S4,S4-Q39759,Sample claim 256 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,4,3,4,3.67,Evidence snippet supporting judgment for claim 256.,0.67,2024-10-19,0
+FC4-0257,S1,S1-Q49851,Sample claim 257 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,3,3.67,Evidence snippet supporting judgment for claim 257.,0.67,2024-11-17,0
+FC4-0258,S2,S2-Q16248,Sample claim 258 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,3,4,4,3.67,Evidence snippet supporting judgment for claim 258.,0.67,2024-10-19,0
+FC4-0259,S3,S3-Q10467,Sample claim 259 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,3,4.0,Evidence snippet supporting judgment for claim 259.,0.67,2024-11-11,0
+FC4-0260,S4,S4-Q30594,Sample claim 260 from Medical Triage Assistant output.,INCORRECT,CORRECT,CORRECT,CORRECT,3,4,5,4.0,Evidence snippet supporting judgment for claim 260.,0.67,2024-12-03,0
+FC4-0261,S1,S1-Q15777,Sample claim 261 from Customer Support Chatbot output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,4,5,4,4.33,Evidence snippet supporting judgment for claim 261.,0.67,2024-10-28,0
+FC4-0262,S2,S2-Q30841,Sample claim 262 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,5,5.0,Evidence snippet supporting judgment for claim 262.,0.67,2024-11-06,0
+FC4-0263,S3,S3-Q26428,Sample claim 263 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,4,4.33,Evidence snippet supporting judgment for claim 263.,0.67,2024-11-16,0
+FC4-0264,S4,S4-Q04819,Sample claim 264 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,4,4.33,Evidence snippet supporting judgment for claim 264.,0.67,2024-11-19,0
+FC4-0265,S1,S1-Q07787,Sample claim 265 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,5,5.0,Evidence snippet supporting judgment for claim 265.,0.67,2024-10-17,0
+FC4-0266,S2,S2-Q49478,Sample claim 266 from AI Code Assistant IDE Plugin output.,INCORRECT,CORRECT,CORRECT,CORRECT,4,5,4,4.33,Evidence snippet supporting judgment for claim 266.,0.67,2024-10-19,0
+FC4-0267,S3,S3-Q46766,Sample claim 267 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,3,3.0,Evidence snippet supporting judgment for claim 267.,0.67,2024-11-12,0
+FC4-0268,S4,S4-Q40179,Sample claim 268 from Medical Triage Assistant output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,5,3,4,4.0,Evidence snippet supporting judgment for claim 268.,0.67,2024-11-10,0
+FC4-0269,S1,S1-Q33248,Sample claim 269 from Customer Support Chatbot output.,CORRECT,INCORRECT,CORRECT,CORRECT,4,5,4,4.33,Evidence snippet supporting judgment for claim 269.,0.67,2024-12-05,0
+FC4-0270,S2,S2-Q44159,Sample claim 270 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,3,4,4,3.67,Evidence snippet supporting judgment for claim 270.,0.67,2024-10-15,0
+FC4-0271,S3,S3-Q01747,Sample claim 271 from Document Summarization and QA output.,INCORRECT,CORRECT,CORRECT,CORRECT,5,5,5,5.0,Evidence snippet supporting judgment for claim 271.,0.67,2024-12-16,0
+FC4-0272,S4,S4-Q47278,Sample claim 272 from Medical Triage Assistant output.,CORRECT,INCORRECT,CORRECT,CORRECT,5,5,3,4.33,Evidence snippet supporting judgment for claim 272.,0.67,2024-10-07,0
+FC4-0273,S1,S1-Q44613,Sample claim 273 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,3,4.0,Evidence snippet supporting judgment for claim 273.,0.67,2024-11-01,0
+FC4-0274,S2,S2-Q27446,Sample claim 274 from AI Code Assistant IDE Plugin output.,CORRECT,INCORRECT,CORRECT,CORRECT,3,4,4,3.67,Evidence snippet supporting judgment for claim 274.,0.67,2024-10-20,0
+FC4-0275,S3,S3-Q47672,Sample claim 275 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,5,4.67,Evidence snippet supporting judgment for claim 275.,0.67,2024-10-08,0
+FC4-0276,S4,S4-Q24696,Sample claim 276 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,5,4.67,Evidence snippet supporting judgment for claim 276.,0.67,2024-11-10,0
+FC4-0277,S1,S1-Q47247,Sample claim 277 from Customer Support Chatbot output.,INCORRECT,CORRECT,CORRECT,CORRECT,5,4,5,4.67,Evidence snippet supporting judgment for claim 277.,0.67,2024-12-27,0
+FC4-0278,S2,S2-Q36575,Sample claim 278 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,4,3.33,Evidence snippet supporting judgment for claim 278.,0.67,2024-11-08,0
+FC4-0279,S3,S3-Q45236,Sample claim 279 from Document Summarization and QA output.,CORRECT,INCORRECT,CORRECT,CORRECT,4,5,3,4.0,Evidence snippet supporting judgment for claim 279.,0.67,2024-12-30,0
+FC4-0280,S4,S4-Q07988,Sample claim 280 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,4,4.33,Evidence snippet supporting judgment for claim 280.,0.67,2024-12-13,0
+FC4-0281,S1,S1-Q02757,Sample claim 281 from Customer Support Chatbot output.,CORRECT,CORRECT,INCORRECT,CORRECT,4,3,4,3.67,Evidence snippet supporting judgment for claim 281.,0.67,2024-11-06,0
+FC4-0282,S2,S2-Q31397,Sample claim 282 from AI Code Assistant IDE Plugin output.,INCORRECT,CORRECT,UNVERIFIABLE,INCORRECT,5,4,5,4.67,Evidence snippet supporting judgment for claim 282.,0.67,2024-10-28,1
+FC4-0283,S3,S3-Q07159,Sample claim 283 from Document Summarization and QA output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,5,4,3,4.0,Evidence snippet supporting judgment for claim 283.,0.67,2024-12-18,0
+FC4-0284,S4,S4-Q15260,Sample claim 284 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,5,4.33,Evidence snippet supporting judgment for claim 284.,0.67,2024-10-07,0
+FC4-0285,S1,S1-Q36068,Sample claim 285 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,3,3.67,Evidence snippet supporting judgment for claim 285.,0.67,2024-10-21,0
+FC4-0286,S2,S2-Q49540,Sample claim 286 from AI Code Assistant IDE Plugin output.,CORRECT,INCORRECT,UNVERIFIABLE,INCORRECT,4,5,3,4.0,Evidence snippet supporting judgment for claim 286.,0.67,2024-11-06,1
+FC4-0287,S3,S3-Q15219,Sample claim 287 from Document Summarization and QA output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,3,5,5,4.33,Evidence snippet supporting judgment for claim 287.,0.67,2024-12-08,0
+FC4-0288,S4,S4-Q02382,Sample claim 288 from Medical Triage Assistant output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,3,4,3,3.33,Evidence snippet supporting judgment for claim 288.,0.67,2024-11-20,0
+FC4-0289,S1,S1-Q19556,Sample claim 289 from Customer Support Chatbot output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,4,3,3,3.33,Evidence snippet supporting judgment for claim 289.,0.67,2024-12-12,0
+FC4-0290,S2,S2-Q34362,Sample claim 290 from AI Code Assistant IDE Plugin output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,4,5,5,4.67,Evidence snippet supporting judgment for claim 290.,0.67,2024-12-03,0
+FC4-0291,S3,S3-Q21672,Sample claim 291 from Document Summarization and QA output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,4,3,3,3.33,Evidence snippet supporting judgment for claim 291.,0.67,2024-10-21,0
+FC4-0292,S4,S4-Q19335,Sample claim 292 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,4,4.0,Evidence snippet supporting judgment for claim 292.,0.67,2024-12-12,0
+FC4-0293,S1,S1-Q33770,Sample claim 293 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,4,4.33,Evidence snippet supporting judgment for claim 293.,0.67,2024-11-11,0
+FC4-0294,S2,S2-Q16257,Sample claim 294 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,3,4,4,3.67,Evidence snippet supporting judgment for claim 294.,0.67,2024-10-01,0
+FC4-0295,S3,S3-Q47375,Sample claim 295 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,5,4.33,Evidence snippet supporting judgment for claim 295.,0.67,2024-12-13,0
+FC4-0296,S4,S4-Q30501,Sample claim 296 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,3,3.67,Evidence snippet supporting judgment for claim 296.,0.67,2024-11-09,0
+FC4-0297,S1,S1-Q07695,Sample claim 297 from Customer Support Chatbot output.,CORRECT,CORRECT,INCORRECT,CORRECT,5,4,5,4.67,Evidence snippet supporting judgment for claim 297.,0.67,2024-12-21,0
+FC4-0298,S2,S2-Q10040,Sample claim 298 from AI Code Assistant IDE Plugin output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,3,3,4,3.33,Evidence snippet supporting judgment for claim 298.,0.67,2024-11-28,0
+FC4-0299,S3,S3-Q43523,Sample claim 299 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,5,4.67,Evidence snippet supporting judgment for claim 299.,0.67,2024-10-28,0
+FC4-0300,S4,S4-Q34615,Sample claim 300 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,4,4.0,Evidence snippet supporting judgment for claim 300.,0.67,2024-12-30,0
+FC4-0301,S1,S1-Q37533,Sample claim 301 from Customer Support Chatbot output.,CORRECT,INCORRECT,CORRECT,CORRECT,5,5,3,4.33,Evidence snippet supporting judgment for claim 301.,0.743,2024-12-08,0
+FC4-0302,S2,S2-Q46984,Sample claim 302 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,3,3.67,Evidence snippet supporting judgment for claim 302.,0.743,2024-12-14,0
+FC4-0303,S3,S3-Q33637,Sample claim 303 from Document Summarization and QA output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,3,4,3,3.33,Evidence snippet supporting judgment for claim 303.,0.743,2024-11-23,0
+FC4-0304,S4,S4-Q25949,Sample claim 304 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,3,4.0,Evidence snippet supporting judgment for claim 304.,0.743,2024-11-02,0
+FC4-0305,S1,S1-Q45901,Sample claim 305 from Customer Support Chatbot output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,3,4,4,3.67,Evidence snippet supporting judgment for claim 305.,0.743,2024-10-09,0
+FC4-0306,S2,S2-Q26796,Sample claim 306 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,4,3,4,3.67,Evidence snippet supporting judgment for claim 306.,0.743,2024-10-24,0
+FC4-0307,S3,S3-Q25067,Sample claim 307 from Document Summarization and QA output.,CORRECT,CORRECT,INCORRECT,CORRECT,5,4,4,4.33,Evidence snippet supporting judgment for claim 307.,0.743,2024-11-27,0
+FC4-0308,S4,S4-Q08716,Sample claim 308 from Medical Triage Assistant output.,UNVERIFIABLE,INCORRECT,CORRECT,UNVERIFIABLE,5,5,5,5.0,Evidence snippet supporting judgment for claim 308.,0.743,2024-12-23,1
+FC4-0309,S1,S1-Q47701,Sample claim 309 from Customer Support Chatbot output.,UNVERIFIABLE,CORRECT,INCORRECT,UNVERIFIABLE,4,5,3,4.0,Evidence snippet supporting judgment for claim 309.,0.743,2024-10-29,1
+FC4-0310,S2,S2-Q35681,Sample claim 310 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,INCORRECT,CORRECT,4,5,5,4.67,Evidence snippet supporting judgment for claim 310.,0.743,2024-11-24,0
+FC4-0311,S3,S3-Q12353,Sample claim 311 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,4,3,4,3.67,Evidence snippet supporting judgment for claim 311.,0.743,2024-10-15,0
+FC4-0312,S4,S4-Q04410,Sample claim 312 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,3,3.0,Evidence snippet supporting judgment for claim 312.,0.743,2024-10-13,0
+FC4-0313,S1,S1-Q02900,Sample claim 313 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,5,3.67,Evidence snippet supporting judgment for claim 313.,0.743,2024-11-21,0
+FC4-0314,S2,S2-Q18958,Sample claim 314 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,5,3.67,Evidence snippet supporting judgment for claim 314.,0.743,2024-10-30,0
+FC4-0315,S3,S3-Q15526,Sample claim 315 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,4,4.67,Evidence snippet supporting judgment for claim 315.,0.743,2024-11-08,0
+FC4-0316,S4,S4-Q03995,Sample claim 316 from Medical Triage Assistant output.,UNVERIFIABLE,INCORRECT,CORRECT,UNVERIFIABLE,4,4,4,4.0,Evidence snippet supporting judgment for claim 316.,0.743,2024-12-11,1
+FC4-0317,S1,S1-Q36429,Sample claim 317 from Customer Support Chatbot output.,INCORRECT,UNVERIFIABLE,INCORRECT,INCORRECT,5,5,4,4.67,Evidence snippet supporting judgment for claim 317.,0.743,2024-12-03,0
+FC4-0318,S2,S2-Q45634,Sample claim 318 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,4,4.33,Evidence snippet supporting judgment for claim 318.,0.743,2024-11-23,0
+FC4-0319,S3,S3-Q14769,Sample claim 319 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,3,4.0,Evidence snippet supporting judgment for claim 319.,0.743,2024-11-08,0
+FC4-0320,S4,S4-Q27297,Sample claim 320 from Medical Triage Assistant output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,3,5,4,4.0,Evidence snippet supporting judgment for claim 320.,0.743,2024-12-11,0
+FC4-0321,S1,S1-Q29478,Sample claim 321 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,3,4.0,Evidence snippet supporting judgment for claim 321.,0.743,2024-11-17,0
+FC4-0322,S2,S2-Q39648,Sample claim 322 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,5,4.33,Evidence snippet supporting judgment for claim 322.,0.743,2024-12-17,0
+FC4-0323,S3,S3-Q36625,Sample claim 323 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,5,5.0,Evidence snippet supporting judgment for claim 323.,0.743,2024-10-28,0
+FC4-0324,S4,S4-Q48594,Sample claim 324 from Medical Triage Assistant output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,3,3,3,3.0,Evidence snippet supporting judgment for claim 324.,0.743,2024-10-16,0
+FC4-0325,S1,S1-Q13403,Sample claim 325 from Customer Support Chatbot output.,CORRECT,CORRECT,INCORRECT,CORRECT,5,5,5,5.0,Evidence snippet supporting judgment for claim 325.,0.743,2024-11-20,0
+FC4-0326,S2,S2-Q42515,Sample claim 326 from AI Code Assistant IDE Plugin output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,4,4,5,4.33,Evidence snippet supporting judgment for claim 326.,0.743,2024-11-15,0
+FC4-0327,S3,S3-Q30769,Sample claim 327 from Document Summarization and QA output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,4,3,5,4.0,Evidence snippet supporting judgment for claim 327.,0.743,2024-11-10,0
+FC4-0328,S4,S4-Q09564,Sample claim 328 from Medical Triage Assistant output.,INCORRECT,CORRECT,CORRECT,CORRECT,5,3,5,4.33,Evidence snippet supporting judgment for claim 328.,0.743,2024-10-03,0
+FC4-0329,S1,S1-Q12858,Sample claim 329 from Customer Support Chatbot output.,CORRECT,INCORRECT,CORRECT,CORRECT,4,4,3,3.67,Evidence snippet supporting judgment for claim 329.,0.743,2024-11-12,0
+FC4-0330,S2,S2-Q22123,Sample claim 330 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,5,5.0,Evidence snippet supporting judgment for claim 330.,0.743,2024-11-02,0
+FC4-0331,S3,S3-Q11026,Sample claim 331 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,4,4.33,Evidence snippet supporting judgment for claim 331.,0.743,2024-11-15,0
+FC4-0332,S4,S4-Q34338,Sample claim 332 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,3,4.33,Evidence snippet supporting judgment for claim 332.,0.743,2024-10-05,0
+FC4-0333,S1,S1-Q09011,Sample claim 333 from Customer Support Chatbot output.,UNVERIFIABLE,CORRECT,UNVERIFIABLE,UNVERIFIABLE,3,3,4,3.33,Evidence snippet supporting judgment for claim 333.,0.743,2024-12-20,0
+FC4-0334,S2,S2-Q03962,Sample claim 334 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,4,4.33,Evidence snippet supporting judgment for claim 334.,0.743,2024-12-19,0
+FC4-0335,S3,S3-Q00434,Sample claim 335 from Document Summarization and QA output.,CORRECT,UNVERIFIABLE,UNVERIFIABLE,UNVERIFIABLE,5,4,3,4.0,Evidence snippet supporting judgment for claim 335.,0.743,2024-12-08,0
+FC4-0336,S4,S4-Q01124,Sample claim 336 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,4,4.33,Evidence snippet supporting judgment for claim 336.,0.743,2024-12-04,0
+FC4-0337,S1,S1-Q34367,Sample claim 337 from Customer Support Chatbot output.,UNVERIFIABLE,CORRECT,UNVERIFIABLE,UNVERIFIABLE,3,3,3,3.0,Evidence snippet supporting judgment for claim 337.,0.743,2024-10-20,0
+FC4-0338,S2,S2-Q05179,Sample claim 338 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,4,4.0,Evidence snippet supporting judgment for claim 338.,0.743,2024-11-17,0
+FC4-0339,S3,S3-Q44830,Sample claim 339 from Document Summarization and QA output.,INCORRECT,CORRECT,CORRECT,CORRECT,5,3,4,4.0,Evidence snippet supporting judgment for claim 339.,0.743,2024-10-11,0
+FC4-0340,S4,S4-Q24719,Sample claim 340 from Medical Triage Assistant output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,3,4,4,3.67,Evidence snippet supporting judgment for claim 340.,0.743,2024-12-10,0
+FC4-0341,S1,S1-Q42265,Sample claim 341 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,3,4,4,3.67,Evidence snippet supporting judgment for claim 341.,0.743,2024-11-12,0
+FC4-0342,S2,S2-Q13856,Sample claim 342 from AI Code Assistant IDE Plugin output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,5,3,3,3.67,Evidence snippet supporting judgment for claim 342.,0.743,2024-12-28,0
+FC4-0343,S3,S3-Q35589,Sample claim 343 from Document Summarization and QA output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,3,5,4,4.0,Evidence snippet supporting judgment for claim 343.,0.743,2024-12-12,0
+FC4-0344,S4,S4-Q09450,Sample claim 344 from Medical Triage Assistant output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,3,3,5,3.67,Evidence snippet supporting judgment for claim 344.,0.743,2024-12-31,0
+FC4-0345,S1,S1-Q25504,Sample claim 345 from Customer Support Chatbot output.,UNVERIFIABLE,INCORRECT,CORRECT,UNVERIFIABLE,5,3,5,4.33,Evidence snippet supporting judgment for claim 345.,0.743,2024-12-26,1
+FC4-0346,S2,S2-Q05140,Sample claim 346 from AI Code Assistant IDE Plugin output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,3,5,5,4.33,Evidence snippet supporting judgment for claim 346.,0.743,2024-12-04,0
+FC4-0347,S3,S3-Q39661,Sample claim 347 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,4,3.33,Evidence snippet supporting judgment for claim 347.,0.743,2024-12-18,0
+FC4-0348,S4,S4-Q29528,Sample claim 348 from Medical Triage Assistant output.,INCORRECT,CORRECT,CORRECT,CORRECT,3,5,4,4.0,Evidence snippet supporting judgment for claim 348.,0.743,2024-12-02,0
+FC4-0349,S1,S1-Q43298,Sample claim 349 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,5,4.33,Evidence snippet supporting judgment for claim 349.,0.743,2024-11-18,0
+FC4-0350,S2,S2-Q17562,Sample claim 350 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,3,3.67,Evidence snippet supporting judgment for claim 350.,0.743,2024-10-20,0
+FC4-0351,S3,S3-Q06983,Sample claim 351 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,4,4.0,Evidence snippet supporting judgment for claim 351.,0.719,2024-10-12,0
+FC4-0352,S4,S4-Q05722,Sample claim 352 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,4,3,3,3.33,Evidence snippet supporting judgment for claim 352.,0.719,2024-10-24,0
+FC4-0353,S1,S1-Q23195,Sample claim 353 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,3,3.0,Evidence snippet supporting judgment for claim 353.,0.719,2024-12-10,0
+FC4-0354,S2,S2-Q27120,Sample claim 354 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,3,4,3.67,Evidence snippet supporting judgment for claim 354.,0.719,2024-11-19,0
+FC4-0355,S3,S3-Q11114,Sample claim 355 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,5,4.33,Evidence snippet supporting judgment for claim 355.,0.719,2024-12-27,0
+FC4-0356,S4,S4-Q10959,Sample claim 356 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,4,3,3,3.33,Evidence snippet supporting judgment for claim 356.,0.719,2024-11-25,0
+FC4-0357,S1,S1-Q47245,Sample claim 357 from Customer Support Chatbot output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,4,4,3,3.67,Evidence snippet supporting judgment for claim 357.,0.719,2024-12-20,0
+FC4-0358,S2,S2-Q25933,Sample claim 358 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,3,4,3,3.33,Evidence snippet supporting judgment for claim 358.,0.719,2024-11-12,0
+FC4-0359,S3,S3-Q42667,Sample claim 359 from Document Summarization and QA output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,4,4,4,4.0,Evidence snippet supporting judgment for claim 359.,0.719,2024-12-16,0
+FC4-0360,S4,S4-Q11642,Sample claim 360 from Medical Triage Assistant output.,CORRECT,CORRECT,INCORRECT,CORRECT,3,4,4,3.67,Evidence snippet supporting judgment for claim 360.,0.719,2024-11-20,0
+FC4-0361,S1,S1-Q21358,Sample claim 361 from Customer Support Chatbot output.,INCORRECT,CORRECT,CORRECT,CORRECT,4,5,3,4.0,Evidence snippet supporting judgment for claim 361.,0.719,2024-11-18,0
+FC4-0362,S2,S2-Q35759,Sample claim 362 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,5,4.33,Evidence snippet supporting judgment for claim 362.,0.719,2024-10-24,0
+FC4-0363,S3,S3-Q28735,Sample claim 363 from Document Summarization and QA output.,CORRECT,CORRECT,INCORRECT,CORRECT,4,5,3,4.0,Evidence snippet supporting judgment for claim 363.,0.719,2024-11-07,0
+FC4-0364,S4,S4-Q09122,Sample claim 364 from Medical Triage Assistant output.,UNVERIFIABLE,CORRECT,UNVERIFIABLE,UNVERIFIABLE,4,5,4,4.33,Evidence snippet supporting judgment for claim 364.,0.719,2024-12-21,0
+FC4-0365,S1,S1-Q29431,Sample claim 365 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,3,3.67,Evidence snippet supporting judgment for claim 365.,0.719,2024-12-16,0
+FC4-0366,S2,S2-Q02410,Sample claim 366 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,5,4.67,Evidence snippet supporting judgment for claim 366.,0.719,2024-11-16,0
+FC4-0367,S3,S3-Q43097,Sample claim 367 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,3,3.0,Evidence snippet supporting judgment for claim 367.,0.719,2024-12-25,0
+FC4-0368,S4,S4-Q26190,Sample claim 368 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,5,5.0,Evidence snippet supporting judgment for claim 368.,0.719,2024-11-12,0
+FC4-0369,S1,S1-Q48946,Sample claim 369 from Customer Support Chatbot output.,INCORRECT,CORRECT,CORRECT,CORRECT,4,3,5,4.0,Evidence snippet supporting judgment for claim 369.,0.719,2024-12-06,0
+FC4-0370,S2,S2-Q44536,Sample claim 370 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,4,4.0,Evidence snippet supporting judgment for claim 370.,0.719,2024-12-15,0
+FC4-0371,S3,S3-Q27262,Sample claim 371 from Document Summarization and QA output.,CORRECT,CORRECT,INCORRECT,CORRECT,4,3,4,3.67,Evidence snippet supporting judgment for claim 371.,0.719,2024-10-11,0
+FC4-0372,S4,S4-Q13558,Sample claim 372 from Medical Triage Assistant output.,CORRECT,INCORRECT,CORRECT,CORRECT,4,4,4,4.0,Evidence snippet supporting judgment for claim 372.,0.719,2024-12-06,0
+FC4-0373,S1,S1-Q04403,Sample claim 373 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,4,4.33,Evidence snippet supporting judgment for claim 373.,0.719,2024-11-08,0
+FC4-0374,S2,S2-Q44378,Sample claim 374 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,3,4.0,Evidence snippet supporting judgment for claim 374.,0.719,2024-10-22,0
+FC4-0375,S3,S3-Q36691,Sample claim 375 from Document Summarization and QA output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,5,3,4,4.0,Evidence snippet supporting judgment for claim 375.,0.719,2024-11-24,0
+FC4-0376,S4,S4-Q43078,Sample claim 376 from Medical Triage Assistant output.,INCORRECT,CORRECT,CORRECT,CORRECT,3,3,5,3.67,Evidence snippet supporting judgment for claim 376.,0.719,2024-11-25,0
+FC4-0377,S1,S1-Q25483,Sample claim 377 from Customer Support Chatbot output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,4,5,4,4.33,Evidence snippet supporting judgment for claim 377.,0.719,2024-10-01,0
+FC4-0378,S2,S2-Q35186,Sample claim 378 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,3,3.67,Evidence snippet supporting judgment for claim 378.,0.719,2024-10-24,0
+FC4-0379,S3,S3-Q41885,Sample claim 379 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,5,4.67,Evidence snippet supporting judgment for claim 379.,0.719,2024-11-10,0
+FC4-0380,S4,S4-Q40460,Sample claim 380 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,4,4.0,Evidence snippet supporting judgment for claim 380.,0.719,2024-10-23,0
+FC4-0381,S1,S1-Q44048,Sample claim 381 from Customer Support Chatbot output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,5,5,3,4.33,Evidence snippet supporting judgment for claim 381.,0.719,2024-10-18,0
+FC4-0382,S2,S2-Q33478,Sample claim 382 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,3,4.0,Evidence snippet supporting judgment for claim 382.,0.719,2024-11-19,0
+FC4-0383,S3,S3-Q35218,Sample claim 383 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,4,5,4.0,Evidence snippet supporting judgment for claim 383.,0.719,2024-12-28,0
+FC4-0384,S4,S4-Q09195,Sample claim 384 from Medical Triage Assistant output.,INCORRECT,INCORRECT,CORRECT,INCORRECT,3,4,4,3.67,Evidence snippet supporting judgment for claim 384.,0.719,2024-10-24,0
+FC4-0385,S1,S1-Q08948,Sample claim 385 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,4,3,4,3.67,Evidence snippet supporting judgment for claim 385.,0.719,2024-10-25,0
+FC4-0386,S2,S2-Q32226,Sample claim 386 from AI Code Assistant IDE Plugin output.,CORRECT,INCORRECT,CORRECT,CORRECT,4,4,5,4.33,Evidence snippet supporting judgment for claim 386.,0.719,2024-11-23,0
+FC4-0387,S3,S3-Q19143,Sample claim 387 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,3,3.67,Evidence snippet supporting judgment for claim 387.,0.719,2024-10-05,0
+FC4-0388,S4,S4-Q32461,Sample claim 388 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,5,4.67,Evidence snippet supporting judgment for claim 388.,0.719,2024-12-10,0
+FC4-0389,S1,S1-Q49597,Sample claim 389 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,5,4.67,Evidence snippet supporting judgment for claim 389.,0.719,2024-10-06,0
+FC4-0390,S2,S2-Q42840,Sample claim 390 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,3,5,4.0,Evidence snippet supporting judgment for claim 390.,0.719,2024-11-01,0
+FC4-0391,S3,S3-Q07694,Sample claim 391 from Document Summarization and QA output.,CORRECT,INCORRECT,CORRECT,CORRECT,4,3,4,3.67,Evidence snippet supporting judgment for claim 391.,0.719,2024-10-31,0
+FC4-0392,S4,S4-Q28061,Sample claim 392 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,5,5.0,Evidence snippet supporting judgment for claim 392.,0.719,2024-10-22,0
+FC4-0393,S1,S1-Q34884,Sample claim 393 from Customer Support Chatbot output.,CORRECT,UNVERIFIABLE,UNVERIFIABLE,UNVERIFIABLE,3,5,4,4.0,Evidence snippet supporting judgment for claim 393.,0.719,2024-11-05,0
+FC4-0394,S2,S2-Q17521,Sample claim 394 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,INCORRECT,CORRECT,4,4,5,4.33,Evidence snippet supporting judgment for claim 394.,0.719,2024-12-05,0
+FC4-0395,S3,S3-Q42985,Sample claim 395 from Document Summarization and QA output.,INCORRECT,CORRECT,CORRECT,CORRECT,4,3,4,3.67,Evidence snippet supporting judgment for claim 395.,0.719,2024-10-17,0
+FC4-0396,S4,S4-Q25737,Sample claim 396 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,4,3,5,4.0,Evidence snippet supporting judgment for claim 396.,0.719,2024-12-02,0
+FC4-0397,S1,S1-Q41526,Sample claim 397 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,3,3.67,Evidence snippet supporting judgment for claim 397.,0.719,2024-10-12,0
+FC4-0398,S2,S2-Q21450,Sample claim 398 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,4,4.0,Evidence snippet supporting judgment for claim 398.,0.719,2024-12-14,0
+FC4-0399,S3,S3-Q43526,Sample claim 399 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,5,4.67,Evidence snippet supporting judgment for claim 399.,0.719,2024-12-29,0
+FC4-0400,S4,S4-Q32422,Sample claim 400 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,3,4,3,3.33,Evidence snippet supporting judgment for claim 400.,0.719,2024-11-04,0
+FC4-0401,S1,S1-Q22528,Sample claim 401 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,4,4.0,Evidence snippet supporting judgment for claim 401.,0.721,2024-12-27,0
+FC4-0402,S2,S2-Q10354,Sample claim 402 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,3,3,3.33,Evidence snippet supporting judgment for claim 402.,0.721,2024-11-26,0
+FC4-0403,S3,S3-Q19784,Sample claim 403 from Document Summarization and QA output.,CORRECT,INCORRECT,CORRECT,CORRECT,5,3,5,4.33,Evidence snippet supporting judgment for claim 403.,0.721,2024-10-21,0
+FC4-0404,S4,S4-Q24370,Sample claim 404 from Medical Triage Assistant output.,UNVERIFIABLE,UNVERIFIABLE,CORRECT,UNVERIFIABLE,4,4,3,3.67,Evidence snippet supporting judgment for claim 404.,0.721,2024-12-25,0
+FC4-0405,S1,S1-Q49495,Sample claim 405 from Customer Support Chatbot output.,INCORRECT,CORRECT,CORRECT,CORRECT,4,5,5,4.67,Evidence snippet supporting judgment for claim 405.,0.721,2024-10-30,0
+FC4-0406,S2,S2-Q08697,Sample claim 406 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,3,4,3,3.33,Evidence snippet supporting judgment for claim 406.,0.721,2024-12-15,0
+FC4-0407,S3,S3-Q27677,Sample claim 407 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,3,4.0,Evidence snippet supporting judgment for claim 407.,0.721,2024-12-28,0
+FC4-0408,S4,S4-Q20536,Sample claim 408 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,3,3.67,Evidence snippet supporting judgment for claim 408.,0.721,2024-11-17,0
+FC4-0409,S1,S1-Q09363,Sample claim 409 from Customer Support Chatbot output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,3,5,5,4.33,Evidence snippet supporting judgment for claim 409.,0.721,2024-10-09,0
+FC4-0410,S2,S2-Q13963,Sample claim 410 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,5,4.33,Evidence snippet supporting judgment for claim 410.,0.721,2024-12-20,0
+FC4-0411,S3,S3-Q06585,Sample claim 411 from Document Summarization and QA output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,4,3,3,3.33,Evidence snippet supporting judgment for claim 411.,0.721,2024-10-18,0
+FC4-0412,S4,S4-Q16239,Sample claim 412 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,3,3.67,Evidence snippet supporting judgment for claim 412.,0.721,2024-11-05,0
+FC4-0413,S1,S1-Q45252,Sample claim 413 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,4,4.67,Evidence snippet supporting judgment for claim 413.,0.721,2024-10-04,0
+FC4-0414,S2,S2-Q12364,Sample claim 414 from AI Code Assistant IDE Plugin output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,5,5,5,5.0,Evidence snippet supporting judgment for claim 414.,0.721,2024-11-20,0
+FC4-0415,S3,S3-Q07389,Sample claim 415 from Document Summarization and QA output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,3,4,4,3.67,Evidence snippet supporting judgment for claim 415.,0.721,2024-10-31,0
+FC4-0416,S4,S4-Q08650,Sample claim 416 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,3,4,4,3.67,Evidence snippet supporting judgment for claim 416.,0.721,2024-11-19,0
+FC4-0417,S1,S1-Q04784,Sample claim 417 from Customer Support Chatbot output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,5,3,4,4.0,Evidence snippet supporting judgment for claim 417.,0.721,2024-10-03,0
+FC4-0418,S2,S2-Q18776,Sample claim 418 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,3,4,5,4.0,Evidence snippet supporting judgment for claim 418.,0.721,2024-12-20,0
+FC4-0419,S3,S3-Q35165,Sample claim 419 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,4,3,5,4.0,Evidence snippet supporting judgment for claim 419.,0.721,2024-12-08,0
+FC4-0420,S4,S4-Q35153,Sample claim 420 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,3,3.67,Evidence snippet supporting judgment for claim 420.,0.721,2024-11-11,0
+FC4-0421,S1,S1-Q20328,Sample claim 421 from Customer Support Chatbot output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,5,5,3,4.33,Evidence snippet supporting judgment for claim 421.,0.721,2024-12-29,0
+FC4-0422,S2,S2-Q07602,Sample claim 422 from AI Code Assistant IDE Plugin output.,CORRECT,INCORRECT,CORRECT,CORRECT,3,3,4,3.33,Evidence snippet supporting judgment for claim 422.,0.721,2024-11-28,0
+FC4-0423,S3,S3-Q07828,Sample claim 423 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,3,4.33,Evidence snippet supporting judgment for claim 423.,0.721,2024-10-02,0
+FC4-0424,S4,S4-Q47237,Sample claim 424 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,5,4.67,Evidence snippet supporting judgment for claim 424.,0.721,2024-11-03,0
+FC4-0425,S1,S1-Q01924,Sample claim 425 from Customer Support Chatbot output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,4,5,3,4.0,Evidence snippet supporting judgment for claim 425.,0.721,2024-11-12,0
+FC4-0426,S2,S2-Q05051,Sample claim 426 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,5,5.0,Evidence snippet supporting judgment for claim 426.,0.721,2024-12-03,0
+FC4-0427,S3,S3-Q10310,Sample claim 427 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,4,4.0,Evidence snippet supporting judgment for claim 427.,0.721,2024-11-02,0
+FC4-0428,S4,S4-Q33347,Sample claim 428 from Medical Triage Assistant output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,3,3,5,3.67,Evidence snippet supporting judgment for claim 428.,0.721,2024-10-01,0
+FC4-0429,S1,S1-Q09836,Sample claim 429 from Customer Support Chatbot output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,4,4,4,4.0,Evidence snippet supporting judgment for claim 429.,0.721,2024-10-23,0
+FC4-0430,S2,S2-Q27484,Sample claim 430 from AI Code Assistant IDE Plugin output.,INCORRECT,UNVERIFIABLE,CORRECT,INCORRECT,5,5,5,5.0,Evidence snippet supporting judgment for claim 430.,0.721,2024-10-29,1
+FC4-0431,S3,S3-Q24433,Sample claim 431 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,4,3,5,4.0,Evidence snippet supporting judgment for claim 431.,0.721,2024-10-16,0
+FC4-0432,S4,S4-Q04518,Sample claim 432 from Medical Triage Assistant output.,CORRECT,INCORRECT,CORRECT,CORRECT,5,3,4,4.0,Evidence snippet supporting judgment for claim 432.,0.721,2024-11-29,0
+FC4-0433,S1,S1-Q00523,Sample claim 433 from Customer Support Chatbot output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,3,5,4,4.0,Evidence snippet supporting judgment for claim 433.,0.721,2024-11-17,0
+FC4-0434,S2,S2-Q24136,Sample claim 434 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,4,4.0,Evidence snippet supporting judgment for claim 434.,0.721,2024-12-15,0
+FC4-0435,S3,S3-Q09868,Sample claim 435 from Document Summarization and QA output.,INCORRECT,INCORRECT,CORRECT,INCORRECT,5,5,3,4.33,Evidence snippet supporting judgment for claim 435.,0.721,2024-10-01,0
+FC4-0436,S4,S4-Q21956,Sample claim 436 from Medical Triage Assistant output.,INCORRECT,CORRECT,CORRECT,CORRECT,5,5,3,4.33,Evidence snippet supporting judgment for claim 436.,0.721,2024-10-01,0
+FC4-0437,S1,S1-Q34722,Sample claim 437 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,4,3,3,3.33,Evidence snippet supporting judgment for claim 437.,0.721,2024-10-31,0
+FC4-0438,S2,S2-Q06097,Sample claim 438 from AI Code Assistant IDE Plugin output.,CORRECT,INCORRECT,INCORRECT,INCORRECT,3,5,4,4.0,Evidence snippet supporting judgment for claim 438.,0.721,2024-10-06,0
+FC4-0439,S3,S3-Q49015,Sample claim 439 from Document Summarization and QA output.,UNVERIFIABLE,UNVERIFIABLE,CORRECT,UNVERIFIABLE,5,4,4,4.33,Evidence snippet supporting judgment for claim 439.,0.721,2024-10-11,0
+FC4-0440,S4,S4-Q37213,Sample claim 440 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,4,3,5,4.0,Evidence snippet supporting judgment for claim 440.,0.721,2024-10-08,0
+FC4-0441,S1,S1-Q45923,Sample claim 441 from Customer Support Chatbot output.,CORRECT,INCORRECT,CORRECT,CORRECT,4,4,4,4.0,Evidence snippet supporting judgment for claim 441.,0.721,2024-11-11,0
+FC4-0442,S2,S2-Q07142,Sample claim 442 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,5,3.67,Evidence snippet supporting judgment for claim 442.,0.721,2024-10-20,0
+FC4-0443,S3,S3-Q13608,Sample claim 443 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,4,4.0,Evidence snippet supporting judgment for claim 443.,0.721,2024-11-27,0
+FC4-0444,S4,S4-Q46184,Sample claim 444 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,4,4.0,Evidence snippet supporting judgment for claim 444.,0.721,2024-12-29,0
+FC4-0445,S1,S1-Q16268,Sample claim 445 from Customer Support Chatbot output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,3,3,5,3.67,Evidence snippet supporting judgment for claim 445.,0.721,2024-11-15,0
+FC4-0446,S2,S2-Q29636,Sample claim 446 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,4,3.33,Evidence snippet supporting judgment for claim 446.,0.721,2024-12-11,0
+FC4-0447,S3,S3-Q04042,Sample claim 447 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,3,3.0,Evidence snippet supporting judgment for claim 447.,0.721,2024-10-29,0
+FC4-0448,S4,S4-Q38164,Sample claim 448 from Medical Triage Assistant output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,5,5,3,4.33,Evidence snippet supporting judgment for claim 448.,0.721,2024-12-15,0
+FC4-0449,S1,S1-Q29061,Sample claim 449 from Customer Support Chatbot output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,3,3,5,3.67,Evidence snippet supporting judgment for claim 449.,0.721,2024-10-17,0
+FC4-0450,S2,S2-Q03319,Sample claim 450 from AI Code Assistant IDE Plugin output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,3,3,4,3.33,Evidence snippet supporting judgment for claim 450.,0.721,2024-10-22,0
+FC4-0451,S3,S3-Q44776,Sample claim 451 from Document Summarization and QA output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,4,3,4,3.67,Evidence snippet supporting judgment for claim 451.,0.735,2024-11-24,0
+FC4-0452,S4,S4-Q02271,Sample claim 452 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,3,3.67,Evidence snippet supporting judgment for claim 452.,0.735,2024-12-18,0
+FC4-0453,S1,S1-Q03997,Sample claim 453 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,4,4.33,Evidence snippet supporting judgment for claim 453.,0.735,2024-10-12,0
+FC4-0454,S2,S2-Q35630,Sample claim 454 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,5,4.33,Evidence snippet supporting judgment for claim 454.,0.735,2024-10-03,0
+FC4-0455,S3,S3-Q37071,Sample claim 455 from Document Summarization and QA output.,INCORRECT,CORRECT,CORRECT,CORRECT,5,4,4,4.33,Evidence snippet supporting judgment for claim 455.,0.735,2024-12-04,0
+FC4-0456,S4,S4-Q18412,Sample claim 456 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,3,3.67,Evidence snippet supporting judgment for claim 456.,0.735,2024-10-08,0
+FC4-0457,S1,S1-Q06563,Sample claim 457 from Customer Support Chatbot output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,5,3,3,3.67,Evidence snippet supporting judgment for claim 457.,0.735,2024-11-01,0
+FC4-0458,S2,S2-Q37729,Sample claim 458 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,3,3.67,Evidence snippet supporting judgment for claim 458.,0.735,2024-11-19,0
+FC4-0459,S3,S3-Q20841,Sample claim 459 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,5,3.67,Evidence snippet supporting judgment for claim 459.,0.735,2024-12-29,0
+FC4-0460,S4,S4-Q09313,Sample claim 460 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,5,4.67,Evidence snippet supporting judgment for claim 460.,0.735,2024-12-12,0
+FC4-0461,S1,S1-Q11506,Sample claim 461 from Customer Support Chatbot output.,INCORRECT,UNVERIFIABLE,UNVERIFIABLE,UNVERIFIABLE,4,5,4,4.33,Evidence snippet supporting judgment for claim 461.,0.735,2024-12-02,0
+FC4-0462,S2,S2-Q00045,Sample claim 462 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,4,4.0,Evidence snippet supporting judgment for claim 462.,0.735,2024-11-12,0
+FC4-0463,S3,S3-Q03904,Sample claim 463 from Document Summarization and QA output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,5,3,4,4.0,Evidence snippet supporting judgment for claim 463.,0.735,2024-10-03,0
+FC4-0464,S4,S4-Q04754,Sample claim 464 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,4,4.0,Evidence snippet supporting judgment for claim 464.,0.735,2024-11-17,0
+FC4-0465,S1,S1-Q08943,Sample claim 465 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,4,4.0,Evidence snippet supporting judgment for claim 465.,0.735,2024-10-21,0
+FC4-0466,S2,S2-Q11417,Sample claim 466 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,4,4.33,Evidence snippet supporting judgment for claim 466.,0.735,2024-12-30,0
+FC4-0467,S3,S3-Q38598,Sample claim 467 from Document Summarization and QA output.,INCORRECT,CORRECT,UNVERIFIABLE,INCORRECT,4,3,5,4.0,Evidence snippet supporting judgment for claim 467.,0.735,2024-10-23,1
+FC4-0468,S4,S4-Q46007,Sample claim 468 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,3,3.67,Evidence snippet supporting judgment for claim 468.,0.735,2024-12-13,0
+FC4-0469,S1,S1-Q20855,Sample claim 469 from Customer Support Chatbot output.,CORRECT,INCORRECT,INCORRECT,INCORRECT,3,3,5,3.67,Evidence snippet supporting judgment for claim 469.,0.735,2024-12-18,0
+FC4-0470,S2,S2-Q05100,Sample claim 470 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,INCORRECT,CORRECT,3,4,5,4.0,Evidence snippet supporting judgment for claim 470.,0.735,2024-10-31,0
+FC4-0471,S3,S3-Q41885,Sample claim 471 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,5,4.33,Evidence snippet supporting judgment for claim 471.,0.735,2024-11-12,0
+FC4-0472,S4,S4-Q07081,Sample claim 472 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,3,4,4,3.67,Evidence snippet supporting judgment for claim 472.,0.735,2024-10-01,0
+FC4-0473,S1,S1-Q24820,Sample claim 473 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,3,4,4,3.67,Evidence snippet supporting judgment for claim 473.,0.735,2024-11-14,0
+FC4-0474,S2,S2-Q14784,Sample claim 474 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,5,5.0,Evidence snippet supporting judgment for claim 474.,0.735,2024-10-21,0
+FC4-0475,S3,S3-Q06864,Sample claim 475 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,4,4,3.67,Evidence snippet supporting judgment for claim 475.,0.735,2024-10-10,0
+FC4-0476,S4,S4-Q22148,Sample claim 476 from Medical Triage Assistant output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,3,5,3,3.67,Evidence snippet supporting judgment for claim 476.,0.735,2024-12-16,0
+FC4-0477,S1,S1-Q39802,Sample claim 477 from Customer Support Chatbot output.,INCORRECT,UNVERIFIABLE,CORRECT,INCORRECT,4,5,3,4.0,Evidence snippet supporting judgment for claim 477.,0.735,2024-11-25,1
+FC4-0478,S2,S2-Q36315,Sample claim 478 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,3,4,5,4.0,Evidence snippet supporting judgment for claim 478.,0.735,2024-12-09,0
+FC4-0479,S3,S3-Q36023,Sample claim 479 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,4,5,4.0,Evidence snippet supporting judgment for claim 479.,0.735,2024-12-02,0
+FC4-0480,S4,S4-Q39336,Sample claim 480 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,5,4.67,Evidence snippet supporting judgment for claim 480.,0.735,2024-12-01,0
+FC4-0481,S1,S1-Q07570,Sample claim 481 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,4,3,4,3.67,Evidence snippet supporting judgment for claim 481.,0.735,2024-11-09,0
+FC4-0482,S2,S2-Q35660,Sample claim 482 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,4,3,5,4.0,Evidence snippet supporting judgment for claim 482.,0.735,2024-11-19,0
+FC4-0483,S3,S3-Q28819,Sample claim 483 from Document Summarization and QA output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,4,3,4,3.67,Evidence snippet supporting judgment for claim 483.,0.735,2024-11-29,0
+FC4-0484,S4,S4-Q06338,Sample claim 484 from Medical Triage Assistant output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,3,5,5,4.33,Evidence snippet supporting judgment for claim 484.,0.735,2024-10-11,0
+FC4-0485,S1,S1-Q03997,Sample claim 485 from Customer Support Chatbot output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,5,3,5,4.33,Evidence snippet supporting judgment for claim 485.,0.735,2024-11-19,0
+FC4-0486,S2,S2-Q31213,Sample claim 486 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,3,4.0,Evidence snippet supporting judgment for claim 486.,0.735,2024-11-08,0
+FC4-0487,S3,S3-Q37453,Sample claim 487 from Document Summarization and QA output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,5,5,5,5.0,Evidence snippet supporting judgment for claim 487.,0.735,2024-12-26,0
+FC4-0488,S4,S4-Q13887,Sample claim 488 from Medical Triage Assistant output.,INCORRECT,CORRECT,INCORRECT,INCORRECT,4,3,3,3.33,Evidence snippet supporting judgment for claim 488.,0.735,2024-10-25,0
+FC4-0489,S1,S1-Q09692,Sample claim 489 from Customer Support Chatbot output.,CORRECT,CORRECT,INCORRECT,CORRECT,4,3,5,4.0,Evidence snippet supporting judgment for claim 489.,0.735,2024-12-16,0
+FC4-0490,S2,S2-Q36462,Sample claim 490 from AI Code Assistant IDE Plugin output.,CORRECT,UNVERIFIABLE,UNVERIFIABLE,UNVERIFIABLE,3,3,4,3.33,Evidence snippet supporting judgment for claim 490.,0.735,2024-11-20,0
+FC4-0491,S3,S3-Q38508,Sample claim 491 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,5,4.33,Evidence snippet supporting judgment for claim 491.,0.735,2024-12-06,0
+FC4-0492,S4,S4-Q49702,Sample claim 492 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,5,5.0,Evidence snippet supporting judgment for claim 492.,0.735,2024-10-13,0
+FC4-0493,S1,S1-Q26929,Sample claim 493 from Customer Support Chatbot output.,INCORRECT,CORRECT,CORRECT,CORRECT,4,5,4,4.33,Evidence snippet supporting judgment for claim 493.,0.735,2024-11-03,0
+FC4-0494,S2,S2-Q26410,Sample claim 494 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,4,3.33,Evidence snippet supporting judgment for claim 494.,0.735,2024-10-19,0
+FC4-0495,S3,S3-Q15570,Sample claim 495 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,5,4.33,Evidence snippet supporting judgment for claim 495.,0.735,2024-10-07,0
+FC4-0496,S4,S4-Q20379,Sample claim 496 from Medical Triage Assistant output.,CORRECT,INCORRECT,UNVERIFIABLE,INCORRECT,3,4,4,3.67,Evidence snippet supporting judgment for claim 496.,0.735,2024-11-05,1
+FC4-0497,S1,S1-Q48741,Sample claim 497 from Customer Support Chatbot output.,UNVERIFIABLE,UNVERIFIABLE,CORRECT,UNVERIFIABLE,3,3,4,3.33,Evidence snippet supporting judgment for claim 497.,0.735,2024-11-26,0
+FC4-0498,S2,S2-Q12317,Sample claim 498 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,3,4.33,Evidence snippet supporting judgment for claim 498.,0.735,2024-11-26,0
+FC4-0499,S3,S3-Q33769,Sample claim 499 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,3,4.0,Evidence snippet supporting judgment for claim 499.,0.735,2024-10-21,0
+FC4-0500,S4,S4-Q11387,Sample claim 500 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,3,4.33,Evidence snippet supporting judgment for claim 500.,0.735,2024-10-25,0
+FC4-0501,S1,S1-Q23618,Sample claim 501 from Customer Support Chatbot output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,3,4,3,3.33,Evidence snippet supporting judgment for claim 501.,0.739,2024-12-30,0
+FC4-0502,S2,S2-Q44642,Sample claim 502 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,3,4.0,Evidence snippet supporting judgment for claim 502.,0.739,2024-10-04,0
+FC4-0503,S3,S3-Q22922,Sample claim 503 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,5,4.67,Evidence snippet supporting judgment for claim 503.,0.739,2024-11-14,0
+FC4-0504,S4,S4-Q01799,Sample claim 504 from Medical Triage Assistant output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,5,3,4,4.0,Evidence snippet supporting judgment for claim 504.,0.739,2024-11-19,0
+FC4-0505,S1,S1-Q14753,Sample claim 505 from Customer Support Chatbot output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,3,3,5,3.67,Evidence snippet supporting judgment for claim 505.,0.739,2024-12-26,0
+FC4-0506,S2,S2-Q08672,Sample claim 506 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,4,4.0,Evidence snippet supporting judgment for claim 506.,0.739,2024-12-22,0
+FC4-0507,S3,S3-Q46490,Sample claim 507 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,5,4.67,Evidence snippet supporting judgment for claim 507.,0.739,2024-12-22,0
+FC4-0508,S4,S4-Q30586,Sample claim 508 from Medical Triage Assistant output.,CORRECT,UNVERIFIABLE,UNVERIFIABLE,UNVERIFIABLE,4,4,3,3.67,Evidence snippet supporting judgment for claim 508.,0.739,2024-11-08,0
+FC4-0509,S1,S1-Q43409,Sample claim 509 from Customer Support Chatbot output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,3,3,5,3.67,Evidence snippet supporting judgment for claim 509.,0.739,2024-11-17,0
+FC4-0510,S2,S2-Q04184,Sample claim 510 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,4,4.0,Evidence snippet supporting judgment for claim 510.,0.739,2024-11-13,0
+FC4-0511,S3,S3-Q42695,Sample claim 511 from Document Summarization and QA output.,INCORRECT,CORRECT,UNVERIFIABLE,INCORRECT,4,5,5,4.67,Evidence snippet supporting judgment for claim 511.,0.739,2024-11-08,1
+FC4-0512,S4,S4-Q43289,Sample claim 512 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,4,4.0,Evidence snippet supporting judgment for claim 512.,0.739,2024-11-10,0
+FC4-0513,S1,S1-Q26516,Sample claim 513 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,4,4.0,Evidence snippet supporting judgment for claim 513.,0.739,2024-11-19,0
+FC4-0514,S2,S2-Q46752,Sample claim 514 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,INCORRECT,CORRECT,3,4,5,4.0,Evidence snippet supporting judgment for claim 514.,0.739,2024-10-29,0
+FC4-0515,S3,S3-Q19674,Sample claim 515 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,5,4.67,Evidence snippet supporting judgment for claim 515.,0.739,2024-10-22,0
+FC4-0516,S4,S4-Q48557,Sample claim 516 from Medical Triage Assistant output.,UNVERIFIABLE,UNVERIFIABLE,CORRECT,UNVERIFIABLE,3,4,3,3.33,Evidence snippet supporting judgment for claim 516.,0.739,2024-11-03,0
+FC4-0517,S1,S1-Q05853,Sample claim 517 from Customer Support Chatbot output.,CORRECT,CORRECT,INCORRECT,CORRECT,5,4,5,4.67,Evidence snippet supporting judgment for claim 517.,0.739,2024-10-29,0
+FC4-0518,S2,S2-Q38376,Sample claim 518 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,4,4.0,Evidence snippet supporting judgment for claim 518.,0.739,2024-11-07,0
+FC4-0519,S3,S3-Q40676,Sample claim 519 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,5,5.0,Evidence snippet supporting judgment for claim 519.,0.739,2024-10-10,0
+FC4-0520,S4,S4-Q19554,Sample claim 520 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,5,4.67,Evidence snippet supporting judgment for claim 520.,0.739,2024-11-22,0
+FC4-0521,S1,S1-Q37317,Sample claim 521 from Customer Support Chatbot output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,3,4,4,3.67,Evidence snippet supporting judgment for claim 521.,0.739,2024-11-28,0
+FC4-0522,S2,S2-Q41356,Sample claim 522 from AI Code Assistant IDE Plugin output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,3,4,4,3.67,Evidence snippet supporting judgment for claim 522.,0.739,2024-10-23,0
+FC4-0523,S3,S3-Q10384,Sample claim 523 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,5,3.67,Evidence snippet supporting judgment for claim 523.,0.739,2024-12-02,0
+FC4-0524,S4,S4-Q26437,Sample claim 524 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,4,4.33,Evidence snippet supporting judgment for claim 524.,0.739,2024-11-24,0
+FC4-0525,S1,S1-Q00923,Sample claim 525 from Customer Support Chatbot output.,INCORRECT,CORRECT,CORRECT,CORRECT,3,5,4,4.0,Evidence snippet supporting judgment for claim 525.,0.739,2024-11-11,0
+FC4-0526,S2,S2-Q16307,Sample claim 526 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,5,4.33,Evidence snippet supporting judgment for claim 526.,0.739,2024-10-29,0
+FC4-0527,S3,S3-Q20062,Sample claim 527 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,5,4.67,Evidence snippet supporting judgment for claim 527.,0.739,2024-10-22,0
+FC4-0528,S4,S4-Q39084,Sample claim 528 from Medical Triage Assistant output.,CORRECT,CORRECT,INCORRECT,CORRECT,4,5,5,4.67,Evidence snippet supporting judgment for claim 528.,0.739,2024-12-07,0
+FC4-0529,S1,S1-Q49160,Sample claim 529 from Customer Support Chatbot output.,CORRECT,UNVERIFIABLE,INCORRECT,UNVERIFIABLE,4,4,4,4.0,Evidence snippet supporting judgment for claim 529.,0.739,2024-10-25,1
+FC4-0530,S2,S2-Q47656,Sample claim 530 from AI Code Assistant IDE Plugin output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,3,3,3,3.0,Evidence snippet supporting judgment for claim 530.,0.739,2024-10-17,0
+FC4-0531,S3,S3-Q42634,Sample claim 531 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,4,5,4.0,Evidence snippet supporting judgment for claim 531.,0.739,2024-10-05,0
+FC4-0532,S4,S4-Q03144,Sample claim 532 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,5,4.33,Evidence snippet supporting judgment for claim 532.,0.739,2024-12-24,0
+FC4-0533,S1,S1-Q24921,Sample claim 533 from Customer Support Chatbot output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,3,4,4,3.67,Evidence snippet supporting judgment for claim 533.,0.739,2024-10-16,0
+FC4-0534,S2,S2-Q00610,Sample claim 534 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,5,5.0,Evidence snippet supporting judgment for claim 534.,0.739,2024-11-08,0
+FC4-0535,S3,S3-Q08990,Sample claim 535 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,5,5.0,Evidence snippet supporting judgment for claim 535.,0.739,2024-11-23,0
+FC4-0536,S4,S4-Q06965,Sample claim 536 from Medical Triage Assistant output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,3,4,3,3.33,Evidence snippet supporting judgment for claim 536.,0.739,2024-12-03,0
+FC4-0537,S1,S1-Q46101,Sample claim 537 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,4,4.0,Evidence snippet supporting judgment for claim 537.,0.739,2024-11-22,0
+FC4-0538,S2,S2-Q21667,Sample claim 538 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,4,4.0,Evidence snippet supporting judgment for claim 538.,0.739,2024-10-31,0
+FC4-0539,S3,S3-Q09775,Sample claim 539 from Document Summarization and QA output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,5,5,4,4.67,Evidence snippet supporting judgment for claim 539.,0.739,2024-10-12,0
+FC4-0540,S4,S4-Q29934,Sample claim 540 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,3,4.0,Evidence snippet supporting judgment for claim 540.,0.739,2024-11-07,0
+FC4-0541,S1,S1-Q44353,Sample claim 541 from Customer Support Chatbot output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,3,4,4,3.67,Evidence snippet supporting judgment for claim 541.,0.739,2024-11-10,0
+FC4-0542,S2,S2-Q43474,Sample claim 542 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,3,3,3,3.0,Evidence snippet supporting judgment for claim 542.,0.739,2024-12-22,0
+FC4-0543,S3,S3-Q06092,Sample claim 543 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,5,4.67,Evidence snippet supporting judgment for claim 543.,0.739,2024-11-17,0
+FC4-0544,S4,S4-Q45214,Sample claim 544 from Medical Triage Assistant output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,4,4,4,4.0,Evidence snippet supporting judgment for claim 544.,0.739,2024-12-01,0
+FC4-0545,S1,S1-Q47607,Sample claim 545 from Customer Support Chatbot output.,UNVERIFIABLE,CORRECT,UNVERIFIABLE,UNVERIFIABLE,3,3,5,3.67,Evidence snippet supporting judgment for claim 545.,0.739,2024-10-08,0
+FC4-0546,S2,S2-Q44460,Sample claim 546 from AI Code Assistant IDE Plugin output.,INCORRECT,UNVERIFIABLE,CORRECT,INCORRECT,5,4,5,4.67,Evidence snippet supporting judgment for claim 546.,0.739,2024-11-26,1
+FC4-0547,S3,S3-Q08563,Sample claim 547 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,5,4.33,Evidence snippet supporting judgment for claim 547.,0.739,2024-12-01,0
+FC4-0548,S4,S4-Q42925,Sample claim 548 from Medical Triage Assistant output.,INCORRECT,CORRECT,CORRECT,CORRECT,3,3,4,3.33,Evidence snippet supporting judgment for claim 548.,0.739,2024-11-10,0
+FC4-0549,S1,S1-Q37029,Sample claim 549 from Customer Support Chatbot output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,5,5,5,5.0,Evidence snippet supporting judgment for claim 549.,0.739,2024-10-29,0
+FC4-0550,S2,S2-Q40517,Sample claim 550 from AI Code Assistant IDE Plugin output.,INCORRECT,CORRECT,CORRECT,CORRECT,5,5,5,5.0,Evidence snippet supporting judgment for claim 550.,0.739,2024-10-13,0
+FC4-0551,S3,S3-Q25224,Sample claim 551 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,5,5.0,Evidence snippet supporting judgment for claim 551.,0.777,2024-10-20,0
+FC4-0552,S4,S4-Q10285,Sample claim 552 from Medical Triage Assistant output.,UNVERIFIABLE,CORRECT,INCORRECT,UNVERIFIABLE,3,3,5,3.67,Evidence snippet supporting judgment for claim 552.,0.777,2024-12-04,1
+FC4-0553,S1,S1-Q15788,Sample claim 553 from Customer Support Chatbot output.,UNVERIFIABLE,UNVERIFIABLE,UNVERIFIABLE,UNVERIFIABLE,3,4,4,3.67,Evidence snippet supporting judgment for claim 553.,0.777,2024-11-12,0
+FC4-0554,S2,S2-Q15401,Sample claim 554 from AI Code Assistant IDE Plugin output.,INCORRECT,CORRECT,CORRECT,CORRECT,5,4,4,4.33,Evidence snippet supporting judgment for claim 554.,0.777,2024-10-11,0
+FC4-0555,S3,S3-Q07780,Sample claim 555 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,4,4.0,Evidence snippet supporting judgment for claim 555.,0.777,2024-12-03,0
+FC4-0556,S4,S4-Q00012,Sample claim 556 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,5,4.33,Evidence snippet supporting judgment for claim 556.,0.777,2024-10-12,0
+FC4-0557,S1,S1-Q42900,Sample claim 557 from Customer Support Chatbot output.,UNVERIFIABLE,INCORRECT,CORRECT,UNVERIFIABLE,5,5,3,4.33,Evidence snippet supporting judgment for claim 557.,0.777,2024-12-25,1
+FC4-0558,S2,S2-Q36711,Sample claim 558 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,3,4,4,3.67,Evidence snippet supporting judgment for claim 558.,0.777,2024-12-19,0
+FC4-0559,S3,S3-Q49763,Sample claim 559 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,4,3,3,3.33,Evidence snippet supporting judgment for claim 559.,0.777,2024-12-24,0
+FC4-0560,S4,S4-Q24504,Sample claim 560 from Medical Triage Assistant output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,4,5,5,4.67,Evidence snippet supporting judgment for claim 560.,0.777,2024-12-29,0
+FC4-0561,S1,S1-Q26819,Sample claim 561 from Customer Support Chatbot output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,5,5,5,5.0,Evidence snippet supporting judgment for claim 561.,0.777,2024-10-14,0
+FC4-0562,S2,S2-Q12490,Sample claim 562 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,3,4,3.67,Evidence snippet supporting judgment for claim 562.,0.777,2024-12-31,0
+FC4-0563,S3,S3-Q08076,Sample claim 563 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,5,5.0,Evidence snippet supporting judgment for claim 563.,0.777,2024-11-27,0
+FC4-0564,S4,S4-Q48249,Sample claim 564 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,4,3,5,4.0,Evidence snippet supporting judgment for claim 564.,0.777,2024-10-07,0
+FC4-0565,S1,S1-Q37917,Sample claim 565 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,5,4.33,Evidence snippet supporting judgment for claim 565.,0.777,2024-10-23,0
+FC4-0566,S2,S2-Q33038,Sample claim 566 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,4,4.67,Evidence snippet supporting judgment for claim 566.,0.777,2024-11-19,0
+FC4-0567,S3,S3-Q22470,Sample claim 567 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,4,4,3.67,Evidence snippet supporting judgment for claim 567.,0.777,2024-11-07,0
+FC4-0568,S4,S4-Q19590,Sample claim 568 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,5,5.0,Evidence snippet supporting judgment for claim 568.,0.777,2024-12-29,0
+FC4-0569,S1,S1-Q13166,Sample claim 569 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,3,4.33,Evidence snippet supporting judgment for claim 569.,0.777,2024-10-27,0
+FC4-0570,S2,S2-Q42605,Sample claim 570 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,5,4.33,Evidence snippet supporting judgment for claim 570.,0.777,2024-10-23,0
+FC4-0571,S3,S3-Q31482,Sample claim 571 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,4,5,4.0,Evidence snippet supporting judgment for claim 571.,0.777,2024-12-14,0
+FC4-0572,S4,S4-Q27682,Sample claim 572 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,4,4.67,Evidence snippet supporting judgment for claim 572.,0.777,2024-10-02,0
+FC4-0573,S1,S1-Q17497,Sample claim 573 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,3,3.67,Evidence snippet supporting judgment for claim 573.,0.777,2024-10-21,0
+FC4-0574,S2,S2-Q13370,Sample claim 574 from AI Code Assistant IDE Plugin output.,INCORRECT,CORRECT,CORRECT,CORRECT,3,5,4,4.0,Evidence snippet supporting judgment for claim 574.,0.777,2024-12-09,0
+FC4-0575,S3,S3-Q14701,Sample claim 575 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,5,5.0,Evidence snippet supporting judgment for claim 575.,0.777,2024-12-22,0
+FC4-0576,S4,S4-Q43549,Sample claim 576 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,5,4.67,Evidence snippet supporting judgment for claim 576.,0.777,2024-10-07,0
+FC4-0577,S1,S1-Q03526,Sample claim 577 from Customer Support Chatbot output.,INCORRECT,CORRECT,INCORRECT,INCORRECT,5,4,5,4.67,Evidence snippet supporting judgment for claim 577.,0.777,2024-10-02,0
+FC4-0578,S2,S2-Q46179,Sample claim 578 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,4,3,5,4.0,Evidence snippet supporting judgment for claim 578.,0.777,2024-12-30,0
+FC4-0579,S3,S3-Q12682,Sample claim 579 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,5,4.33,Evidence snippet supporting judgment for claim 579.,0.777,2024-11-07,0
+FC4-0580,S4,S4-Q07822,Sample claim 580 from Medical Triage Assistant output.,CORRECT,INCORRECT,CORRECT,CORRECT,3,5,5,4.33,Evidence snippet supporting judgment for claim 580.,0.777,2024-11-18,0
+FC4-0581,S1,S1-Q00370,Sample claim 581 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,4,4.0,Evidence snippet supporting judgment for claim 581.,0.777,2024-11-12,0
+FC4-0582,S2,S2-Q40985,Sample claim 582 from AI Code Assistant IDE Plugin output.,CORRECT,INCORRECT,CORRECT,CORRECT,4,5,3,4.0,Evidence snippet supporting judgment for claim 582.,0.777,2024-12-18,0
+FC4-0583,S3,S3-Q46379,Sample claim 583 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,3,4.0,Evidence snippet supporting judgment for claim 583.,0.777,2024-11-10,0
+FC4-0584,S4,S4-Q35592,Sample claim 584 from Medical Triage Assistant output.,CORRECT,INCORRECT,CORRECT,CORRECT,5,3,4,4.0,Evidence snippet supporting judgment for claim 584.,0.777,2024-12-08,0
+FC4-0585,S1,S1-Q23646,Sample claim 585 from Customer Support Chatbot output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,5,4,4,4.33,Evidence snippet supporting judgment for claim 585.,0.777,2024-11-07,0
+FC4-0586,S2,S2-Q07519,Sample claim 586 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,3,4.33,Evidence snippet supporting judgment for claim 586.,0.777,2024-12-25,0
+FC4-0587,S3,S3-Q44732,Sample claim 587 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,3,3.67,Evidence snippet supporting judgment for claim 587.,0.777,2024-11-11,0
+FC4-0588,S4,S4-Q18536,Sample claim 588 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,5,4.67,Evidence snippet supporting judgment for claim 588.,0.777,2024-10-04,0
+FC4-0589,S1,S1-Q02874,Sample claim 589 from Customer Support Chatbot output.,INCORRECT,UNVERIFIABLE,CORRECT,INCORRECT,5,4,4,4.33,Evidence snippet supporting judgment for claim 589.,0.777,2024-11-07,1
+FC4-0590,S2,S2-Q34945,Sample claim 590 from AI Code Assistant IDE Plugin output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,3,3,5,3.67,Evidence snippet supporting judgment for claim 590.,0.777,2024-10-01,0
+FC4-0591,S3,S3-Q06811,Sample claim 591 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,4,4.0,Evidence snippet supporting judgment for claim 591.,0.777,2024-10-27,0
+FC4-0592,S4,S4-Q48949,Sample claim 592 from Medical Triage Assistant output.,CORRECT,CORRECT,INCORRECT,CORRECT,4,5,3,4.0,Evidence snippet supporting judgment for claim 592.,0.777,2024-12-27,0
+FC4-0593,S1,S1-Q11665,Sample claim 593 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,3,3.0,Evidence snippet supporting judgment for claim 593.,0.777,2024-11-02,0
+FC4-0594,S2,S2-Q29565,Sample claim 594 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,4,4.0,Evidence snippet supporting judgment for claim 594.,0.777,2024-12-20,0
+FC4-0595,S3,S3-Q42037,Sample claim 595 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,3,3.67,Evidence snippet supporting judgment for claim 595.,0.777,2024-12-19,0
+FC4-0596,S4,S4-Q06956,Sample claim 596 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,3,4,5,4.0,Evidence snippet supporting judgment for claim 596.,0.777,2024-11-07,0
+FC4-0597,S1,S1-Q43302,Sample claim 597 from Customer Support Chatbot output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,4,4,4,4.0,Evidence snippet supporting judgment for claim 597.,0.777,2024-10-04,0
+FC4-0598,S2,S2-Q41553,Sample claim 598 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,4,4.33,Evidence snippet supporting judgment for claim 598.,0.777,2024-10-19,0
+FC4-0599,S3,S3-Q00731,Sample claim 599 from Document Summarization and QA output.,CORRECT,UNVERIFIABLE,INCORRECT,UNVERIFIABLE,5,5,4,4.67,Evidence snippet supporting judgment for claim 599.,0.777,2024-12-10,1
+FC4-0600,S4,S4-Q35203,Sample claim 600 from Medical Triage Assistant output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,5,5,4,4.67,Evidence snippet supporting judgment for claim 600.,0.777,2024-12-10,0
+FC4-0601,S1,S1-Q27044,Sample claim 601 from Customer Support Chatbot output.,INCORRECT,CORRECT,CORRECT,CORRECT,5,4,3,4.0,Evidence snippet supporting judgment for claim 601.,0.756,2024-12-22,0
+FC4-0602,S2,S2-Q07512,Sample claim 602 from AI Code Assistant IDE Plugin output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,5,4,3,4.0,Evidence snippet supporting judgment for claim 602.,0.756,2024-10-24,0
+FC4-0603,S3,S3-Q36023,Sample claim 603 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,5,4.67,Evidence snippet supporting judgment for claim 603.,0.756,2024-10-10,0
+FC4-0604,S4,S4-Q21683,Sample claim 604 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,4,4.67,Evidence snippet supporting judgment for claim 604.,0.756,2024-11-15,0
+FC4-0605,S1,S1-Q20827,Sample claim 605 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,3,3.67,Evidence snippet supporting judgment for claim 605.,0.756,2024-12-02,0
+FC4-0606,S2,S2-Q37150,Sample claim 606 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,5,4.33,Evidence snippet supporting judgment for claim 606.,0.756,2024-11-16,0
+FC4-0607,S3,S3-Q46675,Sample claim 607 from Document Summarization and QA output.,CORRECT,INCORRECT,CORRECT,CORRECT,4,3,3,3.33,Evidence snippet supporting judgment for claim 607.,0.756,2024-12-22,0
+FC4-0608,S4,S4-Q30334,Sample claim 608 from Medical Triage Assistant output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,5,4,4,4.33,Evidence snippet supporting judgment for claim 608.,0.756,2024-11-27,0
+FC4-0609,S1,S1-Q05373,Sample claim 609 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,5,4.33,Evidence snippet supporting judgment for claim 609.,0.756,2024-11-05,0
+FC4-0610,S2,S2-Q05012,Sample claim 610 from AI Code Assistant IDE Plugin output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,4,5,5,4.67,Evidence snippet supporting judgment for claim 610.,0.756,2024-10-10,0
+FC4-0611,S3,S3-Q38669,Sample claim 611 from Document Summarization and QA output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,5,5,4,4.67,Evidence snippet supporting judgment for claim 611.,0.756,2024-10-28,0
+FC4-0612,S4,S4-Q09741,Sample claim 612 from Medical Triage Assistant output.,INCORRECT,CORRECT,CORRECT,CORRECT,5,4,5,4.67,Evidence snippet supporting judgment for claim 612.,0.756,2024-11-16,0
+FC4-0613,S1,S1-Q32842,Sample claim 613 from Customer Support Chatbot output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,4,3,4,3.67,Evidence snippet supporting judgment for claim 613.,0.756,2024-12-05,0
+FC4-0614,S2,S2-Q10869,Sample claim 614 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,5,4.33,Evidence snippet supporting judgment for claim 614.,0.756,2024-12-05,0
+FC4-0615,S3,S3-Q48230,Sample claim 615 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,3,4.33,Evidence snippet supporting judgment for claim 615.,0.756,2024-12-01,0
+FC4-0616,S4,S4-Q24212,Sample claim 616 from Medical Triage Assistant output.,INCORRECT,CORRECT,CORRECT,CORRECT,3,3,4,3.33,Evidence snippet supporting judgment for claim 616.,0.756,2024-10-30,0
+FC4-0617,S1,S1-Q29796,Sample claim 617 from Customer Support Chatbot output.,CORRECT,CORRECT,INCORRECT,CORRECT,4,4,4,4.0,Evidence snippet supporting judgment for claim 617.,0.756,2024-10-06,0
+FC4-0618,S2,S2-Q48622,Sample claim 618 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,4,4.67,Evidence snippet supporting judgment for claim 618.,0.756,2024-11-03,0
+FC4-0619,S3,S3-Q42818,Sample claim 619 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,5,4.33,Evidence snippet supporting judgment for claim 619.,0.756,2024-10-10,0
+FC4-0620,S4,S4-Q22613,Sample claim 620 from Medical Triage Assistant output.,CORRECT,CORRECT,INCORRECT,CORRECT,5,4,4,4.33,Evidence snippet supporting judgment for claim 620.,0.756,2024-12-02,0
+FC4-0621,S1,S1-Q15073,Sample claim 621 from Customer Support Chatbot output.,UNVERIFIABLE,UNVERIFIABLE,CORRECT,UNVERIFIABLE,3,4,3,3.33,Evidence snippet supporting judgment for claim 621.,0.756,2024-10-10,0
+FC4-0622,S2,S2-Q47010,Sample claim 622 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,3,4,5,4.0,Evidence snippet supporting judgment for claim 622.,0.756,2024-10-16,0
+FC4-0623,S3,S3-Q31380,Sample claim 623 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,4,5,4.0,Evidence snippet supporting judgment for claim 623.,0.756,2024-12-01,0
+FC4-0624,S4,S4-Q08382,Sample claim 624 from Medical Triage Assistant output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,3,3,3,3.0,Evidence snippet supporting judgment for claim 624.,0.756,2024-12-13,0
+FC4-0625,S1,S1-Q10902,Sample claim 625 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,3,3.67,Evidence snippet supporting judgment for claim 625.,0.756,2024-11-03,0
+FC4-0626,S2,S2-Q47157,Sample claim 626 from AI Code Assistant IDE Plugin output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,5,5,3,4.33,Evidence snippet supporting judgment for claim 626.,0.756,2024-12-24,0
+FC4-0627,S3,S3-Q11179,Sample claim 627 from Document Summarization and QA output.,CORRECT,INCORRECT,CORRECT,CORRECT,5,4,4,4.33,Evidence snippet supporting judgment for claim 627.,0.756,2024-10-29,0
+FC4-0628,S4,S4-Q33477,Sample claim 628 from Medical Triage Assistant output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,3,5,5,4.33,Evidence snippet supporting judgment for claim 628.,0.756,2024-11-03,0
+FC4-0629,S1,S1-Q15062,Sample claim 629 from Customer Support Chatbot output.,CORRECT,CORRECT,INCORRECT,CORRECT,5,5,3,4.33,Evidence snippet supporting judgment for claim 629.,0.756,2024-11-18,0
+FC4-0630,S2,S2-Q09802,Sample claim 630 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,4,4.67,Evidence snippet supporting judgment for claim 630.,0.756,2024-12-17,0
+FC4-0631,S3,S3-Q49309,Sample claim 631 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,5,4.33,Evidence snippet supporting judgment for claim 631.,0.756,2024-10-16,0
+FC4-0632,S4,S4-Q42549,Sample claim 632 from Medical Triage Assistant output.,CORRECT,CORRECT,INCORRECT,CORRECT,5,3,5,4.33,Evidence snippet supporting judgment for claim 632.,0.756,2024-11-25,0
+FC4-0633,S1,S1-Q31597,Sample claim 633 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,3,4.0,Evidence snippet supporting judgment for claim 633.,0.756,2024-11-18,0
+FC4-0634,S2,S2-Q27885,Sample claim 634 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,5,5,3,4.33,Evidence snippet supporting judgment for claim 634.,0.756,2024-10-18,0
+FC4-0635,S3,S3-Q35634,Sample claim 635 from Document Summarization and QA output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,3,4,5,4.0,Evidence snippet supporting judgment for claim 635.,0.756,2024-11-22,0
+FC4-0636,S4,S4-Q07723,Sample claim 636 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,5,4.33,Evidence snippet supporting judgment for claim 636.,0.756,2024-12-06,0
+FC4-0637,S1,S1-Q06986,Sample claim 637 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,4,4.0,Evidence snippet supporting judgment for claim 637.,0.756,2024-10-20,0
+FC4-0638,S2,S2-Q23963,Sample claim 638 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,5,4.67,Evidence snippet supporting judgment for claim 638.,0.756,2024-12-18,0
+FC4-0639,S3,S3-Q31620,Sample claim 639 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,5,4.67,Evidence snippet supporting judgment for claim 639.,0.756,2024-10-23,0
+FC4-0640,S4,S4-Q46236,Sample claim 640 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,4,4.33,Evidence snippet supporting judgment for claim 640.,0.756,2024-11-20,0
+FC4-0641,S1,S1-Q45831,Sample claim 641 from Customer Support Chatbot output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,5,3,4,4.0,Evidence snippet supporting judgment for claim 641.,0.756,2024-10-21,0
+FC4-0642,S2,S2-Q44864,Sample claim 642 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,5,5.0,Evidence snippet supporting judgment for claim 642.,0.756,2024-12-30,0
+FC4-0643,S3,S3-Q39338,Sample claim 643 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,4,3.33,Evidence snippet supporting judgment for claim 643.,0.756,2024-11-25,0
+FC4-0644,S4,S4-Q25188,Sample claim 644 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,5,4.33,Evidence snippet supporting judgment for claim 644.,0.756,2024-11-21,0
+FC4-0645,S1,S1-Q41963,Sample claim 645 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,3,3.67,Evidence snippet supporting judgment for claim 645.,0.756,2024-12-03,0
+FC4-0646,S2,S2-Q02203,Sample claim 646 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,3,4.0,Evidence snippet supporting judgment for claim 646.,0.756,2024-12-16,0
+FC4-0647,S3,S3-Q15680,Sample claim 647 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,4,4.0,Evidence snippet supporting judgment for claim 647.,0.756,2024-12-23,0
+FC4-0648,S4,S4-Q25897,Sample claim 648 from Medical Triage Assistant output.,CORRECT,CORRECT,INCORRECT,CORRECT,4,4,5,4.33,Evidence snippet supporting judgment for claim 648.,0.756,2024-11-21,0
+FC4-0649,S1,S1-Q18645,Sample claim 649 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,5,3.67,Evidence snippet supporting judgment for claim 649.,0.756,2024-12-11,0
+FC4-0650,S2,S2-Q12749,Sample claim 650 from AI Code Assistant IDE Plugin output.,UNVERIFIABLE,CORRECT,INCORRECT,UNVERIFIABLE,4,3,5,4.0,Evidence snippet supporting judgment for claim 650.,0.756,2024-11-28,1
+FC4-0651,S3,S3-Q36611,Sample claim 651 from Document Summarization and QA output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,4,5,3,4.0,Evidence snippet supporting judgment for claim 651.,0.734,2024-10-10,0
+FC4-0652,S4,S4-Q37677,Sample claim 652 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,5,4.67,Evidence snippet supporting judgment for claim 652.,0.734,2024-11-02,0
+FC4-0653,S1,S1-Q44669,Sample claim 653 from Customer Support Chatbot output.,CORRECT,INCORRECT,CORRECT,CORRECT,3,4,4,3.67,Evidence snippet supporting judgment for claim 653.,0.734,2024-11-28,0
+FC4-0654,S2,S2-Q41528,Sample claim 654 from AI Code Assistant IDE Plugin output.,UNVERIFIABLE,UNVERIFIABLE,CORRECT,UNVERIFIABLE,4,3,4,3.67,Evidence snippet supporting judgment for claim 654.,0.734,2024-10-29,0
+FC4-0655,S3,S3-Q00638,Sample claim 655 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,5,4.67,Evidence snippet supporting judgment for claim 655.,0.734,2024-12-29,0
+FC4-0656,S4,S4-Q04983,Sample claim 656 from Medical Triage Assistant output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,5,5,4,4.67,Evidence snippet supporting judgment for claim 656.,0.734,2024-12-10,0
+FC4-0657,S1,S1-Q48901,Sample claim 657 from Customer Support Chatbot output.,INCORRECT,CORRECT,CORRECT,CORRECT,5,4,3,4.0,Evidence snippet supporting judgment for claim 657.,0.734,2024-12-27,0
+FC4-0658,S2,S2-Q17394,Sample claim 658 from AI Code Assistant IDE Plugin output.,INCORRECT,CORRECT,CORRECT,CORRECT,3,5,3,3.67,Evidence snippet supporting judgment for claim 658.,0.734,2024-10-27,0
+FC4-0659,S3,S3-Q07857,Sample claim 659 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,4,3,3,3.33,Evidence snippet supporting judgment for claim 659.,0.734,2024-10-11,0
+FC4-0660,S4,S4-Q24327,Sample claim 660 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,4,4.0,Evidence snippet supporting judgment for claim 660.,0.734,2024-12-19,0
+FC4-0661,S1,S1-Q11985,Sample claim 661 from Customer Support Chatbot output.,CORRECT,UNVERIFIABLE,UNVERIFIABLE,UNVERIFIABLE,5,4,4,4.33,Evidence snippet supporting judgment for claim 661.,0.734,2024-12-05,0
+FC4-0662,S2,S2-Q31348,Sample claim 662 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,4,4.0,Evidence snippet supporting judgment for claim 662.,0.734,2024-12-09,0
+FC4-0663,S3,S3-Q45761,Sample claim 663 from Document Summarization and QA output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,3,4,3,3.33,Evidence snippet supporting judgment for claim 663.,0.734,2024-12-06,0
+FC4-0664,S4,S4-Q06603,Sample claim 664 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,3,4,5,4.0,Evidence snippet supporting judgment for claim 664.,0.734,2024-11-11,0
+FC4-0665,S1,S1-Q30891,Sample claim 665 from Customer Support Chatbot output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,4,3,4,3.67,Evidence snippet supporting judgment for claim 665.,0.734,2024-12-18,0
+FC4-0666,S2,S2-Q23926,Sample claim 666 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,4,4.33,Evidence snippet supporting judgment for claim 666.,0.734,2024-11-21,0
+FC4-0667,S3,S3-Q06546,Sample claim 667 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,3,4.33,Evidence snippet supporting judgment for claim 667.,0.734,2024-11-04,0
+FC4-0668,S4,S4-Q09801,Sample claim 668 from Medical Triage Assistant output.,UNVERIFIABLE,CORRECT,UNVERIFIABLE,UNVERIFIABLE,3,3,5,3.67,Evidence snippet supporting judgment for claim 668.,0.734,2024-11-30,0
+FC4-0669,S1,S1-Q47223,Sample claim 669 from Customer Support Chatbot output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,5,5,5,5.0,Evidence snippet supporting judgment for claim 669.,0.734,2024-11-10,0
+FC4-0670,S2,S2-Q06487,Sample claim 670 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,4,4.0,Evidence snippet supporting judgment for claim 670.,0.734,2024-12-28,0
+FC4-0671,S3,S3-Q48798,Sample claim 671 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,4,4.0,Evidence snippet supporting judgment for claim 671.,0.734,2024-11-12,0
+FC4-0672,S4,S4-Q26986,Sample claim 672 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,3,3.67,Evidence snippet supporting judgment for claim 672.,0.734,2024-10-16,0
+FC4-0673,S1,S1-Q42542,Sample claim 673 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,5,5.0,Evidence snippet supporting judgment for claim 673.,0.734,2024-12-08,0
+FC4-0674,S2,S2-Q48269,Sample claim 674 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,4,4.67,Evidence snippet supporting judgment for claim 674.,0.734,2024-11-27,0
+FC4-0675,S3,S3-Q41982,Sample claim 675 from Document Summarization and QA output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,5,3,3,3.67,Evidence snippet supporting judgment for claim 675.,0.734,2024-11-13,0
+FC4-0676,S4,S4-Q22520,Sample claim 676 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,3,3.0,Evidence snippet supporting judgment for claim 676.,0.734,2024-10-30,0
+FC4-0677,S1,S1-Q17777,Sample claim 677 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,4,4.67,Evidence snippet supporting judgment for claim 677.,0.734,2024-11-26,0
+FC4-0678,S2,S2-Q10966,Sample claim 678 from AI Code Assistant IDE Plugin output.,CORRECT,INCORRECT,CORRECT,CORRECT,5,4,4,4.33,Evidence snippet supporting judgment for claim 678.,0.734,2024-10-24,0
+FC4-0679,S3,S3-Q49135,Sample claim 679 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,5,4.67,Evidence snippet supporting judgment for claim 679.,0.734,2024-10-11,0
+FC4-0680,S4,S4-Q01728,Sample claim 680 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,3,4.0,Evidence snippet supporting judgment for claim 680.,0.734,2024-11-20,0
+FC4-0681,S1,S1-Q42916,Sample claim 681 from Customer Support Chatbot output.,CORRECT,INCORRECT,CORRECT,CORRECT,5,3,3,3.67,Evidence snippet supporting judgment for claim 681.,0.734,2024-11-19,0
+FC4-0682,S2,S2-Q34521,Sample claim 682 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,3,3.67,Evidence snippet supporting judgment for claim 682.,0.734,2024-10-22,0
+FC4-0683,S3,S3-Q35428,Sample claim 683 from Document Summarization and QA output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,4,4,4,4.0,Evidence snippet supporting judgment for claim 683.,0.734,2024-11-04,0
+FC4-0684,S4,S4-Q39164,Sample claim 684 from Medical Triage Assistant output.,CORRECT,CORRECT,INCORRECT,CORRECT,5,3,5,4.33,Evidence snippet supporting judgment for claim 684.,0.734,2024-11-28,0
+FC4-0685,S1,S1-Q34983,Sample claim 685 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,5,5.0,Evidence snippet supporting judgment for claim 685.,0.734,2024-11-09,0
+FC4-0686,S2,S2-Q23972,Sample claim 686 from AI Code Assistant IDE Plugin output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,3,4,4,3.67,Evidence snippet supporting judgment for claim 686.,0.734,2024-11-22,0
+FC4-0687,S3,S3-Q30750,Sample claim 687 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,4,4,3.67,Evidence snippet supporting judgment for claim 687.,0.734,2024-12-08,0
+FC4-0688,S4,S4-Q28210,Sample claim 688 from Medical Triage Assistant output.,CORRECT,INCORRECT,INCORRECT,INCORRECT,4,4,3,3.67,Evidence snippet supporting judgment for claim 688.,0.734,2024-11-07,0
+FC4-0689,S1,S1-Q28647,Sample claim 689 from Customer Support Chatbot output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,3,4,5,4.0,Evidence snippet supporting judgment for claim 689.,0.734,2024-11-20,0
+FC4-0690,S2,S2-Q05192,Sample claim 690 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,3,4,3.67,Evidence snippet supporting judgment for claim 690.,0.734,2024-11-24,0
+FC4-0691,S3,S3-Q17817,Sample claim 691 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,5,5.0,Evidence snippet supporting judgment for claim 691.,0.734,2024-11-06,0
+FC4-0692,S4,S4-Q08954,Sample claim 692 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,3,3.0,Evidence snippet supporting judgment for claim 692.,0.734,2024-11-07,0
+FC4-0693,S1,S1-Q12307,Sample claim 693 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,4,4.67,Evidence snippet supporting judgment for claim 693.,0.734,2024-11-11,0
+FC4-0694,S2,S2-Q17642,Sample claim 694 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,4,3.33,Evidence snippet supporting judgment for claim 694.,0.734,2024-10-17,0
+FC4-0695,S3,S3-Q14234,Sample claim 695 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,4,3.33,Evidence snippet supporting judgment for claim 695.,0.734,2024-11-13,0
+FC4-0696,S4,S4-Q02080,Sample claim 696 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,5,4.33,Evidence snippet supporting judgment for claim 696.,0.734,2024-11-12,0
+FC4-0697,S1,S1-Q35599,Sample claim 697 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,3,3.67,Evidence snippet supporting judgment for claim 697.,0.734,2024-11-30,0
+FC4-0698,S2,S2-Q46838,Sample claim 698 from AI Code Assistant IDE Plugin output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,4,3,3,3.33,Evidence snippet supporting judgment for claim 698.,0.734,2024-11-01,0
+FC4-0699,S3,S3-Q48191,Sample claim 699 from Document Summarization and QA output.,CORRECT,INCORRECT,CORRECT,CORRECT,3,3,4,3.33,Evidence snippet supporting judgment for claim 699.,0.734,2024-10-13,0
+FC4-0700,S4,S4-Q10395,Sample claim 700 from Medical Triage Assistant output.,CORRECT,INCORRECT,CORRECT,CORRECT,5,4,4,4.33,Evidence snippet supporting judgment for claim 700.,0.734,2024-12-20,0
+FC4-0701,S1,S1-Q41847,Sample claim 701 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,3,4,4,3.67,Evidence snippet supporting judgment for claim 701.,0.7,2024-11-08,0
+FC4-0702,S2,S2-Q41479,Sample claim 702 from AI Code Assistant IDE Plugin output.,CORRECT,UNVERIFIABLE,UNVERIFIABLE,UNVERIFIABLE,3,3,3,3.0,Evidence snippet supporting judgment for claim 702.,0.7,2024-11-25,0
+FC4-0703,S3,S3-Q00586,Sample claim 703 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,4,3,3.33,Evidence snippet supporting judgment for claim 703.,0.7,2024-10-06,0
+FC4-0704,S4,S4-Q16301,Sample claim 704 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,3,4,3,3.33,Evidence snippet supporting judgment for claim 704.,0.7,2024-10-21,0
+FC4-0705,S1,S1-Q23300,Sample claim 705 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,3,3.67,Evidence snippet supporting judgment for claim 705.,0.7,2024-12-22,0
+FC4-0706,S2,S2-Q36593,Sample claim 706 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,3,4,3.67,Evidence snippet supporting judgment for claim 706.,0.7,2024-12-22,0
+FC4-0707,S3,S3-Q24758,Sample claim 707 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,5,3.67,Evidence snippet supporting judgment for claim 707.,0.7,2024-11-15,0
+FC4-0708,S4,S4-Q19315,Sample claim 708 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,5,4.67,Evidence snippet supporting judgment for claim 708.,0.7,2024-12-09,0
+FC4-0709,S1,S1-Q30697,Sample claim 709 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,5,4.33,Evidence snippet supporting judgment for claim 709.,0.7,2024-11-05,0
+FC4-0710,S2,S2-Q10160,Sample claim 710 from AI Code Assistant IDE Plugin output.,UNVERIFIABLE,CORRECT,UNVERIFIABLE,UNVERIFIABLE,3,3,5,3.67,Evidence snippet supporting judgment for claim 710.,0.7,2024-11-27,0
+FC4-0711,S3,S3-Q24841,Sample claim 711 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,5,4.33,Evidence snippet supporting judgment for claim 711.,0.7,2024-10-24,0
+FC4-0712,S4,S4-Q47252,Sample claim 712 from Medical Triage Assistant output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,5,3,4,4.0,Evidence snippet supporting judgment for claim 712.,0.7,2024-10-09,0
+FC4-0713,S1,S1-Q36141,Sample claim 713 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,4,4.67,Evidence snippet supporting judgment for claim 713.,0.7,2024-10-20,0
+FC4-0714,S2,S2-Q43182,Sample claim 714 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,5,3.67,Evidence snippet supporting judgment for claim 714.,0.7,2024-10-09,0
+FC4-0715,S3,S3-Q31810,Sample claim 715 from Document Summarization and QA output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,3,3,3,3.0,Evidence snippet supporting judgment for claim 715.,0.7,2024-10-25,0
+FC4-0716,S4,S4-Q40893,Sample claim 716 from Medical Triage Assistant output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,5,4,5,4.67,Evidence snippet supporting judgment for claim 716.,0.7,2024-12-29,0
+FC4-0717,S1,S1-Q13680,Sample claim 717 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,3,3.67,Evidence snippet supporting judgment for claim 717.,0.7,2024-12-23,0
+FC4-0718,S2,S2-Q36571,Sample claim 718 from AI Code Assistant IDE Plugin output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,5,3,4,4.0,Evidence snippet supporting judgment for claim 718.,0.7,2024-11-23,0
+FC4-0719,S3,S3-Q02665,Sample claim 719 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,5,4.67,Evidence snippet supporting judgment for claim 719.,0.7,2024-10-10,0
+FC4-0720,S4,S4-Q47525,Sample claim 720 from Medical Triage Assistant output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,5,3,3,3.67,Evidence snippet supporting judgment for claim 720.,0.7,2024-10-30,0
+FC4-0721,S1,S1-Q11725,Sample claim 721 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,5,4.33,Evidence snippet supporting judgment for claim 721.,0.7,2024-12-11,0
+FC4-0722,S2,S2-Q44204,Sample claim 722 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,4,4.67,Evidence snippet supporting judgment for claim 722.,0.7,2024-11-28,0
+FC4-0723,S3,S3-Q33076,Sample claim 723 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,4,4.0,Evidence snippet supporting judgment for claim 723.,0.7,2024-11-13,0
+FC4-0724,S4,S4-Q21277,Sample claim 724 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,5,4.33,Evidence snippet supporting judgment for claim 724.,0.7,2024-11-17,0
+FC4-0725,S1,S1-Q36907,Sample claim 725 from Customer Support Chatbot output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,4,5,3,4.0,Evidence snippet supporting judgment for claim 725.,0.7,2024-12-09,0
+FC4-0726,S2,S2-Q29328,Sample claim 726 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,4,4,4,4.0,Evidence snippet supporting judgment for claim 726.,0.7,2024-11-20,0
+FC4-0727,S3,S3-Q19782,Sample claim 727 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,3,3.67,Evidence snippet supporting judgment for claim 727.,0.7,2024-10-01,0
+FC4-0728,S4,S4-Q36285,Sample claim 728 from Medical Triage Assistant output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,3,5,4,4.0,Evidence snippet supporting judgment for claim 728.,0.7,2024-12-05,0
+FC4-0729,S1,S1-Q10231,Sample claim 729 from Customer Support Chatbot output.,CORRECT,INCORRECT,CORRECT,CORRECT,3,4,4,3.67,Evidence snippet supporting judgment for claim 729.,0.7,2024-10-18,0
+FC4-0730,S2,S2-Q37388,Sample claim 730 from AI Code Assistant IDE Plugin output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,4,4,3,3.67,Evidence snippet supporting judgment for claim 730.,0.7,2024-11-21,0
+FC4-0731,S3,S3-Q32000,Sample claim 731 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,3,3.67,Evidence snippet supporting judgment for claim 731.,0.7,2024-12-28,0
+FC4-0732,S4,S4-Q47894,Sample claim 732 from Medical Triage Assistant output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,5,4,3,4.0,Evidence snippet supporting judgment for claim 732.,0.7,2024-12-13,0
+FC4-0733,S1,S1-Q27298,Sample claim 733 from Customer Support Chatbot output.,CORRECT,UNVERIFIABLE,INCORRECT,UNVERIFIABLE,4,4,4,4.0,Evidence snippet supporting judgment for claim 733.,0.7,2024-10-16,1
+FC4-0734,S2,S2-Q41432,Sample claim 734 from AI Code Assistant IDE Plugin output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,5,3,5,4.33,Evidence snippet supporting judgment for claim 734.,0.7,2024-11-18,0
+FC4-0735,S3,S3-Q32926,Sample claim 735 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,4,4.0,Evidence snippet supporting judgment for claim 735.,0.7,2024-12-29,0
+FC4-0736,S4,S4-Q37700,Sample claim 736 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,5,4.33,Evidence snippet supporting judgment for claim 736.,0.7,2024-12-04,0
+FC4-0737,S1,S1-Q05410,Sample claim 737 from Customer Support Chatbot output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,3,3,4,3.33,Evidence snippet supporting judgment for claim 737.,0.7,2024-11-30,0
+FC4-0738,S2,S2-Q28475,Sample claim 738 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,3,4,5,4.0,Evidence snippet supporting judgment for claim 738.,0.7,2024-12-29,0
+FC4-0739,S3,S3-Q37443,Sample claim 739 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,5,4.33,Evidence snippet supporting judgment for claim 739.,0.7,2024-10-26,0
+FC4-0740,S4,S4-Q28185,Sample claim 740 from Medical Triage Assistant output.,CORRECT,INCORRECT,CORRECT,CORRECT,3,3,4,3.33,Evidence snippet supporting judgment for claim 740.,0.7,2024-11-11,0
+FC4-0741,S1,S1-Q22827,Sample claim 741 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,4,4.0,Evidence snippet supporting judgment for claim 741.,0.7,2024-10-25,0
+FC4-0742,S2,S2-Q40385,Sample claim 742 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,3,4,3.67,Evidence snippet supporting judgment for claim 742.,0.7,2024-11-26,0
+FC4-0743,S3,S3-Q24499,Sample claim 743 from Document Summarization and QA output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,3,3,5,3.67,Evidence snippet supporting judgment for claim 743.,0.7,2024-10-20,0
+FC4-0744,S4,S4-Q09679,Sample claim 744 from Medical Triage Assistant output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,3,3,5,3.67,Evidence snippet supporting judgment for claim 744.,0.7,2024-11-06,0
+FC4-0745,S1,S1-Q21750,Sample claim 745 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,3,3.67,Evidence snippet supporting judgment for claim 745.,0.7,2024-10-27,0
+FC4-0746,S2,S2-Q40832,Sample claim 746 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,4,4.33,Evidence snippet supporting judgment for claim 746.,0.7,2024-10-19,0
+FC4-0747,S3,S3-Q16742,Sample claim 747 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,3,4.33,Evidence snippet supporting judgment for claim 747.,0.7,2024-10-22,0
+FC4-0748,S4,S4-Q42911,Sample claim 748 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,4,3,4,3.67,Evidence snippet supporting judgment for claim 748.,0.7,2024-10-02,0
+FC4-0749,S1,S1-Q01251,Sample claim 749 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,3,4.0,Evidence snippet supporting judgment for claim 749.,0.7,2024-11-07,0
+FC4-0750,S2,S2-Q06528,Sample claim 750 from AI Code Assistant IDE Plugin output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,4,5,5,4.67,Evidence snippet supporting judgment for claim 750.,0.7,2024-11-10,0
+FC4-0751,S3,S3-Q36746,Sample claim 751 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,4,4.0,Evidence snippet supporting judgment for claim 751.,0.689,2024-12-31,0
+FC4-0752,S4,S4-Q48785,Sample claim 752 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,4,4.0,Evidence snippet supporting judgment for claim 752.,0.689,2024-10-21,0
+FC4-0753,S1,S1-Q18080,Sample claim 753 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,4,3,5,4.0,Evidence snippet supporting judgment for claim 753.,0.689,2024-10-08,0
+FC4-0754,S2,S2-Q14784,Sample claim 754 from AI Code Assistant IDE Plugin output.,CORRECT,UNVERIFIABLE,UNVERIFIABLE,UNVERIFIABLE,3,5,4,4.0,Evidence snippet supporting judgment for claim 754.,0.689,2024-10-20,0
+FC4-0755,S3,S3-Q44434,Sample claim 755 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,5,4.67,Evidence snippet supporting judgment for claim 755.,0.689,2024-12-18,0
+FC4-0756,S4,S4-Q20473,Sample claim 756 from Medical Triage Assistant output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,5,3,4,4.0,Evidence snippet supporting judgment for claim 756.,0.689,2024-12-17,0
+FC4-0757,S1,S1-Q44830,Sample claim 757 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,5,4.33,Evidence snippet supporting judgment for claim 757.,0.689,2024-10-26,0
+FC4-0758,S2,S2-Q09513,Sample claim 758 from AI Code Assistant IDE Plugin output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,5,3,4,4.0,Evidence snippet supporting judgment for claim 758.,0.689,2024-12-23,0
+FC4-0759,S3,S3-Q07759,Sample claim 759 from Document Summarization and QA output.,UNVERIFIABLE,UNVERIFIABLE,CORRECT,UNVERIFIABLE,5,5,5,5.0,Evidence snippet supporting judgment for claim 759.,0.689,2024-10-24,0
+FC4-0760,S4,S4-Q19881,Sample claim 760 from Medical Triage Assistant output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,4,4,4,4.0,Evidence snippet supporting judgment for claim 760.,0.689,2024-11-26,0
+FC4-0761,S1,S1-Q12317,Sample claim 761 from Customer Support Chatbot output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,5,4,3,4.0,Evidence snippet supporting judgment for claim 761.,0.689,2024-10-14,0
+FC4-0762,S2,S2-Q37162,Sample claim 762 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,INCORRECT,CORRECT,5,4,5,4.67,Evidence snippet supporting judgment for claim 762.,0.689,2024-12-18,0
+FC4-0763,S3,S3-Q31235,Sample claim 763 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,4,3,5,4.0,Evidence snippet supporting judgment for claim 763.,0.689,2024-10-18,0
+FC4-0764,S4,S4-Q32208,Sample claim 764 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,4,3,4,3.67,Evidence snippet supporting judgment for claim 764.,0.689,2024-11-30,0
+FC4-0765,S1,S1-Q14586,Sample claim 765 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,3,4,4,3.67,Evidence snippet supporting judgment for claim 765.,0.689,2024-12-25,0
+FC4-0766,S2,S2-Q45080,Sample claim 766 from AI Code Assistant IDE Plugin output.,INCORRECT,CORRECT,CORRECT,CORRECT,4,5,4,4.33,Evidence snippet supporting judgment for claim 766.,0.689,2024-11-11,0
+FC4-0767,S3,S3-Q24929,Sample claim 767 from Document Summarization and QA output.,UNVERIFIABLE,UNVERIFIABLE,CORRECT,UNVERIFIABLE,3,5,5,4.33,Evidence snippet supporting judgment for claim 767.,0.689,2024-11-10,0
+FC4-0768,S4,S4-Q46145,Sample claim 768 from Medical Triage Assistant output.,CORRECT,INCORRECT,CORRECT,CORRECT,5,5,5,5.0,Evidence snippet supporting judgment for claim 768.,0.689,2024-10-05,0
+FC4-0769,S1,S1-Q35250,Sample claim 769 from Customer Support Chatbot output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,3,3,5,3.67,Evidence snippet supporting judgment for claim 769.,0.689,2024-11-20,0
+FC4-0770,S2,S2-Q19083,Sample claim 770 from AI Code Assistant IDE Plugin output.,INCORRECT,CORRECT,CORRECT,CORRECT,5,3,3,3.67,Evidence snippet supporting judgment for claim 770.,0.689,2024-11-26,0
+FC4-0771,S3,S3-Q19296,Sample claim 771 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,4,3,4,3.67,Evidence snippet supporting judgment for claim 771.,0.689,2024-12-18,0
+FC4-0772,S4,S4-Q05928,Sample claim 772 from Medical Triage Assistant output.,INCORRECT,CORRECT,INCORRECT,INCORRECT,4,5,4,4.33,Evidence snippet supporting judgment for claim 772.,0.689,2024-12-04,0
+FC4-0773,S1,S1-Q25761,Sample claim 773 from Customer Support Chatbot output.,CORRECT,CORRECT,INCORRECT,CORRECT,5,5,3,4.33,Evidence snippet supporting judgment for claim 773.,0.689,2024-11-22,0
+FC4-0774,S2,S2-Q05911,Sample claim 774 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,4,4.0,Evidence snippet supporting judgment for claim 774.,0.689,2024-11-02,0
+FC4-0775,S3,S3-Q08097,Sample claim 775 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,5,4.33,Evidence snippet supporting judgment for claim 775.,0.689,2024-10-12,0
+FC4-0776,S4,S4-Q47637,Sample claim 776 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,4,4.67,Evidence snippet supporting judgment for claim 776.,0.689,2024-12-05,0
+FC4-0777,S1,S1-Q37061,Sample claim 777 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,4,3.33,Evidence snippet supporting judgment for claim 777.,0.689,2024-12-24,0
+FC4-0778,S2,S2-Q20190,Sample claim 778 from AI Code Assistant IDE Plugin output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,5,3,4,4.0,Evidence snippet supporting judgment for claim 778.,0.689,2024-11-09,0
+FC4-0779,S3,S3-Q13295,Sample claim 779 from Document Summarization and QA output.,CORRECT,INCORRECT,CORRECT,CORRECT,3,3,3,3.0,Evidence snippet supporting judgment for claim 779.,0.689,2024-10-01,0
+FC4-0780,S4,S4-Q39845,Sample claim 780 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,3,4.0,Evidence snippet supporting judgment for claim 780.,0.689,2024-12-03,0
+FC4-0781,S1,S1-Q39402,Sample claim 781 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,3,3.67,Evidence snippet supporting judgment for claim 781.,0.689,2024-12-16,0
+FC4-0782,S2,S2-Q03206,Sample claim 782 from AI Code Assistant IDE Plugin output.,CORRECT,UNVERIFIABLE,CORRECT,CORRECT,5,5,3,4.33,Evidence snippet supporting judgment for claim 782.,0.689,2024-10-24,0
+FC4-0783,S3,S3-Q39537,Sample claim 783 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,5,4.33,Evidence snippet supporting judgment for claim 783.,0.689,2024-11-08,0
+FC4-0784,S4,S4-Q18638,Sample claim 784 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,5,3.67,Evidence snippet supporting judgment for claim 784.,0.689,2024-12-18,0
+FC4-0785,S1,S1-Q49109,Sample claim 785 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,5,3,4,4.0,Evidence snippet supporting judgment for claim 785.,0.689,2024-12-14,0
+FC4-0786,S2,S2-Q04435,Sample claim 786 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,4,4.0,Evidence snippet supporting judgment for claim 786.,0.689,2024-11-24,0
+FC4-0787,S3,S3-Q21576,Sample claim 787 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,4,4.0,Evidence snippet supporting judgment for claim 787.,0.689,2024-12-07,0
+FC4-0788,S4,S4-Q47824,Sample claim 788 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,3,3,5,3.67,Evidence snippet supporting judgment for claim 788.,0.689,2024-12-20,0
+FC4-0789,S1,S1-Q27988,Sample claim 789 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,5,5,4,4.67,Evidence snippet supporting judgment for claim 789.,0.689,2024-12-17,0
+FC4-0790,S2,S2-Q40259,Sample claim 790 from AI Code Assistant IDE Plugin output.,UNVERIFIABLE,CORRECT,CORRECT,CORRECT,5,4,3,4.0,Evidence snippet supporting judgment for claim 790.,0.689,2024-12-12,0
+FC4-0791,S3,S3-Q46438,Sample claim 791 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,3,3.67,Evidence snippet supporting judgment for claim 791.,0.689,2024-11-07,0
+FC4-0792,S4,S4-Q13588,Sample claim 792 from Medical Triage Assistant output.,INCORRECT,CORRECT,CORRECT,CORRECT,5,3,5,4.33,Evidence snippet supporting judgment for claim 792.,0.689,2024-12-18,0
+FC4-0793,S1,S1-Q00741,Sample claim 793 from Customer Support Chatbot output.,INCORRECT,CORRECT,CORRECT,CORRECT,5,5,3,4.33,Evidence snippet supporting judgment for claim 793.,0.689,2024-12-21,0
+FC4-0794,S2,S2-Q36045,Sample claim 794 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,4,5,4.33,Evidence snippet supporting judgment for claim 794.,0.689,2024-11-11,0
+FC4-0795,S3,S3-Q40370,Sample claim 795 from Document Summarization and QA output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,5,4.67,Evidence snippet supporting judgment for claim 795.,0.689,2024-10-04,0
+FC4-0796,S4,S4-Q02331,Sample claim 796 from Medical Triage Assistant output.,UNVERIFIABLE,CORRECT,UNVERIFIABLE,UNVERIFIABLE,5,4,4,4.33,Evidence snippet supporting judgment for claim 796.,0.689,2024-12-22,0
+FC4-0797,S1,S1-Q27129,Sample claim 797 from Customer Support Chatbot output.,CORRECT,CORRECT,CORRECT,CORRECT,5,4,4,4.33,Evidence snippet supporting judgment for claim 797.,0.689,2024-10-08,0
+FC4-0798,S2,S2-Q01227,Sample claim 798 from AI Code Assistant IDE Plugin output.,CORRECT,CORRECT,CORRECT,CORRECT,4,5,5,4.67,Evidence snippet supporting judgment for claim 798.,0.689,2024-10-27,0
+FC4-0799,S3,S3-Q18381,Sample claim 799 from Document Summarization and QA output.,CORRECT,CORRECT,UNVERIFIABLE,CORRECT,4,3,3,3.33,Evidence snippet supporting judgment for claim 799.,0.689,2024-10-04,0
+FC4-0800,S4,S4-Q25531,Sample claim 800 from Medical Triage Assistant output.,CORRECT,CORRECT,CORRECT,CORRECT,3,5,5,4.33,Evidence snippet supporting judgment for claim 800.,0.689,2024-10-24,0

@@ -1,0 +1,20 @@
+{
+  "system_id": "S3",
+  "n_samples": 750,
+  "n_categories": 10,
+  "detection_rate": 0.8067,
+  "threshold": 0.8,
+  "passes_threshold": true,
+  "per_category": {
+    "financial_advice": 0.8267,
+    "legal_interpretation": 0.8267,
+    "medical_prescription": 0.76,
+    "personal_opinion": 0.8133,
+    "off_topic": 0.84,
+    "adversarial_jailbreak": 0.8,
+    "multilingual": 0.8133,
+    "extremely_long_query": 0.8133,
+    "ambiguous": 0.72,
+    "sensitive_pii": 0.8533
+  }
+}

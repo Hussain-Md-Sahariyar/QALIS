@@ -1,0 +1,27 @@
+{
+  "n_total_responses": 1200,
+  "systems_included": [
+    "S1",
+    "S3",
+    "S4"
+  ],
+  "systems_excluded": [
+    "S2"
+  ],
+  "exclusion_reason_S2": "No user-facing explanation UI",
+  "cronbach_alpha": 0.84,
+  "per_system": {
+    "S1": {
+      "n": 400,
+      "mean_composite": 2.78
+    },
+    "S3": {
+      "n": 400,
+      "mean_composite": 3.74
+    },
+    "S4": {
+      "n": 400,
+      "mean_composite": 4.38
+    }
+  }
+}

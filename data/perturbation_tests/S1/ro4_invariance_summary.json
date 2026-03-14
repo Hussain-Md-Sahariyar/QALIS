@@ -1,0 +1,7 @@
+{
+  "system_id": "S1",
+  "n_pairs": 1000,
+  "mean_semantic_invariance": 0.8811,
+  "threshold": 0.85,
+  "passes_threshold": true
+}
