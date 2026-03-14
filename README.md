@@ -1,7 +1,6 @@
 # QALIS: Quality Assessment Framework for LLM-Integrated Software Systems
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Paper: QUATIC 2025](https://img.shields.io/badge/Paper-QUATIC%202025-blue)](supplementary/replication_package/)
 [![Observations: 3,400](https://img.shields.io/badge/Observations-3%2C400-green)](data/processed/)
 [![Metrics: 24](https://img.shields.io/badge/QALIS%20Metrics-24-orange)](framework/metrics/)
 [![Systems: 4](https://img.shields.io/badge/Case%20Systems-4-purple)](data/raw/)
@@ -12,9 +11,7 @@
 
 ## What is QALIS?
 
-**QALIS** (Quality Assessment for LLM-Integrated Software Systems) is an open-source,
-empirically validated quality framework for production software systems that integrate
-Large Language Model (LLM) components.
+**QALIS** (Quality Assessment for LLM-Integrated Software Systems) is an open-source, empirically validated quality framework for production software systems that integrate Large Language Model (LLM) components.
 
 It bridges the gap between:
 - **Software quality engineering** (ISO 25010, reliability, maintainability) — which lacks LLM-specific metrics
