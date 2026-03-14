@@ -35,8 +35,7 @@ QALIS provides a **four-layer architecture** with **24 fully operationalized met
 6. [Case Study Systems](#case-study-systems)
 7. [Key Empirical Results](#key-empirical-results)
 8. [Replication](#replication)
-9. [Citation](#citation)
-10. [License](#license)
+9. [License](#license)
 
 ---
 
