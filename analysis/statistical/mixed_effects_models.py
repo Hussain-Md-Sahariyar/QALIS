@@ -65,7 +65,7 @@ def longitudinal_trend_analysis(df):
     print("=" * 70)
 
     systems = df["system_id"].unique()
-    dims    = df["dimension"].unique()
+    dims = df["dimension"].unique()
 
     results = []
     for sys_id in sorted(systems):
@@ -113,15 +113,14 @@ def wilcoxon_bonferroni_tests(df_comp):
     print("WILCOXON SIGNED-RANK TESTS")
     print("=" * 70)
 
-    alpha         = 0.01
-    baselines     = [a for a in df_comp["approach"].unique() if a != "QALIS"]
-    dims          = df_comp["dimension"].unique()
+    alpha = 0.01
+    baselines = [a for a in df_comp["approach"].unique() if a != "QALIS"]
+    dims = df_comp["dimension"].unique()
     n_comparisons = len(dims) * len(baselines)
-    bonf_alpha    = alpha / n_comparisons
+    bonf_alpha = alpha / n_comparisons
 
     print(f"\nalpha={alpha}, k={n_comparisons}, Bonferroni threshold p < {bonf_alpha:.6f}\n")
-    print(f"{'Dimension':<6} {'Baseline':<20} {'QALIS Mean':>10} {'Base Mean':>10} "
-          f"{'W stat':>8} {'p-value':>10} {'Sig':>4}")
+    print(f"{'Dimension':<6} {'Baseline':<20} {'QALIS Mean':>10} {'Base Mean':>10} {'W stat':>8} {'p-value':>10} {'Sig':>4}")
     print("-" * 75)
 
     all_results = []
@@ -148,8 +147,7 @@ def wilcoxon_bonferroni_tests(df_comp):
             if p >= bonf_alpha:
                 all_significant = False
 
-            print(f"{dim:<6} {approach:<20} {qalis_scores.mean():>10.4f} "
-                  f"{base_scores.mean():>10.4f} {W:>8.1f} {p:>10.6f} {sig:>4}")
+            print(f"{dim:<6} {approach:<20} {qalis_scores.mean():>10.4f} {base_scores.mean():>10.4f} {W:>8.1f} {p:>10.6f} {sig:>4}")
 
             all_results.append({
                 "dimension": dim, "baseline": approach,
@@ -161,12 +159,11 @@ def wilcoxon_bonferroni_tests(df_comp):
                 "effect_direction": "QALIS > baseline"
             })
 
-    print(f"\nAll {n_comparisons} comparisons significant at Bonferroni-corrected "
-          f"alpha: {all_significant}")
+    print(f"\nAll {n_comparisons} comparisons significant at Bonferroni-corrected alpha: {all_significant}")
 
     return pd.DataFrame(all_results)
 
-# 4. METRIC CORRELATION ANALYSIS
+# METRIC CORRELATION ANALYSIS
 
 def metric_correlation_analysis(corr_data):
     print("\n" + "=" * 70)
@@ -197,7 +194,7 @@ def metric_correlation_analysis(corr_data):
         for j in range(i+1, len(metrics)):
             r = matrix[i][j]
             if abs(r) > 0.50:
-                print(f"  {metrics[i]} × {metrics[j]}: r = {r:.3f}")
+                print(f"{metrics[i]} × {metrics[j]}: r = {r:.3f}")
 
 # INTER-ANNOTATOR RELIABILITY
 
@@ -216,7 +213,7 @@ def inter_annotator_reliability():
     iaa_results = {}
     for metric, col_a, col_b, col_c, expected_kappa in [
         ("FC-4", "annotator_1_judgment", "annotator_2_judgment", "annotator_3_judgment", 0.76),
-        ("TI-2", "annotator_1",          "annotator_2",          "annotator_3",          0.71),
+        ("TI-2", "annotator_1", "annotator_2", "annotator_3", 0.71),
     ]:
         kappas = []
         for sys_id, sys_dir in sys_dirs.items():
@@ -256,7 +253,7 @@ def inter_annotator_reliability():
 
         print(f"\n{metric} Fleiss' kappa:")
         print(f"Computed:  {mean_kappa:.3f}")
-        print(f"    Interpretation: {'Substantial' if mean_kappa >= 0.61 else 'Moderate'} agreement")
+        print(f"Interpretation: {'Substantial' if mean_kappa >= 0.61 else 'Moderate'} agreement")
 
     return iaa_results
 
@@ -292,7 +289,7 @@ def defect_detection_improvement(df_long):
         m1_rate = sub[sub["month"] == 1]["detection_rate"].mean()
         m3_rate = sub[sub["month"] == 3]["detection_rate"].mean()
         change = m3_rate - m1_rate
-        print(f"  {approach:<22}: M1={m1_rate:.3f}, M3={m3_rate:.3f}, Δ={change:+.3f} "
+        print(f"{approach:<22}: M1={m1_rate:.3f}, M3={m3_rate:.3f}, Δ={change:+.3f} "
               f"({'no significant trend' if abs(change) < 0.05 else 'trend detected'})")
 
 # DIMENSION INDEPENDENCE
@@ -319,7 +316,7 @@ def dimension_independence(df):
     print(f"\nDimensions active:")
     for dim in sorted(df["dimension"].unique()):
         n_sys = df[df["dimension"] == dim]["system_id"].nunique()
-        print(f"  {dim}: active in {n_sys}/4 systems ✓" if n_sys >= 3 else f"  {dim}: {n_sys}/4 systems")
+        print(f"{dim}: active in {n_sys}/4 systems" if n_sys >= 3 else f"{dim}: {n_sys}/4 systems")
 
     return corr_matrix
 
@@ -329,10 +326,10 @@ def main():
     print("\n" + "=" * 70)
     print("=" * 70)
 
-    df_scores  = load_master_scores()
-    df_comp    = load_comparison_data()
-    df_long    = load_longitudinal_data()
-    corr_data  = load_correlation_data()
+    df_scores = load_master_scores()
+    df_comp = load_comparison_data()
+    df_long = load_longitudinal_data()
+    corr_data = load_correlation_data()
 
     descriptive_statistics(df_scores)
     dimension_independence(df_scores)
