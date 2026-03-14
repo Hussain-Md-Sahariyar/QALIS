@@ -1,0 +1,9 @@
+layer_id: 1
+name: "Input Quality Layer"
+primary_stakeholders:
+  - "Data engineers"
+  - "ML engineers"
+  - "Product managers"
+  - "Platform engineers"
+metrics_count: 0
+monitoring_frequency: "mixed (real-time to weekly)"

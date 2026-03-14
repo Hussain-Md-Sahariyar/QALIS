@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "QALIS Human Annotation Record",
+  "description": "Schema for human evaluation panel annotations (FC-4, TI-2, TI-3)",
+  "type": "object",
+  "required": ["annotation_id","system_id","metric_id","annotator_id","judgment"],
+  "properties": {
+    "annotation_id":   { "type": "string" },
+    "system_id":       { "type": "string" },
+    "query_id":        { "type": "string" },
+    "metric_id":       { "type": "string", "enum": ["FC-4","TI-2","TI-3"] },
+    "annotator_id":    { "type": "string" },
+    "timestamp":       { "type": "string", "format": "date" },
+    "judgment":        { "type": "string" },
+    "confidence":      { "type": "integer", "minimum": 1, "maximum": 5 },
+    "notes":           { "type": "string" },
+    "iaa_kappa":       { "type": "number", "description": "FC-4: 0.76, TI-2: 0.71 (Fleiss kappa)" }
+  }
+}
