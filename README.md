@@ -44,7 +44,7 @@ QALIS provides a **four-layer architecture** with **24 fully operationalized met
 
 ```bash
 # Clone and install
-git clone https://[github.com/Hussain-Md-Sahariyar/QALIS.git]
+git clone https://github.com/Hussain-Md-Sahariyar/QALIS.git
 cd QALIS
 python -m venv .venv && source .venv/bin/activate    # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
@@ -73,16 +73,15 @@ python analysis/rq3/comparative_effectiveness_analysis.py
 | Disk | 5 GB | 20 GB |
 | OS | Ubuntu 22.04 / macOS 13 / Windows 11 | Ubuntu 22.04 |
 
-GPU is optional but strongly recommended for the NLI classifier (SF dimension). Without
-a GPU, NLI inference falls back to CPU and is ~16× slower (5 vs 80 evaluations/second).
+GPU is optional but strongly recommended for the NLI classifier (SF dimension). Without a GPU, NLI inference falls back to CPU and is ~16× slower (5 vs 80 evaluations/second).
 
 ### Step-by-step Installation
 
 #### 1. Clone the repository
 
 ```bash
-git clone https://github.com/[anonymised]/qalis-quatic2025.git
-cd qalis-quatic2025
+git clone https://github.com/Hussain-Md-Sahariyar/QALIS.git
+cd QALIS
 ```
 
 #### 2. Create and activate a virtual environment
@@ -109,15 +108,15 @@ conda activate qalis
 ```bash
 pip install --upgrade pip
 pip install -r requirements.txt
-pip install -e .          # Installs src/qalis as an editable package
+pip install -e . # Installs src/qalis as an editable package
 ```
 
 #### 4. Download NLP models (required for SF and SS dimensions)
 
 ```bash
 # spaCy NER model (SS-2 PII detection)
-python -m spacy download en_core_web_trf      # Production (transformer-based)
-python -m spacy download en_core_web_sm       # Lightweight alternative for CI
+python -m spacy download en_core_web_trf # Production (transformer-based)
+python -m spacy download en_core_web_sm # Lightweight alternative for CI
 
 # DeBERTa NLI model (SF-1, SF-3 hallucination) — downloads on first use
 # Pre-download to avoid cold start:
@@ -181,7 +180,6 @@ print(f'Framework version: {QALISFramework.__version__}')
 
 ```bash
 pytest tests/ -m "not slow and not integration" -v
-# Expected: all tests pass in ~30 seconds (CPU-only, no models loaded)
 ```
 
 ---
@@ -189,7 +187,7 @@ pytest tests/ -m "not slow and not integration" -v
 ## Repository Structure
 
 ```
-qalis-quatic2025/
+QALIS/
 │
 ├── framework/                    # Framework specification (authoritative)
 │   ├── qalis_framework_spec.md   # Full framework spec with layer/dimension definitions
