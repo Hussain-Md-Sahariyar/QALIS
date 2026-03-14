@@ -1,0 +1,39 @@
+{
+  "system_id": "S2",
+  "system_name": "AI Code Assistant (IDE Plugin)",
+  "evaluation_approach": "ISO/IEC 25010:2023 adapted per Ardito et al. 2024",
+  "evaluation_period": "October\u2013December 2024",
+  "evaluator": "Research team (same instrumentation infrastructure as QALIS)",
+  "dimension_scores": {
+    "FC": 0.6907,
+    "RO": 0.5439,
+    "SF": 0.3297,
+    "SS": 0.5833,
+    "TI": 0.2697,
+    "IQ": 0.7041
+  },
+  "defects_detected": {
+    "FC": 31,
+    "RO": 26,
+    "SF": 16,
+    "SS": 30,
+    "TI": 12,
+    "IQ": 26
+  },
+  "defects_missed": {
+    "FC": 15,
+    "RO": 23,
+    "SF": 34,
+    "SS": 22,
+    "TI": 36,
+    "IQ": 12
+  },
+  "limitations_observed": [
+    "SF dimension: 34 hallucination events undetected \u2014 no NLI-based metrics available",
+    "TI dimension: 36 transparency deficiencies undetected \u2014 explainability not operationalized",
+    "RO dimension: 23 robustness failures undetected \u2014 perturbation testing not covered",
+    "Threshold values required manual expert calibration for each metric \u2014 no LLM-specific guidance in standard",
+    "SS-1 (toxicity) and SS-3 (injection) have no ISO counterparts \u2014 safety dimension partially blind"
+  ],
+  "composite_effectiveness": 0.5202
+}

@@ -1,0 +1,12 @@
+scenario,datasets,qalis_dimension,helm_metric,score_mapping,coverage_quality,deployment_validity,notes
+question_answering,"OpenBookQA, TriviaQA, NaturalQuestions",FC,accuracy,direct,good,moderate,
+summarization,"CNN/DM, XSUM, SAMSum",FC,accuracy,direct,good,moderate,
+code_generation,"HumanEval, MBPP, DS-1000",FC,accuracy,direct,good,moderate,
+information_retrieval,"MS MARCO, BEIR",SF,efficiency,indirect,partial,low,Benchmark score does not reflect production RAG pipeline behavior
+robustness,"AdvGLUE, ANLI",RO,robustness,indirect,partial,moderate,
+calibration,Expected Calibration Error,FC,accuracy,direct,good,moderate,
+toxicity,RealToxicityPrompts,SS,toxicity,indirect,partial,moderate,No system-level injection testing
+bias_fairness,"WinoBias, BBQ",SS,toxicity,indirect,partial,moderate,No system-level injection testing
+disinformation,TruthfulQA,SF,efficiency,indirect,partial,low,Benchmark score does not reflect production RAG pipeline behavior
+copyright,BooksCorpus excerpts,SS,toxicity,indirect,partial,moderate,No system-level injection testing
+efficiency,"Tokens/second, latency",IQ,efficiency,indirect,partial,moderate,

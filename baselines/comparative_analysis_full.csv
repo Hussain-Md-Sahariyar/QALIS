@@ -1,0 +1,97 @@
+system_id,approach,dimension,coverage_score,effectiveness_score,combined_score,defects_detected,defects_missed,total_defects,actionability_rating,false_positive_rate,statistically_sig_vs_qalis,wilcoxon_p_value,bonferroni_corrected_sig,notes
+S1,QALIS,FC,0.9063,0.8503,0.87,39,5,44,5,0.0927,0,1.0,0,Reference approach — all dimensions instrumented
+S1,QALIS,RO,0.8213,0.7539,0.7884,37,9,46,5,0.031,0,1.0,0,Reference approach — all dimensions instrumented
+S1,QALIS,SF,0.87,0.7973,0.8352,28,5,33,5,0.0502,0,1.0,0,Reference approach — all dimensions instrumented
+S1,QALIS,SS,0.9564,0.8847,0.9181,51,3,54,5,0.0864,0,1.0,0,Reference approach — all dimensions instrumented
+S1,QALIS,TI,0.7922,0.7246,0.7605,42,12,54,5,0.0267,0,1.0,0,Reference approach — all dimensions instrumented
+S1,QALIS,IQ,0.8619,0.8149,0.8274,25,5,30,5,0.0834,0,1.0,0,Reference approach — all dimensions instrumented
+S1,ISO_25010,FC,0.7142,0.6592,0.6856,33,14,47,2,0.0882,1,0.000231,1,SF and TI coverage severely limited — no LLM-specific metrics
+S1,ISO_25010,RO,0.5518,0.5132,0.5297,29,25,54,2,0.0852,1,0.000179,1,SF and TI coverage severely limited — no LLM-specific metrics
+S1,ISO_25010,SF,0.2999,0.2973,0.2879,11,26,37,3,0.0414,1,2.7e-05,1,SF and TI coverage severely limited — no LLM-specific metrics
+S1,ISO_25010,SS,0.575,0.5279,0.552,17,14,31,2,0.0282,1,4.1e-05,1,SF and TI coverage severely limited — no LLM-specific metrics
+S1,ISO_25010,TI,0.3096,0.2713,0.2972,9,21,30,1,0.0381,1,0.000284,1,SF and TI coverage severely limited — no LLM-specific metrics
+S1,ISO_25010,IQ,0.6925,0.6494,0.6648,27,12,39,3,0.0508,1,7.8e-05,1,SF and TI coverage severely limited — no LLM-specific metrics
+S1,HELM,FC,0.7747,0.688,0.7437,25,8,33,1,0.038,1,0.000158,1,Model-centric — IQ (0.22) and TI (0.38) lowest
+S1,HELM,RO,0.7096,0.6484,0.6812,22,10,32,1,0.0488,1,0.000195,1,Model-centric — IQ (0.22) and TI (0.38) lowest
+S1,HELM,SF,0.6294,0.5752,0.6042,19,12,31,1,0.0543,1,0.000191,1,Model-centric — IQ (0.22) and TI (0.38) lowest
+S1,HELM,SS,0.482,0.4543,0.4627,20,23,43,3,0.075,1,5.5e-05,1,Model-centric — IQ (0.22) and TI (0.38) lowest
+S1,HELM,TI,0.3654,0.3246,0.3508,21,37,58,2,0.0729,1,4.1e-05,1,Model-centric — IQ (0.22) and TI (0.38) lowest
+S1,HELM,IQ,0.2616,0.2257,0.2511,13,39,52,1,0.0889,1,0.00025,1,Model-centric — IQ (0.22) and TI (0.38) lowest
+S1,MLflow,FC,0.5529,0.5039,0.5308,18,16,34,2,0.0557,1,0.000106,1,IQ (0.77) strong but SF (0.28) and TI (0.19) critical gaps
+S1,MLflow,RO,0.4498,0.3614,0.4318,25,31,56,3,0.0542,1,3e-05,1,IQ (0.77) strong but SF (0.28) and TI (0.19) critical gaps
+S1,MLflow,SF,0.278,0.2447,0.2669,11,29,40,1,0.0814,1,0.000308,1,IQ (0.77) strong but SF (0.28) and TI (0.19) critical gaps
+S1,MLflow,SS,0.5925,0.5638,0.5688,26,19,45,2,0.0681,1,0.000218,1,IQ (0.77) strong but SF (0.28) and TI (0.19) critical gaps
+S1,MLflow,TI,0.1811,0.1584,0.1739,10,50,60,1,0.0507,1,0.000206,1,IQ (0.77) strong but SF (0.28) and TI (0.19) critical gaps
+S1,MLflow,IQ,0.7404,0.6736,0.7108,33,12,45,1,0.0508,1,0.00017,1,IQ (0.77) strong but SF (0.28) and TI (0.19) critical gaps
+S2,QALIS,FC,0.8671,0.7875,0.8324,41,7,48,5,0.0821,0,1.0,0,Reference approach — all dimensions instrumented
+S2,QALIS,RO,0.8166,0.7382,0.7839,26,6,32,5,0.0388,0,1.0,0,Reference approach — all dimensions instrumented
+S2,QALIS,SF,0.9498,0.875,0.9118,28,2,30,5,0.049,0,1.0,0,Reference approach — all dimensions instrumented
+S2,QALIS,SS,0.8968,0.8268,0.8609,29,4,33,5,0.0248,0,1.0,0,Reference approach — all dimensions instrumented
+S2,QALIS,TI,0.7516,0.723,0.7215,42,15,57,5,0.0823,0,1.0,0,Reference approach — all dimensions instrumented
+S2,QALIS,IQ,0.8578,0.8062,0.8235,48,8,56,5,0.0883,0,1.0,0,Reference approach — all dimensions instrumented
+S2,ISO_25010,FC,0.7244,0.6587,0.6954,26,11,37,1,0.0245,1,7.3e-05,1,SF and TI coverage severely limited — no LLM-specific metrics
+S2,ISO_25010,RO,0.5814,0.5739,0.5581,30,22,52,3,0.0221,1,5.3e-05,1,SF and TI coverage severely limited — no LLM-specific metrics
+S2,ISO_25010,SF,0.3335,0.3026,0.3202,17,35,52,3,0.0259,1,4.2e-05,1,SF and TI coverage severely limited — no LLM-specific metrics
+S2,ISO_25010,SS,0.6064,0.5234,0.5821,18,12,30,1,0.0263,1,5.4e-05,1,SF and TI coverage severely limited — no LLM-specific metrics
+S2,ISO_25010,TI,0.3187,0.3053,0.306,17,39,56,1,0.0576,1,0.000135,1,SF and TI coverage severely limited — no LLM-specific metrics
+S2,ISO_25010,IQ,0.7295,0.69,0.7003,43,17,60,2,0.0778,1,0.0001,1,SF and TI coverage severely limited — no LLM-specific metrics
+S2,HELM,FC,0.7062,0.6596,0.678,21,9,30,1,0.0248,1,9.6e-05,1,Model-centric — IQ (0.22) and TI (0.38) lowest
+S2,HELM,RO,0.6687,0.594,0.642,23,12,35,1,0.0517,1,0.000161,1,Model-centric — IQ (0.22) and TI (0.38) lowest
+S2,HELM,SF,0.566,0.5432,0.5434,24,20,44,2,0.0935,1,0.000176,1,Model-centric — IQ (0.22) and TI (0.38) lowest
+S2,HELM,SS,0.4507,0.4143,0.4327,19,24,43,2,0.0978,1,0.000289,1,Model-centric — IQ (0.22) and TI (0.38) lowest
+S2,HELM,TI,0.3116,0.2792,0.2991,10,24,34,2,0.0695,1,0.000233,1,Model-centric — IQ (0.22) and TI (0.38) lowest
+S2,HELM,IQ,0.2231,0.2178,0.2142,11,42,53,3,0.0873,1,0.000303,1,Model-centric — IQ (0.22) and TI (0.38) lowest
+S2,MLflow,FC,0.5214,0.4591,0.5005,20,20,40,2,0.0862,1,0.000206,1,IQ (0.77) strong but SF (0.28) and TI (0.19) critical gaps
+S2,MLflow,RO,0.453,0.4478,0.4349,22,28,50,2,0.0287,1,0.000137,1,IQ (0.77) strong but SF (0.28) and TI (0.19) critical gaps
+S2,MLflow,SF,0.31,0.298,0.2976,17,40,57,1,0.0426,1,0.000111,1,IQ (0.77) strong but SF (0.28) and TI (0.19) critical gaps
+S2,MLflow,SS,0.6011,0.5511,0.5771,29,20,49,2,0.035,1,1.3e-05,1,IQ (0.77) strong but SF (0.28) and TI (0.19) critical gaps
+S2,MLflow,TI,0.2072,0.2345,0.1989,7,30,37,3,0.0652,1,9.1e-05,1,IQ (0.77) strong but SF (0.28) and TI (0.19) critical gaps
+S2,MLflow,IQ,0.7293,0.6572,0.7001,22,9,31,1,0.0955,1,2.4e-05,1,IQ (0.77) strong but SF (0.28) and TI (0.19) critical gaps
+S3,QALIS,FC,0.9134,0.8413,0.8769,35,4,39,5,0.0967,0,1.0,0,Reference approach — all dimensions instrumented
+S3,QALIS,RO,0.7883,0.7252,0.7568,33,9,42,5,0.0781,0,1.0,0,Reference approach — all dimensions instrumented
+S3,QALIS,SF,0.9084,0.8306,0.8721,29,4,33,5,0.0465,0,1.0,0,Reference approach — all dimensions instrumented
+S3,QALIS,SS,0.9335,0.8445,0.8962,42,4,46,5,0.0846,0,1.0,0,Reference approach — all dimensions instrumented
+S3,QALIS,TI,0.7995,0.7571,0.7675,33,9,42,5,0.0582,0,1.0,0,Reference approach — all dimensions instrumented
+S3,QALIS,IQ,0.8447,0.7731,0.8109,29,6,35,5,0.0321,0,1.0,0,Reference approach — all dimensions instrumented
+S3,ISO_25010,FC,0.6194,0.5794,0.5946,19,13,32,1,0.0908,1,0.000296,1,SF and TI coverage severely limited — no LLM-specific metrics
+S3,ISO_25010,RO,0.5529,0.4814,0.5308,29,25,54,3,0.0613,1,0.000226,1,SF and TI coverage severely limited — no LLM-specific metrics
+S3,ISO_25010,SF,0.3052,0.252,0.293,18,41,59,2,0.0828,1,0.000241,1,SF and TI coverage severely limited — no LLM-specific metrics
+S3,ISO_25010,SS,0.5675,0.5381,0.5448,32,25,57,1,0.0913,1,0.000292,1,SF and TI coverage severely limited — no LLM-specific metrics
+S3,ISO_25010,TI,0.2937,0.2506,0.282,10,26,36,3,0.026,1,0.000309,1,SF and TI coverage severely limited — no LLM-specific metrics
+S3,ISO_25010,IQ,0.7302,0.6948,0.701,32,13,45,1,0.0314,1,3.9e-05,1,SF and TI coverage severely limited — no LLM-specific metrics
+S3,HELM,FC,0.7616,0.6824,0.7311,41,14,55,1,0.0599,1,0.000244,1,Model-centric — IQ (0.22) and TI (0.38) lowest
+S3,HELM,RO,0.6754,0.6248,0.6484,26,13,39,2,0.0661,1,5.8e-05,1,Model-centric — IQ (0.22) and TI (0.38) lowest
+S3,HELM,SF,0.6142,0.5712,0.5896,31,21,52,2,0.0989,1,0.000242,1,Model-centric — IQ (0.22) and TI (0.38) lowest
+S3,HELM,SS,0.532,0.4849,0.5107,23,21,44,1,0.0952,1,0.000205,1,Model-centric — IQ (0.22) and TI (0.38) lowest
+S3,HELM,TI,0.4085,0.3717,0.3922,16,25,41,2,0.0527,1,0.000268,1,Model-centric — IQ (0.22) and TI (0.38) lowest
+S3,HELM,IQ,0.1924,0.1564,0.1847,8,36,44,3,0.0962,1,0.00012,1,Model-centric — IQ (0.22) and TI (0.38) lowest
+S3,MLflow,FC,0.4835,0.4664,0.4642,22,24,46,3,0.0234,1,0.000145,1,IQ (0.77) strong but SF (0.28) and TI (0.19) critical gaps
+S3,MLflow,RO,0.4385,0.4025,0.421,24,31,55,3,0.0206,1,8.3e-05,1,IQ (0.77) strong but SF (0.28) and TI (0.19) critical gaps
+S3,MLflow,SF,0.2925,0.2559,0.2808,10,25,35,1,0.0378,1,0.000181,1,IQ (0.77) strong but SF (0.28) and TI (0.19) critical gaps
+S3,MLflow,SS,0.6362,0.5642,0.6108,26,15,41,3,0.0628,1,0.00015,1,IQ (0.77) strong but SF (0.28) and TI (0.19) critical gaps
+S3,MLflow,TI,0.195,0.1707,0.1872,6,29,35,2,0.0815,1,0.00023,1,IQ (0.77) strong but SF (0.28) and TI (0.19) critical gaps
+S3,MLflow,IQ,0.777,0.7318,0.7459,31,9,40,3,0.0589,1,0.000113,1,IQ (0.77) strong but SF (0.28) and TI (0.19) critical gaps
+S4,QALIS,FC,0.8816,0.7893,0.8463,33,5,38,5,0.0564,0,1.0,0,Reference approach — all dimensions instrumented
+S4,QALIS,RO,0.7515,0.6778,0.7214,25,9,34,5,0.0712,0,1.0,0,Reference approach — all dimensions instrumented
+S4,QALIS,SF,0.8673,0.8025,0.8326,42,7,49,5,0.0819,0,1.0,0,Reference approach — all dimensions instrumented
+S4,QALIS,SS,0.952,0.8897,0.9139,52,3,55,5,0.0544,0,1.0,0,Reference approach — all dimensions instrumented
+S4,QALIS,TI,0.7718,0.7112,0.7409,43,14,57,5,0.0218,0,1.0,0,Reference approach — all dimensions instrumented
+S4,QALIS,IQ,0.8414,0.7531,0.8077,31,7,38,5,0.0709,0,1.0,0,Reference approach — all dimensions instrumented
+S4,ISO_25010,FC,0.6782,0.6277,0.6511,28,14,42,3,0.0561,1,3.5e-05,1,SF and TI coverage severely limited — no LLM-specific metrics
+S4,ISO_25010,RO,0.5248,0.4895,0.5038,30,28,58,1,0.0274,1,8.8e-05,1,SF and TI coverage severely limited — no LLM-specific metrics
+S4,ISO_25010,SF,0.3286,0.2917,0.3155,17,37,54,1,0.0479,1,9.9e-05,1,SF and TI coverage severely limited — no LLM-specific metrics
+S4,ISO_25010,SS,0.5552,0.5218,0.533,28,24,52,3,0.0549,1,0.000245,1,SF and TI coverage severely limited — no LLM-specific metrics
+S4,ISO_25010,TI,0.3177,0.2787,0.305,17,39,56,3,0.0359,1,1.3e-05,1,SF and TI coverage severely limited — no LLM-specific metrics
+S4,ISO_25010,IQ,0.7044,0.6221,0.6762,23,11,34,3,0.0794,1,0.000107,1,SF and TI coverage severely limited — no LLM-specific metrics
+S4,HELM,FC,0.7382,0.6618,0.7087,25,9,34,1,0.06,1,0.000279,1,Model-centric — IQ (0.22) and TI (0.38) lowest
+S4,HELM,RO,0.672,0.6506,0.6451,34,17,51,3,0.0778,1,0.000132,1,Model-centric — IQ (0.22) and TI (0.38) lowest
+S4,HELM,SF,0.6797,0.6218,0.6525,38,19,57,2,0.0711,1,4.8e-05,1,Model-centric — IQ (0.22) and TI (0.38) lowest
+S4,HELM,SS,0.484,0.4427,0.4646,25,28,53,2,0.0757,1,0.000304,1,Model-centric — IQ (0.22) and TI (0.38) lowest
+S4,HELM,TI,0.3852,0.3276,0.3698,13,23,36,1,0.0977,1,0.000114,1,Model-centric — IQ (0.22) and TI (0.38) lowest
+S4,HELM,IQ,0.2162,0.1973,0.2076,12,44,56,2,0.0917,1,0.000119,1,Model-centric — IQ (0.22) and TI (0.38) lowest
+S4,MLflow,FC,0.4597,0.4224,0.4413,23,29,52,2,0.0531,1,0.00016,1,IQ (0.77) strong but SF (0.28) and TI (0.19) critical gaps
+S4,MLflow,RO,0.402,0.4,0.3859,17,26,43,2,0.0291,1,0.000167,1,IQ (0.77) strong but SF (0.28) and TI (0.19) critical gaps
+S4,MLflow,SF,0.2919,0.2874,0.2802,10,25,35,1,0.0634,1,0.000176,1,IQ (0.77) strong but SF (0.28) and TI (0.19) critical gaps
+S4,MLflow,SS,0.5745,0.5547,0.5515,29,23,52,3,0.0427,1,0.000214,1,IQ (0.77) strong but SF (0.28) and TI (0.19) critical gaps
+S4,MLflow,TI,0.1486,0.1055,0.1427,8,49,57,1,0.0845,1,4e-05,1,IQ (0.77) strong but SF (0.28) and TI (0.19) critical gaps
+S4,MLflow,IQ,0.7988,0.7525,0.7668,39,10,49,1,0.0597,1,0.00029,1,IQ (0.77) strong but SF (0.28) and TI (0.19) critical gaps
