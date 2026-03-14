@@ -189,95 +189,95 @@ pytest tests/ -m "not slow and not integration" -v
 ```
 QALIS/
 │
-├── framework/                    # Framework specification (authoritative)
-│   ├── qalis_framework_spec.md   # Full framework spec with layer/dimension definitions
-│   ├── layers/                   # Per-layer YAML specifications (layer1–layer4)
-│   ├── metrics/metrics_catalogue.json  # All 24 metrics: formulas, thresholds, cadences
-│   └── schemas/                  # JSON Schema validators for data files
+├── framework/                    
+│   ├── qalis_framework_spec.md  
+│   ├── layers/                  
+│   ├── metrics/metrics_catalogue.json 
+│   └── schemas/                  
 │
-├── src/qalis/                    # Core Python package (pip install -e .)
-│   ├── framework.py              # QALISFramework orchestration class
-│   ├── result.py                 # QALISResult data class
-│   ├── metrics/                  # One module per dimension (FC, RO, SF, SS, TI, IQ)
-│   ├── collectors/               # Data collection classes (streaming, batch, log)
-│   ├── dashboard/                # FastAPI monitoring dashboard + Prometheus exporter
-│   ├── analysis/                 # Statistical analysis helpers (RQ1–RQ3)
-│   └── utils/                    # I/O, logging, scoring, validation utilities
+├── src/qalis/                    
+│   ├── framework.py              
+│   ├── result.py              
+│   ├── metrics/                 
+│   ├── collectors/               
+│   ├── dashboard/               
+│   ├── analysis/               
+│   └── utils/                   
 │
-├── toolkit/                      # Production toolkit (no src dependency required)
-│   ├── collectors/qalis_collector.py    # High-level collector — primary entry point
-│   ├── classifiers/              # Toxicity, PII, OOD, policy classifiers
-│   ├── ci_gate/quality_gate.py   # QALISQualityGate — CI/CD blocking gate
-│   ├── ci_cd_integration/        # GitHubActionsRunner, DeploymentHooks
-│   ├── exporters/                # MLflow and Prometheus exporters
-│   ├── integrations/             # LangChain callback handler
-│   └── dashboard_templates/      # Grafana JSON + HTML report templates  ← NEW
+├── toolkit/                    
+│   ├── collectors/qalis_collector.py   
+│   ├── classifiers/            
+│   ├── ci_gate/quality_gate.py  
+│   ├── ci_cd_integration/       
+│   ├── exporters/               
+│   ├── integrations/           
+│   └── dashboard_templates/   
 │
-├── configs/                      # All YAML configuration files
-│   ├── metrics_thresholds.yaml   # All 24 metric thresholds (Table 3)
-│   ├── nli_classifier_config.yaml        # DeBERTa NLI model settings
-│   ├── classifier_config.yaml    # Toxicity / PII / OOD / policy classifier settings
-│   ├── perturbation_config.yaml  # Perturbation test parameters
-│   ├── ci_cd_config.yaml         # CI/CD quality gate configuration
-│   ├── monitoring_config.yaml    # Collection cadences and alert routing
-│   └── system_profiles/          # Per-system configs: S1–S4 + your system
+├── configs/                   
+│   ├── metrics_thresholds.yaml  
+│   ├── nli_classifier_config.yaml        
+│   ├── classifier_config.yaml  
+│   ├── perturbation_config.yaml 
+│   ├── ci_cd_config.yaml      
+│   ├── monitoring_config.yaml  
+│   └── system_profiles/        
 │
 ├── data/
-│   ├── annotations/              # Anonymized human annotation data (FC-4, TI-2, TI-3)
-│   ├── perturbation_tests/       # Per-system perturbation test results (S1–S4)
-│   ├── processed/                # Processed analysis inputs
-│   │   ├── correlations/         # Pearson correlation matrix (RQ2)
-│   │   ├── eval_sets/            # CI regression test suites (FC-1, SF-3, SS-1)
-│   │   └── data_dictionary.json  # Schema documentation for all data files
-│   └── raw/                      # Per-system raw data (embeddings, NLI logs)
-│       └── S{1-4}_*/             # One directory per case system
+│   ├── annotations/            
+│   ├── perturbation_tests/      
+│   ├── processed/             
+│   │   ├── correlations/       
+│   │   ├── eval_sets/           
+│   │   └── data_dictionary.json  
+│   └── raw/                     
+│       └── S{1-4}_*/          
 │
-├── analysis/                     # Reproducible analysis scripts
-│   ├── rq1/dimension_coverage_analysis.py      # RQ1: dimension independence (Figure 3)
-│   ├── rq2/metric_correlation_analysis.py      # RQ2: Pearson correlations (Figure 4)
-│   ├── rq3/comparative_effectiveness_analysis.py # RQ3: vs baselines (Figures 5, 6)
-│   ├── statistical/mixed_effects_models.py     # Mixed-effects regression models
-│   └── generate_all_figures.py                 # Reproduce all paper figures at once
+├── analysis/                    
+│   ├── rq1/dimension_coverage_analysis.py     
+│   ├── rq2/metric_correlation_analysis.py     
+│   ├── rq3/comparative_effectiveness_analysis.py 
+│   ├── statistical/mixed_effects_models.py   
+│   └── generate_all_figures.py               
 │
-├── perturbation_tests/           # Automated perturbation generation pipeline
-│   ├── typographical/            # 5,000 typo perturbations (RO-1)
-│   ├── paraphrase/               # 4,000 paraphrase pairs (RO-4)
-│   ├── ood_detection/            # 3,000 OOD samples (RO-3)
-│   └── prompt_injection/         # Injection corpus (RO-2, SS-3)
+├── perturbation_tests/         
+│   ├── typographical/          
+│   ├── paraphrase/          
+│   ├── ood_detection/          
+│   └── prompt_injection/       
 │
-├── red_team/                     # Red-team evaluation materials
-│   ├── run_red_team.py           # Red-team runner script
-│   ├── prompts/                  # Attack prompts and rubrics
-│   ├── patterns/                 # Attack taxonomy and mitigation register
-│   └── results/                  # Per-system summaries + by-category breakdowns
+├── red_team/                   
+│   ├── run_red_team.py         
+│   ├── prompts/                 
+│   ├── patterns/              
+│   └── results/               
 │
-├── baselines/                    # Baseline comparison data (ISO 25010 / HELM / MLflow)
+├── baselines/                
 │
-├── experiments/                  # Experiment records and sensitivity analyses
-│   ├── rq1_dimension_coverage/   # RQ1 experiment results
-│   ├── rq2_metric_operationalization/   # RQ2 experiment results
-│   ├── rq3_comparative_effectiveness/   # RQ3 experiment results
-│   ├── ablations/                # Dimension dropout and metric subset ablations
-│   └── threshold_sensitivity/    # Threshold sweep results
+├── experiments/                
+│   ├── rq1_dimension_coverage/ 
+│   ├── rq2_metric_operationalization/  
+│   ├── rq3_comparative_effectiveness/  
+│   ├── ablations/              
+│   └── threshold_sensitivity/  
 │
-├── interviews/                   # Practitioner interview materials (anonymized)
-│   ├── codebook/                 # Analysis codebook (8 codes, IAA κ = 0.81)
-│   └── thematic_analysis/        # 8 themes with coded excerpts
+├── interviews/                 
+│   ├── codebook/               
+│   └── thematic_analysis/       
 │
 ├── supplementary/
-│   ├── annotated_case_studies/   # Annotated per-system results (S1–S4)  ← NEW
-│   ├── replication_package/      # Full replication guide
-│   │   ├── instantiation_guide.md   # Step-by-step QALIS instantiation  ← NEW
+│   ├── annotated_case_studies/ 
+│   ├── replication_package/    
+│   │   ├── instantiation_guide.md 
 │   │   ├── replicate_all_results.py
 │   │   ├── replication_checklist.md
 │   │   └── known_deviations.md
-│   ├── case_study_protocol/      # IRB-approved research protocol
-│   └── survey_instruments/       # Data collection instruments
+│   ├── case_study_protocol/    
+│   └── survey_instruments/     
 │
-├── notebooks/                    # 14 Jupyter notebooks (guided exploration)
-├── tests/                        # pytest test suite
-├── .github/workflows/            # CI/CD pipelines (qalis_ci, quality_gate, daily_regression)
-├── docs/                         # User guide, API reference, deployment guide
+├── notebooks/                 
+├── tests/                      
+├── .github/workflows/           
+├── docs/                      
 ├── pyproject.toml
 └── requirements.txt
 ```
@@ -295,11 +295,10 @@ The primary entry point is `QALISCollector` in `toolkit/collectors/qalis_collect
 ```python
 from toolkit.collectors.qalis_collector import QALISCollector
 
-# Initialise once (loads models lazily)
+# Initialise once 
 collector = QALISCollector(
     system_id="my-chatbot",
-    domain="customer_support",         # customer_support | code_generation |
-                                       # document_qa | medical | legal | general
+    domain="customer_support",         
     config_path="configs/metrics_thresholds.yaml",
     system_profile_path="configs/system_profiles/S1_customer_support.yaml",
 )
@@ -308,7 +307,7 @@ collector = QALISCollector(
 result = collector.evaluate_interaction(
     query="What is your refund policy?",
     response="We offer 30-day refunds on all items in original condition...",
-    context=retrieved_chunks,      # list[str] from RAG; None if no retrieval
+    context=retrieved_chunks, # list[str] from RAG; None if no retrieval
     ground_truth=reference_answer, # str or None if no oracle
     latency_ms=843.0,
     api_status_code=200,
@@ -361,8 +360,8 @@ from src.qalis.collectors.streaming_collector import QALISStreamCollector
 
 stream_collector = QALISStreamCollector(
     system_id="my-system",
-    buffer_size=100,               # Flush to storage every 100 interactions
-    flush_interval_seconds=300,    # Or every 5 minutes
+    buffer_size=100, # Flush to storage every 100 interactions
+    flush_interval_seconds=300, # Or every 5 minutes
 )
 # Runs as background thread — attach to your API middleware
 stream_collector.start()
@@ -387,7 +386,7 @@ supplementary/replication_package/instantiation_guide.md
    (not all 24 metrics apply to every system; e.g. FC-3 Pass@k only for code generation)
 
 3. **Configure thresholds** — edit `configs/metrics_thresholds.yaml`  
-   (start with paper-validated defaults; use `run_threshold_sweep.py` to calibrate from your data)
+   (use `run_threshold_sweep.py` to calibrate from your data)
 
 4. **Establish collection cadences** — map metrics to real-time / daily / weekly / per-release  
    (copy `configs/monitoring_config.yaml` and adjust for your infrastructure)
@@ -402,34 +401,6 @@ All scripts are self-contained and reproducible. Run them from the repository ro
 
 ```bash
 python supplementary/replication_package/replicate_all_results.py
-# Outputs: analysis/figures/ (all paper figures), reports/replication_summary.json
-# Expected runtime: ~5 min (CPU), ~2 min (GPU)
-```
-
-#### Run individual research question analyses
-
-```bash
-# RQ1: Are the six quality dimensions non-redundant? (Figure 3)
-python analysis/rq1/dimension_coverage_analysis.py
-# → prints dimension independence correlation matrix
-# → saves analysis/figures/fig3_dimension_profiles.pdf
-
-# RQ2: Pearson correlation analysis — which metrics co-vary? (Figure 4)
-python analysis/rq2/metric_correlation_analysis.py
-# → prints key correlations (e.g. RO-4 ↔ SF-3: r=0.61)
-# → saves analysis/figures/fig4_correlation_matrix.pdf
-
-# RQ3: QALIS vs baselines — detection effectiveness (Figures 5, 6)
-python analysis/rq3/comparative_effectiveness_analysis.py
-# → prints Wilcoxon test results with Bonferroni correction
-# → saves analysis/figures/fig5_coverage_comparison.pdf, fig6_longitudinal.pdf
-
-# Statistical models (mixed-effects regression)
-python analysis/statistical/mixed_effects_models.py
-# → prints LME model coefficients and p-values (Table 5)
-
-# Regenerate all figures in one step
-python analysis/generate_all_figures.py
 ```
 
 #### Threshold sensitivity analysis
@@ -453,17 +424,7 @@ python experiments/ablations/run_ablations.py \
 
 ### CI/CD Quality Gates
 
-QALIS includes a ready-to-use GitHub Actions pipeline that blocks releases when quality
-degrades below defined thresholds.
-
-#### Standard pipeline (triggers on every push to `main`/`develop`)
-
-The pipeline is in `.github/workflows/qalis_ci.yml` and runs automatically. It includes:
-- Lint (ruff + black)
-- Unit tests (Python 3.10 + 3.11 matrix)
-- Analysis smoke-tests (RQ1/RQ2/RQ3)
-- QALIS quality gate (all mandatory thresholds + regression detection)
-- Replication smoke-test (on main push only)
+QALIS includes a ready-to-use GitHub Actions pipeline that blocks releases when quality degrades below defined thresholds.
 
 #### Manual quality gate run
 
@@ -475,26 +436,6 @@ python -m toolkit.ci_cd_integration.github_actions \
   --output-file reports/gate_result.json \
   --verbose
 ```
-
-#### Integrating into your own deployment pipeline
-
-```yaml
-# In your .github/workflows/deploy.yml
-jobs:
-  quality-gate:
-    uses: ./.github/workflows/quality_gate.yml
-    with:
-      system_id: MY_SYS
-      trigger: model_version_update
-      version: ${{ github.sha }}
-      save_baseline: true
-    secrets: inherit
-```
-
-The reusable workflow (`quality_gate.yml`) outputs:
-- `gate_passed`: `true`/`false`
-- `violations`: comma-separated metric IDs that failed
-- `regressions`: comma-separated metric IDs with regressions
 
 #### Python API for deployment hooks
 
@@ -512,7 +453,7 @@ hooks = DeploymentHooks(
 try:
     hooks.pre_deploy(eval_sets=["fc1_regression_suite", "sf3_regression_suite"])
     # ... your deployment steps ...
-    hooks.post_deploy(tag="last_stable_release")   # Save as new stable baseline
+    hooks.post_deploy(tag="last_stable_release") # Save as new stable baseline
 except QALISGateFailure as e:
     print(f"Deployment blocked: {e.failures}")
     hooks.on_deploy_failure(reason=str(e))
@@ -562,8 +503,7 @@ import json
 
 gate = QALISQualityGate('MY_SYS', 'configs/ci_cd_config.yaml')
 result = gate.run()
-result.export_html('reports/qalis_report.html',
-                   template='toolkit/dashboard_templates/qalis_html_report_template.html')
+result.export_html('reports/qalis_report.html', template='toolkit/dashboard_templates/qalis_html_report_template.html')
 "
 # Open reports/qalis_report.html in any browser
 ```
@@ -572,8 +512,7 @@ result.export_html('reports/qalis_report.html',
 
 ## QALIS Framework
 
-QALIS organizes quality concerns across a **four-layer architecture** mirroring
-the structure of a production LLM-integrated system:
+QALIS organizes quality concerns across a **four-layer architecture** mirroring the structure of a production LLM-integrated system:
 
 | Layer | Scope | Key dimensions |
 |-------|-------|---------------|
@@ -593,8 +532,7 @@ the structure of a production LLM-integrated system:
 | 5 | **TI** | Transparency & Interpretability | TI-1 to TI-4 | Opaque reasoning, poor explanation quality | 7.05 ⚠️ |
 | 6 | **IQ** | System Integration Quality | IQ-1 to IQ-4 | API failures, latency SLA breaches | 7.70 |
 
-> ⚠️ **TI (Transparency)** was the lowest-scoring and highest-variance dimension across
-> all four systems — identified as the most critical current quality gap.
+> ⚠️ **TI (Transparency)** was the lowest-scoring and highest-variance dimension across all four systems — identified as the most critical current quality gap.
 
 Full metric specifications: `framework/metrics/metrics_catalogue.json`  
 Threshold table: `configs/metrics_thresholds.yaml`  
@@ -607,7 +545,7 @@ Instantiation guide: `supplementary/replication_package/instantiation_guide.md`
 | ID | Domain | LLM | Architecture | DAU | Team |
 |----|--------|-----|--------------|-----|------|
 | **S1** | Customer Support Chatbot | GPT-4o (OpenAI API) | Direct API + RAG (top-5) | ~8,400 | 11 |
-| **S2** | AI Code Assistant (IDE Plugin) | Claude 3.5, Fine-tuned | FIM, Streaming | ~3,200 | 7 |
+| **S2** | AI Code Assistant (IDE Plugin) | Llama 3.3 70B, Fine-tuned | FIM, Streaming | ~3,200 | 7 |
 | **S3** | Document Summarization & QA | Gemini 1.5 Pro | Long-context (1M), RAG | ~1,900 | 5 |
 | **S4** | Medical Triage Assistant | Llama 3.1 70B (self-hosted) | Agentic, Tool-use, HIPAA | ~620 | 14 |
 
@@ -634,7 +572,7 @@ System configurations: `configs/system_profiles/S1–S4_*.yaml`
 | System Integration | **8.3** | 7.1 | 8.6 | 6.8 | 7.70 | 0.78 |
 | **Composite** | **7.23** | **7.68** | **8.02** | **8.15** | **7.77** | **0.40** |
 
-### RQ3: QALIS vs Baselines
+### QALIS vs Baselines
 
 QALIS outperformed all three baselines across all six dimensions (Wilcoxon signed-rank, p<0.01, Bonferroni-corrected).
 
@@ -645,7 +583,7 @@ QALIS outperformed all three baselines across all six dimensions (Wilcoxon signe
 | HELM | 0.74 | 0.69 | 0.62 | 0.49 | 0.38 | 0.22 |
 | MLflow | 0.51 | 0.43 | 0.28 | 0.61 | 0.19 | 0.77 |
 
-**Key longitudinal finding (Figure 6):** By Month 3, QALIS-monitored systems showed 81% reduction in undetected hallucination events, 77% reduction in undetected integration errors, and 68% earlier average detection across all defect categories.
+**Key longitudinal finding:** By Month 3, QALIS-monitored systems showed 81% reduction in undetected hallucination events, 77% reduction in undetected integration errors, and 68% earlier average detection across all defect categories.
 
 ---
 
@@ -654,13 +592,13 @@ QALIS outperformed all three baselines across all six dimensions (Wilcoxon signe
 All materials for full replication are included:
 
 ```bash
-# Full replication (~5 min)
+# Full replication
 python supplementary/replication_package/replicate_all_results.py
 
 # Check replication checklist
 cat supplementary/replication_package/replication_checklist.md
 
-# View known deviations from paper results
+# View known deviations
 cat supplementary/replication_package/known_deviations.md
 ```
 
@@ -668,53 +606,23 @@ cat supplementary/replication_package/known_deviations.md
 
 | Item | Location | Paper reference |
 |------|----------|-----------------|
-| Anonymized metric observations (FC-4, TI-2, TI-3) | `data/annotations/` | §3.5 |
-| QALIS metric catalogue (24 metrics, formulas, thresholds) | `framework/metrics/metrics_catalogue.json` | §4, Table 3 |
-| Data collection instruments (interview guide, annotation rubrics) | `supplementary/survey_instruments/` | §3.4–3.5 |
+| Anonymized metric observations (FC-4, TI-2, TI-3) | `data/annotations/` | 3.5 |
+| QALIS metric catalogue (24 metrics, formulas, thresholds) | `framework/metrics/metrics_catalogue.json` | 4, Table 3 |
+| Data collection instruments (interview guide, annotation rubrics) | `supplementary/survey_instruments/` | 3.4–3.5 |
 | Threshold guidance tables | `configs/metrics_thresholds.yaml` | Table 3 |
-| Instantiation guide | `supplementary/replication_package/instantiation_guide.md` | §4.1 |
-| Annotated case study documentation | `supplementary/annotated_case_studies/` | §4.2–4.5 |
-| Instrumentation code | `toolkit/collectors/`, `src/qalis/collectors/` | §4.5 |
-| NLI classifier configuration | `configs/nli_classifier_config.yaml` | §4.4, §8.3 |
-| Automated perturbation generation pipeline | `perturbation_tests/*/generate_*.py` | §3.3 |
-| Pearson correlation analysis scripts | `analysis/rq2/metric_correlation_analysis.py` | §5.2, Figure 4 |
-| Monitoring dashboard templates | `toolkit/dashboard_templates/` | §3.3, §4.4 |
-
-**What is not included (per ethical and privacy obligations):**
-
-| Excluded item | Reason |
-|---------------|--------|
-| Raw interview transcripts (INT-01–14) | IRB consent: individual privacy; available to reviewers on request |
-| Raw system query logs (`query_response_log.jsonl`) | Production system confidentiality; contain interaction metadata |
-| Raw real-time system snapshots (`realtime_metrics.csv`) | Production system confidentiality |
-| Aggregated and anonymized versions of the above | Derive from confidential data; excluded to prevent re-identification |
+| Instantiation guide | `supplementary/replication_package/instantiation_guide.md` | 4.1 |
+| Annotated case study documentation | `supplementary/annotated_case_studies/` | 4.2–4.5 |
+| Instrumentation code | `toolkit/collectors/`, `src/qalis/collectors/` | 4.5 |
+| NLI classifier configuration | `configs/nli_classifier_config.yaml` | 4.4, 8.3 |
+| Automated perturbation generation pipeline | `perturbation_tests/*/generate_*.py` | 3.3 |
+| Pearson correlation analysis scripts | `analysis/rq2/metric_correlation_analysis.py` | 5.2, Figure 4 |
+| Monitoring dashboard templates | `toolkit/dashboard_templates/` | 3.3, 4.4 |
 
 ---
 
-## Citation
-
-```bibtex
-@inproceedings{qalis2025,
-  title     = {{QALIS}: A Multi-Dimensional Quality Assessment Framework
-               for Large Language Model-Integrated Software Systems},
-  booktitle = {Proceedings of the 18th International Conference on Quality
-               of Information and Communications Technology (QUATIC 2025)},
-  year      = {2025},
-  note      = {Special Issue: Software Quality in an AI-Driven World},
-  series    = {Communications in Computer and Information Science},
-  publisher = {Springer},
-  keywords  = {LLM-integrated systems, software quality, hallucination detection,
-               robustness, empirical evaluation}
-}
-```
-
----
 
 ## License
 
 Code and framework specification: [MIT License](LICENSE)  
-Dataset files: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
 ---
-
-*For questions, open a GitHub Issue. For replication support, see `supplementary/replication_package/`.*
