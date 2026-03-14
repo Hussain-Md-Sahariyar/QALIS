@@ -17,12 +17,7 @@ It bridges the gap between:
 - **Software quality engineering** (ISO 25010, reliability, maintainability) — which lacks LLM-specific metrics
 - **LLM evaluation** (HELM, BIG-bench) — which treats the model in isolation, ignoring system context
 
-QALIS provides a **four-layer architecture** with **24 fully operationalized metrics** across
-**6 quality dimensions**, validated across 4 industrial systems over a 3-month study.
-
-> Paper: *"QALIS: A Multi-Dimensional Quality Assessment Framework for Large Language
-> Model-Integrated Software Systems"* — QUATIC 2025, Special Issue on Software Quality
-> in an AI-Driven World.
+QALIS provides a **four-layer architecture** with **24 fully operationalized metrics** across **6 quality dimensions**, validated across 4 industrial systems over a 3-month study.
 
 ---
 
@@ -49,13 +44,13 @@ QALIS provides a **four-layer architecture** with **24 fully operationalized met
 
 ```bash
 # Clone and install
-git clone https://github.com/[anonymised]/qalis-quatic2025.git
-cd qalis-quatic2025
+git clone https://[github.com/Hussain-Md-Sahariyar/QALIS.git]
+cd QALIS
 python -m venv .venv && source .venv/bin/activate    # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 pip install -e .
 
-# Reproduce all paper results (RQ1, RQ2, RQ3)
+# Reproduce all results
 python supplementary/replication_package/replicate_all_results.py
 
 # Or run individual analyses
