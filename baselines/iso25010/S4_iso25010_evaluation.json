@@ -1,7 +1,7 @@
 {
   "system_id": "S4",
   "system_name": "Medical Triage Assistant",
-  "evaluation_approach": "ISO/IEC 25010:2023 adapted per Ardito et al. 2024",
+  "evaluation_approach": "ISO/IEC 25010:2023",
   "evaluation_period": "October\u2013December 2024",
   "evaluator": "Research team (same instrumentation infrastructure as QALIS)",
   "dimension_scores": {
