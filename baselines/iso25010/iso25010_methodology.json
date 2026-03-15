@@ -1,7 +1,6 @@
 {
   "baseline_id": "ISO_25010",
   "full_name": "ISO/IEC 25010:2023 Product Quality Model (AI-adapted)",
-  "adaptation_reference": "Ardito et al. (2024). Quality-in-Use of Large Language Model-Based Applications: An Adaptation of ISO/IEC 25010. QUATIC 2024.",
   "standard_version": "ISO/IEC 25010:2023",
   "original_standard": "ISO/IEC 9126 (1991) -> ISO/IEC 25010 (2011, revised 2023)",
   "characteristics_used": [
