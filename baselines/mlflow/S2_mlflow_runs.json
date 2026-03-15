@@ -26,7 +26,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -64,7 +64,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -102,7 +102,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -140,7 +140,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -178,7 +178,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -216,7 +216,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -254,7 +254,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -292,7 +292,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -330,7 +330,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -368,7 +368,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -406,7 +406,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -444,7 +444,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -482,7 +482,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -520,7 +520,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -558,7 +558,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -596,7 +596,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -634,7 +634,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -672,7 +672,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -710,7 +710,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -748,7 +748,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -786,7 +786,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -824,7 +824,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -862,7 +862,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -900,7 +900,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -938,7 +938,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -976,7 +976,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -1014,7 +1014,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -1052,7 +1052,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -1090,7 +1090,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -1128,7 +1128,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -1166,7 +1166,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -1204,7 +1204,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -1242,7 +1242,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -1280,7 +1280,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -1318,7 +1318,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -1356,7 +1356,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -1394,7 +1394,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -1432,7 +1432,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -1470,7 +1470,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -1508,7 +1508,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -1546,7 +1546,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -1584,7 +1584,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -1622,7 +1622,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -1660,7 +1660,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -1698,7 +1698,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -1736,7 +1736,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -1774,7 +1774,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -1812,7 +1812,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -1850,7 +1850,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -1888,7 +1888,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -1926,7 +1926,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -1964,7 +1964,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -2002,7 +2002,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -2040,7 +2040,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -2078,7 +2078,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -2116,7 +2116,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -2154,7 +2154,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -2192,7 +2192,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -2230,7 +2230,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -2268,7 +2268,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -2306,7 +2306,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -2344,7 +2344,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -2382,7 +2382,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -2420,7 +2420,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -2458,7 +2458,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -2496,7 +2496,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -2534,7 +2534,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -2572,7 +2572,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -2610,7 +2610,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -2648,7 +2648,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -2686,7 +2686,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -2724,7 +2724,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -2762,7 +2762,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -2800,7 +2800,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -2838,7 +2838,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -2876,7 +2876,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -2914,7 +2914,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -2952,7 +2952,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -2990,7 +2990,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -3028,7 +3028,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -3066,7 +3066,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -3104,7 +3104,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -3142,7 +3142,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -3180,7 +3180,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -3218,7 +3218,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -3256,7 +3256,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -3294,7 +3294,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -3332,7 +3332,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -3370,7 +3370,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -3408,7 +3408,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -3446,7 +3446,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
@@ -3484,7 +3484,7 @@
       },
       "tags": {
         "mlflow.source.name": "qalis_study_instrumentation",
-        "model_version": "Claude 3.5 FT",
+        "model_version": "Llama 3.3 70B FT",
         "domain": "code_generation"
       },
       "artifacts_logged": [
