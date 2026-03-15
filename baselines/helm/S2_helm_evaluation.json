@@ -1,7 +1,7 @@
 {
   "system_id": "S2",
   "system_name": "AI Code Assistant (IDE Plugin)",
-  "llm_evaluated": "Claude 3.5 FT",
+  "llm_evaluated": "Llama 3.3 70B FT",
   "evaluation_note": "HELM applied to isolated model queries; does NOT assess system integration",
   "evaluation_period": "October\u2013December 2024 (representative query sample)",
   "n_queries_per_scenario": 200,
