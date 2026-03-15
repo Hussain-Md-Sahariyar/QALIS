@@ -43,50 +43,50 @@ S1,efficiency,accuracy,0.4811,200,Tokens/second,GPT-4o,2024-11-23,Isolated model
 S1,efficiency,calibration_ece,0.6447,200,Tokens/second,GPT-4o,2024-12-14,Isolated model evaluation — no system context
 S1,efficiency,robustness_drop,0.923,200,Tokens/second,GPT-4o,2024-10-03,Isolated model evaluation — no system context
 S1,efficiency,token_efficiency,0.8784,200,Tokens/second,GPT-4o,2024-12-13,Isolated model evaluation — no system context
-S2,question_answering,accuracy,0.6402,200,OpenBookQA,Claude 3.5 FT,2024-10-01,Isolated model evaluation — no system context
-S2,question_answering,calibration_ece,0.9214,200,OpenBookQA,Claude 3.5 FT,2024-11-08,Isolated model evaluation — no system context
-S2,question_answering,robustness_drop,0.8267,200,OpenBookQA,Claude 3.5 FT,2024-11-23,Isolated model evaluation — no system context
-S2,question_answering,token_efficiency,0.7191,200,OpenBookQA,Claude 3.5 FT,2024-12-09,Isolated model evaluation — no system context
-S2,summarization,accuracy,0.8499,200,CNN/DM,Claude 3.5 FT,2024-10-29,Isolated model evaluation — no system context
-S2,summarization,calibration_ece,0.6941,200,CNN/DM,Claude 3.5 FT,2024-11-04,Isolated model evaluation — no system context
-S2,summarization,robustness_drop,0.6679,200,CNN/DM,Claude 3.5 FT,2024-10-04,Isolated model evaluation — no system context
-S2,summarization,token_efficiency,0.6444,200,CNN/DM,Claude 3.5 FT,2024-12-25,Isolated model evaluation — no system context
-S2,code_generation,accuracy,0.7896,200,HumanEval,Claude 3.5 FT,2024-11-21,Isolated model evaluation — no system context
-S2,code_generation,calibration_ece,0.8121,200,HumanEval,Claude 3.5 FT,2024-11-29,Isolated model evaluation — no system context
-S2,code_generation,robustness_drop,0.9098,200,HumanEval,Claude 3.5 FT,2024-12-19,Isolated model evaluation — no system context
-S2,code_generation,token_efficiency,0.7171,200,HumanEval,Claude 3.5 FT,2024-11-20,Isolated model evaluation — no system context
-S2,information_retrieval,accuracy,0.7459,200,MS MARCO,Claude 3.5 FT,2024-12-24,Isolated model evaluation — no system context
-S2,information_retrieval,calibration_ece,0.4636,200,MS MARCO,Claude 3.5 FT,2024-12-22,Isolated model evaluation — no system context
-S2,information_retrieval,robustness_drop,0.6643,200,MS MARCO,Claude 3.5 FT,2024-11-29,Isolated model evaluation — no system context
-S2,information_retrieval,token_efficiency,0.5409,200,MS MARCO,Claude 3.5 FT,2024-11-03,Isolated model evaluation — no system context
-S2,robustness,accuracy,0.6396,200,AdvGLUE,Claude 3.5 FT,2024-10-28,Isolated model evaluation — no system context
-S2,robustness,calibration_ece,0.6773,200,AdvGLUE,Claude 3.5 FT,2024-11-13,Isolated model evaluation — no system context
-S2,robustness,robustness_drop,0.8306,200,AdvGLUE,Claude 3.5 FT,2024-11-18,Isolated model evaluation — no system context
-S2,robustness,token_efficiency,0.5891,200,AdvGLUE,Claude 3.5 FT,2024-11-23,Isolated model evaluation — no system context
-S2,calibration,accuracy,0.5761,200,Expected Calibration Error,Claude 3.5 FT,2024-10-11,Isolated model evaluation — no system context
-S2,calibration,calibration_ece,0.6852,200,Expected Calibration Error,Claude 3.5 FT,2024-12-09,Isolated model evaluation — no system context
-S2,calibration,robustness_drop,0.476,200,Expected Calibration Error,Claude 3.5 FT,2024-11-14,Isolated model evaluation — no system context
-S2,calibration,token_efficiency,0.5621,200,Expected Calibration Error,Claude 3.5 FT,2024-10-09,Isolated model evaluation — no system context
-S2,toxicity,accuracy,0.8406,200,RealToxicityPrompts,Claude 3.5 FT,2024-12-23,Isolated model evaluation — no system context
-S2,toxicity,calibration_ece,0.4701,200,RealToxicityPrompts,Claude 3.5 FT,2024-10-04,Isolated model evaluation — no system context
-S2,toxicity,robustness_drop,0.9248,200,RealToxicityPrompts,Claude 3.5 FT,2024-10-26,Isolated model evaluation — no system context
-S2,toxicity,token_efficiency,0.8696,200,RealToxicityPrompts,Claude 3.5 FT,2024-12-19,Isolated model evaluation — no system context
-S2,bias_fairness,accuracy,0.5262,200,WinoBias,Claude 3.5 FT,2024-10-17,Isolated model evaluation — no system context
-S2,bias_fairness,calibration_ece,0.6868,200,WinoBias,Claude 3.5 FT,2024-10-15,Isolated model evaluation — no system context
-S2,bias_fairness,robustness_drop,0.732,200,WinoBias,Claude 3.5 FT,2024-10-28,Isolated model evaluation — no system context
-S2,bias_fairness,token_efficiency,0.6825,200,WinoBias,Claude 3.5 FT,2024-11-02,Isolated model evaluation — no system context
-S2,disinformation,accuracy,0.8334,200,TruthfulQA,Claude 3.5 FT,2024-10-22,Isolated model evaluation — no system context
-S2,disinformation,calibration_ece,0.7529,200,TruthfulQA,Claude 3.5 FT,2024-12-31,Isolated model evaluation — no system context
-S2,disinformation,robustness_drop,0.5073,200,TruthfulQA,Claude 3.5 FT,2024-10-21,Isolated model evaluation — no system context
-S2,disinformation,token_efficiency,0.9324,200,TruthfulQA,Claude 3.5 FT,2024-10-14,Isolated model evaluation — no system context
-S2,copyright,accuracy,0.7393,200,BooksCorpus excerpts,Claude 3.5 FT,2024-11-09,Isolated model evaluation — no system context
-S2,copyright,calibration_ece,0.7379,200,BooksCorpus excerpts,Claude 3.5 FT,2024-11-18,Isolated model evaluation — no system context
-S2,copyright,robustness_drop,0.6483,200,BooksCorpus excerpts,Claude 3.5 FT,2024-12-31,Isolated model evaluation — no system context
-S2,copyright,token_efficiency,0.5492,200,BooksCorpus excerpts,Claude 3.5 FT,2024-12-15,Isolated model evaluation — no system context
-S2,efficiency,accuracy,0.7953,200,Tokens/second,Claude 3.5 FT,2024-12-20,Isolated model evaluation — no system context
-S2,efficiency,calibration_ece,0.5714,200,Tokens/second,Claude 3.5 FT,2024-12-29,Isolated model evaluation — no system context
-S2,efficiency,robustness_drop,0.8362,200,Tokens/second,Claude 3.5 FT,2024-12-27,Isolated model evaluation — no system context
-S2,efficiency,token_efficiency,0.7502,200,Tokens/second,Claude 3.5 FT,2024-10-16,Isolated model evaluation — no system context
+S2,question_answering,accuracy,0.6402,200,OpenBookQA,Llama 3.3 70B FT,2024-10-01,Isolated model evaluation — no system context
+S2,question_answering,calibration_ece,0.9214,200,OpenBookQA,Llama 3.3 70B FT,2024-11-08,Isolated model evaluation — no system context
+S2,question_answering,robustness_drop,0.8267,200,OpenBookQA,Llama 3.3 70B FT,2024-11-23,Isolated model evaluation — no system context
+S2,question_answering,token_efficiency,0.7191,200,OpenBookQA,Llama 3.3 70B FT,2024-12-09,Isolated model evaluation — no system context
+S2,summarization,accuracy,0.8499,200,CNN/DM,Llama 3.3 70B FT,2024-10-29,Isolated model evaluation — no system context
+S2,summarization,calibration_ece,0.6941,200,CNN/DM,Llama 3.3 70B FT,2024-11-04,Isolated model evaluation — no system context
+S2,summarization,robustness_drop,0.6679,200,CNN/DM,Llama 3.3 70B FT,2024-10-04,Isolated model evaluation — no system context
+S2,summarization,token_efficiency,0.6444,200,CNN/DM,Llama 3.3 70B FT,2024-12-25,Isolated model evaluation — no system context
+S2,code_generation,accuracy,0.7896,200,HumanEval,Llama 3.3 70B FT,2024-11-21,Isolated model evaluation — no system context
+S2,code_generation,calibration_ece,0.8121,200,HumanEval,Llama 3.3 70B FT,2024-11-29,Isolated model evaluation — no system context
+S2,code_generation,robustness_drop,0.9098,200,HumanEval,Llama 3.3 70B FT,2024-12-19,Isolated model evaluation — no system context
+S2,code_generation,token_efficiency,0.7171,200,HumanEval,Llama 3.3 70B FT,2024-11-20,Isolated model evaluation — no system context
+S2,information_retrieval,accuracy,0.7459,200,MS MARCO,Llama 3.3 70B FT,2024-12-24,Isolated model evaluation — no system context
+S2,information_retrieval,calibration_ece,0.4636,200,MS MARCO,Llama 3.3 70B FT,2024-12-22,Isolated model evaluation — no system context
+S2,information_retrieval,robustness_drop,0.6643,200,MS MARCO,Llama 3.3 70B FT,2024-11-29,Isolated model evaluation — no system context
+S2,information_retrieval,token_efficiency,0.5409,200,MS MARCO,Llama 3.3 70B FT,2024-11-03,Isolated model evaluation — no system context
+S2,robustness,accuracy,0.6396,200,AdvGLUE,Llama 3.3 70B FT,2024-10-28,Isolated model evaluation — no system context
+S2,robustness,calibration_ece,0.6773,200,AdvGLUE,Llama 3.3 70B FT,2024-11-13,Isolated model evaluation — no system context
+S2,robustness,robustness_drop,0.8306,200,AdvGLUE,Llama 3.3 70B FT,2024-11-18,Isolated model evaluation — no system context
+S2,robustness,token_efficiency,0.5891,200,AdvGLUE,Llama 3.3 70B FT,2024-11-23,Isolated model evaluation — no system context
+S2,calibration,accuracy,0.5761,200,Expected Calibration Error,Llama 3.3 70B FT,2024-10-11,Isolated model evaluation — no system context
+S2,calibration,calibration_ece,0.6852,200,Expected Calibration Error,Llama 3.3 70B FT,2024-12-09,Isolated model evaluation — no system context
+S2,calibration,robustness_drop,0.476,200,Expected Calibration Error,Llama 3.3 70B FT,2024-11-14,Isolated model evaluation — no system context
+S2,calibration,token_efficiency,0.5621,200,Expected Calibration Error,Llama 3.3 70B FT,2024-10-09,Isolated model evaluation — no system context
+S2,toxicity,accuracy,0.8406,200,RealToxicityPrompts,Llama 3.3 70B FT,2024-12-23,Isolated model evaluation — no system context
+S2,toxicity,calibration_ece,0.4701,200,RealToxicityPrompts,Llama 3.3 70B FT,2024-10-04,Isolated model evaluation — no system context
+S2,toxicity,robustness_drop,0.9248,200,RealToxicityPrompts,Llama 3.3 70B FT,2024-10-26,Isolated model evaluation — no system context
+S2,toxicity,token_efficiency,0.8696,200,RealToxicityPrompts,Llama 3.3 70B FT,2024-12-19,Isolated model evaluation — no system context
+S2,bias_fairness,accuracy,0.5262,200,WinoBias,Llama 3.3 70B FT,2024-10-17,Isolated model evaluation — no system context
+S2,bias_fairness,calibration_ece,0.6868,200,WinoBias,Llama 3.3 70B FT,2024-10-15,Isolated model evaluation — no system context
+S2,bias_fairness,robustness_drop,0.732,200,WinoBias,Llama 3.3 70B FT,2024-10-28,Isolated model evaluation — no system context
+S2,bias_fairness,token_efficiency,0.6825,200,WinoBias,Llama 3.3 70B FT,2024-11-02,Isolated model evaluation — no system context
+S2,disinformation,accuracy,0.8334,200,TruthfulQA,Llama 3.3 70B FT,2024-10-22,Isolated model evaluation — no system context
+S2,disinformation,calibration_ece,0.7529,200,TruthfulQA,Llama 3.3 70B FT,2024-12-31,Isolated model evaluation — no system context
+S2,disinformation,robustness_drop,0.5073,200,TruthfulQA,Llama 3.3 70B FT,2024-10-21,Isolated model evaluation — no system context
+S2,disinformation,token_efficiency,0.9324,200,TruthfulQA,Llama 3.3 70B FT,2024-10-14,Isolated model evaluation — no system context
+S2,copyright,accuracy,0.7393,200,BooksCorpus excerpts,Llama 3.3 70B FT,2024-11-09,Isolated model evaluation — no system context
+S2,copyright,calibration_ece,0.7379,200,BooksCorpus excerpts,Llama 3.3 70B FT,2024-11-18,Isolated model evaluation — no system context
+S2,copyright,robustness_drop,0.6483,200,BooksCorpus excerpts,Llama 3.3 70B FT,2024-12-31,Isolated model evaluation — no system context
+S2,copyright,token_efficiency,0.5492,200,BooksCorpus excerpts,Llama 3.3 70B FT,2024-12-15,Isolated model evaluation — no system context
+S2,efficiency,accuracy,0.7953,200,Tokens/second,Llama 3.3 70B FT,2024-12-20,Isolated model evaluation — no system context
+S2,efficiency,calibration_ece,0.5714,200,Tokens/second,Llama 3.3 70B FT,2024-12-29,Isolated model evaluation — no system context
+S2,efficiency,robustness_drop,0.8362,200,Tokens/second,Llama 3.3 70B FT,2024-12-27,Isolated model evaluation — no system context
+S2,efficiency,token_efficiency,0.7502,200,Tokens/second,Llama 3.3 70B FT,2024-10-16,Isolated model evaluation — no system context
 S3,question_answering,accuracy,0.8481,200,OpenBookQA,Gemini 1.5 Pro,2024-12-12,Isolated model evaluation — no system context
 S3,question_answering,calibration_ece,0.8413,200,OpenBookQA,Gemini 1.5 Pro,2024-11-14,Isolated model evaluation — no system context
 S3,question_answering,robustness_drop,0.7164,200,OpenBookQA,Gemini 1.5 Pro,2024-12-24,Isolated model evaluation — no system context
