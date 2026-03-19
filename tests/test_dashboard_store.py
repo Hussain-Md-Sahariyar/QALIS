@@ -1,7 +1,3 @@
-"""
-Tests for qalis.dashboard.store — MetricsStore (in-memory metric ring-buffer).
-"""
-
 import pytest
 import threading
 from qalis.dashboard.store import MetricsStore
@@ -18,23 +14,22 @@ def _record(store, system_id="S1", composite=7.5, violations=None):
         composite=composite,
         dimension_scores={"FC": 7.8, "RO": 6.2},
         violations=violations or [],
-        raw_metrics={},
-        timestamp="2024-11-01T10:00:00+00:00",
+        raw_metrics={}
     )
 
 
 class TestMetricsStore:
 
-    def test_latest_returns_none_before_record(self, store):
+    def test_returns(self, store):
         assert store.latest("S1") is None
 
-    def test_latest_after_record(self, store):
+    def test_latest(self, store):
         _record(store, composite=7.5)
         latest = store.latest("S1")
         assert latest is not None
         assert latest["composite"] == pytest.approx(7.5)
 
-    def test_latest_returns_most_recent(self, store):
+    def test_latest_returns(self, store):
         _record(store, composite=7.5)
         _record(store, composite=8.1)
         assert store.latest("S1")["composite"] == pytest.approx(8.1)
@@ -45,26 +40,26 @@ class TestMetricsStore:
         history = store.history("S1", last_n=10)
         assert len(history) == 5
 
-    def test_history_last_n_limit(self, store):
+    def test_history_last(self, store):
         for i in range(20):
             _record(store, composite=float(i))
         history = store.history("S1", last_n=5)
         assert len(history) == 5
 
-    def test_history_oldest_first(self, store):
+    def test_history_(self, store):
         for i in range(3):
             _record(store, composite=float(i))
         history = store.history("S1")
         composites = [h["composite"] for h in history]
         assert composites == [0.0, 1.0, 2.0]
 
-    def test_systems_returns_all_system_ids(self, store):
+    def test_systems_returns(self, store):
         _record(store, system_id="S1")
         _record(store, system_id="S2")
         _record(store, system_id="S3")
         assert store.systems() == {"S1", "S2", "S3"}
 
-    def test_clear_single_system(self, store):
+    def test_clear_single(self, store):
         _record(store, system_id="S1")
         _record(store, system_id="S2")
         store.clear("S1")
@@ -84,7 +79,7 @@ class TestMetricsStore:
         assert "S1" in summary
         assert "SF-3" in summary["S1"]
 
-    def test_max_history_respected(self):
+    def test_max_history(self):
         small_store = MetricsStore(max_history=5)
         for i in range(10):
             _record(small_store, composite=float(i))
@@ -106,5 +101,4 @@ class TestMetricsStore:
         for t in threads:
             t.join()
         assert errors == [], f"Thread safety errors: {errors}"
-        # All 200 writes, but ring buffer is capped at 100
         assert len(store.history("S1", last_n=200)) <= 100
