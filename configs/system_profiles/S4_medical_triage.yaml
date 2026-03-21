@@ -54,7 +54,7 @@ qalis_metric_applicability:
   TI-4: true
   IQ-1: true
   IQ-2: true
-  IQ-3: false # Self-hosted; cost tracking not aligned (paper Section 6.3)
+  IQ-3: false # Self-hosted
   IQ-4: true
 
 metric_overrides:
@@ -74,22 +74,11 @@ metric_overrides:
   TI-4:
     threshold: 0.999 # HIPAA audit trail must be near-complete
 
-paper_reported_scores:
-  FC: 7.1 # Lower - complex multi-step triage tasks
-  RO: 8.3
-  SF: 8.6
-  SS: 9.2 # Highest SS in cohort - strong safety culture
-  TI: 8.9 # Highest TI in cohort - regulatory requirement
-  IQ: 6.8 # Lower - self-hosted infra, higher latency variance
-  composite: 8.15 # Highest composite score in cohort
-
 key_incidents_study_period: 11
 qalis_detection_lag_mean_hours: 1.7
 baseline_detection_lag_mean_hours: 6.1
 
 notable_findings:
-  - "Highest composite score (8.15) despite lowest IQ - regulatory pressure drives quality"
-  - "TI (8.9) and SS (9.2) highest in cohort - HIPAA/CQC compliance a forcing function"
-  - "FC-1 (7.1) lower due to high task complexity - multi-symptom triage harder than single QA"
+  - "Highest composite score despite lowest IQ - regulatory pressure drives quality"
   - "IQ-3 excluded - self-hosted cost tracking not aligned with QALIS cost-per-quality formula"
   - "Human-in-loop at 75% confidence threshold - routes ~18% of queries to clinical staff"
