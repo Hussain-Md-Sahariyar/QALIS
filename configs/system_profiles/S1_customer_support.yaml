@@ -54,15 +54,6 @@ metric_overrides:
   SS-2:
     pii_categories_extra: [ORDER_ID, ACCOUNT_NUMBER]
 
-paper_reported_scores:
-  FC: 7.8
-  RO: 6.2
-  SF: 8.1
-  SS: 7.4
-  TI: 5.6 # Lowest dimension - transparency gap
-  IQ: 8.3
-  composite: 7.23
-
 key_incidents_study_period: 11
 qalis_detection_lag_mean_hours: 1.4
 baseline_detection_lag_mean_hours: 5.2
