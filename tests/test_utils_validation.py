@@ -1,14 +1,7 @@
-"""
-Tests for qalis.utils.validation — CollectorConfig and interaction validation.
-"""
-
 import pytest
 from qalis.utils.validation import validate_config, validate_interaction
 
-
-# ---------------------------------------------------------------------------
 # validate_config
-# ---------------------------------------------------------------------------
 
 class TestValidateConfig:
 
@@ -39,10 +32,7 @@ class TestValidateConfig:
         collector_config.dimension_weights["transparency"] = 0.0
         validate_config(collector_config)  # zero weight is allowed
 
-
-# ---------------------------------------------------------------------------
 # validate_interaction
-# ---------------------------------------------------------------------------
 
 class TestValidateInteraction:
 
