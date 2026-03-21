@@ -55,15 +55,6 @@ metric_overrides:
   IQ-2:
     threshold: 4000 # Longer docs = longer generation; relaxed latency
 
-paper_reported_scores:
-  FC: 8.2
-  RO: 6.8
-  SF: 9.1 # Highest SF across all systems
-  SS: 7.9
-  TI: 7.5
-  IQ: 8.6
-  composite: 8.02
-
 key_incidents_study_period: 10
 qalis_detection_lag_mean_hours: 1.3
 baseline_detection_lag_mean_hours: 4.9
