@@ -6,8 +6,8 @@ system:
   study_role: "Case System 2 of 4 - highest FC score in study cohort"
 
 infrastructure:
-  llm_provider: anthropic
-  llm_model: "claude-3-5-sonnet-ft-v1.3"
+  llm_provider: self-hosted
+  llm_model: "llama-3.3-70b-instruct-ft"
   context_window_tokens: 100000
   streaming_enabled: true # Fill-in-the-middle streaming
   rag_enabled: false
@@ -29,7 +29,7 @@ qalis_metric_applicability:
   RO-5: true
   SF-1: true # Faithfulness to in-context code
   SF-2: false # No RAG - attribution N/A
-  SF-3: true  # Hallucinated API calls / functions
+  SF-3: true # Hallucinated API calls / functions
   SS-1: true
   SS-2: true
   SS-3: true
