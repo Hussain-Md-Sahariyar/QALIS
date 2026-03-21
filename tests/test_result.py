@@ -1,14 +1,7 @@
-"""
-Tests for qalis.result — QALISResult and DimensionScore data structures.
-"""
-
 import pytest
 from qalis.result import QALISResult, DimensionScore
 
-
-# ---------------------------------------------------------------------------
 # DimensionScore
-# ---------------------------------------------------------------------------
 
 class TestDimensionScore:
 
@@ -24,7 +17,7 @@ class TestDimensionScore:
         )
         assert ds.passed_threshold() is False
 
-    def test_to_dict_round_trip(self):
+    def test_to_dict(self):
         ds = DimensionScore(
             name="transparency", score=7.05,
             metrics={"TI-1": 0.72, "TI-2": 0.68}, layer=3,
@@ -38,19 +31,17 @@ class TestDimensionScore:
         assert d["weight"] == pytest.approx(1.2)
 
 
-# ---------------------------------------------------------------------------
 # QALISResult
-# ---------------------------------------------------------------------------
 
 def _make_result(composite: float = 7.5, violations=None) -> QALISResult:
     dims = {
-        "functional_correctness":  DimensionScore("functional_correctness",  7.8, {}, 3),
-        "robustness":              DimensionScore("robustness",              6.2, {}, 2),
-        "semantic_faithfulness":   DimensionScore("semantic_faithfulness",   8.1, {}, 3),
-        "safety_security":         DimensionScore("safety_security",         7.4, {}, 3),
-        "transparency":            DimensionScore("transparency",            5.6, {}, 3,
-                                                  threshold_violations=violations or []),
-        "system_integration":      DimensionScore("system_integration",      8.3, {}, 4),
+        "functional_correctness": DimensionScore("functional_correctness", 7.8, {}, 3),
+        "robustness": DimensionScore("robustness", 6.2, {}, 2),
+        "semantic_faithfulness": DimensionScore("semantic_faithfulness", 8.1, {}, 3),
+        "safety_security": DimensionScore("safety_security", 7.4, {}, 3),
+        "transparency": DimensionScore("transparency", 5.6, {}, 3, 
+                                       threshold_violations=violations or []),
+        "system_integration": DimensionScore("system_integration", 8.3, {}, 4),
     }
     return QALISResult(
         system_id="S1",
@@ -108,7 +99,6 @@ class TestQALISResult:
         assert 0.0 <= result.composite_score <= 10.0
 
     def test_study_composites_in_range(self):
-        """All four study system composites should round to paper Table 4 values."""
         expected = {"S1": 7.23, "S2": 7.68, "S3": 8.02, "S4": 8.15}
         for sid, expected_val in expected.items():
             assert 6.5 <= expected_val <= 9.0, \
