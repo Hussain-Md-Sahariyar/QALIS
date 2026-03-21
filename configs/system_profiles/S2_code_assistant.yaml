@@ -53,21 +53,12 @@ metric_overrides:
   SF-3:
     note: "Hallucination = hallucinated stdlib/library calls that don't exist"
 
-paper_reported_scores:
-  FC: 8.9 # Highest FC across all systems
-  RO: 7.8
-  SF: 7.3
-  SS: 8.8
-  TI: 6.2
-  IQ: 7.1
-  composite: 7.68
-
 key_incidents_study_period: 10
 qalis_detection_lag_mean_hours: 1.1
 baseline_detection_lag_mean_hours: 4.7
 
 notable_findings:
-  - "FC-3 (Pass@k=0.91) highest functional correctness in cohort"
+  - "FC-3 highest functional correctness in cohort"
   - "SF-3 hallucination manifests as non-existent library function calls"
   - "TI-3 not collected - plugin has no explanation UI surface"
   - "IQ-3 excluded - self-managed fine-tuned model, cost tracking misaligned"
