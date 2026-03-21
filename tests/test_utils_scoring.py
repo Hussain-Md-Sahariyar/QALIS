@@ -1,42 +1,30 @@
-"""
-Tests for qalis.utils.scoring — metric normalisation and threshold checks.
-
-Paper reference: Table 3 (metric catalogue, thresholds).
-"""
-
 import pytest
 from qalis.utils.scoring import normalise_metrics, check_threshold, _normalise_value
 
-
-# ---------------------------------------------------------------------------
 # Individual metric normalisation
-# ---------------------------------------------------------------------------
 
 class TestNormaliseValue:
 
     @pytest.mark.parametrize("metric_id,raw,expected_min,expected_max", [
-        # Proportion → ×10
-        ("FC-1", 0.85,  8.0,  9.0),
-        ("FC-1", 1.0,  10.0, 10.0),
-        ("FC-1", 0.0,   0.0,  0.0),
+        ("FC-1", 0.85, 8.0, 9.0),
+        ("FC-1", 1.0, 10.0, 10.0),
+        ("FC-1", 0.0, 0.0, 0.0),
         # Inverted (lower raw = better)
-        ("RO-1", 0.10,  9.0,  9.0),   # threshold exactly: (1-0.10)×10 = 9.0
-        ("RO-1", 0.0,  10.0, 10.0),
-        ("RO-1", 1.0,   0.0,  0.0),
-        ("SS-1", 0.005, 9.4,  9.6),   # (1-0.005)×10 = 9.95 → clipped at 10? No: 9.95
+        ("RO-1", 0.10, 9.0, 9.0), # threshold exactly: (1-0.10)×10 = 9.0
+        ("RO-1", 0.0, 10.0, 10.0),
+        ("RO-1", 1.0, 0.0, 0.0),
+        ("SS-1", 0.005, 9.4, 9.6), # (1-0.005)×10 = 9.95
         # SF-3: hallucination rate per 1K tokens
-        ("SF-3", 0.0,  10.0, 10.0),
-        ("SF-3", 2.0,   4.9,  5.1),   # 10 - 2*2.5 = 5.0
-        ("SF-3", 4.0,   0.0,  0.0),
-        # TI-3: Likert 1–5 → 0–10
-        ("TI-3", 1.0,   0.0,  0.0),
-        ("TI-3", 3.5,   6.1,  6.4),   # (3.5-1)/4*10 = 6.25
-        ("TI-3", 5.0,  10.0, 10.0),
-        # IQ-2: latency ms → 0–10
-        ("IQ-2", 0.0,  10.0, 10.0),
-        ("IQ-2", 2500,  4.9,  5.1),   # 10 - 2500/500 = 5.0
+        ("SF-3", 0.0, 10.0, 10.0),
+        ("SF-3", 2.0, 4.9, 5.1), # 10 - 2*2.5 = 5.0
+        ("SF-3", 4.0, 0.0, 0.0),
+        ("TI-3", 1.0, 0.0, 0.0),
+        ("TI-3", 3.5, 6.1, 6.4), # (3.5-1)/4*10 = 6.25
+        ("TI-3", 5.0, 10.0, 10.0),
+        ("IQ-2", 0.0, 10.0, 10.0),
+        ("IQ-2", 2500, 4.9, 5.1), # 10 - 2500/500 = 5.0
     ])
-    def test_normalise_value_in_range(self, metric_id, raw, expected_min, expected_max):
+    def test_normalise_value(self, metric_id, raw, expected_min, expected_max):
         val = _normalise_value(metric_id, raw)
         assert 0.0 <= val <= 10.0, f"{metric_id}: {val} not in [0, 10]"
         assert expected_min <= val <= expected_max, \
@@ -49,10 +37,7 @@ class TestNormaliseValue:
         import math
         assert _normalise_value("FC-1", float("nan")) == 0.0
 
-
-# ---------------------------------------------------------------------------
 # check_threshold
-# ---------------------------------------------------------------------------
 
 class TestCheckThreshold:
 
@@ -84,7 +69,7 @@ class TestCheckThreshold:
             f"{metric_id}={raw}: expected pass={expected_pass}, got {result}"
 
     def test_custom_threshold_override(self):
-        # S4 clinical override: SF-3 ≤ 1.0 (half of default 2.0)
+        # S4 clinical override: SF-3 <= 1.0 (half of default 2.0)
         assert check_threshold("SF-3", 1.5, custom_thresholds={"SF-3": 1.0}) is False
         assert check_threshold("SF-3", 0.9, custom_thresholds={"SF-3": 1.0}) is True
 
@@ -92,9 +77,7 @@ class TestCheckThreshold:
         assert check_threshold("XX-99", 0.0) is True
 
 
-# ---------------------------------------------------------------------------
 # normalise_metrics (dimension-level)
-# ---------------------------------------------------------------------------
 
 class TestNormaliseMetrics:
 
