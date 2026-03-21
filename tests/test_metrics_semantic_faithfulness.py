@@ -1,9 +1,3 @@
-"""
-Tests for qalis.metrics.semantic_faithfulness — SF-1 through SF-3.
-
-Paper reference: §4.2, Table 3 (SF dimension).
-"""
-
 import pytest
 from qalis.metrics.semantic_faithfulness import SemanticFaithfulnessMetrics
 
@@ -11,7 +5,8 @@ from qalis.metrics.semantic_faithfulness import SemanticFaithfulnessMetrics
 @pytest.fixture
 def sf_metrics():
     cfg = {
-        "system_id": "TEST", "domain": "general",
+        "system_id": "TEST", 
+        "domain": "general",
         "enable_embeddings": False,
     }
     return SemanticFaithfulnessMetrics(cfg, enable_nli=False)
@@ -19,7 +14,7 @@ def sf_metrics():
 
 class TestSemanticFaithfulnessMetrics:
 
-    def test_compute_returns_dict(self, sf_metrics, rag_interaction):
+    def test_compute(self, sf_metrics, rag_interaction):
         result = sf_metrics.compute(
             response=rag_interaction["response"],
             context=rag_interaction["context"],
@@ -27,7 +22,7 @@ class TestSemanticFaithfulnessMetrics:
         )
         assert isinstance(result, dict)
 
-    def test_sf_keys_present(self, sf_metrics, rag_interaction):
+    def test_sf_keys(self, sf_metrics, rag_interaction):
         result = sf_metrics.compute(
             response=rag_interaction["response"],
             context=rag_interaction["context"],
@@ -46,7 +41,7 @@ class TestSemanticFaithfulnessMetrics:
         if sf1 is not None:
             assert 0.0 <= sf1 <= 1.0, f"SF-1={sf1} out of [0, 1]"
 
-    def test_sf3_non_negative(self, sf_metrics, rag_interaction):
+    def test_sf3(self, sf_metrics, rag_interaction):
         result = sf_metrics.compute(
             response=rag_interaction["response"],
             context=rag_interaction["context"],
@@ -55,7 +50,7 @@ class TestSemanticFaithfulnessMetrics:
         if sf3 is not None:
             assert sf3 >= 0.0, f"SF-3={sf3} is negative"
 
-    def test_empty_context_no_crash(self, sf_metrics, simple_interaction):
+    def test_empty_context(self, sf_metrics, simple_interaction):
         result = sf_metrics.compute(
             response=simple_interaction["response"],
             context=[],
@@ -63,7 +58,7 @@ class TestSemanticFaithfulnessMetrics:
         )
         assert isinstance(result, dict)
 
-    def test_extract_atomic_claims(self, sf_metrics):
+    def test_atomic_claims(self, sf_metrics):
         text = (
             "The study included 14 participants. "
             "All four systems passed their respective thresholds. "
@@ -78,11 +73,11 @@ class TestSemanticFaithfulnessMetrics:
         sents = sf_metrics._split_to_sentences(text)
         assert len(sents) == 3
 
-    def test_term_overlap_identical(self, sf_metrics):
+    def test_term_overlap(self, sf_metrics):
         overlap = sf_metrics._term_overlap("hello world", "hello world")
         assert overlap == pytest.approx(1.0, abs=0.01)
 
-    def test_term_overlap_no_shared_terms(self, sf_metrics):
+    def test_term_overlap_terms(self, sf_metrics):
         overlap = sf_metrics._term_overlap("alpha beta gamma", "delta epsilon zeta")
         assert overlap == pytest.approx(0.0, abs=0.01)
 
