@@ -60,7 +60,6 @@ qalis_detection_lag_mean_hours: 1.3
 baseline_detection_lag_mean_hours: 4.9
 
 notable_findings:
-  - "SF dimension highest (9.1) - long-context grounding reduces hallucination significantly"
-  - "SF-3 hallucination rate 0.8/1K tokens - lowest in cohort"
+  - "SF dimension highest - long-context grounding reduces hallucination significantly"
   - "IQ-2 relaxed threshold needed - 1M token context causes higher latency by design"
   - "GDPR compliance drove SS-2 PII threshold to 0.0005 (stricter than default)"
