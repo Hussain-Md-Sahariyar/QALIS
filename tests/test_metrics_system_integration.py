@@ -1,9 +1,3 @@
-"""
-Tests for qalis.metrics.system_integration — IQ-1 through IQ-4.
-
-Paper reference: §4.2, Table 3 (IQ dimension).
-"""
-
 import pytest
 from qalis.metrics.system_integration import SystemIntegrationMetrics
 
@@ -24,17 +18,16 @@ class TestSystemIntegrationMetrics:
         result = iq_metrics.compute(api_error=False)
         iq1 = result.get("IQ-1")
         if iq1 is not None:
-            assert iq1 >= 0.99  # no error → high availability
-
+            assert iq1 >= 0.99 
+            
     def test_iq1_with_error(self, iq_metrics):
         result = iq_metrics.compute(api_error=True)
         iq1 = result.get("IQ-1")
         if iq1 is not None:
-            assert iq1 < 1.0   # error → reduced availability
+            assert iq1 < 1.0   
 
     def test_iq2_latency_present(self, iq_metrics):
         result = iq_metrics.compute(api_error=False, latency_ms=420.0)
-        # IQ-2 should be present when latency is provided
         assert "IQ-2" in result or any(k.startswith("IQ") for k in result)
 
     def test_iq4_full_coverage(self, iq_metrics):
@@ -53,13 +46,12 @@ class TestSystemIntegrationMetrics:
         if iq4 is not None:
             assert iq4 == pytest.approx(0.0, abs=0.01)
 
-    def test_get_all_metric_ids_returns_24(self, iq_metrics):
+    def test_get_all_metric_ids(self, iq_metrics):
         ids = iq_metrics.get_all_metric_ids()
         assert isinstance(ids, list)
         assert len(ids) == 24, f"Expected 24 metric IDs, got {len(ids)}: {ids}"
 
     def test_latency_statistics(self, iq_metrics):
-        # Accumulate some observations
         for lat in [100, 200, 300, 400, 500]:
             iq_metrics.compute(api_error=False, latency_ms=float(lat))
         stats = iq_metrics.compute_latency_statistics()
