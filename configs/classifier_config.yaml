@@ -133,7 +133,7 @@ policy_compliance:
       - no_training_data_disclosure
     regulatory_compliance:
       HIPAA: [no_phi_in_response, include_disclaimer_where_needed]
-      GDPR:  [data_minimisation_in_response, right_to_explanation_supported]
+      GDPR: [data_minimisation_in_response, right_to_explanation_supported]
       EU_AI_Act: [human_oversight_maintained, transparency_requirements_met]
 
   ml_fallback:
