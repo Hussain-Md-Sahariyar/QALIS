@@ -1,0 +1,19 @@
+{
+  "system_id": "S3",
+  "timestamp": "2024-12-31T07:00:41.109Z",
+  "compare_to": "last_stable_release",
+  "passed": true,
+  "composite_score": 8.11,
+  "regressions": [],
+  "failures": [],
+  "advisories": [
+    {
+      "metric_id": "TI-1",
+      "value": 0.61,
+      "threshold": 0.65,
+      "operator": ">=",
+      "description": "Explanation coverage advisory threshold",
+      "severity": "advisory"
+    }
+  ]
+}

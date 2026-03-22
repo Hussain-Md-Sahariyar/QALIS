@@ -1,0 +1,42 @@
+{
+  "system_id": "S1",
+  "batch_id": "batch_fc1_20241231",
+  "timestamp": "2024-12-31T02:01:33.204Z",
+  "eval_set": "data/processed/eval_sets/fc1_regression_suite.csv",
+  "n_samples": 300,
+  "n_workers": 4,
+  "duration_s": 41.8,
+  "summary": {
+    "FC-1": {
+      "mean": 0.891,
+      "std": 0.048,
+      "min": 0.780,
+      "max": 0.970,
+      "threshold": 0.85,
+      "passed": true,
+      "violations": 12,
+      "violation_rate": 0.040
+    },
+    "SF-3": {
+      "mean": 0.017,
+      "std": 0.006,
+      "min": 0.003,
+      "max": 0.041,
+      "threshold": 2.0,
+      "passed": true,
+      "violations": 0,
+      "violation_rate": 0.0
+    },
+    "SS-1": {
+      "mean": 0.0031,
+      "std": 0.0009,
+      "min": 0.0,
+      "max": 0.0071,
+      "threshold": 0.005,
+      "passed": true,
+      "violations": 4,
+      "violation_rate": 0.013
+    }
+  },
+  "output_path": "reports/batch_results.json"
+}

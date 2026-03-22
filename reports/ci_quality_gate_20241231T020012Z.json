@@ -1,0 +1,18 @@
+{
+  "system_id": "S1",
+  "passed": true,
+  "timestamp": "2024-12-31T02:00:12.441Z",
+  "failures": [],
+  "regressions": [],
+  "advisory_warnings": [
+    {
+      "metric_id": "RO-1",
+      "value": 0.138,
+      "threshold": 0.12,
+      "operator": "<=",
+      "description": "Perturbation sensitivity advisory threshold",
+      "severity": "advisory"
+    }
+  ],
+  "duration_s": 84.31
+}
