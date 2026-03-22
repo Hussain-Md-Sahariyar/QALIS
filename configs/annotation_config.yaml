@@ -2,14 +2,14 @@ general:
   annotation_platform: "custom_web_interface"  # Hosted internally
   payment_model: "research_team" # Internal annotators for this study
   training_required: true
-  training_materials: "supplementary/survey_instruments/annotator_training_guide.pdf"
+  training_materials: "supplementary/survey_instruments/annotator_training_guide.md"
   pilot_annotation_size: 20 # Pre-study pilot before live annotation
   iaa_check_frequency: 50 # Re-compute IAA every 50 items
 
 FC4_factual_precision:
   metric_id: "FC-4"
   description: "Assess the factual precision of LLM output claims against source evidence"
-  total_items: 800 # Paper: 800 claims across all systems
+  total_items: 800
   items_per_system: 200
   annotators_per_item: 3
   achieved_iaa_kappa: 0.76 # Fleiss κ achieved
