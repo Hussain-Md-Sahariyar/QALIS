@@ -1,0 +1,9 @@
+layer_id: 2
+name: "Model Behavior Layer"
+primary_stakeholders:
+  - "Data engineers"
+  - "ML engineers"
+  - "Product managers"
+  - "Platform engineers"
+metrics_count: 9
+monitoring_frequency: "mixed (real-time to weekly)"

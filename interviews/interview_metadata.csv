@@ -1,0 +1,15 @@
+interview_id,date,duration_minutes,participant_role,sector,llm_experience_years,org_team_size,recording_mode,participant_verified,interview_type,system_description
+INT-01,2024-11-04,62,Principal ML Engineer,Financial Services,5,~23 engineers,audio_recorded,verified,Semi-structured,GPT-4 customer-facing chatbot + internal RAG
+INT-02,2024-11-06,54,AI Product Manager,Healthcare,4,~11 engineers,audio_recorded,verified,Semi-structured,LLM-assisted clinical documentation
+INT-03,2024-11-08,71,Head of LLM Engineering,Legal Tech,6,~18 engineers,audio_recorded,verified,Semi-structured,Contract analysis and summarisation system
+INT-04,2024-11-11,49,Senior Data Scientist,E-Commerce,3,~8 engineers,audio_recorded,verified,Semi-structured,Product recommendation and Q&A chatbot
+INT-05,2024-11-13,58,ML Platform Engineer,Software Dev Tooling,4,~30 engineers,audio_recorded,verified,Semi-structured,AI code assistant IDE plugin
+INT-06,2024-11-15,63,Applied AI Lead,Manufacturing,5,~14 engineers,audio_recorded,verified,Semi-structured,Predictive maintenance and anomaly detection LLM
+INT-07,2024-11-18,55,LLM Safety Engineer,Financial Services,4,~20 engineers,audio_recorded,verified,Semi-structured,Fraud explanation and customer communication
+INT-08,2024-11-20,67,Clinical Informatics Lead,Healthcare,7,~9 engineers,audio_recorded,verified,Semi-structured,Medical triage and symptom assessment assistant
+INT-09,2024-11-22,48,VP of Engineering,Legal Tech,5,~25 engineers,audio_recorded,verified,Semi-structured,Due diligence document review system
+INT-10,2024-11-25,61,ML Engineering Manager,E-Commerce,4,~16 engineers,audio_recorded,verified,Semi-structured,Personalised search and discovery assistant
+INT-11,2024-11-27,57,Staff Software Engineer,Software Dev Tooling,3,~40 engineers,audio_recorded,verified,Semi-structured,Natural language to SQL generation tool
+INT-12,2024-11-29,52,AI Systems Architect,Manufacturing,6,~12 engineers,audio_recorded,verified,Semi-structured,Process optimisation and root cause analysis LLM
+INT-13,2024-12-02,66,Director of AI,Financial Services,5,~35 engineers,audio_recorded,verified,Semi-structured,Regulatory reporting and compliance assistant
+INT-14,2024-12-04,59,Chief Data Officer,Healthcare,8,~22 engineers,audio_recorded,verified,Semi-structured,Population health management and risk stratification

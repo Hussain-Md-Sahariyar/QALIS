@@ -1,0 +1,22 @@
+{
+  "overall_fleiss_kappa": 0.71,
+  "n_explanations": 500,
+  "per_system": {
+    "S1": {
+      "n": 125,
+      "faithful_pct": 60.0
+    },
+    "S2": {
+      "n": 125,
+      "faithful_pct": 64.8
+    },
+    "S3": {
+      "n": 125,
+      "faithful_pct": 80.0
+    },
+    "S4": {
+      "n": 125,
+      "faithful_pct": 84.8
+    }
+  }
+}

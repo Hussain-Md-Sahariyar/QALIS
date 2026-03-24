@@ -1,0 +1,119 @@
+{
+  "total_themes": 8,
+  "total_coded_excerpts": 237,
+  "analysis_method": "Framework Method (Gale et al., 2013) with directed content analysis",
+  "inter_rater_kappa": 0.81,
+  "themes": {
+    "TH1": {
+      "name": "Inadequacy of existing QA approaches for LLM systems",
+      "interviews": [
+        "INT-01",
+        "INT-03",
+        "INT-06",
+        "INT-08",
+        "INT-09",
+        "INT-10",
+        "INT-12"
+      ],
+      "key_quotes": 34,
+      "framework_implication": "Motivates QALIS multi-layer design"
+    },
+    "TH2": {
+      "name": "Hallucination as primary safety concern",
+      "interviews": [
+        "INT-02",
+        "INT-03",
+        "INT-05",
+        "INT-07",
+        "INT-08",
+        "INT-11"
+      ],
+      "key_quotes": 28,
+      "framework_implication": "Operationalizes SF dimension (SF-1, SF-2, SF-3)"
+    },
+    "TH3": {
+      "name": "Transparency as underserved quality gap",
+      "interviews": [
+        "INT-01",
+        "INT-02",
+        "INT-03",
+        "INT-04",
+        "INT-05",
+        "INT-06",
+        "INT-07",
+        "INT-08",
+        "INT-09",
+        "INT-10",
+        "INT-11",
+        "INT-12",
+        "INT-13",
+        "INT-14"
+      ],
+      "key_quotes": 52,
+      "framework_implication": "Elevates TI dimension priority; motivates TI-2 metric"
+    },
+    "TH4": {
+      "name": "Integration reliability distinct from model quality",
+      "interviews": [
+        "INT-01",
+        "INT-04",
+        "INT-09",
+        "INT-10",
+        "INT-12",
+        "INT-13"
+      ],
+      "key_quotes": 19,
+      "framework_implication": "Defines IQ dimension as separate from model-level concerns"
+    },
+    "TH5": {
+      "name": "Need for operationalized thresholds with domain calibration",
+      "interviews": [
+        "INT-02",
+        "INT-05",
+        "INT-07",
+        "INT-08",
+        "INT-11",
+        "INT-14"
+      ],
+      "key_quotes": 31,
+      "framework_implication": "Drives threshold specification in Table 3 with domain guidance"
+    },
+    "TH6": {
+      "name": "Prompt brittleness as robustness failure mode",
+      "interviews": [
+        "INT-04",
+        "INT-06",
+        "INT-09",
+        "INT-11",
+        "INT-13"
+      ],
+      "key_quotes": 22,
+      "framework_implication": "Informs RO-1 (Perturbation Sensitivity) and RO-4 design"
+    },
+    "TH7": {
+      "name": "Regulatory compliance as quality driver",
+      "interviews": [
+        "INT-02",
+        "INT-03",
+        "INT-05",
+        "INT-07",
+        "INT-08"
+      ],
+      "key_quotes": 24,
+      "framework_implication": "Motivates TI-4 Audit Trail and SS-2 PII metrics"
+    },
+    "TH8": {
+      "name": "Tooling fragmentation as adoption barrier",
+      "interviews": [
+        "INT-01",
+        "INT-06",
+        "INT-09",
+        "INT-10",
+        "INT-11",
+        "INT-14"
+      ],
+      "key_quotes": 27,
+      "framework_implication": "Motivates QALIS unified toolkit and IQ-4 Observability metric"
+    }
+  }
+}

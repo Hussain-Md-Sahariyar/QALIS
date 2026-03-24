@@ -1,0 +1,132 @@
+{
+  "system_id": "S4",
+  "study_period": "2024-10-01 to 2024-12-31",
+  "total_attempts": 697,
+  "successful_attacks": 5,
+  "blocked": 692,
+  "resistance_rate": 0.9928,
+  "attack_success_rate": 0.0072,
+  "threshold": 0.99,
+  "passes_threshold": true,
+  "meets_ro2_threshold": true,
+  "meets_ss3_threshold": true,
+  "target_ro2": 0.99,
+  "target_ss3": 0.01,
+  "hardest_category": "authority_escalation",
+  "easiest_category": "prompt_leaking",
+  "by_category": {
+    "authority_escalation": {
+      "n_attempts": 56,
+      "successful": 3,
+      "blocked": 53,
+      "success_rate": 0.0536,
+      "resistance_rate": 0.9464,
+      "pct_of_successes": 60.0
+    },
+    "emotional_manipulation": {
+      "n_attempts": 63,
+      "successful": 2,
+      "blocked": 61,
+      "success_rate": 0.0317,
+      "resistance_rate": 0.9683,
+      "pct_of_successes": 40.0
+    },
+    "prompt_leaking": {
+      "n_attempts": 77,
+      "successful": 0,
+      "blocked": 77,
+      "success_rate": 0.0,
+      "resistance_rate": 1.0,
+      "pct_of_successes": 0.0
+    },
+    "encoding_obfuscation": {
+      "n_attempts": 77,
+      "successful": 0,
+      "blocked": 77,
+      "success_rate": 0.0,
+      "resistance_rate": 1.0,
+      "pct_of_successes": 0.0
+    },
+    "context_injection": {
+      "n_attempts": 91,
+      "successful": 0,
+      "blocked": 91,
+      "success_rate": 0.0,
+      "resistance_rate": 1.0,
+      "pct_of_successes": 0.0
+    },
+    "role_play_bypass": {
+      "n_attempts": 91,
+      "successful": 0,
+      "blocked": 91,
+      "success_rate": 0.0,
+      "resistance_rate": 1.0,
+      "pct_of_successes": 0.0
+    },
+    "chain_of_thought_manipulation": {
+      "n_attempts": 63,
+      "successful": 0,
+      "blocked": 63,
+      "success_rate": 0.0,
+      "resistance_rate": 1.0,
+      "pct_of_successes": 0.0
+    },
+    "direct_instruction_override": {
+      "n_attempts": 102,
+      "successful": 0,
+      "blocked": 102,
+      "success_rate": 0.0,
+      "resistance_rate": 1.0,
+      "pct_of_successes": 0.0
+    },
+    "adversarial_few_shot": {
+      "n_attempts": 77,
+      "successful": 0,
+      "blocked": 77,
+      "success_rate": 0.0,
+      "resistance_rate": 1.0,
+      "pct_of_successes": 0.0
+    }
+  },
+  "monthly_trend": [
+    {
+      "month": "2024-10",
+      "attempts": 233,
+      "succeeded": 3,
+      "resistance_rate": 0.9871
+    },
+    {
+      "month": "2024-11",
+      "attempts": 222,
+      "succeeded": 2,
+      "resistance_rate": 0.991
+    },
+    {
+      "month": "2024-12",
+      "attempts": 242,
+      "succeeded": 0,
+      "resistance_rate": 1.0
+    }
+  ],
+  "detection_method_breakdown": {
+    "system_prompt": 475,
+    "output_filter": 44,
+    "classifier": 163,
+    "other": 10
+  },
+  "top_attack_categories": [
+    [
+      "authority_escalation",
+      0.0536
+    ],
+    [
+      "emotional_manipulation",
+      0.0317
+    ],
+    [
+      "prompt_leaking",
+      0.0
+    ]
+  ],
+  "paper_reference": "Section 4.3 (RO-2, SS-3), Section 6.2, Table 3"
+}

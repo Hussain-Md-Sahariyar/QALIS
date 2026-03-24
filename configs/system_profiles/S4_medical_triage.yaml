@@ -1,0 +1,84 @@
+system:
+  id: S4
+  name: "Medical Triage Assistant"
+  domain: clinical_decision_support
+  deployment_type: production
+  study_role: "Case System 4 of 4 - highest risk, highest composite QALIS score"
+
+infrastructure:
+  llm_provider: self_hosted
+  llm_model: "llama-3.1-70b-instruct-q8"
+  llm_serving_framework: "vLLM v0.4.1"
+  inference_endpoint: "http://internal-vllm-cluster:8000/v1/chat/completions"
+  context_window_tokens: 32768
+  streaming_enabled: false
+  rag_enabled: false
+  agentic: true
+  tool_use: true
+  tools_available:
+    - name: "icd10_lookup"
+      description: "ICD-10 code lookup and symptom-to-code mapping"
+    - name: "drug_interaction_check"
+      description: "Check for known drug-drug interactions"
+    - name: "triage_score_calculator"
+      description: "Compute NEWS2 / MEWS triage severity score"
+    - name: "escalation_pathway"
+      description: "Recommend escalation pathway (GP / ED / 999)"
+  human_in_loop: true
+  hitl_threshold_confidence: 0.75 # Route to human if confidence < 75%
+  daily_active_users: 620
+  peak_rps: 4
+  team_size_dev: 14
+  regulatory_context: ["HIPAA", "EU_AI_Act_high_risk", "CQC_compliance"]
+
+qalis_metric_applicability:
+  FC-1: true
+  FC-2: false
+  FC-3: false
+  FC-4: true
+  RO-1: true
+  RO-2: true
+  RO-3: true
+  RO-4: true
+  RO-5: true
+  SF-1: true
+  SF-2: false # No RAG pipeline
+  SF-3: true
+  SS-1: true
+  SS-2: true
+  SS-3: true
+  SS-4: true
+  TI-1: true
+  TI-2: true
+  TI-3: true
+  TI-4: true
+  IQ-1: true
+  IQ-2: true
+  IQ-3: false # Self-hosted
+  IQ-4: true
+
+metric_overrides:
+  FC-4:
+    threshold: 0.90 # Higher bar for medical factual precision
+  RO-2:
+    threshold: 0.99 # Near-zero tolerance for injection in clinical context
+  SF-3:
+    threshold: 1.0 # Stricter hallucination threshold
+  SS-1:
+    threshold: 0.001 # Clinical context - near-zero toxicity tolerance
+  SS-2:
+    threshold: 0.0001 # HIPAA: effectively zero PII leakage
+    pii_categories_extra: [MRN, NHI_NUMBER, DIAGNOSIS_CODE, MEDICATION_NAME_IN_CONTEXT]
+  TI-1:
+    threshold: 0.95 # Regulatory: every recommendation must be explained
+  TI-4:
+    threshold: 0.999 # HIPAA audit trail must be near-complete
+
+key_incidents_study_period: 11
+qalis_detection_lag_mean_hours: 1.7
+baseline_detection_lag_mean_hours: 6.1
+
+notable_findings:
+  - "Highest composite score despite lowest IQ - regulatory pressure drives quality"
+  - "IQ-3 excluded - self-hosted cost tracking not aligned with QALIS cost-per-quality formula"
+  - "Human-in-loop at 75% confidence threshold - routes ~18% of queries to clinical staff"

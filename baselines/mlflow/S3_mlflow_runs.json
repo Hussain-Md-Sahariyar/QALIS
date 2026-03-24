@@ -1,0 +1,3503 @@
+{
+  "system_id": "S3",
+  "total_runs": 92,
+  "experiment": "qalis-study-s3-oct-dec-2024",
+  "runs": [
+    {
+      "run_id": "mlflow-S3-0001",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-10-01T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00086,
+        "p95_latency_ms": 1609.8,
+        "tokens_per_request": 813.1,
+        "cost_per_request_usd": 0.00217,
+        "null_response_rate": 0.00109,
+        "task_accuracy_eval_set": 0.7936,
+        "input_drift_ks_stat": 0.0736,
+        "output_drift_psi": 0.0001,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0002",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-10-02T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00246,
+        "p95_latency_ms": 1821.7,
+        "tokens_per_request": 749.7,
+        "cost_per_request_usd": 0.00264,
+        "null_response_rate": 0.00189,
+        "task_accuracy_eval_set": 0.8517,
+        "input_drift_ks_stat": 0.0435,
+        "output_drift_psi": 0.0336,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0003",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-10-03T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00135,
+        "p95_latency_ms": 1856.6,
+        "tokens_per_request": 803.5,
+        "cost_per_request_usd": 0.00206,
+        "null_response_rate": 0.00029,
+        "task_accuracy_eval_set": 0.8317,
+        "input_drift_ks_stat": 0.0284,
+        "output_drift_psi": 0.0384,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0004",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-10-04T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00218,
+        "p95_latency_ms": 1662.1,
+        "tokens_per_request": 902.2,
+        "cost_per_request_usd": 0.00141,
+        "null_response_rate": 0.00087,
+        "task_accuracy_eval_set": 0.8092,
+        "input_drift_ks_stat": 0.0595,
+        "output_drift_psi": 0.0038,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0005",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-10-05T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00227,
+        "p95_latency_ms": 1957.6,
+        "tokens_per_request": 742.7,
+        "cost_per_request_usd": 0.00154,
+        "null_response_rate": 0.00106,
+        "task_accuracy_eval_set": 0.8402,
+        "input_drift_ks_stat": 0.0458,
+        "output_drift_psi": 0.0655,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0006",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-10-06T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00178,
+        "p95_latency_ms": 1830.2,
+        "tokens_per_request": 835.0,
+        "cost_per_request_usd": 0.00178,
+        "null_response_rate": 0.00058,
+        "task_accuracy_eval_set": 0.8091,
+        "input_drift_ks_stat": 0.0152,
+        "output_drift_psi": 0.0326,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0007",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-10-07T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00203,
+        "p95_latency_ms": 1254.4,
+        "tokens_per_request": 881.4,
+        "cost_per_request_usd": 0.00209,
+        "null_response_rate": 0.00122,
+        "task_accuracy_eval_set": 0.8107,
+        "input_drift_ks_stat": 0.0407,
+        "output_drift_psi": 0.0491,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0008",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-10-08T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00185,
+        "p95_latency_ms": 2396.0,
+        "tokens_per_request": 789.7,
+        "cost_per_request_usd": 0.00188,
+        "null_response_rate": 0.00044,
+        "task_accuracy_eval_set": 0.8043,
+        "input_drift_ks_stat": 0.0632,
+        "output_drift_psi": 0.024,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0009",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-10-09T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00278,
+        "p95_latency_ms": 1456.8,
+        "tokens_per_request": 890.5,
+        "cost_per_request_usd": 0.00128,
+        "null_response_rate": 0.0008,
+        "task_accuracy_eval_set": 0.8464,
+        "input_drift_ks_stat": 0.037,
+        "output_drift_psi": 0.0136,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0010",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-10-10T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00263,
+        "p95_latency_ms": 1972.8,
+        "tokens_per_request": 891.4,
+        "cost_per_request_usd": 0.0027,
+        "null_response_rate": 0.00048,
+        "task_accuracy_eval_set": 0.8186,
+        "input_drift_ks_stat": 0.051,
+        "output_drift_psi": 0.0375,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0011",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-10-11T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00256,
+        "p95_latency_ms": 2192.0,
+        "tokens_per_request": 835.0,
+        "cost_per_request_usd": 0.00133,
+        "null_response_rate": 0.00164,
+        "task_accuracy_eval_set": 0.82,
+        "input_drift_ks_stat": 0.0439,
+        "output_drift_psi": 0.0018,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0012",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-10-12T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00157,
+        "p95_latency_ms": 2101.9,
+        "tokens_per_request": 904.5,
+        "cost_per_request_usd": 0.00216,
+        "null_response_rate": 0.00127,
+        "task_accuracy_eval_set": 0.8207,
+        "input_drift_ks_stat": 0.0821,
+        "output_drift_psi": 0.1182,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0013",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-10-13T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00083,
+        "p95_latency_ms": 1788.0,
+        "tokens_per_request": 839.3,
+        "cost_per_request_usd": 0.00152,
+        "null_response_rate": 0.00131,
+        "task_accuracy_eval_set": 0.8004,
+        "input_drift_ks_stat": 0.0174,
+        "output_drift_psi": 0.0062,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0014",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-10-14T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00206,
+        "p95_latency_ms": 1551.2,
+        "tokens_per_request": 850.3,
+        "cost_per_request_usd": 0.00261,
+        "null_response_rate": 0.00127,
+        "task_accuracy_eval_set": 0.8393,
+        "input_drift_ks_stat": 0.0064,
+        "output_drift_psi": 0.0851,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0015",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-10-15T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00153,
+        "p95_latency_ms": 1754.8,
+        "tokens_per_request": 925.1,
+        "cost_per_request_usd": 0.00257,
+        "null_response_rate": 0.00121,
+        "task_accuracy_eval_set": 0.8029,
+        "input_drift_ks_stat": 0.0103,
+        "output_drift_psi": 0.0131,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0016",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-10-16T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00176,
+        "p95_latency_ms": 1429.9,
+        "tokens_per_request": 883.2,
+        "cost_per_request_usd": 0.00199,
+        "null_response_rate": 0.0014,
+        "task_accuracy_eval_set": 0.7908,
+        "input_drift_ks_stat": 0.0902,
+        "output_drift_psi": 0.1823,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0017",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-10-17T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00112,
+        "p95_latency_ms": 1886.3,
+        "tokens_per_request": 881.9,
+        "cost_per_request_usd": 0.00151,
+        "null_response_rate": 0.00186,
+        "task_accuracy_eval_set": 0.8187,
+        "input_drift_ks_stat": 0.012,
+        "output_drift_psi": 0.0909,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0018",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-10-18T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00121,
+        "p95_latency_ms": 1653.7,
+        "tokens_per_request": 842.7,
+        "cost_per_request_usd": 0.00131,
+        "null_response_rate": 0.00114,
+        "task_accuracy_eval_set": 0.8295,
+        "input_drift_ks_stat": 0.0147,
+        "output_drift_psi": 0.0328,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0019",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-10-19T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00287,
+        "p95_latency_ms": 1901.6,
+        "tokens_per_request": 847.9,
+        "cost_per_request_usd": 0.00261,
+        "null_response_rate": 0.00065,
+        "task_accuracy_eval_set": 0.8479,
+        "input_drift_ks_stat": 0.0154,
+        "output_drift_psi": 0.0382,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0020",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-10-20T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00383,
+        "p95_latency_ms": 1120.6,
+        "tokens_per_request": 850.4,
+        "cost_per_request_usd": 0.0018,
+        "null_response_rate": 0.00185,
+        "task_accuracy_eval_set": 0.8119,
+        "input_drift_ks_stat": 0.2183,
+        "output_drift_psi": 0.0764,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0021",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-10-21T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00235,
+        "p95_latency_ms": 1684.1,
+        "tokens_per_request": 885.3,
+        "cost_per_request_usd": 0.00172,
+        "null_response_rate": 0.00077,
+        "task_accuracy_eval_set": 0.7835,
+        "input_drift_ks_stat": 0.0087,
+        "output_drift_psi": 0.0749,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0022",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-10-22T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00069,
+        "p95_latency_ms": 1826.1,
+        "tokens_per_request": 853.9,
+        "cost_per_request_usd": 0.00251,
+        "null_response_rate": 0.00032,
+        "task_accuracy_eval_set": 0.8284,
+        "input_drift_ks_stat": 0.0258,
+        "output_drift_psi": 0.0151,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0023",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-10-23T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.0012,
+        "p95_latency_ms": 1776.3,
+        "tokens_per_request": 904.2,
+        "cost_per_request_usd": 0.00181,
+        "null_response_rate": 0.00142,
+        "task_accuracy_eval_set": 0.8145,
+        "input_drift_ks_stat": 0.138,
+        "output_drift_psi": 0.0013,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0024",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-10-24T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00182,
+        "p95_latency_ms": 1316.8,
+        "tokens_per_request": 788.6,
+        "cost_per_request_usd": 0.00219,
+        "null_response_rate": 0.00089,
+        "task_accuracy_eval_set": 0.8256,
+        "input_drift_ks_stat": 0.0548,
+        "output_drift_psi": 0.0075,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0025",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-10-25T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00138,
+        "p95_latency_ms": 1888.6,
+        "tokens_per_request": 849.1,
+        "cost_per_request_usd": 0.00293,
+        "null_response_rate": 0.00066,
+        "task_accuracy_eval_set": 0.8424,
+        "input_drift_ks_stat": 0.0844,
+        "output_drift_psi": 0.0233,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0026",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-10-26T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00116,
+        "p95_latency_ms": 2177.9,
+        "tokens_per_request": 881.8,
+        "cost_per_request_usd": 0.00207,
+        "null_response_rate": 0.00112,
+        "task_accuracy_eval_set": 0.7983,
+        "input_drift_ks_stat": 0.1122,
+        "output_drift_psi": 0.0695,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0027",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-10-27T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00197,
+        "p95_latency_ms": 1804.0,
+        "tokens_per_request": 892.5,
+        "cost_per_request_usd": 0.00191,
+        "null_response_rate": 0.0009,
+        "task_accuracy_eval_set": 0.8101,
+        "input_drift_ks_stat": 0.0277,
+        "output_drift_psi": 0.0238,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0028",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-10-28T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00273,
+        "p95_latency_ms": 1701.5,
+        "tokens_per_request": 838.6,
+        "cost_per_request_usd": 0.00169,
+        "null_response_rate": 0.00025,
+        "task_accuracy_eval_set": 0.8512,
+        "input_drift_ks_stat": 0.0407,
+        "output_drift_psi": 0.0433,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0029",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-10-29T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00147,
+        "p95_latency_ms": 2237.2,
+        "tokens_per_request": 867.3,
+        "cost_per_request_usd": 0.00273,
+        "null_response_rate": 0.00099,
+        "task_accuracy_eval_set": 0.8191,
+        "input_drift_ks_stat": 0.0422,
+        "output_drift_psi": 0.0039,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0030",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-10-30T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00222,
+        "p95_latency_ms": 2247.8,
+        "tokens_per_request": 937.0,
+        "cost_per_request_usd": 0.00204,
+        "null_response_rate": 0.00161,
+        "task_accuracy_eval_set": 0.7656,
+        "input_drift_ks_stat": 0.0376,
+        "output_drift_psi": 0.0125,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0031",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-10-31T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00289,
+        "p95_latency_ms": 1926.9,
+        "tokens_per_request": 857.2,
+        "cost_per_request_usd": 0.00177,
+        "null_response_rate": 0.0006,
+        "task_accuracy_eval_set": 0.858,
+        "input_drift_ks_stat": 0.0898,
+        "output_drift_psi": 0.0654,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0032",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-11-01T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00201,
+        "p95_latency_ms": 1639.7,
+        "tokens_per_request": 887.7,
+        "cost_per_request_usd": 0.00199,
+        "null_response_rate": 0.00094,
+        "task_accuracy_eval_set": 0.8195,
+        "input_drift_ks_stat": 0.0506,
+        "output_drift_psi": 0.0436,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0033",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-11-02T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00176,
+        "p95_latency_ms": 1384.4,
+        "tokens_per_request": 889.9,
+        "cost_per_request_usd": 0.00242,
+        "null_response_rate": 0.00062,
+        "task_accuracy_eval_set": 0.7835,
+        "input_drift_ks_stat": 0.0315,
+        "output_drift_psi": 0.0119,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0034",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-11-03T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00202,
+        "p95_latency_ms": 1399.7,
+        "tokens_per_request": 764.1,
+        "cost_per_request_usd": 0.00286,
+        "null_response_rate": 0.00089,
+        "task_accuracy_eval_set": 0.8301,
+        "input_drift_ks_stat": 0.0057,
+        "output_drift_psi": 0.0207,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0035",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-11-04T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00072,
+        "p95_latency_ms": 1666.3,
+        "tokens_per_request": 792.2,
+        "cost_per_request_usd": 0.00146,
+        "null_response_rate": 0.00065,
+        "task_accuracy_eval_set": 0.7839,
+        "input_drift_ks_stat": 0.0369,
+        "output_drift_psi": 0.0355,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0036",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-11-05T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00081,
+        "p95_latency_ms": 1760.1,
+        "tokens_per_request": 859.4,
+        "cost_per_request_usd": 0.00158,
+        "null_response_rate": 0.00201,
+        "task_accuracy_eval_set": 0.8344,
+        "input_drift_ks_stat": 0.0897,
+        "output_drift_psi": 0.0164,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0037",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-11-06T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00289,
+        "p95_latency_ms": 2029.7,
+        "tokens_per_request": 809.1,
+        "cost_per_request_usd": 0.00166,
+        "null_response_rate": 0.00246,
+        "task_accuracy_eval_set": 0.8118,
+        "input_drift_ks_stat": 0.0389,
+        "output_drift_psi": 0.0107,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0038",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-11-07T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00283,
+        "p95_latency_ms": 1501.6,
+        "tokens_per_request": 809.7,
+        "cost_per_request_usd": 0.00257,
+        "null_response_rate": 0.0011,
+        "task_accuracy_eval_set": 0.7704,
+        "input_drift_ks_stat": 0.0019,
+        "output_drift_psi": 0.0091,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0039",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-11-08T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00271,
+        "p95_latency_ms": 1896.3,
+        "tokens_per_request": 877.1,
+        "cost_per_request_usd": 0.00204,
+        "null_response_rate": 0.00115,
+        "task_accuracy_eval_set": 0.7969,
+        "input_drift_ks_stat": 0.0652,
+        "output_drift_psi": 0.0426,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0040",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-11-09T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00066,
+        "p95_latency_ms": 2036.5,
+        "tokens_per_request": 913.9,
+        "cost_per_request_usd": 0.00231,
+        "null_response_rate": 0.0007,
+        "task_accuracy_eval_set": 0.8093,
+        "input_drift_ks_stat": 0.0352,
+        "output_drift_psi": 0.0556,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0041",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-11-10T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00253,
+        "p95_latency_ms": 2321.7,
+        "tokens_per_request": 811.5,
+        "cost_per_request_usd": 0.00189,
+        "null_response_rate": 0.00037,
+        "task_accuracy_eval_set": 0.7917,
+        "input_drift_ks_stat": 0.0124,
+        "output_drift_psi": 0.0168,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0042",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-11-11T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00149,
+        "p95_latency_ms": 1339.6,
+        "tokens_per_request": 869.8,
+        "cost_per_request_usd": 0.00186,
+        "null_response_rate": 0.00146,
+        "task_accuracy_eval_set": 0.831,
+        "input_drift_ks_stat": 0.1049,
+        "output_drift_psi": 0.0198,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0043",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-11-12T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.0014,
+        "p95_latency_ms": 2259.8,
+        "tokens_per_request": 858.5,
+        "cost_per_request_usd": 0.00175,
+        "null_response_rate": 0.0008,
+        "task_accuracy_eval_set": 0.79,
+        "input_drift_ks_stat": 0.102,
+        "output_drift_psi": 0.106,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0044",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-11-13T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00027,
+        "p95_latency_ms": 1724.5,
+        "tokens_per_request": 854.5,
+        "cost_per_request_usd": 0.0017,
+        "null_response_rate": 0.00161,
+        "task_accuracy_eval_set": 0.8449,
+        "input_drift_ks_stat": 0.0196,
+        "output_drift_psi": 0.1036,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0045",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-11-14T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00203,
+        "p95_latency_ms": 1727.4,
+        "tokens_per_request": 874.0,
+        "cost_per_request_usd": 0.00163,
+        "null_response_rate": 0.00173,
+        "task_accuracy_eval_set": 0.8323,
+        "input_drift_ks_stat": 0.0284,
+        "output_drift_psi": 0.0093,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0046",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-11-15T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00109,
+        "p95_latency_ms": 1878.8,
+        "tokens_per_request": 795.3,
+        "cost_per_request_usd": 0.002,
+        "null_response_rate": 0.00074,
+        "task_accuracy_eval_set": 0.8313,
+        "input_drift_ks_stat": 0.0834,
+        "output_drift_psi": 0.0393,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0047",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-11-16T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00188,
+        "p95_latency_ms": 1587.1,
+        "tokens_per_request": 845.0,
+        "cost_per_request_usd": 0.00199,
+        "null_response_rate": 0.00124,
+        "task_accuracy_eval_set": 0.8086,
+        "input_drift_ks_stat": 0.0774,
+        "output_drift_psi": 0.0087,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0048",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-11-17T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00336,
+        "p95_latency_ms": 2361.7,
+        "tokens_per_request": 899.7,
+        "cost_per_request_usd": 0.0015,
+        "null_response_rate": 0.0017,
+        "task_accuracy_eval_set": 0.8031,
+        "input_drift_ks_stat": 0.0616,
+        "output_drift_psi": 0.0214,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0049",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-11-18T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00062,
+        "p95_latency_ms": 2040.5,
+        "tokens_per_request": 857.3,
+        "cost_per_request_usd": 0.0022,
+        "null_response_rate": 0.00059,
+        "task_accuracy_eval_set": 0.8369,
+        "input_drift_ks_stat": 0.041,
+        "output_drift_psi": 0.0182,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0050",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-11-19T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00295,
+        "p95_latency_ms": 1001.9,
+        "tokens_per_request": 878.1,
+        "cost_per_request_usd": 0.00195,
+        "null_response_rate": 0.0006,
+        "task_accuracy_eval_set": 0.8235,
+        "input_drift_ks_stat": 0.04,
+        "output_drift_psi": 0.0368,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0051",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-11-20T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00188,
+        "p95_latency_ms": 1787.6,
+        "tokens_per_request": 879.6,
+        "cost_per_request_usd": 0.00261,
+        "null_response_rate": 0.00077,
+        "task_accuracy_eval_set": 0.8463,
+        "input_drift_ks_stat": 0.1043,
+        "output_drift_psi": 0.015,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0052",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-11-21T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00028,
+        "p95_latency_ms": 1821.5,
+        "tokens_per_request": 896.1,
+        "cost_per_request_usd": 0.00301,
+        "null_response_rate": 0.00102,
+        "task_accuracy_eval_set": 0.805,
+        "input_drift_ks_stat": 0.0821,
+        "output_drift_psi": 0.0021,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0053",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-11-22T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.0021,
+        "p95_latency_ms": 2075.1,
+        "tokens_per_request": 914.6,
+        "cost_per_request_usd": 0.00113,
+        "null_response_rate": 0.00103,
+        "task_accuracy_eval_set": 0.8197,
+        "input_drift_ks_stat": 0.0856,
+        "output_drift_psi": 0.0812,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0054",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-11-23T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00193,
+        "p95_latency_ms": 1660.9,
+        "tokens_per_request": 823.8,
+        "cost_per_request_usd": 0.00193,
+        "null_response_rate": 0.00082,
+        "task_accuracy_eval_set": 0.8204,
+        "input_drift_ks_stat": 0.1261,
+        "output_drift_psi": 0.0015,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0055",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-11-24T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00388,
+        "p95_latency_ms": 2173.2,
+        "tokens_per_request": 908.4,
+        "cost_per_request_usd": 0.00164,
+        "null_response_rate": 0.00085,
+        "task_accuracy_eval_set": 0.8016,
+        "input_drift_ks_stat": 0.0333,
+        "output_drift_psi": 0.0034,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0056",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-11-25T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00244,
+        "p95_latency_ms": 1890.8,
+        "tokens_per_request": 868.4,
+        "cost_per_request_usd": 0.00182,
+        "null_response_rate": 0.00051,
+        "task_accuracy_eval_set": 0.8112,
+        "input_drift_ks_stat": 0.0573,
+        "output_drift_psi": 0.0082,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0057",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-11-26T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00194,
+        "p95_latency_ms": 2060.3,
+        "tokens_per_request": 884.4,
+        "cost_per_request_usd": 0.00126,
+        "null_response_rate": 0.00096,
+        "task_accuracy_eval_set": 0.8026,
+        "input_drift_ks_stat": 0.0043,
+        "output_drift_psi": 0.0195,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0058",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-11-27T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00251,
+        "p95_latency_ms": 2299.1,
+        "tokens_per_request": 835.0,
+        "cost_per_request_usd": 0.00185,
+        "null_response_rate": 0.00129,
+        "task_accuracy_eval_set": 0.8392,
+        "input_drift_ks_stat": 0.0825,
+        "output_drift_psi": 0.0343,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0059",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-11-28T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00267,
+        "p95_latency_ms": 1754.9,
+        "tokens_per_request": 845.9,
+        "cost_per_request_usd": 0.00237,
+        "null_response_rate": 0.00121,
+        "task_accuracy_eval_set": 0.828,
+        "input_drift_ks_stat": 0.0585,
+        "output_drift_psi": 0.0861,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0060",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-11-29T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00191,
+        "p95_latency_ms": 1718.7,
+        "tokens_per_request": 882.9,
+        "cost_per_request_usd": 0.00162,
+        "null_response_rate": 0.00132,
+        "task_accuracy_eval_set": 0.8282,
+        "input_drift_ks_stat": 0.0592,
+        "output_drift_psi": 0.0473,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0061",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-11-30T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00166,
+        "p95_latency_ms": 1591.1,
+        "tokens_per_request": 872.5,
+        "cost_per_request_usd": 0.00199,
+        "null_response_rate": 0.00055,
+        "task_accuracy_eval_set": 0.8324,
+        "input_drift_ks_stat": 0.0007,
+        "output_drift_psi": 0.0379,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0062",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-12-01T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00025,
+        "p95_latency_ms": 1927.9,
+        "tokens_per_request": 865.0,
+        "cost_per_request_usd": 0.00206,
+        "null_response_rate": 0.00169,
+        "task_accuracy_eval_set": 0.7702,
+        "input_drift_ks_stat": 0.1015,
+        "output_drift_psi": 0.0682,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0063",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-12-02T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00102,
+        "p95_latency_ms": 2104.4,
+        "tokens_per_request": 819.4,
+        "cost_per_request_usd": 0.00148,
+        "null_response_rate": 0.00095,
+        "task_accuracy_eval_set": 0.8566,
+        "input_drift_ks_stat": 0.0289,
+        "output_drift_psi": 0.0025,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0064",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-12-03T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00289,
+        "p95_latency_ms": 1613.3,
+        "tokens_per_request": 934.9,
+        "cost_per_request_usd": 0.00279,
+        "null_response_rate": 0.00121,
+        "task_accuracy_eval_set": 0.8042,
+        "input_drift_ks_stat": 0.0858,
+        "output_drift_psi": 0.0147,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0065",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-12-04T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00264,
+        "p95_latency_ms": 2141.0,
+        "tokens_per_request": 881.8,
+        "cost_per_request_usd": 0.00155,
+        "null_response_rate": 0.00175,
+        "task_accuracy_eval_set": 0.8256,
+        "input_drift_ks_stat": 0.0259,
+        "output_drift_psi": 0.0308,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0066",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-12-05T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00231,
+        "p95_latency_ms": 2024.4,
+        "tokens_per_request": 869.9,
+        "cost_per_request_usd": 0.00191,
+        "null_response_rate": 0.00072,
+        "task_accuracy_eval_set": 0.8098,
+        "input_drift_ks_stat": 0.0231,
+        "output_drift_psi": 0.0495,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0067",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-12-06T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00166,
+        "p95_latency_ms": 1766.7,
+        "tokens_per_request": 854.9,
+        "cost_per_request_usd": 0.00227,
+        "null_response_rate": 0.00132,
+        "task_accuracy_eval_set": 0.8595,
+        "input_drift_ks_stat": 0.1114,
+        "output_drift_psi": 0.0114,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0068",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-12-07T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00257,
+        "p95_latency_ms": 1294.5,
+        "tokens_per_request": 947.1,
+        "cost_per_request_usd": 0.00194,
+        "null_response_rate": 0.0006,
+        "task_accuracy_eval_set": 0.8394,
+        "input_drift_ks_stat": 0.1758,
+        "output_drift_psi": 0.0106,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0069",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-12-08T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00101,
+        "p95_latency_ms": 1795.5,
+        "tokens_per_request": 878.7,
+        "cost_per_request_usd": 0.0024,
+        "null_response_rate": 0.00121,
+        "task_accuracy_eval_set": 0.8617,
+        "input_drift_ks_stat": 0.005,
+        "output_drift_psi": 0.0171,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0070",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-12-09T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00323,
+        "p95_latency_ms": 1780.4,
+        "tokens_per_request": 880.9,
+        "cost_per_request_usd": 3e-05,
+        "null_response_rate": 0.00123,
+        "task_accuracy_eval_set": 0.8185,
+        "input_drift_ks_stat": 0.0348,
+        "output_drift_psi": 0.0328,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0071",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-12-10T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.0029,
+        "p95_latency_ms": 1187.5,
+        "tokens_per_request": 1017.5,
+        "cost_per_request_usd": 0.00258,
+        "null_response_rate": 0.00118,
+        "task_accuracy_eval_set": 0.858,
+        "input_drift_ks_stat": 0.022,
+        "output_drift_psi": 0.0447,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0072",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-12-11T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00303,
+        "p95_latency_ms": 1309.2,
+        "tokens_per_request": 890.0,
+        "cost_per_request_usd": 0.0026,
+        "null_response_rate": 0.00127,
+        "task_accuracy_eval_set": 0.791,
+        "input_drift_ks_stat": 0.0164,
+        "output_drift_psi": 0.0062,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0073",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-12-12T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00126,
+        "p95_latency_ms": 1106.4,
+        "tokens_per_request": 800.7,
+        "cost_per_request_usd": 0.00175,
+        "null_response_rate": 0.00156,
+        "task_accuracy_eval_set": 0.8751,
+        "input_drift_ks_stat": 0.0685,
+        "output_drift_psi": 0.0394,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0074",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-12-13T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00158,
+        "p95_latency_ms": 2124.7,
+        "tokens_per_request": 890.7,
+        "cost_per_request_usd": 0.0022,
+        "null_response_rate": 0.00112,
+        "task_accuracy_eval_set": 0.844,
+        "input_drift_ks_stat": 0.1789,
+        "output_drift_psi": 0.0005,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0075",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-12-14T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00216,
+        "p95_latency_ms": 1951.3,
+        "tokens_per_request": 836.9,
+        "cost_per_request_usd": 0.0009,
+        "null_response_rate": 0.00125,
+        "task_accuracy_eval_set": 0.8053,
+        "input_drift_ks_stat": 0.1053,
+        "output_drift_psi": 0.0091,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0076",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-12-15T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.0035,
+        "p95_latency_ms": 1542.7,
+        "tokens_per_request": 916.6,
+        "cost_per_request_usd": 0.00118,
+        "null_response_rate": 0.00147,
+        "task_accuracy_eval_set": 0.8153,
+        "input_drift_ks_stat": 0.075,
+        "output_drift_psi": 0.0179,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0077",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-12-16T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00268,
+        "p95_latency_ms": 1950.8,
+        "tokens_per_request": 879.2,
+        "cost_per_request_usd": 0.00222,
+        "null_response_rate": 0.00184,
+        "task_accuracy_eval_set": 0.8088,
+        "input_drift_ks_stat": 0.1123,
+        "output_drift_psi": 0.0177,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0078",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-12-17T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00321,
+        "p95_latency_ms": 2501.9,
+        "tokens_per_request": 820.1,
+        "cost_per_request_usd": 0.00092,
+        "null_response_rate": 0.00108,
+        "task_accuracy_eval_set": 0.8062,
+        "input_drift_ks_stat": 0.0421,
+        "output_drift_psi": 0.0165,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0079",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-12-18T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00147,
+        "p95_latency_ms": 2229.3,
+        "tokens_per_request": 916.3,
+        "cost_per_request_usd": 0.00258,
+        "null_response_rate": 0.00216,
+        "task_accuracy_eval_set": 0.8046,
+        "input_drift_ks_stat": 0.1997,
+        "output_drift_psi": 0.1012,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0080",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-12-19T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00225,
+        "p95_latency_ms": 1783.3,
+        "tokens_per_request": 769.9,
+        "cost_per_request_usd": 0.00132,
+        "null_response_rate": 0.00135,
+        "task_accuracy_eval_set": 0.8171,
+        "input_drift_ks_stat": 0.1722,
+        "output_drift_psi": 0.047,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0081",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-12-20T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00305,
+        "p95_latency_ms": 2183.6,
+        "tokens_per_request": 870.7,
+        "cost_per_request_usd": 0.00342,
+        "null_response_rate": 0.00151,
+        "task_accuracy_eval_set": 0.8562,
+        "input_drift_ks_stat": 0.1067,
+        "output_drift_psi": 0.0416,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0082",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-12-21T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00066,
+        "p95_latency_ms": 1319.9,
+        "tokens_per_request": 822.9,
+        "cost_per_request_usd": 0.00213,
+        "null_response_rate": 0.001,
+        "task_accuracy_eval_set": 0.8275,
+        "input_drift_ks_stat": 0.0016,
+        "output_drift_psi": 0.0239,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0083",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-12-22T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00299,
+        "p95_latency_ms": 1802.4,
+        "tokens_per_request": 845.6,
+        "cost_per_request_usd": 0.00069,
+        "null_response_rate": 0.00144,
+        "task_accuracy_eval_set": 0.8045,
+        "input_drift_ks_stat": 0.0727,
+        "output_drift_psi": 0.0434,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0084",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-12-23T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00292,
+        "p95_latency_ms": 2004.0,
+        "tokens_per_request": 907.7,
+        "cost_per_request_usd": 0.00145,
+        "null_response_rate": 0.00089,
+        "task_accuracy_eval_set": 0.809,
+        "input_drift_ks_stat": 0.1384,
+        "output_drift_psi": 0.0432,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0085",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-12-24T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00176,
+        "p95_latency_ms": 2052.4,
+        "tokens_per_request": 878.7,
+        "cost_per_request_usd": 0.00194,
+        "null_response_rate": 0.00123,
+        "task_accuracy_eval_set": 0.837,
+        "input_drift_ks_stat": 0.0114,
+        "output_drift_psi": 0.0625,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0086",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-12-25T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00235,
+        "p95_latency_ms": 1720.8,
+        "tokens_per_request": 802.7,
+        "cost_per_request_usd": 0.00162,
+        "null_response_rate": 0.00088,
+        "task_accuracy_eval_set": 0.8205,
+        "input_drift_ks_stat": 0.0449,
+        "output_drift_psi": 0.0106,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0087",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-12-26T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00245,
+        "p95_latency_ms": 1688.0,
+        "tokens_per_request": 887.3,
+        "cost_per_request_usd": 0.0022,
+        "null_response_rate": 0.00128,
+        "task_accuracy_eval_set": 0.8487,
+        "input_drift_ks_stat": 0.0226,
+        "output_drift_psi": 0.0797,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0088",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-12-27T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00192,
+        "p95_latency_ms": 2042.8,
+        "tokens_per_request": 861.2,
+        "cost_per_request_usd": 0.00216,
+        "null_response_rate": 0.00014,
+        "task_accuracy_eval_set": 0.8033,
+        "input_drift_ks_stat": 0.0431,
+        "output_drift_psi": 0.0389,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0089",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-12-28T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00125,
+        "p95_latency_ms": 1910.1,
+        "tokens_per_request": 824.4,
+        "cost_per_request_usd": 0.00142,
+        "null_response_rate": 0.00104,
+        "task_accuracy_eval_set": 0.8243,
+        "input_drift_ks_stat": 0.0317,
+        "output_drift_psi": 0.0365,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0090",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-12-29T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00368,
+        "p95_latency_ms": 2084.6,
+        "tokens_per_request": 842.0,
+        "cost_per_request_usd": 0.00247,
+        "null_response_rate": 0.00027,
+        "task_accuracy_eval_set": 0.822,
+        "input_drift_ks_stat": 0.0843,
+        "output_drift_psi": 0.034,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0091",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-12-30T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00283,
+        "p95_latency_ms": 2373.0,
+        "tokens_per_request": 823.0,
+        "cost_per_request_usd": 0.0024,
+        "null_response_rate": 0.00095,
+        "task_accuracy_eval_set": 0.8423,
+        "input_drift_ks_stat": 0.0094,
+        "output_drift_psi": 0.0391,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S3-0092",
+      "experiment_id": "qalis-study-s3-oct-dec-2024",
+      "system_id": "S3",
+      "timestamp": "2024-12-31T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00355,
+        "p95_latency_ms": 1989.3,
+        "tokens_per_request": 849.5,
+        "cost_per_request_usd": 0.00182,
+        "null_response_rate": 0.00065,
+        "task_accuracy_eval_set": 0.8408,
+        "input_drift_ks_stat": 0.105,
+        "output_drift_psi": 0.0122,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Gemini 1.5 Pro",
+        "domain": "document_intelligence"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    }
+  ]
+}

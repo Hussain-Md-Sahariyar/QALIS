@@ -1,0 +1,26 @@
+{
+  "theme_id": "TH7",
+  "name": "Regulatory compliance as quality driver",
+  "n_excerpts": 14,
+  "codes": [
+    "C27",
+    "C28",
+    "C29"
+  ],
+  "description": "In regulated sectors, compliance requirements were identified as the primary forcing function for quality investment \u2014 often driving higher quality standards than practitioners would otherwise adopt.",
+  "key_evidence": [
+    "HIPAA compliance drove near-zero PII leakage requirements in healthcare participants (INT-02, INT-08, INT-14)",
+    "EU AI Act high-risk classification created compliance urgency and threshold review (INT-07, INT-13, INT-14)",
+    "Financial regulation audit evidence requirements exposed logging gaps (INT-01, INT-07, INT-13)"
+  ],
+  "significance_for_qalis": "Motivates domain-specific threshold overrides and TI-4 (audit trail completeness). Strong signal from financial, healthcare, and legal sectors.",
+  "representative_quotes": [
+    "[Anonymised quote from a participant whose excerpt was coded C27]",
+    "[Anonymised quote from a participant whose excerpt was coded C29]"
+  ],
+  "sectors_most_represented": [
+    "Financial Services",
+    "Healthcare",
+    "Legal Tech"
+  ]
+}

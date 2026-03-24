@@ -1,0 +1,36 @@
+{
+  "experiment_id": "exp_rq2_002",
+  "name": "NLI Model Comparison for SF Metrics",
+  "research_question": "RQ2",
+  "date": "2024-09-18",
+  "status": "completed",
+  "purpose": "Select optimal NLI model for SF-1 and SF-3 collection \u2014 accuracy vs latency trade-off",
+  "models_evaluated": [
+    {
+      "model": "cross-encoder/nli-deberta-v3-large",
+      "f1": 0.891,
+      "latency_ms_per_claim": 12.4,
+      "selected": true
+    },
+    {
+      "model": "cross-encoder/nli-deberta-v3-base",
+      "f1": 0.863,
+      "latency_ms_per_claim": 6.1,
+      "selected": false
+    },
+    {
+      "model": "facebook/bart-large-mnli",
+      "f1": 0.847,
+      "latency_ms_per_claim": 8.9,
+      "selected": false
+    },
+    {
+      "model": "typeform/distilbert-base-uncased-mnli",
+      "f1": 0.801,
+      "latency_ms_per_claim": 2.3,
+      "selected": false
+    }
+  ],
+  "evaluation_set": "200 manually labelled claim-context pairs",
+  "selection_rationale": "DeBERTa-v3-large selected for highest F1 (0.891). Latency acceptable on GPU (12.4ms/claim \u2192 ~1.2s for 10-claim response). CPU fallback available."
+}

@@ -1,0 +1,87 @@
+{
+  "total_mitigations": 5,
+  "last_updated": "2024-12-15",
+  "paper_reference": "Section 4.3, Section 6.2",
+  "mitigations": [
+    {
+      "mitigation_id": "MIT-001",
+      "strategy": "system_prompt_hardening",
+      "description": "Explicit anti-injection instructions added to system prompt",
+      "effective_against": [
+        "direct_instruction_override",
+        "authority_escalation",
+        "role_play_bypass"
+      ],
+      "implementation": "Append boundary-assertion clause to every system prompt",
+      "systems_using": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "estimated_reduction_pct": 62
+    },
+    {
+      "mitigation_id": "MIT-002",
+      "strategy": "classifier",
+      "description": "NLI-based injection classifier (DeBERTa-v3-large fine-tuned on injection corpus)",
+      "effective_against": [
+        "encoding_obfuscation",
+        "adversarial_few_shot",
+        "context_injection"
+      ],
+      "implementation": "Pre-inference classifier; rejects requests with injection_score > 0.85",
+      "systems_using": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "estimated_reduction_pct": 71
+    },
+    {
+      "mitigation_id": "MIT-003",
+      "strategy": "output_filter",
+      "description": "Post-inference output scanner for system prompt leakage and policy violations",
+      "effective_against": [
+        "prompt_leaking",
+        "chain_of_thought_manipulation"
+      ],
+      "implementation": "Regex + semantic similarity check against known system prompt fragments",
+      "systems_using": [
+        "S1",
+        "S3",
+        "S4"
+      ],
+      "estimated_reduction_pct": 54
+    },
+    {
+      "mitigation_id": "MIT-004",
+      "strategy": "emotional_framing_detection",
+      "description": "Sentiment and urgency classifier flags emotional manipulation attempts",
+      "effective_against": [
+        "emotional_manipulation"
+      ],
+      "implementation": "Distress-urgency keyword patterns + sentiment intensity threshold",
+      "systems_using": [
+        "S4"
+      ],
+      "estimated_reduction_pct": 83
+    },
+    {
+      "mitigation_id": "MIT-005",
+      "strategy": "decoding_sandbox",
+      "description": "Detect and sandbox encoded content before passing to model",
+      "effective_against": [
+        "encoding_obfuscation"
+      ],
+      "implementation": "Detect Base64/ROT13/hex patterns pre-inference; flag for classifier",
+      "systems_using": [
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "estimated_reduction_pct": 68
+    }
+  ]
+}

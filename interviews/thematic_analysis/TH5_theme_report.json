@@ -1,0 +1,26 @@
+{
+  "theme_id": "TH5",
+  "name": "Need for operationalised thresholds with domain calibration",
+  "n_excerpts": 27,
+  "codes": [
+    "C02",
+    "C21",
+    "C22",
+    "C23"
+  ],
+  "description": "Participants expressed a need for concrete, numeric quality thresholds but emphasised that generic thresholds are insufficient \u2014 domain-specific calibration is necessary, particularly in high-risk sectors.",
+  "key_evidence": [
+    "Domain threshold divergence: medical participants require \u226599% factual precision vs 85% generic default (INT-02, INT-08, INT-14)",
+    "No industry baseline reference: teams cannot contextualise their metric values (INT-04, INT-06, INT-10)",
+    "Threshold instability: regulatory change (EU AI Act) triggered emergency threshold reviews (INT-07, INT-13)"
+  ],
+  "significance_for_qalis": "Directly motivates QALIS threshold calibration methodology (Section 3.3). Domain overrides in configs/metrics_thresholds.yaml.",
+  "representative_quotes": [
+    "[Anonymised quote from a participant whose excerpt was coded C02]",
+    "[Anonymised quote from a participant whose excerpt was coded C23]"
+  ],
+  "sectors_most_represented": [
+    "Healthcare",
+    "Financial Services"
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "baseline_id": "MLflow",
+  "full_name": "MLflow Model Monitoring (v2.8+)",
+  "version": "2.8.1",
+  "features_used": [
+    "drift_detection",
+    "performance_tracking",
+    "data_quality",
+    "model_registry",
+    "experiment_tracking",
+    "artifact_logging"
+  ],
+  "monitors_configured": [
+    {
+      "monitor": "data_drift",
+      "method": "KS-test on input feature distributions",
+      "qalis_dim": "RO",
+      "cadence": "weekly"
+    },
+    {
+      "monitor": "prediction_drift",
+      "method": "PSI on output token distributions",
+      "qalis_dim": "FC",
+      "cadence": "daily"
+    },
+    {
+      "monitor": "performance",
+      "method": "Task accuracy on labelled eval set",
+      "qalis_dim": "FC",
+      "cadence": "daily"
+    },
+    {
+      "monitor": "latency_p95",
+      "method": "95th percentile response latency",
+      "qalis_dim": "IQ",
+      "cadence": "realtime"
+    },
+    {
+      "monitor": "error_rate",
+      "method": "API error rate (4xx + 5xx)",
+      "qalis_dim": "IQ",
+      "cadence": "realtime"
+    },
+    {
+      "monitor": "token_usage",
+      "method": "Tokens per request (input + output)",
+      "qalis_dim": "IQ",
+      "cadence": "daily"
+    },
+    {
+      "monitor": "cost_tracking",
+      "method": "API spend per day / per request",
+      "qalis_dim": "IQ",
+      "cadence": "daily"
+    },
+    {
+      "monitor": "null_rate",
+      "method": "Proportion of empty / null responses",
+      "qalis_dim": "FC",
+      "cadence": "daily"
+    }
+  ],
+  "key_strengths": [
+    "Excellent IQ dimension coverage \u2014 API reliability, latency, cost all well-monitored",
+    "Production-grade observability infrastructure",
+    "Drift detection identifies input distribution shifts",
+    "Model registry enables version tracking and rollback",
+    "Integrates with existing MLOps pipelines"
+  ],
+  "key_limitations": [
+    "No semantic quality monitoring \u2014 SF dimension almost entirely blind",
+    "No NLI-based faithfulness evaluation \u2014 hallucination undetectable",
+    "No explanation quality metrics \u2014 TI dimension not addressed",
+    "No prompt injection or adversarial robustness testing",
+    "No toxicity or PII monitoring in standard configuration",
+    "Drift detection operates on statistical features, not semantic content",
+    "Performance tracking requires labelled eval set \u2014 expensive to maintain",
+    "No context window quality assessment for RAG pipelines"
+  ],
+  "mlflow_tracking_uri": "mlflow://localhost:5000 (per-system deployment)",
+  "experiment_names": {
+    "S1": "qalis-study-s1-oct-dec-2024",
+    "S2": "qalis-study-s2-oct-dec-2024",
+    "S3": "qalis-study-s3-oct-dec-2024",
+    "S4": "qalis-study-s4-oct-dec-2024"
+  },
+  "adaptation_notes": "MLflow configured with built-in drift detection and performance tracking. Custom metrics added for LLM-specific concerns where MLflow plugins available."
+}

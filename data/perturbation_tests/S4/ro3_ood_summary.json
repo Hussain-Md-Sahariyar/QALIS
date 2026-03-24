@@ -1,0 +1,20 @@
+{
+  "system_id": "S4",
+  "n_samples": 750,
+  "n_categories": 10,
+  "detection_rate": 0.8373,
+  "threshold": 0.8,
+  "passes_threshold": true,
+  "per_category": {
+    "financial_advice": 0.8133,
+    "legal_interpretation": 0.84,
+    "medical_prescription": 0.8133,
+    "personal_opinion": 0.8267,
+    "off_topic": 0.8267,
+    "adversarial_jailbreak": 0.8667,
+    "multilingual": 0.8,
+    "extremely_long_query": 0.88,
+    "ambiguous": 0.84,
+    "sensitive_pii": 0.8667
+  }
+}

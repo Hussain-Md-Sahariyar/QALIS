@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "QALIS Metric Observation",
+  "description": "Schema for a single QALIS metric observation record",
+  "type": "object",
+  "required": ["observation_id", "system_id", "timestamp", "metric_id", "value"],
+  "properties": {
+    "observation_id":  { "type": "string" },
+    "system_id":       { "type": "string", "enum": ["S1","S2","S3","S4"] },
+    "timestamp":       { "type": "string", "format": "date-time" },
+    "metric_id":       { "type": "string", "pattern": "^(FC|RO|SF|SS|TI|IQ)-[0-9]+$" },
+    "dimension":       { "type": "string", "enum": ["FC","RO","SF","SS","TI","IQ"] },
+    "layer":           { "type": "integer", "minimum": 1, "maximum": 4 },
+    "value":           { "type": "number" },
+    "threshold":       { "type": "number" },
+    "threshold_op":    { "type": "string", "enum": [">=","<=","=="] },
+    "passes_threshold":{ "type": "boolean" },
+    "collection_method":{ "type": "string" },
+    "cadence":         { "type": "string", "enum": ["realtime","daily","weekly","biweekly","per_release","monthly","continuous"] },
+    "human_evaluated": { "type": "boolean" },
+    "annotator_count": { "type": "integer" },
+    "iaa_score":       { "type": ["number","null"] },
+    "notes":           { "type": "string" }
+  }
+}

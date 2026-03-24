@@ -1,0 +1,7 @@
+{
+  "system_id": "S3",
+  "n_pairs": 1000,
+  "mean_semantic_invariance": 0.887,
+  "threshold": 0.85,
+  "passes_threshold": true
+}

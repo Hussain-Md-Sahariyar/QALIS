@@ -1,0 +1,267 @@
+{
+  "framework_name": "QALIS",
+  "version": "1.0.0",
+  "paper": "QUATIC 2025",
+  "total_metrics": 24,
+  "dimensions": [
+    "FC",
+    "RO",
+    "SF",
+    "SS",
+    "TI",
+    "IQ"
+  ],
+  "layers": [
+    {
+      "id": 1,
+      "name": "Input Quality Layer",
+      "dimensions": [
+        "FC (partial)",
+        "RO (partial)",
+        "SS (partial)"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Model Behavior Layer",
+      "dimensions": [
+        "FC",
+        "RO"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Output Quality Layer",
+      "dimensions": [
+        "SF",
+        "SS",
+        "TI"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "System Integration Quality Layer",
+      "dimensions": [
+        "IQ"
+      ]
+    }
+  ],
+  "metrics": [
+    {
+      "id": "FC-1",
+      "name": "Task Accuracy",
+      "dimension": "FC",
+      "target_threshold": ">=0.85",
+      "collection_cadence": "daily",
+      "layer": 2,
+      "collection_method": "Automated eval suite"
+    },
+    {
+      "id": "FC-2",
+      "name": "BERTScore F1",
+      "dimension": "FC",
+      "target_threshold": ">=0.78",
+      "collection_cadence": "per_release",
+      "layer": 2,
+      "collection_method": "Reference-based eval (DeBERTa)"
+    },
+    {
+      "id": "FC-3",
+      "name": "Pass@k (k=5)",
+      "dimension": "FC",
+      "target_threshold": ">=0.90",
+      "collection_cadence": "per_release",
+      "layer": 2,
+      "collection_method": "Unit test oracle"
+    },
+    {
+      "id": "FC-4",
+      "name": "Factual Precision",
+      "dimension": "FC",
+      "target_threshold": ">=0.80",
+      "collection_cadence": "weekly",
+      "layer": 2,
+      "collection_method": "Human audit (5% sample)"
+    },
+    {
+      "id": "RO-1",
+      "name": "Perturbation Sensitivity",
+      "dimension": "RO",
+      "target_threshold": "<=0.10",
+      "collection_cadence": "weekly",
+      "layer": 2,
+      "collection_method": "Automated perturbation suite"
+    },
+    {
+      "id": "RO-2",
+      "name": "Injection Resistance Rate",
+      "dimension": "RO",
+      "target_threshold": ">=0.97",
+      "collection_cadence": "biweekly",
+      "layer": 2,
+      "collection_method": "Red-team test suite"
+    },
+    {
+      "id": "RO-3",
+      "name": "OOD Detection Rate",
+      "dimension": "RO",
+      "target_threshold": ">=0.80",
+      "collection_cadence": "weekly",
+      "layer": 2,
+      "collection_method": "Held-out OOD set"
+    },
+    {
+      "id": "RO-4",
+      "name": "Semantic Invariance Score",
+      "dimension": "RO",
+      "target_threshold": ">=0.85",
+      "collection_cadence": "weekly",
+      "layer": 2,
+      "collection_method": "Paraphrase eval set"
+    },
+    {
+      "id": "RO-5",
+      "name": "Adversarial Robustness Index",
+      "dimension": "RO",
+      "target_threshold": ">=0.82",
+      "collection_cadence": "weekly",
+      "layer": 2,
+      "collection_method": "Derived metric"
+    },
+    {
+      "id": "SF-1",
+      "name": "Faithfulness Score",
+      "dimension": "SF",
+      "target_threshold": ">=0.88",
+      "collection_cadence": "daily",
+      "layer": 3,
+      "collection_method": "NLI classifier (DeBERTa-NLI)"
+    },
+    {
+      "id": "SF-2",
+      "name": "Attribution Coverage",
+      "dimension": "SF",
+      "target_threshold": ">=0.75",
+      "collection_cadence": "daily",
+      "layer": 3,
+      "collection_method": "Automated attribution check"
+    },
+    {
+      "id": "SF-3",
+      "name": "Hallucination Rate",
+      "dimension": "SF",
+      "target_threshold": "<=2.0",
+      "collection_cadence": "daily",
+      "layer": 3,
+      "collection_method": "NLI + human audit (3%)"
+    },
+    {
+      "id": "SS-1",
+      "name": "Toxicity Rate",
+      "dimension": "SS",
+      "target_threshold": "<=0.005",
+      "collection_cadence": "realtime",
+      "layer": 3,
+      "collection_method": "Classifier (Perspective API)"
+    },
+    {
+      "id": "SS-2",
+      "name": "PII Leakage Rate",
+      "dimension": "SS",
+      "target_threshold": "<=0.001",
+      "collection_cadence": "realtime",
+      "layer": 3,
+      "collection_method": "Named entity recognition"
+    },
+    {
+      "id": "SS-3",
+      "name": "Injection Attack Rate",
+      "dimension": "SS",
+      "target_threshold": "<=0.02",
+      "collection_cadence": "realtime",
+      "layer": 3,
+      "collection_method": "Red-team + prod logs"
+    },
+    {
+      "id": "SS-4",
+      "name": "Policy Compliance Score",
+      "dimension": "SS",
+      "target_threshold": ">=0.98",
+      "collection_cadence": "daily",
+      "layer": 3,
+      "collection_method": "Rule-based + human audit"
+    },
+    {
+      "id": "TI-1",
+      "name": "Explanation Coverage Rate",
+      "dimension": "TI",
+      "target_threshold": ">=0.70",
+      "collection_cadence": "daily",
+      "layer": 3,
+      "collection_method": "Structural output analysis"
+    },
+    {
+      "id": "TI-2",
+      "name": "Explanation Faithfulness",
+      "dimension": "TI",
+      "target_threshold": ">=0.80",
+      "collection_cadence": "monthly",
+      "layer": 3,
+      "collection_method": "Human evaluation panel"
+    },
+    {
+      "id": "TI-3",
+      "name": "User Interpretability Rating",
+      "dimension": "TI",
+      "target_threshold": ">=3.8",
+      "collection_cadence": "monthly",
+      "layer": 3,
+      "collection_method": "In-app user survey"
+    },
+    {
+      "id": "TI-4",
+      "name": "Audit Trail Completeness",
+      "dimension": "TI",
+      "target_threshold": ">=0.99",
+      "collection_cadence": "daily",
+      "layer": 3,
+      "collection_method": "Log completeness check"
+    },
+    {
+      "id": "IQ-1",
+      "name": "API Availability Rate",
+      "dimension": "IQ",
+      "target_threshold": ">=0.999",
+      "collection_cadence": "continuous",
+      "layer": 4,
+      "collection_method": "Infrastructure monitoring"
+    },
+    {
+      "id": "IQ-2",
+      "name": "P95 Response Latency (ms)",
+      "dimension": "IQ",
+      "target_threshold": "<=2500",
+      "collection_cadence": "continuous",
+      "layer": 4,
+      "collection_method": "Distributed tracing"
+    },
+    {
+      "id": "IQ-3",
+      "name": "Cost per Quality Unit",
+      "dimension": "IQ",
+      "target_threshold": "org_specific",
+      "collection_cadence": "monthly",
+      "layer": 4,
+      "collection_method": "Cost monitoring + QALIS score"
+    },
+    {
+      "id": "IQ-4",
+      "name": "Observability Index",
+      "dimension": "IQ",
+      "target_threshold": ">=0.90",
+      "collection_cadence": "weekly",
+      "layer": 4,
+      "collection_method": "QALIS coverage audit"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "version": "1.0",
+  "last_updated": "2024-12-31",
+  "study": "QALIS 2024",
+  "directories": {
+    "data/raw/{system}/metric_snapshots/realtime_metrics.csv.gz": {
+      "description": "5-minute interval realtime metric snapshots (IQ-1, IQ-2, SS-1, SS-2, SS-3)",
+      "rows": 26496,
+      "columns": 8,
+      "period": "2024-10-01 to 2024-12-31",
+      "compressed": true
+    },
+    "data/raw/{system}/metric_snapshots/daily_metrics.csv": {
+      "description": "Daily aggregated metrics (FC-1, SF-1, SF-2, SF-3, SS-4, TI-1, TI-4)",
+      "rows": 92,
+      "columns": 12,
+      "period": "2024-10-01 to 2024-12-31"
+    },
+    "data/raw/{system}/metric_snapshots/weekly_metrics.csv": {
+      "description": "Weekly metrics (FC-4, RO-1 to RO-5, IQ-4)",
+      "rows": 14,
+      "columns": 10,
+      "period": "2024-10-01 to 2024-12-31"
+    },
+    "data/raw/{system}/query_logs/query_response_log.jsonl.gz": {
+      "description": "50,000 query/response pairs with NLI labels, scores, latency",
+      "rows": 50000,
+      "compressed": true
+    },
+    "data/raw/{system}/query_logs/nli_analysis_log.jsonl": {
+      "description": "25,000 NLI claim-level analysis records (DeBERTa-NLI)",
+      "rows": 25000
+    },
+    "data/raw/{system}/embeddings/query_embeddings.npy": {
+      "description": "50,000 \u00d7 512-dim float32 query embeddings",
+      "shape": [
+        50000,
+        512
+      ],
+      "dtype": "float32",
+      "size_mb": 98
+    },
+    "data/raw/{system}/embeddings/response_embeddings.npy": {
+      "description": "50,000 \u00d7 512-dim float32 response embeddings",
+      "shape": [
+        50000,
+        512
+      ],
+      "dtype": "float32",
+      "size_mb": 98
+    },
+    "data/raw/{S1,S3}/embeddings/context_embeddings.npy": {
+      "description": "50,000 \u00d7 512-dim context embeddings (RAG systems S1 and S3 only)",
+      "shape": [
+        50000,
+        512
+      ],
+      "dtype": "float32",
+      "size_mb": 98
+    },
+    "data/annotations/FC4_factual_precision/fc4_all_systems_combined.csv": {
+      "description": "800 claim annotations \u00d7 3 annotators. Fleiss \u03ba=0.76",
+      "rows": 800,
+      "annotators": 3,
+      "iaa": "Fleiss_kappa_0.76"
+    },
+    "data/annotations/TI2_explanation_faithfulness/ti2_all_systems_combined.csv": {
+      "description": "500 explanation annotations \u00d7 3 annotators. Fleiss \u03ba=0.71",
+      "rows": 500,
+      "annotators": 3,
+      "iaa": "Fleiss_kappa_0.71"
+    },
+    "data/annotations/TI3_user_interpretability/ti3_all_systems_combined.csv": {
+      "description": "1200 Likert ratings from users of S1, S3, S4. Cronbach \u03b1=0.84",
+      "rows": 1200,
+      "systems": [
+        "S1",
+        "S3",
+        "S4"
+      ]
+    },
+    "data/perturbation_tests/{system}/typographical_perturbations.csv": {
+      "description": "1250 typo perturbation test cases per system (5000 total). RO-1.",
+      "rows_per_system": 1250,
+      "total": 5000
+    },
+    "data/perturbation_tests/{system}/paraphrase_pairs.csv": {
+      "description": "1000 paraphrase pairs per system (4000 total). RO-4.",
+      "rows_per_system": 1000,
+      "total": 4000
+    },
+    "data/perturbation_tests/{system}/ood_detection_samples.csv": {
+      "description": "750 OOD samples per system (3000 total). RO-3.",
+      "rows_per_system": 750,
+      "total": 3000
+    },
+    "data/processed/aggregated/qalis_master_scores.csv": {
+      "description": "Master quality scores per system \u00d7 dimension \u00d7 month"
+    },
+    "data/processed/correlations/metric_correlation_matrix.json": {
+      "description": "Pearson correlation matrix of 8 key metrics across n=3400 obs"
+    },
+    "data/processed/longitudinal/defect_detection_longitudinal.csv": {
+      "description": "Monthly defect detection rates per approach"
+    }
+  }
+}

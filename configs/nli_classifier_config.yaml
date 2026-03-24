@@ -1,0 +1,75 @@
+model:
+  name: "cross-encoder/nli-deberta-v3-large"
+  huggingface_id: "cross-encoder/nli-deberta-v3-large"
+  type: cross_encoder
+  task: natural_language_inference
+  labels: ["contradiction", "entailment", "neutral"]
+  label_mapping:
+    0: "contradiction"
+    1: "entailment"
+    2: "neutral"
+  max_length: 512
+  batch_size: 32
+  device: "cuda"      
+  fp16: true                            
+
+inference:
+  faithfulness_label: "entailment"
+  hallucination_label: "contradiction"
+  entailment_threshold: 0.70 # Probability threshold for entailment
+  contradiction_threshold: 0.60 # Probability threshold for contradiction
+  neutral_threshold: 0.50
+
+claim_extraction:
+  method: "sentence_splitting" # Splits output into atomic claims by sentence
+  min_claim_length_tokens: 5
+  max_claim_length_tokens: 80
+  strip_uncertainty_markers: true       
+  uncertainty_markers:
+    - "i think"
+    - "i believe"
+    - "possibly"
+    - "perhaps"
+    - "it seems"
+    - "approximately"
+    - "roughly"
+
+context_preparation:
+  max_context_tokens: 450 # Leave room for claim within 512 token limit
+  truncation_strategy: "tail" # Truncate end of context if too long
+  prepend_instruction: false # DeBERTa-NLI uses raw text pairs
+
+faithfulness_scoring:
+  formula: "entailed_claims / total_claims"
+  min_claims_for_valid_score: 3 # Discard results with fewer than 3 claims
+  weight_by_claim_length: false
+
+hallucination_rate:
+  formula: "contradiction_claims / (output_tokens / 1000)"
+  output_token_estimate: "whitespace_split_x1.3"
+  human_audit_sample_rate: 0.03 # 3% of flagged outputs reviewed by humans
+  auto_flag_threshold: 0.60 # NLI contradiction probability to auto-flag
+
+performance:
+  cache_embeddings: true
+  cache_ttl_hours: 24
+  max_workers: 4
+  timeout_seconds: 30
+
+false_positive_characterisation:
+  known_fp_patterns:
+    - "Numerical reformulations may score as neutral"
+    - "Passive voice transformations sometimes score as neutral"
+    - "Domain-specific abbreviations without expansion score unreliably"
+  correction_method: "human_audit_calibration"
+  calibration_correction_factor:
+    S1: 0.97
+    S2: 0.95
+    S3: 0.98
+    S4: 0.96
+
+logging:
+  log_all_predictions: false
+  log_contradictions: true
+  log_low_confidence: true   
+  low_confidence_threshold: 0.75

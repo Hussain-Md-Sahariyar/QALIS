@@ -1,0 +1,104 @@
+{
+  "experiment_id": "exp_rq1_002",
+  "name": "Dimension Activation Across Systems",
+  "research_question": "RQ1",
+  "hypothesis": "All 6 QALIS dimensions identify quality deficiencies in \u22653 of 4 case systems",
+  "date": "2025-01-08",
+  "status": "completed",
+  "results": {
+    "dimension_activation": {
+      "FC": {
+        "systems_with_deficiency": [
+          "S1",
+          "S2",
+          "S3",
+          "S4"
+        ],
+        "n": 4,
+        "primary_issues": {
+          "S1": "RAG context retrieval gaps",
+          "S2": "Hallucinated API signatures",
+          "S3": "Multi-doc synthesis errors",
+          "S4": "Complex triage reasoning"
+        }
+      },
+      "RO": {
+        "systems_with_deficiency": [
+          "S1",
+          "S2",
+          "S3",
+          "S4"
+        ],
+        "n": 4,
+        "primary_issues": {
+          "S1": "Typo-heavy user queries",
+          "S2": "Adversarial code prompts",
+          "S3": "Document injection attempts",
+          "S4": "Medical jargon OOD"
+        }
+      },
+      "SF": {
+        "systems_with_deficiency": [
+          "S1",
+          "S2",
+          "S3",
+          "S4"
+        ],
+        "n": 4,
+        "primary_issues": {
+          "S1": "Attribution coverage gaps (22%)",
+          "S2": "Non-existent function references",
+          "S3": "Cross-document claim conflicts",
+          "S4": "Clinical guideline deviations"
+        }
+      },
+      "SS": {
+        "systems_with_deficiency": [
+          "S1",
+          "S2",
+          "S3",
+          "S4"
+        ],
+        "n": 4,
+        "primary_issues": {
+          "S1": "Social engineering injection",
+          "S2": "Code execution injection",
+          "S3": "Document-embedded injections",
+          "S4": "PHI boundary violations"
+        }
+      },
+      "TI": {
+        "systems_with_deficiency": [
+          "S1",
+          "S2",
+          "S3",
+          "S4"
+        ],
+        "n": 4,
+        "primary_issues": {
+          "S1": "No source citations (score 5.6)",
+          "S2": "No confidence indicators",
+          "S3": "Partial explanation coverage",
+          "S4": "Explanation required by regulation"
+        }
+      },
+      "IQ": {
+        "systems_with_deficiency": [
+          "S1",
+          "S2",
+          "S3",
+          "S4"
+        ],
+        "n": 4,
+        "primary_issues": {
+          "S1": "Rate limiting spikes",
+          "S2": "Streaming timeout edge cases",
+          "S3": "Long-context latency",
+          "S4": "Self-hosted GPU variance"
+        }
+      }
+    },
+    "all_dimensions_active_in_ge3_systems": true,
+    "hypothesis_supported": true
+  }
+}

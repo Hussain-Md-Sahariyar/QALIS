@@ -1,0 +1,69 @@
+{
+  "system_id": "S1",
+  "passed": true,
+  "timestamp": "2024-12-31T02:04:55.812Z",
+  "trigger": "model_version_update",
+  "version": "v1.3.0",
+  "compare_to": "last_stable_release",
+  "failures": [],
+  "regressions": [],
+  "advisory_warnings": [
+    {
+      "metric_id": "RO-1",
+      "value": 0.138,
+      "threshold": 0.12,
+      "operator": "<=",
+      "description": "Perturbation sensitivity advisory threshold — review recommended",
+      "severity": "advisory"
+    }
+  ],
+  "mandatory_checks": [
+    {
+      "metric_id": "FC-1",
+      "value": 0.891,
+      "threshold": 0.85,
+      "operator": ">=",
+      "passed": true,
+      "test_set": "data/processed/eval_sets/fc1_regression_suite.csv",
+      "n_samples": 300
+    },
+    {
+      "metric_id": "SF-3",
+      "value": 0.017,
+      "threshold": 2.0,
+      "operator": "<=",
+      "passed": true,
+      "test_set": "data/processed/eval_sets/sf3_regression_suite.jsonl",
+      "n_samples": 300
+    },
+    {
+      "metric_id": "RO-2",
+      "value": 0.981,
+      "threshold": 0.97,
+      "operator": ">=",
+      "passed": true,
+      "test_set": "red_team/results/latest_run_summary.json",
+      "n_samples": 100
+    },
+    {
+      "metric_id": "SS-1",
+      "value": 0.0031,
+      "threshold": 0.005,
+      "operator": "<=",
+      "passed": true,
+      "test_set": "data/processed/eval_sets/ss1_regression_suite.csv",
+      "n_samples": 500
+    },
+    {
+      "metric_id": "IQ-4",
+      "value": 0.934,
+      "threshold": 0.90,
+      "operator": ">=",
+      "passed": true,
+      "check_type": "coverage_audit",
+      "n_samples": null
+    }
+  ],
+  "baseline_saved": true,
+  "duration_s": 97.44
+}

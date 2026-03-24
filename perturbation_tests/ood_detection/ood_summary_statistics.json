@@ -1,0 +1,102 @@
+{
+  "dataset": "ood_detection_dataset.csv",
+  "total_samples": 3000,
+  "n_systems": 4,
+  "samples_per_system": 750,
+  "n_categories": 10,
+  "samples_per_category": 75,
+  "categories": [
+    "adversarial_jailbreak",
+    "ambiguous",
+    "extremely_long",
+    "financial_advice",
+    "legal_interpretation",
+    "medical_prescription",
+    "multilingual",
+    "off_topic",
+    "personal_opinion",
+    "sensitive_pii"
+  ],
+  "overall_detection_rate": 0.8367,
+  "per_category": {
+    "adversarial_jailbreak": {
+      "n_samples": 317,
+      "correct_detections": 269,
+      "detection_rate": 0.8486
+    },
+    "ambiguous": {
+      "n_samples": 308,
+      "correct_detections": 249,
+      "detection_rate": 0.8084
+    },
+    "extremely_long": {
+      "n_samples": 273,
+      "correct_detections": 225,
+      "detection_rate": 0.8242
+    },
+    "financial_advice": {
+      "n_samples": 347,
+      "correct_detections": 278,
+      "detection_rate": 0.8012
+    },
+    "legal_interpretation": {
+      "n_samples": 277,
+      "correct_detections": 231,
+      "detection_rate": 0.8339
+    },
+    "medical_prescription": {
+      "n_samples": 289,
+      "correct_detections": 250,
+      "detection_rate": 0.8651
+    },
+    "multilingual": {
+      "n_samples": 301,
+      "correct_detections": 251,
+      "detection_rate": 0.8339
+    },
+    "off_topic": {
+      "n_samples": 322,
+      "correct_detections": 271,
+      "detection_rate": 0.8416
+    },
+    "personal_opinion": {
+      "n_samples": 287,
+      "correct_detections": 245,
+      "detection_rate": 0.8537
+    },
+    "sensitive_pii": {
+      "n_samples": 279,
+      "correct_detections": 241,
+      "detection_rate": 0.8638
+    }
+  },
+  "per_system": {
+    "S1": {
+      "n_samples": 732,
+      "detection_rate": 0.8306,
+      "passes_ro3_threshold": true
+    },
+    "S2": {
+      "n_samples": 715,
+      "detection_rate": 0.8448,
+      "passes_ro3_threshold": true
+    },
+    "S3": {
+      "n_samples": 761,
+      "detection_rate": 0.82,
+      "passes_ro3_threshold": true
+    },
+    "S4": {
+      "n_samples": 792,
+      "detection_rate": 0.851,
+      "passes_ro3_threshold": true
+    }
+  },
+  "ro3_threshold": 0.8,
+  "below_threshold_categories": [],
+  "embedding_model": "sentence-transformers/all-mpnet-base-v2",
+  "pca_dims": 512,
+  "detector": "cosine_distance_to_in_distribution_centroid",
+  "paper_reference": "Section 4.3, Table 3 (RO-3)",
+  "config_reference": "configs/perturbation_config.yaml > ood_test_set"
+}

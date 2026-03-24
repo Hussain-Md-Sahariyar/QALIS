@@ -1,0 +1,36 @@
+{
+  "S1": {
+    "n_claims": 200,
+    "correct_pct": 87.0,
+    "incorrect_pct": 5.0,
+    "unverifiable_pct": 8.0,
+    "mean_confidence": 4.01
+  },
+  "S2": {
+    "n_claims": 200,
+    "correct_pct": 93.5,
+    "incorrect_pct": 3.0,
+    "unverifiable_pct": 3.5,
+    "mean_confidence": 4.04
+  },
+  "S3": {
+    "n_claims": 200,
+    "correct_pct": 93.5,
+    "incorrect_pct": 2.5,
+    "unverifiable_pct": 4.0,
+    "mean_confidence": 4.08
+  },
+  "S4": {
+    "n_claims": 200,
+    "correct_pct": 90.5,
+    "incorrect_pct": 3.5,
+    "unverifiable_pct": 6.0,
+    "mean_confidence": 4.04
+  },
+  "overall": {
+    "fleiss_kappa": 0.76,
+    "n_claims_total": 800,
+    "n_annotators": 3,
+    "adjudicated_pct": 3.0
+  }
+}

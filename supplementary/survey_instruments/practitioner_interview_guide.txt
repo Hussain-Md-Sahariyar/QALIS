@@ -1,0 +1,146 @@
+QALIS PRACTITIONER INTERVIEW GUIDE
+============================================================
+
+Version: 1.0 | Approved by: Research Ethics Board
+Expected duration: 50-80 minutes
+
+[IC1] Production Deployment Experience
+----------------------------------------
+Can you walk me through the LLM-integrated systems you've deployed in production? What were the primary use cases and what LLM provider did you use?
+
+Follow-up probes:
+  - Can you give a specific example?
+  - How did you detect/measure this?
+  - What was the business impact?
+  - How have you addressed this?
+
+[IC2] Quality Challenges
+----------------------------------------
+What quality challenges have you encountered that were specific to having an LLM component in your system, as opposed to traditional software components?
+
+Follow-up probes:
+  - Can you give a specific example?
+  - How did you detect/measure this?
+  - What was the business impact?
+  - How have you addressed this?
+
+[IC3] Current QA Practices
+----------------------------------------
+How do you currently evaluate the quality of your LLM-integrated system? What metrics do you track, if any?
+
+Follow-up probes:
+  - Can you give a specific example?
+  - How did you detect/measure this?
+  - What was the business impact?
+  - How have you addressed this?
+
+[IC4] Hallucination and Faithfulness
+----------------------------------------
+Have you experienced issues with your system generating incorrect or fabricated information? How did you detect and handle this?
+
+Follow-up probes:
+  - Can you give a specific example?
+  - How did you detect/measure this?
+  - What was the business impact?
+  - How have you addressed this?
+
+[IC5] Robustness
+----------------------------------------
+Has the system behaved unexpectedly under unusual or adversarial inputs? Can you describe a specific incident?
+
+Follow-up probes:
+  - Can you give a specific example?
+  - How did you detect/measure this?
+  - What was the business impact?
+  - How have you addressed this?
+
+[IC6] Safety and Security
+----------------------------------------
+What measures do you have in place to prevent harmful outputs or prompt injection attacks? Have these ever been triggered in production?
+
+Follow-up probes:
+  - Can you give a specific example?
+  - How did you detect/measure this?
+  - What was the business impact?
+  - How have you addressed this?
+
+[IC7] Transparency and Explainability
+----------------------------------------
+Do users or operators need to understand why the system produced a particular output? How do you currently address explainability?
+
+Follow-up probes:
+  - Can you give a specific example?
+  - How did you detect/measure this?
+  - What was the business impact?
+  - How have you addressed this?
+
+[IC8] System Integration
+----------------------------------------
+What quality issues have arisen at the integration boundary — between your application and the LLM API? Latency, availability, cost?
+
+Follow-up probes:
+  - Can you give a specific example?
+  - How did you detect/measure this?
+  - What was the business impact?
+  - How have you addressed this?
+
+[IC9] Tooling Gaps
+----------------------------------------
+What quality assurance tooling do you currently use, and where do you feel there are gaps that existing tools don't address?
+
+Follow-up probes:
+  - Can you give a specific example?
+  - How did you detect/measure this?
+  - What was the business impact?
+  - How have you addressed this?
+
+[IC10] Framework Desiderata
+----------------------------------------
+If you were to design a quality assessment framework specifically for LLM-integrated systems, what would it need to include to be practically useful for your team?
+
+Follow-up probes:
+  - Can you give a specific example?
+  - How did you detect/measure this?
+  - What was the business impact?
+  - How have you addressed this?
+
+[IC11] Threshold Calibration
+----------------------------------------
+For the metrics you do track, how did you determine what constitutes an acceptable vs. unacceptable value? Was this empirical or expert judgment?
+
+Follow-up probes:
+  - Can you give a specific example?
+  - How did you detect/measure this?
+  - What was the business impact?
+  - How have you addressed this?
+
+[IC12] Regulatory Context
+----------------------------------------
+Are you subject to regulatory requirements (GDPR, HIPAA, EU AI Act, sector-specific) that affect how you assess and document quality?
+
+Follow-up probes:
+  - Can you give a specific example?
+  - How did you detect/measure this?
+  - What was the business impact?
+  - How have you addressed this?
+
+[IC13] Transparency Gaps
+----------------------------------------
+Looking specifically at transparency and explainability of your system — is this an area you feel is adequately addressed by current tooling?
+
+Follow-up probes:
+  - Can you give a specific example?
+  - How did you detect/measure this?
+  - What was the business impact?
+  - How have you addressed this?
+
+[IC14] Future Priorities
+----------------------------------------
+Looking ahead, what do you see as the most critical quality challenge for LLM-integrated systems that the research and tooling community needs to address?
+
+Follow-up probes:
+  - Can you give a specific example?
+  - How did you detect/measure this?
+  - What was the business impact?
+  - How have you addressed this?
+

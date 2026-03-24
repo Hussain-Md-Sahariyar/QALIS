@@ -1,0 +1,141 @@
+{
+  "system_id": "S4",
+  "system_name": "Medical Triage Assistant",
+  "llm_evaluated": "Llama 3.1 70B",
+  "evaluation_note": "HELM applied to isolated model queries; does NOT assess system integration",
+  "evaluation_period": "October\u2013December 2024 (representative query sample)",
+  "n_queries_per_scenario": 200,
+  "scenario_results": [
+    {
+      "scenario": "question_answering",
+      "datasets": "OpenBookQA, TriviaQA, NaturalQuestions",
+      "qalis_dim": "FC",
+      "accuracy": 0.7624,
+      "calibration_ece": 0.1751,
+      "robustness_drop": 0.0619,
+      "n_examples": 200,
+      "pass_rate": 0.7647
+    },
+    {
+      "scenario": "summarization",
+      "datasets": "CNN/DM, XSUM, SAMSum",
+      "qalis_dim": "FC",
+      "accuracy": 0.7866,
+      "calibration_ece": 0.1447,
+      "robustness_drop": 0.0676,
+      "n_examples": 200,
+      "pass_rate": 0.7732
+    },
+    {
+      "scenario": "code_generation",
+      "datasets": "HumanEval, MBPP, DS-1000",
+      "qalis_dim": "FC",
+      "accuracy": 0.6876,
+      "calibration_ece": 0.1001,
+      "robustness_drop": 0.0992,
+      "n_examples": 200,
+      "pass_rate": 0.7024
+    },
+    {
+      "scenario": "information_retrieval",
+      "datasets": "MS MARCO, BEIR",
+      "qalis_dim": "SF",
+      "accuracy": 0.6495,
+      "calibration_ece": 0.0502,
+      "robustness_drop": 0.1411,
+      "n_examples": 200,
+      "pass_rate": 0.6181
+    },
+    {
+      "scenario": "robustness",
+      "datasets": "AdvGLUE, ANLI",
+      "qalis_dim": "RO",
+      "accuracy": 0.6205,
+      "calibration_ece": 0.1465,
+      "robustness_drop": 0.1105,
+      "n_examples": 200,
+      "pass_rate": 0.6281
+    },
+    {
+      "scenario": "calibration",
+      "datasets": "Expected Calibration Error",
+      "qalis_dim": "FC",
+      "accuracy": 0.7357,
+      "calibration_ece": 0.1364,
+      "robustness_drop": 0.0696,
+      "n_examples": 200,
+      "pass_rate": 0.73
+    },
+    {
+      "scenario": "toxicity",
+      "datasets": "RealToxicityPrompts",
+      "qalis_dim": "SS",
+      "accuracy": 0.4953,
+      "calibration_ece": 0.1436,
+      "robustness_drop": 0.066,
+      "n_examples": 200,
+      "pass_rate": 0.4596
+    },
+    {
+      "scenario": "bias_fairness",
+      "datasets": "WinoBias, BBQ",
+      "qalis_dim": "SS",
+      "accuracy": 0.4942,
+      "calibration_ece": 0.1023,
+      "robustness_drop": 0.0655,
+      "n_examples": 200,
+      "pass_rate": 0.4751
+    },
+    {
+      "scenario": "disinformation",
+      "datasets": "TruthfulQA",
+      "qalis_dim": "SF",
+      "accuracy": 0.6641,
+      "calibration_ece": 0.1722,
+      "robustness_drop": 0.1113,
+      "n_examples": 200,
+      "pass_rate": 0.6491
+    },
+    {
+      "scenario": "copyright",
+      "datasets": "BooksCorpus excerpts",
+      "qalis_dim": "SS",
+      "accuracy": 0.5194,
+      "calibration_ece": 0.0891,
+      "robustness_drop": 0.0958,
+      "n_examples": 200,
+      "pass_rate": 0.5353
+    },
+    {
+      "scenario": "efficiency",
+      "datasets": "Tokens/second, latency",
+      "qalis_dim": "IQ",
+      "accuracy": 0.2529,
+      "calibration_ece": 0.1059,
+      "robustness_drop": 0.0996,
+      "n_examples": 200,
+      "pass_rate": 0.2529
+    }
+  ],
+  "dimension_coverage_scores": {
+    "FC": 0.7211,
+    "RO": 0.6623,
+    "SF": 0.6006,
+    "SS": 0.4974,
+    "TI": 0.3164,
+    "IQ": 0.2308
+  },
+  "uncovered_dimensions": [
+    "TI",
+    "IQ"
+  ],
+  "partially_covered_dimensions": [
+    "RO",
+    "SF",
+    "SS"
+  ],
+  "well_covered_dimensions": [
+    "FC"
+  ],
+  "key_finding": "HELM achieved competitive FC score (0.72) but IQ score was only 0.23 \u2014 confirming model-centric design limitation for system-level quality assessment."
+}

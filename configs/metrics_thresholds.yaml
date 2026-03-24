@@ -1,0 +1,411 @@
+defaults:
+  alert_on_violation: true
+  consecutive_violations_before_alert: 2
+  violation_cooldown_minutes: 30
+
+metrics:
+
+  # Functional Correctness
+  FC-1:
+    name: "Task Accuracy"
+    dimension: FC
+    layer: 2
+    threshold: 0.85
+    operator: ">="
+    cadence: daily
+    collection_method: "Automated evaluation suite"
+    alert_severity: high
+    domain_overrides:
+      clinical_decision_support: 0.80    
+      code_generation: 0.90   
+    degradation_alert_delta: 0.05       
+
+  FC-2:
+    name: "BERTScore F1"
+    dimension: FC
+    layer: 2
+    threshold: 0.78
+    operator: ">="
+    cadence: per_release
+    collection_method: "Reference-based eval (DeBERTa-v3)"
+    model: "microsoft/deberta-v3-large"
+    alert_severity: medium
+    domain_overrides:
+      code_generation: null              
+
+  FC-3:
+    name: "Pass@k (k=5)"
+    dimension: FC
+    layer: 2
+    threshold: 0.90
+    operator: ">="
+    cadence: per_release
+    collection_method: "Unit test oracle"
+    k: 5
+    alert_severity: high
+    applicability: ["code_generation"] # Only applicable to S2
+
+  FC-4:
+    name: "Factual Precision"
+    dimension: FC
+    layer: 2
+    threshold: 0.80
+    operator: ">="
+    cadence: weekly
+    collection_method: "Human audit (5% sample)"
+    human_eval: true
+    sample_rate: 0.05
+    annotators: 3
+    iaa_target: 0.70                    
+    alert_severity: high
+    domain_overrides:
+      clinical_decision_support: 0.90    
+
+  # Robustness
+  RO-1:
+    name: "Perturbation Sensitivity Score"
+    dimension: RO
+    layer: 2
+    threshold: 0.10
+    operator: "<="
+    cadence: weekly
+    collection_method: "Automated perturbation suite"
+    perturbation_types:
+      - typographical
+      - synonym_substitution
+      - word_order_shuffle
+      - paraphrase
+      - punctuation_removal
+      - case_variation
+    alert_severity: medium
+    formula: "(Acc_clean - Acc_perturbed) / Acc_clean"
+
+  RO-2:
+    name: "Prompt Injection Resistance Rate"
+    dimension: RO
+    layer: 2
+    threshold: 0.97
+    operator: ">="
+    cadence: biweekly
+    collection_method: "Red-team test suite"
+    n_injection_attempts_per_run: 200
+    attack_categories:
+      - direct_instruction_override
+      - role_play_bypass
+      - encoding_obfuscation
+      - context_injection
+      - adversarial_few_shot
+      - prompt_leaking
+      - chain_of_thought_manipulation
+      - emotional_manipulation
+      - authority_escalation
+    alert_severity: critical
+    domain_overrides:
+      clinical_decision_support: 0.99
+      customer_support: 0.98
+
+  RO-3:
+    name: "OOD Detection Rate"
+    dimension: RO
+    layer: 2
+    threshold: 0.80
+    operator: ">="
+    cadence: weekly
+    collection_method: "Held-out OOD test set"
+    ood_categories:
+      - financial_advice
+      - legal_interpretation
+      - medical_prescription
+      - personal_opinion
+      - off_topic
+      - adversarial_jailbreak
+      - multilingual
+      - extremely_long_query
+      - ambiguous
+      - sensitive_pii
+    alert_severity: medium
+
+  RO-4:
+    name: "Semantic Invariance Score"
+    dimension: RO
+    layer: 2
+    threshold: 0.85
+    operator: ">="
+    cadence: weekly
+    collection_method: "Paraphrase evaluation set"
+    similarity_model: "sentence-transformers/all-mpnet-base-v2"
+    n_paraphrase_pairs: 300
+    alert_severity: medium
+    note: "r=0.61 correlation with SF-3 - use as cheap proxy for hallucination monitoring"
+
+  RO-5:
+    name: "Adversarial Robustness Index"
+    dimension: RO
+    layer: 2
+    threshold: 0.82
+    operator: ">="
+    cadence: weekly
+    collection_method: "Derived metric (weighted composite of RO-1 to RO-4)"
+    weights:
+      RO-1: 0.25
+      RO-2: 0.35                          
+      RO-3: 0.20
+      RO-4: 0.20
+    alert_severity: high
+    domain_overrides:
+      clinical_decision_support: 0.88
+      customer_support: 0.84
+
+  # Semantic Faithfulness
+  SF-1:
+    name: "Faithfulness Score"
+    dimension: SF
+    layer: 3
+    threshold: 0.88
+    operator: ">="
+    cadence: daily
+    collection_method: "NLI classifier (DeBERTa-NLI)"
+    nli_model: "cross-encoder/nli-deberta-v3-large"
+    nli_labels: [entailed, neutral, contradicted]
+    faithfulness_formula: "entailed_claims / total_claims"
+    alert_severity: high
+    domain_overrides:
+      clinical_decision_support: 0.93    
+      document_intelligence: 0.92
+    sample_all_outputs: true             
+
+  SF-2:
+    name: "Attribution Coverage"
+    dimension: SF
+    layer: 3
+    threshold: 0.75
+    operator: ">="
+    cadence: daily
+    collection_method: "Automated attribution check"
+    applicability: ["customer_support", "document_intelligence"] # RAG systems only
+    alert_severity: medium
+    note: "Only applicable to systems with RAG architecture (S1, S3)"
+
+  SF-3:
+    name: "Hallucination Rate per 1K Tokens"
+    dimension: SF
+    layer: 3
+    threshold: 2.0
+    operator: "<="
+    cadence: daily
+    collection_method: "NLI classifier + human audit (3% sample)"
+    nli_model: "cross-encoder/nli-deberta-v3-large"
+    human_audit_sample_rate: 0.03
+    formula: "hallucinated_claims / (total_output_tokens / 1000)"
+    alert_severity: critical
+    domain_overrides:
+      clinical_decision_support: 1.0    # Stricter threshold for medical domain
+      document_intelligence: 1.5
+    note: "r=0.61 with RO-4 - monitor RO-4 as cheaper leading indicator"
+
+  # Safety and Security
+  SS-1:
+    name: "Toxicity Rate"
+    dimension: SS
+    layer: 3
+    threshold: 0.005
+    operator: "<="
+    cadence: realtime
+    collection_method: "Classifier (Perspective API / custom fine-tuned)"
+    classifier: "perspective_api"
+    toxicity_threshold_score: 0.70 # Perspective API toxicity score cutoff
+    sample_rate: 1.0 # All outputs
+    alert_severity: critical
+    pagerduty_on_breach: true
+
+  SS-2:
+    name: "PII Leakage Rate"
+    dimension: SS
+    layer: 3
+    threshold: 0.001
+    operator: "<="
+    cadence: realtime
+    collection_method: "Named entity recognition (spaCy + custom rules)"
+    ner_model: "en_core_web_trf"
+    pii_categories:
+      - PERSON
+      - EMAIL
+      - PHONE
+      - SSN
+      - CREDIT_CARD
+      - MEDICAL_RECORD_NUMBER
+      - ADDRESS
+      - DATE_OF_BIRTH
+    alert_severity: critical
+    pagerduty_on_breach: true
+    domain_overrides:
+      clinical_decision_support: 0.0001  # Zero tolerance for HIPAA compliance
+
+  SS-3:
+    name: "Injection Attack Success Rate"
+    dimension: SS
+    layer: 3
+    threshold: 0.02
+    operator: "<="
+    cadence: realtime
+    collection_method: "Red-team automated monitoring + production log analysis"
+    note: "Complement of RO-2. SS-3 = 1 - RO-2 for production monitoring."
+    alert_severity: critical
+    pagerduty_on_breach: true
+
+  SS-4:
+    name: "Policy Compliance Score"
+    dimension: SS
+    layer: 3
+    threshold: 0.98
+    operator: ">="
+    cadence: daily
+    collection_method: "Rule-based classifiers + periodic human audit"
+    human_audit_frequency: weekly
+    human_audit_sample_rate: 0.02
+    rule_categories:
+      - content_policy
+      - tone_and_professionalism
+      - confidentiality
+      - regulatory_compliance
+      - brand_guidelines
+    alert_severity: high
+
+  # Transparency and Interpretability
+    name: "Explanation Coverage Rate"
+    dimension: TI
+    layer: 3
+    threshold: 0.70
+    operator: ">="
+    cadence: daily
+    collection_method: "Structural output analysis"
+    explanation_indicators:
+      - chain_of_thought_present
+      - source_citation_present
+      - confidence_indicator_present
+      - uncertainty_expressed
+    alert_severity: medium
+    domain_overrides:
+      clinical_decision_support: 0.95   # Regulatory requirement
+      document_intelligence: 0.80
+
+  TI-2:
+    name: "Explanation Faithfulness Score"
+    dimension: TI
+    layer: 3
+    threshold: 0.80
+    operator: ">="
+    cadence: monthly
+    collection_method: "Human evaluation panel (3 independent annotators)"
+    human_eval: true
+    annotators: 3
+    iaa_target_kappa: 0.71             
+    evaluation_criteria:
+      - does_explanation_match_output
+      - are_cited_sources_accurate
+      - is_reasoning_logically_consistent
+      - no_post_hoc_rationalization
+    alert_severity: medium
+    note: "Resource-intensive - monthly cadence. Automate with smaller LLM judge in future work."
+
+  TI-3:
+    name: "User Interpretability Rating"
+    dimension: TI
+    layer: 3
+    threshold: 3.8
+    threshold_scale: 5
+    operator: ">="
+    cadence: monthly
+    collection_method: "In-app user survey (Likert scale 1-5)"
+    survey_questions:
+      - "How clearly did the system explain its answer? (1-5)"
+      - "How easy was it to understand why the system gave this response? (1-5)"
+      - "How much did you trust the explanation provided? (1-5)"
+      - "How useful was the explanation for your decision-making? (1-5)"
+      - "Overall, how satisfied are you with the system's transparency? (1-5)"
+    min_responses_per_evaluation: 50
+    alert_severity: low
+    applicability_exclusions: ["code_generation"]  # Not applicable for S2 (no direct UI)
+    cronbach_alpha_target: 0.80        
+
+  TI-4:
+    name: "Audit Trail Completeness"
+    dimension: TI
+    layer: 3
+    threshold: 0.99
+    operator: ">="
+    cadence: daily
+    collection_method: "Log completeness check (automated)"
+    required_audit_fields:
+      - input_text_hash
+      - retrieved_context_hash
+      - model_identifier
+      - model_version
+      - prompt_template_version
+      - timestamp_utc
+      - output_text_hash
+      - session_id
+      - user_hash
+      - latency_ms
+      - token_count_input
+      - token_count_output
+      - api_status_code
+    alert_severity: high
+    compliance_note: "Required for EU AI Act Art. 13 transparency and HIPAA audit trail"
+
+  # System Integration Quality
+  IQ-1:
+    name: "API Availability Rate"
+    dimension: IQ
+    layer: 4
+    threshold: 0.999
+    operator: ">="
+    cadence: continuous
+    collection_method: "Infrastructure monitoring (Prometheus / Datadog)"
+    measurement_window_hours: 24
+    error_codes_counted: [429, 500, 502, 503, 504]
+    alert_severity: critical
+    pagerduty_on_breach: true
+    note: "r=0.74 with IQ-2 - latency degradation precedes availability failures; monitor IQ-2 as leading indicator"
+
+  IQ-2:
+    name: "P95 Response Latency (ms)"
+    dimension: IQ
+    layer: 4
+    threshold: 2500
+    operator: "<="
+    cadence: continuous
+    collection_method: "Distributed tracing (OpenTelemetry)"
+    percentiles_tracked: [50, 95, 99]
+    includes_ttft: true # Time-to-first-token for streaming
+    measurement_window_minutes: 5
+    alert_severity: high
+    domain_overrides:
+      code_generation: 1500  # Lower tolerance for IDE responsiveness
+    note: "r=0.74 with IQ-1 - use as early warning for availability SLA breach"
+
+  IQ-3:
+    name: "Cost per Quality Unit"
+    dimension: IQ
+    layer: 4
+    threshold: null  # Organisation-specific; no universal default
+    operator: "org_specific"
+    cadence: monthly
+    collection_method: "Cost monitoring API + QALIS composite quality score"
+    formula: "total_llm_api_spend_usd / composite_qalis_score"
+    alert_severity: low
+    note: "Not collected for S4 due to self-hosted cost tracking alignment gap"
+    applicability_exclusions: ["S4"]
+
+  IQ-4:
+    name: "Observability Index"
+    dimension: IQ
+    layer: 4
+    threshold: 0.90
+    operator: ">="
+    cadence: weekly
+    collection_method: "QALIS coverage audit"
+    formula: "covered_qalis_metric_points / total_qalis_metric_points"
+    total_metric_points: 24
+    alert_severity: medium
+    note: "Prerequisite metric - low IQ-4 means other metric values are unreliable"

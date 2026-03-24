@@ -1,0 +1,60 @@
+{
+  "dataset": "typo_perturbation_dataset.csv",
+  "total_cases": 5000,
+  "n_systems": 4,
+  "cases_per_system": 1250,
+  "perturbation_types": [
+    "word_misspelling",
+    "character_swap",
+    "case_variation",
+    "homophone_substitution",
+    "character_insertion",
+    "character_deletion",
+    "punctuation_error",
+    "keyboard_adjacency"
+  ],
+  "subtype_distribution": {
+    "word_misspelling": 671,
+    "character_swap": 621,
+    "case_variation": 605,
+    "homophone_substitution": 645,
+    "character_insertion": 620,
+    "character_deletion": 610,
+    "punctuation_error": 609,
+    "keyboard_adjacency": 619
+  },
+  "overall": {
+    "mean_sensitivity": 0.0808,
+    "median_sensitivity": 0.0794,
+    "pct_below_threshold": 68.6
+  },
+  "per_system": {
+    "S1": {
+      "n_cases": 1244,
+      "mean_sensitivity": 0.0804,
+      "passes_ro1_threshold": true,
+      "pass_rate": 0.687
+    },
+    "S2": {
+      "n_cases": 1243,
+      "mean_sensitivity": 0.0818,
+      "passes_ro1_threshold": true,
+      "pass_rate": 0.68
+    },
+    "S3": {
+      "n_cases": 1240,
+      "mean_sensitivity": 0.0795,
+      "passes_ro1_threshold": true,
+      "pass_rate": 0.702
+    },
+    "S4": {
+      "n_cases": 1273,
+      "mean_sensitivity": 0.0813,
+      "passes_ro1_threshold": true,
+      "pass_rate": 0.674
+    }
+  },
+  "ro1_threshold": 0.1,
+  "paper_reference": "Section 4.3, Table 3 (RO-1)",
+  "config_reference": "configs/perturbation_config.yaml > typographical_perturbations"
+}

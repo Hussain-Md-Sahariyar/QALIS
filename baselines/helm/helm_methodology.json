@@ -1,0 +1,100 @@
+{
+  "baseline_id": "HELM",
+  "full_name": "Holistic Evaluation of Language Models (HELM)",
+  "reference": "Liang et al. (2022). Holistic Evaluation of Language Models. TMLR 2023.",
+  "helm_version": "v0.3.0",
+  "evaluation_unit": "model (not system)",
+  "n_scenarios_full": 42,
+  "n_scenarios_applied": 11,
+  "core_metrics": [
+    "accuracy",
+    "calibration",
+    "robustness",
+    "fairness",
+    "bias",
+    "toxicity",
+    "efficiency"
+  ],
+  "scenarios_applied": [
+    {
+      "scenario": "question_answering",
+      "datasets": "OpenBookQA, TriviaQA, NaturalQuestions",
+      "qalis_dim": "FC"
+    },
+    {
+      "scenario": "summarization",
+      "datasets": "CNN/DM, XSUM, SAMSum",
+      "qalis_dim": "FC"
+    },
+    {
+      "scenario": "code_generation",
+      "datasets": "HumanEval, MBPP, DS-1000",
+      "qalis_dim": "FC"
+    },
+    {
+      "scenario": "information_retrieval",
+      "datasets": "MS MARCO, BEIR",
+      "qalis_dim": "SF"
+    },
+    {
+      "scenario": "robustness",
+      "datasets": "AdvGLUE, ANLI",
+      "qalis_dim": "RO"
+    },
+    {
+      "scenario": "calibration",
+      "datasets": "Expected Calibration Error",
+      "qalis_dim": "FC"
+    },
+    {
+      "scenario": "toxicity",
+      "datasets": "RealToxicityPrompts",
+      "qalis_dim": "SS"
+    },
+    {
+      "scenario": "bias_fairness",
+      "datasets": "WinoBias, BBQ",
+      "qalis_dim": "SS"
+    },
+    {
+      "scenario": "disinformation",
+      "datasets": "TruthfulQA",
+      "qalis_dim": "SF"
+    },
+    {
+      "scenario": "copyright",
+      "datasets": "BooksCorpus excerpts",
+      "qalis_dim": "SS"
+    },
+    {
+      "scenario": "efficiency",
+      "datasets": "Tokens/second, latency",
+      "qalis_dim": "IQ"
+    }
+  ],
+  "key_limitations": [
+    "Model-centric design \u2014 evaluates the LLM in isolation, not the integrated system",
+    "No system integration metrics \u2014 IQ dimension almost entirely uncovered",
+    "No transparency/explainability metrics \u2014 TI dimension severely underserved",
+    "No production-context safety monitoring \u2014 SS metrics only at model benchmark level",
+    "Benchmark performance is poor predictor of deployment behavior (per [14] Guo et al. 2024)",
+    "No context window / RAG evaluation \u2014 retrieval pipeline quality invisible",
+    "No prompt injection resistance evaluation at system level",
+    "No hallucination detection in production context \u2014 only benchmark-level truthfulness",
+    "No latency SLA or API reliability monitoring",
+    "Static benchmark evaluation \u2014 no continuous/longitudinal monitoring capability"
+  ],
+  "strengths": [
+    "Strong coverage of Functional Correctness (FC) dimension",
+    "Robustness evaluation via adversarial benchmarks (AdvGLUE, ANLI)",
+    "Toxicity evaluation via RealToxicityPrompts",
+    "Well-validated and widely cited methodology",
+    "Reproducible benchmark infrastructure"
+  ],
+  "adaptation_notes": "HELM applied to isolated model queries representative of each system's use cases. Per-scenario scores mapped to QALIS dimensions using the scenario-to-dimension mapping table.",
+  "tools_used": [
+    "HELM evaluation harness v0.3.0",
+    "HuggingFace Evaluate",
+    "Custom scenario adapters"
+  ]
+}

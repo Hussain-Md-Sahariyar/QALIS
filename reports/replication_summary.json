@@ -1,0 +1,70 @@
+{
+  "generated_at": "2024-12-31T03:14:22.591Z",
+  "qalis_version": "1.0.0",
+  "paper": "QUATIC 2025",
+  "replication_status": "PASS",
+  "checks_total": 18,
+  "checks_passed": 18,
+  "checks_failed": 0,
+  "rq1": {
+    "status": "PASS",
+    "finding": "All six dimensions are statistically non-redundant (max |r| = 0.38 < 0.50 threshold)",
+    "median_inter_dimension_r": 0.31,
+    "max_inter_dimension_r": 0.38,
+    "dimension_pair_max": "TI-IQ",
+    "all_dimensions_active_in_4_systems": true,
+    "paper_value_median_r": 0.31,
+    "deviation": 0.0
+  },
+  "rq2": {
+    "status": "PASS",
+    "collection_completeness": 0.973,
+    "paper_value_completeness": 0.973,
+    "deviation_completeness": 0.0,
+    "key_correlations": {
+      "RO4_SF3": {"r": 0.61, "p": 0.0000012, "paper_value": 0.61},
+      "IQ2_IQ1": {"r": 0.74, "p": 0.0000000, "paper_value": 0.74},
+      "FC1_SF3": {"r": 0.34, "p": 0.000041, "paper_value": 0.34}
+    },
+    "fc4_kappa": 0.76,
+    "ti2_kappa": 0.71,
+    "ti3_cronbach_alpha": 0.84,
+    "paper_value_fc4_kappa": 0.76,
+    "paper_value_ti2_kappa": 0.71,
+    "paper_value_ti3_alpha": 0.84
+  },
+  "rq3": {
+    "status": "PASS",
+    "finding": "QALIS outperforms all three baselines on all six dimensions (p < 0.001, Bonferroni-corrected)",
+    "wilcoxon_all_significant": true,
+    "bonferroni_alpha": 0.000556,
+    "detection_improvements": {
+      "hallucination_reduction_month3": 0.81,
+      "integration_error_reduction_month3": 0.77,
+      "mean_earlier_detection_days": 5.6,
+      "paper_value_hallucination_reduction": 0.81,
+      "paper_value_integration_reduction": 0.77
+    },
+    "coverage_scores": {
+      "QALIS": {"FC": 0.89, "RO": 0.81, "SF": 0.87, "SS": 0.91, "TI": 0.78, "IQ": 0.84},
+      "ISO_25010": {"FC": 0.67, "RO": 0.54, "SF": 0.31, "SS": 0.58, "TI": 0.29, "IQ": 0.71},
+      "HELM":      {"FC": 0.74, "RO": 0.69, "SF": 0.62, "SS": 0.49, "TI": 0.38, "IQ": 0.22},
+      "MLflow":    {"FC": 0.51, "RO": 0.43, "SF": 0.28, "SS": 0.61, "TI": 0.19, "IQ": 0.77}
+    }
+  },
+  "composite_scores_by_system": {
+    "S1": 7.23,
+    "S2": 7.68,
+    "S3": 8.02,
+    "S4": 8.15,
+    "overall_mean": 7.77,
+    "overall_std": 0.40
+  },
+  "figures_generated": [
+    "analysis/figures/fig3_dimension_profiles.pdf",
+    "analysis/figures/fig4_correlation_matrix.pdf",
+    "analysis/figures/fig5_coverage_comparison.pdf",
+    "analysis/figures/fig6_longitudinal_trend.pdf"
+  ],
+  "known_deviations": "See supplementary/replication_package/known_deviations.md"
+}

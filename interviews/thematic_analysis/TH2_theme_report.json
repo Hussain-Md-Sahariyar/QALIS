@@ -1,0 +1,28 @@
+{
+  "theme_id": "TH2",
+  "name": "Hallucination as primary safety concern",
+  "n_excerpts": 52,
+  "codes": [
+    "C01",
+    "C09",
+    "C10",
+    "C11",
+    "C12"
+  ],
+  "description": "Hallucination \u2014 defined by participants as model assertions not grounded in provided context or factual reality \u2014 was identified as the most significant and most difficult-to-detect quality failure mode across all sectors.",
+  "key_evidence": [
+    "RAG attribution failure (citing non-existent sources) most common form (INT-01, INT-03, INT-08, INT-13)",
+    "Confident confabulation particularly dangerous in medical/legal contexts where users trust apparent certainty (INT-02, INT-08, INT-14)",
+    "Context boundary violations: model uses training knowledge instead of provided document (INT-03, INT-09)"
+  ],
+  "significance_for_qalis": "Highest excerpt count (n=52). Most salient theme across medical (INT-02, INT-08, INT-14) and legal (INT-03, INT-09) participants. Directly motivates SF dimension (SF-1, SF-3).",
+  "representative_quotes": [
+    "[Anonymised quote from a participant whose excerpt was coded C01]",
+    "[Anonymised quote from a participant whose excerpt was coded C12]"
+  ],
+  "sectors_most_represented": [
+    "Healthcare",
+    "Legal Tech",
+    "Financial Services"
+  ]
+}

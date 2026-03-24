@@ -1,0 +1,3503 @@
+{
+  "system_id": "S2",
+  "total_runs": 92,
+  "experiment": "qalis-study-s2-oct-dec-2024",
+  "runs": [
+    {
+      "run_id": "mlflow-S2-0001",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-10-01T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00139,
+        "p95_latency_ms": 1797.1,
+        "tokens_per_request": 737.0,
+        "cost_per_request_usd": 0.0019,
+        "null_response_rate": 0.00057,
+        "task_accuracy_eval_set": 0.7932,
+        "input_drift_ks_stat": 0.1215,
+        "output_drift_psi": 0.059,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0002",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-10-02T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00028,
+        "p95_latency_ms": 1581.9,
+        "tokens_per_request": 725.0,
+        "cost_per_request_usd": 0.00203,
+        "null_response_rate": 0.00059,
+        "task_accuracy_eval_set": 0.7996,
+        "input_drift_ks_stat": 0.0795,
+        "output_drift_psi": 0.0694,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0003",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-10-03T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00076,
+        "p95_latency_ms": 2014.3,
+        "tokens_per_request": 639.8,
+        "cost_per_request_usd": 0.00201,
+        "null_response_rate": 0.00069,
+        "task_accuracy_eval_set": 0.8686,
+        "input_drift_ks_stat": 0.1438,
+        "output_drift_psi": 0.0097,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0004",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-10-04T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00167,
+        "p95_latency_ms": 1568.7,
+        "tokens_per_request": 725.8,
+        "cost_per_request_usd": 0.00208,
+        "null_response_rate": 0.00047,
+        "task_accuracy_eval_set": 0.8285,
+        "input_drift_ks_stat": 0.0311,
+        "output_drift_psi": 0.0655,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0005",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-10-05T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00139,
+        "p95_latency_ms": 2241.1,
+        "tokens_per_request": 700.2,
+        "cost_per_request_usd": 0.00101,
+        "null_response_rate": 0.00126,
+        "task_accuracy_eval_set": 0.8184,
+        "input_drift_ks_stat": 0.0706,
+        "output_drift_psi": 0.0467,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0006",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-10-06T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00153,
+        "p95_latency_ms": 2105.1,
+        "tokens_per_request": 705.9,
+        "cost_per_request_usd": 0.00238,
+        "null_response_rate": 0.00134,
+        "task_accuracy_eval_set": 0.8295,
+        "input_drift_ks_stat": 0.0826,
+        "output_drift_psi": 0.046,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0007",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-10-07T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00202,
+        "p95_latency_ms": 2400.7,
+        "tokens_per_request": 733.9,
+        "cost_per_request_usd": 0.00238,
+        "null_response_rate": 0.00062,
+        "task_accuracy_eval_set": 0.8119,
+        "input_drift_ks_stat": 0.0077,
+        "output_drift_psi": 0.0585,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0008",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-10-08T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00083,
+        "p95_latency_ms": 1767.4,
+        "tokens_per_request": 706.1,
+        "cost_per_request_usd": 0.0021,
+        "null_response_rate": 0.00156,
+        "task_accuracy_eval_set": 0.812,
+        "input_drift_ks_stat": 0.0545,
+        "output_drift_psi": 0.0072,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0009",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-10-09T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00181,
+        "p95_latency_ms": 1877.1,
+        "tokens_per_request": 606.6,
+        "cost_per_request_usd": 0.00203,
+        "null_response_rate": 0.00068,
+        "task_accuracy_eval_set": 0.8014,
+        "input_drift_ks_stat": 0.151,
+        "output_drift_psi": 0.0221,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0010",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-10-10T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00012,
+        "p95_latency_ms": 2061.0,
+        "tokens_per_request": 698.0,
+        "cost_per_request_usd": 0.00116,
+        "null_response_rate": 0.00066,
+        "task_accuracy_eval_set": 0.8351,
+        "input_drift_ks_stat": 0.0476,
+        "output_drift_psi": 0.0141,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0011",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-10-11T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00163,
+        "p95_latency_ms": 1761.5,
+        "tokens_per_request": 625.0,
+        "cost_per_request_usd": 0.00198,
+        "null_response_rate": 0.00072,
+        "task_accuracy_eval_set": 0.8791,
+        "input_drift_ks_stat": 0.017,
+        "output_drift_psi": 0.0228,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0012",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-10-12T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00299,
+        "p95_latency_ms": 1753.2,
+        "tokens_per_request": 722.7,
+        "cost_per_request_usd": 0.00156,
+        "null_response_rate": 0.00178,
+        "task_accuracy_eval_set": 0.8074,
+        "input_drift_ks_stat": 0.03,
+        "output_drift_psi": 0.0566,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0013",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-10-13T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.0017,
+        "p95_latency_ms": 1800.0,
+        "tokens_per_request": 739.3,
+        "cost_per_request_usd": 0.00234,
+        "null_response_rate": 0.00045,
+        "task_accuracy_eval_set": 0.8236,
+        "input_drift_ks_stat": 0.0756,
+        "output_drift_psi": 0.0373,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0014",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-10-14T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00135,
+        "p95_latency_ms": 2164.8,
+        "tokens_per_request": 789.8,
+        "cost_per_request_usd": 0.0033,
+        "null_response_rate": 0.00097,
+        "task_accuracy_eval_set": 0.8032,
+        "input_drift_ks_stat": 0.0776,
+        "output_drift_psi": 0.0804,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0015",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-10-15T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00046,
+        "p95_latency_ms": 1704.9,
+        "tokens_per_request": 681.7,
+        "cost_per_request_usd": 0.00287,
+        "null_response_rate": 0.00049,
+        "task_accuracy_eval_set": 0.842,
+        "input_drift_ks_stat": 0.1051,
+        "output_drift_psi": 0.0083,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0016",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-10-16T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00247,
+        "p95_latency_ms": 1338.4,
+        "tokens_per_request": 705.6,
+        "cost_per_request_usd": 0.00189,
+        "null_response_rate": 0,
+        "task_accuracy_eval_set": 0.8283,
+        "input_drift_ks_stat": 0.0284,
+        "output_drift_psi": 0.0847,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0017",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-10-17T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00059,
+        "p95_latency_ms": 1575.2,
+        "tokens_per_request": 683.5,
+        "cost_per_request_usd": 0.00185,
+        "null_response_rate": 0.00052,
+        "task_accuracy_eval_set": 0.7998,
+        "input_drift_ks_stat": 0.0245,
+        "output_drift_psi": 0.0238,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0018",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-10-18T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00189,
+        "p95_latency_ms": 1731.1,
+        "tokens_per_request": 732.9,
+        "cost_per_request_usd": 0.00192,
+        "null_response_rate": 0.00143,
+        "task_accuracy_eval_set": 0.8221,
+        "input_drift_ks_stat": 0.0711,
+        "output_drift_psi": 0.0624,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0019",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-10-19T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00054,
+        "p95_latency_ms": 2076.6,
+        "tokens_per_request": 799.1,
+        "cost_per_request_usd": 0.00151,
+        "null_response_rate": 0.00098,
+        "task_accuracy_eval_set": 0.8129,
+        "input_drift_ks_stat": 0.0353,
+        "output_drift_psi": 0.026,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0020",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-10-20T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00133,
+        "p95_latency_ms": 2193.8,
+        "tokens_per_request": 667.2,
+        "cost_per_request_usd": 0.00193,
+        "null_response_rate": 0.00151,
+        "task_accuracy_eval_set": 0.8591,
+        "input_drift_ks_stat": 0.041,
+        "output_drift_psi": 0.0391,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0021",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-10-21T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00222,
+        "p95_latency_ms": 1325.3,
+        "tokens_per_request": 662.2,
+        "cost_per_request_usd": 0.0014,
+        "null_response_rate": 0.00075,
+        "task_accuracy_eval_set": 0.8117,
+        "input_drift_ks_stat": 0.0022,
+        "output_drift_psi": 0.0639,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0022",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-10-22T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00242,
+        "p95_latency_ms": 2595.9,
+        "tokens_per_request": 697.8,
+        "cost_per_request_usd": 0.00239,
+        "null_response_rate": 0.00121,
+        "task_accuracy_eval_set": 0.8501,
+        "input_drift_ks_stat": 0.0303,
+        "output_drift_psi": 0.0423,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0023",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-10-23T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00363,
+        "p95_latency_ms": 1583.8,
+        "tokens_per_request": 706.3,
+        "cost_per_request_usd": 0.00225,
+        "null_response_rate": 0.00078,
+        "task_accuracy_eval_set": 0.8025,
+        "input_drift_ks_stat": 0.1466,
+        "output_drift_psi": 0.0115,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0024",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-10-24T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00373,
+        "p95_latency_ms": 1647.5,
+        "tokens_per_request": 699.6,
+        "cost_per_request_usd": 0.0024,
+        "null_response_rate": 0.0009,
+        "task_accuracy_eval_set": 0.802,
+        "input_drift_ks_stat": 0.0576,
+        "output_drift_psi": 0.0136,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0025",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-10-25T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00133,
+        "p95_latency_ms": 1826.4,
+        "tokens_per_request": 597.1,
+        "cost_per_request_usd": 0.00172,
+        "null_response_rate": 0.00091,
+        "task_accuracy_eval_set": 0.8097,
+        "input_drift_ks_stat": 0.0795,
+        "output_drift_psi": 0.0442,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0026",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-10-26T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00207,
+        "p95_latency_ms": 2246.1,
+        "tokens_per_request": 640.1,
+        "cost_per_request_usd": 0.00186,
+        "null_response_rate": 0.00149,
+        "task_accuracy_eval_set": 0.8267,
+        "input_drift_ks_stat": 0.0075,
+        "output_drift_psi": 0.0225,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0027",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-10-27T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00201,
+        "p95_latency_ms": 1769.7,
+        "tokens_per_request": 600.7,
+        "cost_per_request_usd": 0.00164,
+        "null_response_rate": 3e-05,
+        "task_accuracy_eval_set": 0.8458,
+        "input_drift_ks_stat": 0.0658,
+        "output_drift_psi": 0.0394,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0028",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-10-28T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.0028,
+        "p95_latency_ms": 2534.6,
+        "tokens_per_request": 678.8,
+        "cost_per_request_usd": 0.00265,
+        "null_response_rate": 0.00118,
+        "task_accuracy_eval_set": 0.8153,
+        "input_drift_ks_stat": 0.0885,
+        "output_drift_psi": 0.0278,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0029",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-10-29T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00161,
+        "p95_latency_ms": 1105.3,
+        "tokens_per_request": 736.5,
+        "cost_per_request_usd": 0.00184,
+        "null_response_rate": 0.00123,
+        "task_accuracy_eval_set": 0.8116,
+        "input_drift_ks_stat": 0.2399,
+        "output_drift_psi": 0.0829,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0030",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-10-30T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00107,
+        "p95_latency_ms": 2011.6,
+        "tokens_per_request": 827.9,
+        "cost_per_request_usd": 0.0015,
+        "null_response_rate": 0.00191,
+        "task_accuracy_eval_set": 0.8017,
+        "input_drift_ks_stat": 0.1035,
+        "output_drift_psi": 0.0038,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0031",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-10-31T00:00:00",
+      "month": 1,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00423,
+        "p95_latency_ms": 2334.6,
+        "tokens_per_request": 677.6,
+        "cost_per_request_usd": 0.00347,
+        "null_response_rate": 0.00044,
+        "task_accuracy_eval_set": 0.8137,
+        "input_drift_ks_stat": 0.1446,
+        "output_drift_psi": 0.0367,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0032",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-11-01T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00136,
+        "p95_latency_ms": 1839.2,
+        "tokens_per_request": 732.6,
+        "cost_per_request_usd": 0.00219,
+        "null_response_rate": 0.00063,
+        "task_accuracy_eval_set": 0.8239,
+        "input_drift_ks_stat": 0.051,
+        "output_drift_psi": 0.0752,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0033",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-11-02T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00233,
+        "p95_latency_ms": 1424.1,
+        "tokens_per_request": 711.4,
+        "cost_per_request_usd": 0.00169,
+        "null_response_rate": 0.00166,
+        "task_accuracy_eval_set": 0.7865,
+        "input_drift_ks_stat": 0.0448,
+        "output_drift_psi": 0.0533,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0034",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-11-03T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00327,
+        "p95_latency_ms": 2031.3,
+        "tokens_per_request": 721.0,
+        "cost_per_request_usd": 0.00225,
+        "null_response_rate": 0.00083,
+        "task_accuracy_eval_set": 0.8335,
+        "input_drift_ks_stat": 0.004,
+        "output_drift_psi": 0.0366,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0035",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-11-04T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00206,
+        "p95_latency_ms": 1055.6,
+        "tokens_per_request": 684.3,
+        "cost_per_request_usd": 0.00276,
+        "null_response_rate": 0.00173,
+        "task_accuracy_eval_set": 0.8221,
+        "input_drift_ks_stat": 0.0101,
+        "output_drift_psi": 0.0168,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0036",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-11-05T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00263,
+        "p95_latency_ms": 1973.7,
+        "tokens_per_request": 661.0,
+        "cost_per_request_usd": 0.00233,
+        "null_response_rate": 0.00162,
+        "task_accuracy_eval_set": 0.8009,
+        "input_drift_ks_stat": 0.0149,
+        "output_drift_psi": 0.0232,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0037",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-11-06T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00272,
+        "p95_latency_ms": 1673.8,
+        "tokens_per_request": 683.6,
+        "cost_per_request_usd": 0.00177,
+        "null_response_rate": 0.00119,
+        "task_accuracy_eval_set": 0.8286,
+        "input_drift_ks_stat": 0.0016,
+        "output_drift_psi": 0.0682,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0038",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-11-07T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00091,
+        "p95_latency_ms": 1991.0,
+        "tokens_per_request": 648.9,
+        "cost_per_request_usd": 0.00211,
+        "null_response_rate": 0.00082,
+        "task_accuracy_eval_set": 0.808,
+        "input_drift_ks_stat": 0.0021,
+        "output_drift_psi": 0.0838,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0039",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-11-08T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00229,
+        "p95_latency_ms": 1711.3,
+        "tokens_per_request": 636.3,
+        "cost_per_request_usd": 0.00226,
+        "null_response_rate": 0.00157,
+        "task_accuracy_eval_set": 0.8321,
+        "input_drift_ks_stat": 0.0933,
+        "output_drift_psi": 0.0238,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0040",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-11-09T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.0007,
+        "p95_latency_ms": 1786.5,
+        "tokens_per_request": 736.2,
+        "cost_per_request_usd": 0.00236,
+        "null_response_rate": 0.00075,
+        "task_accuracy_eval_set": 0.8187,
+        "input_drift_ks_stat": 0.0293,
+        "output_drift_psi": 0.0636,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0041",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-11-10T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00301,
+        "p95_latency_ms": 1993.9,
+        "tokens_per_request": 729.8,
+        "cost_per_request_usd": 0.00149,
+        "null_response_rate": 0.00045,
+        "task_accuracy_eval_set": 0.8182,
+        "input_drift_ks_stat": 0.0833,
+        "output_drift_psi": 0.0198,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0042",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-11-11T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00256,
+        "p95_latency_ms": 1349.5,
+        "tokens_per_request": 636.9,
+        "cost_per_request_usd": 0.00256,
+        "null_response_rate": 0.00098,
+        "task_accuracy_eval_set": 0.7937,
+        "input_drift_ks_stat": 0.0706,
+        "output_drift_psi": 0.0129,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0043",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-11-12T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00495,
+        "p95_latency_ms": 2175.0,
+        "tokens_per_request": 727.3,
+        "cost_per_request_usd": 0.00192,
+        "null_response_rate": 0.00112,
+        "task_accuracy_eval_set": 0.8179,
+        "input_drift_ks_stat": 0.1151,
+        "output_drift_psi": 0.0464,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0044",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-11-13T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00227,
+        "p95_latency_ms": 973.6,
+        "tokens_per_request": 678.2,
+        "cost_per_request_usd": 0.00159,
+        "null_response_rate": 0.00149,
+        "task_accuracy_eval_set": 0.8191,
+        "input_drift_ks_stat": 0.119,
+        "output_drift_psi": 0.0796,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0045",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-11-14T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00092,
+        "p95_latency_ms": 2120.1,
+        "tokens_per_request": 677.2,
+        "cost_per_request_usd": 0.00147,
+        "null_response_rate": 0.00074,
+        "task_accuracy_eval_set": 0.8048,
+        "input_drift_ks_stat": 0.0431,
+        "output_drift_psi": 0.0559,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0046",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-11-15T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00041,
+        "p95_latency_ms": 1712.8,
+        "tokens_per_request": 710.7,
+        "cost_per_request_usd": 0.00204,
+        "null_response_rate": 0.00142,
+        "task_accuracy_eval_set": 0.8224,
+        "input_drift_ks_stat": 0.0464,
+        "output_drift_psi": 0.0556,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0047",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-11-16T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00018,
+        "p95_latency_ms": 1688.7,
+        "tokens_per_request": 710.7,
+        "cost_per_request_usd": 0.00246,
+        "null_response_rate": 0.00081,
+        "task_accuracy_eval_set": 0.8665,
+        "input_drift_ks_stat": 0.0061,
+        "output_drift_psi": 0.0242,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0048",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-11-17T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00238,
+        "p95_latency_ms": 1508.8,
+        "tokens_per_request": 720.4,
+        "cost_per_request_usd": 0.00097,
+        "null_response_rate": 0.00134,
+        "task_accuracy_eval_set": 0.8213,
+        "input_drift_ks_stat": 0.0168,
+        "output_drift_psi": 0.0077,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0049",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-11-18T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00073,
+        "p95_latency_ms": 1530.4,
+        "tokens_per_request": 788.3,
+        "cost_per_request_usd": 0.00225,
+        "null_response_rate": 0.0007,
+        "task_accuracy_eval_set": 0.8284,
+        "input_drift_ks_stat": 0.0326,
+        "output_drift_psi": 0.0977,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0050",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-11-19T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00311,
+        "p95_latency_ms": 1923.4,
+        "tokens_per_request": 687.5,
+        "cost_per_request_usd": 0.00289,
+        "null_response_rate": 0.00095,
+        "task_accuracy_eval_set": 0.8026,
+        "input_drift_ks_stat": 0.0976,
+        "output_drift_psi": 0.0431,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0051",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-11-20T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00164,
+        "p95_latency_ms": 2029.6,
+        "tokens_per_request": 755.7,
+        "cost_per_request_usd": 0.00258,
+        "null_response_rate": 0.00108,
+        "task_accuracy_eval_set": 0.8366,
+        "input_drift_ks_stat": 0.1807,
+        "output_drift_psi": 0.0455,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0052",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-11-21T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.0036,
+        "p95_latency_ms": 1346.8,
+        "tokens_per_request": 672.9,
+        "cost_per_request_usd": 0.00162,
+        "null_response_rate": 0,
+        "task_accuracy_eval_set": 0.8215,
+        "input_drift_ks_stat": 0.1114,
+        "output_drift_psi": 0.0268,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0053",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-11-22T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.0022,
+        "p95_latency_ms": 1543.8,
+        "tokens_per_request": 685.4,
+        "cost_per_request_usd": 0.00214,
+        "null_response_rate": 0.0004,
+        "task_accuracy_eval_set": 0.8435,
+        "input_drift_ks_stat": 0.1535,
+        "output_drift_psi": 0.0161,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0054",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-11-23T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00151,
+        "p95_latency_ms": 2246.7,
+        "tokens_per_request": 748.1,
+        "cost_per_request_usd": 0.00096,
+        "null_response_rate": 0,
+        "task_accuracy_eval_set": 0.8,
+        "input_drift_ks_stat": 0.0402,
+        "output_drift_psi": 0.0095,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0055",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-11-24T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00203,
+        "p95_latency_ms": 2002.1,
+        "tokens_per_request": 641.7,
+        "cost_per_request_usd": 0.0011,
+        "null_response_rate": 0.00113,
+        "task_accuracy_eval_set": 0.8128,
+        "input_drift_ks_stat": 0.0083,
+        "output_drift_psi": 0.0321,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0056",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-11-25T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00183,
+        "p95_latency_ms": 2246.0,
+        "tokens_per_request": 628.8,
+        "cost_per_request_usd": 0.00139,
+        "null_response_rate": 0.00132,
+        "task_accuracy_eval_set": 0.8513,
+        "input_drift_ks_stat": 0.0165,
+        "output_drift_psi": 0.0631,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0057",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-11-26T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0,
+        "p95_latency_ms": 1878.2,
+        "tokens_per_request": 647.5,
+        "cost_per_request_usd": 0.00309,
+        "null_response_rate": 0.00217,
+        "task_accuracy_eval_set": 0.8245,
+        "input_drift_ks_stat": 0.0388,
+        "output_drift_psi": 0.0059,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0058",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-11-27T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00314,
+        "p95_latency_ms": 1799.1,
+        "tokens_per_request": 713.2,
+        "cost_per_request_usd": 0.00268,
+        "null_response_rate": 0.00131,
+        "task_accuracy_eval_set": 0.8626,
+        "input_drift_ks_stat": 0.1309,
+        "output_drift_psi": 0.0278,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0059",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-11-28T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.0011,
+        "p95_latency_ms": 2052.5,
+        "tokens_per_request": 685.3,
+        "cost_per_request_usd": 0.0023,
+        "null_response_rate": 0.00042,
+        "task_accuracy_eval_set": 0.8181,
+        "input_drift_ks_stat": 0.1838,
+        "output_drift_psi": 0.0819,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0060",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-11-29T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00012,
+        "p95_latency_ms": 1909.4,
+        "tokens_per_request": 751.3,
+        "cost_per_request_usd": 0.00175,
+        "null_response_rate": 0.00045,
+        "task_accuracy_eval_set": 0.8332,
+        "input_drift_ks_stat": 0.0081,
+        "output_drift_psi": 0.0276,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0061",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-11-30T00:00:00",
+      "month": 2,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00184,
+        "p95_latency_ms": 2499.3,
+        "tokens_per_request": 664.3,
+        "cost_per_request_usd": 0.00175,
+        "null_response_rate": 0.00126,
+        "task_accuracy_eval_set": 0.8346,
+        "input_drift_ks_stat": 0.1103,
+        "output_drift_psi": 0.0649,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0062",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-12-01T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00054,
+        "p95_latency_ms": 1801.9,
+        "tokens_per_request": 694.6,
+        "cost_per_request_usd": 0.00165,
+        "null_response_rate": 0.00157,
+        "task_accuracy_eval_set": 0.7731,
+        "input_drift_ks_stat": 0.0585,
+        "output_drift_psi": 0.0451,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0063",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-12-02T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00287,
+        "p95_latency_ms": 2265.1,
+        "tokens_per_request": 748.8,
+        "cost_per_request_usd": 0.0027,
+        "null_response_rate": 0,
+        "task_accuracy_eval_set": 0.8233,
+        "input_drift_ks_stat": 0.1106,
+        "output_drift_psi": 0.0187,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0064",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-12-03T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00224,
+        "p95_latency_ms": 1828.4,
+        "tokens_per_request": 778.8,
+        "cost_per_request_usd": 0.00101,
+        "null_response_rate": 0.00058,
+        "task_accuracy_eval_set": 0.7904,
+        "input_drift_ks_stat": 0.1311,
+        "output_drift_psi": 0.0503,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0065",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-12-04T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00218,
+        "p95_latency_ms": 2267.0,
+        "tokens_per_request": 769.3,
+        "cost_per_request_usd": 0.00203,
+        "null_response_rate": 0.00052,
+        "task_accuracy_eval_set": 0.8398,
+        "input_drift_ks_stat": 0.0553,
+        "output_drift_psi": 0.06,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0066",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-12-05T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00085,
+        "p95_latency_ms": 1836.6,
+        "tokens_per_request": 773.3,
+        "cost_per_request_usd": 0.00203,
+        "null_response_rate": 0.00161,
+        "task_accuracy_eval_set": 0.8218,
+        "input_drift_ks_stat": 0.0341,
+        "output_drift_psi": 0.1361,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0067",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-12-06T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00382,
+        "p95_latency_ms": 1859.1,
+        "tokens_per_request": 668.4,
+        "cost_per_request_usd": 0.0012,
+        "null_response_rate": 0.0012,
+        "task_accuracy_eval_set": 0.8149,
+        "input_drift_ks_stat": 0.0374,
+        "output_drift_psi": 0.0162,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0068",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-12-07T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00244,
+        "p95_latency_ms": 2142.7,
+        "tokens_per_request": 725.7,
+        "cost_per_request_usd": 0.00164,
+        "null_response_rate": 0.00061,
+        "task_accuracy_eval_set": 0.8317,
+        "input_drift_ks_stat": 0.0857,
+        "output_drift_psi": 0.0359,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0069",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-12-08T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00271,
+        "p95_latency_ms": 1786.8,
+        "tokens_per_request": 670.9,
+        "cost_per_request_usd": 0.00111,
+        "null_response_rate": 0.00044,
+        "task_accuracy_eval_set": 0.7875,
+        "input_drift_ks_stat": 0.0021,
+        "output_drift_psi": 0.0221,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0070",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-12-09T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00108,
+        "p95_latency_ms": 2061.8,
+        "tokens_per_request": 716.5,
+        "cost_per_request_usd": 0.00202,
+        "null_response_rate": 0.00128,
+        "task_accuracy_eval_set": 0.8407,
+        "input_drift_ks_stat": 0.1282,
+        "output_drift_psi": 0.0353,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0071",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-12-10T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00019,
+        "p95_latency_ms": 1561.7,
+        "tokens_per_request": 760.6,
+        "cost_per_request_usd": 0.00235,
+        "null_response_rate": 0.00133,
+        "task_accuracy_eval_set": 0.8236,
+        "input_drift_ks_stat": 0.113,
+        "output_drift_psi": 0.077,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0072",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-12-11T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00169,
+        "p95_latency_ms": 1814.2,
+        "tokens_per_request": 811.8,
+        "cost_per_request_usd": 0.00251,
+        "null_response_rate": 0.00152,
+        "task_accuracy_eval_set": 0.8048,
+        "input_drift_ks_stat": 0.18,
+        "output_drift_psi": 0.0236,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0073",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-12-12T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00099,
+        "p95_latency_ms": 2503.6,
+        "tokens_per_request": 638.7,
+        "cost_per_request_usd": 0.00157,
+        "null_response_rate": 0.00088,
+        "task_accuracy_eval_set": 0.8004,
+        "input_drift_ks_stat": 0.0422,
+        "output_drift_psi": 0.0138,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0074",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-12-13T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00211,
+        "p95_latency_ms": 2368.1,
+        "tokens_per_request": 628.3,
+        "cost_per_request_usd": 0.00268,
+        "null_response_rate": 0.00059,
+        "task_accuracy_eval_set": 0.8492,
+        "input_drift_ks_stat": 0.1524,
+        "output_drift_psi": 0.1151,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0075",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-12-14T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00181,
+        "p95_latency_ms": 1451.0,
+        "tokens_per_request": 726.4,
+        "cost_per_request_usd": 0.00197,
+        "null_response_rate": 0.00012,
+        "task_accuracy_eval_set": 0.8347,
+        "input_drift_ks_stat": 0.0738,
+        "output_drift_psi": 0.0721,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0076",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-12-15T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00297,
+        "p95_latency_ms": 1715.6,
+        "tokens_per_request": 711.8,
+        "cost_per_request_usd": 0.00188,
+        "null_response_rate": 0.00077,
+        "task_accuracy_eval_set": 0.882,
+        "input_drift_ks_stat": 0.0749,
+        "output_drift_psi": 0.0028,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0077",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-12-16T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00299,
+        "p95_latency_ms": 1684.7,
+        "tokens_per_request": 678.6,
+        "cost_per_request_usd": 0.00134,
+        "null_response_rate": 0.0016,
+        "task_accuracy_eval_set": 0.8342,
+        "input_drift_ks_stat": 0.0376,
+        "output_drift_psi": 0.0754,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0078",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-12-17T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.0025,
+        "p95_latency_ms": 1885.6,
+        "tokens_per_request": 693.1,
+        "cost_per_request_usd": 0.00131,
+        "null_response_rate": 0.00097,
+        "task_accuracy_eval_set": 0.8026,
+        "input_drift_ks_stat": 0.0064,
+        "output_drift_psi": 0.0032,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0079",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-12-18T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00166,
+        "p95_latency_ms": 2064.6,
+        "tokens_per_request": 706.7,
+        "cost_per_request_usd": 0.00226,
+        "null_response_rate": 0.00121,
+        "task_accuracy_eval_set": 0.8402,
+        "input_drift_ks_stat": 0.0771,
+        "output_drift_psi": 0.0173,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0080",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-12-19T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00292,
+        "p95_latency_ms": 1846.1,
+        "tokens_per_request": 766.3,
+        "cost_per_request_usd": 0.00237,
+        "null_response_rate": 0.00078,
+        "task_accuracy_eval_set": 0.8376,
+        "input_drift_ks_stat": 0.0206,
+        "output_drift_psi": 0.0478,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0081",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-12-20T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00385,
+        "p95_latency_ms": 2127.5,
+        "tokens_per_request": 824.5,
+        "cost_per_request_usd": 0.00122,
+        "null_response_rate": 0.00073,
+        "task_accuracy_eval_set": 0.8147,
+        "input_drift_ks_stat": 0.032,
+        "output_drift_psi": 0.0186,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0082",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-12-21T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00163,
+        "p95_latency_ms": 2131.8,
+        "tokens_per_request": 759.2,
+        "cost_per_request_usd": 0.00221,
+        "null_response_rate": 0.00049,
+        "task_accuracy_eval_set": 0.8309,
+        "input_drift_ks_stat": 0.0539,
+        "output_drift_psi": 0.0177,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0083",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-12-22T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00203,
+        "p95_latency_ms": 2220.1,
+        "tokens_per_request": 682.6,
+        "cost_per_request_usd": 0.00182,
+        "null_response_rate": 0.00133,
+        "task_accuracy_eval_set": 0.8306,
+        "input_drift_ks_stat": 0.0682,
+        "output_drift_psi": 0.0142,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0084",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-12-23T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00069,
+        "p95_latency_ms": 1428.7,
+        "tokens_per_request": 688.4,
+        "cost_per_request_usd": 0.0024,
+        "null_response_rate": 0.0014,
+        "task_accuracy_eval_set": 0.7837,
+        "input_drift_ks_stat": 0.0427,
+        "output_drift_psi": 0.0044,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0085",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-12-24T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00096,
+        "p95_latency_ms": 2457.2,
+        "tokens_per_request": 723.2,
+        "cost_per_request_usd": 0.00241,
+        "null_response_rate": 0.00228,
+        "task_accuracy_eval_set": 0.8084,
+        "input_drift_ks_stat": 0.0317,
+        "output_drift_psi": 0.0745,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0086",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-12-25T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00069,
+        "p95_latency_ms": 1822.2,
+        "tokens_per_request": 712.3,
+        "cost_per_request_usd": 0.00249,
+        "null_response_rate": 0.0012,
+        "task_accuracy_eval_set": 0.8017,
+        "input_drift_ks_stat": 0.0778,
+        "output_drift_psi": 0.0423,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0087",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-12-26T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00095,
+        "p95_latency_ms": 1593.7,
+        "tokens_per_request": 683.7,
+        "cost_per_request_usd": 0.00143,
+        "null_response_rate": 0.00153,
+        "task_accuracy_eval_set": 0.8135,
+        "input_drift_ks_stat": 0.0222,
+        "output_drift_psi": 0.0519,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0088",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-12-27T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00161,
+        "p95_latency_ms": 2245.5,
+        "tokens_per_request": 747.4,
+        "cost_per_request_usd": 0.00119,
+        "null_response_rate": 0.00051,
+        "task_accuracy_eval_set": 0.8327,
+        "input_drift_ks_stat": 0.0398,
+        "output_drift_psi": 0.0277,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0089",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-12-28T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00114,
+        "p95_latency_ms": 1400.7,
+        "tokens_per_request": 714.8,
+        "cost_per_request_usd": 0.00181,
+        "null_response_rate": 0.00157,
+        "task_accuracy_eval_set": 0.8187,
+        "input_drift_ks_stat": 0.0772,
+        "output_drift_psi": 0.0347,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0090",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-12-29T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00335,
+        "p95_latency_ms": 1579.3,
+        "tokens_per_request": 624.9,
+        "cost_per_request_usd": 0.00176,
+        "null_response_rate": 0.00033,
+        "task_accuracy_eval_set": 0.8528,
+        "input_drift_ks_stat": 0.111,
+        "output_drift_psi": 0.0164,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0091",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-12-30T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00347,
+        "p95_latency_ms": 2061.4,
+        "tokens_per_request": 684.3,
+        "cost_per_request_usd": 0.00161,
+        "null_response_rate": 0.00091,
+        "task_accuracy_eval_set": 0.8152,
+        "input_drift_ks_stat": 0.1197,
+        "output_drift_psi": 0.0077,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    },
+    {
+      "run_id": "mlflow-S2-0092",
+      "experiment_id": "qalis-study-s2-oct-dec-2024",
+      "system_id": "S2",
+      "timestamp": "2024-12-31T00:00:00",
+      "month": 3,
+      "status": "FINISHED",
+      "metrics": {
+        "api_error_rate": 0.00065,
+        "p95_latency_ms": 2095.7,
+        "tokens_per_request": 761.8,
+        "cost_per_request_usd": 0.00189,
+        "null_response_rate": 0.00139,
+        "task_accuracy_eval_set": 0.821,
+        "input_drift_ks_stat": 0.0965,
+        "output_drift_psi": 0.0041,
+        "faithfulness_score": null,
+        "hallucination_rate": null,
+        "explanation_coverage": null,
+        "toxicity_rate": null
+      },
+      "tags": {
+        "mlflow.source.name": "qalis_study_instrumentation",
+        "model_version": "Llama 3.3 70B FT",
+        "domain": "code_generation"
+      },
+      "artifacts_logged": [
+        "eval_metrics.json",
+        "drift_report.html",
+        "latency_histogram.png"
+      ],
+      "qalis_gaps_identified": [
+        "SF dimension not covered \u2014 no faithfulness or hallucination metrics",
+        "TI dimension not covered \u2014 no explanation quality metrics",
+        "SS-1/SS-2 not covered \u2014 no toxicity/PII monitoring in base config",
+        "RO-2/RO-3 not covered \u2014 no adversarial/OOD testing"
+      ]
+    }
+  ]
+}

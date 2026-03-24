@@ -1,0 +1,211 @@
+{
+  "__inputs": [
+    {
+      "name": "DS_PROMETHEUS",
+      "label": "Prometheus",
+      "description": "QALIS Prometheus metrics endpoint. Configure to point to your qalis-dashboard /metrics endpoint.",
+      "type": "datasource",
+      "pluginId": "prometheus",
+      "pluginName": "Prometheus"
+    }
+  ],
+  "__requires": [
+    { "type": "grafana", "id": "grafana", "name": "Grafana", "version": "10.0.0" },
+    { "type": "datasource", "id": "prometheus", "name": "Prometheus", "version": "1.0.0" },
+    { "type": "panel", "id": "gauge", "name": "Gauge", "version": "" },
+    { "type": "panel", "id": "timeseries", "name": "Time series", "version": "" },
+    { "type": "panel", "id": "stat", "name": "Stat", "version": "" },
+    { "type": "panel", "id": "table", "name": "Table", "version": "" }
+  ],
+  "annotations": { "list": [] },
+  "description": "QALIS Quality Assessment Dashboard — real-time and daily metric monitoring for LLM-integrated systems. Paper: QUATIC 2025.",
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 1,
+  "id": null,
+  "links": [],
+  "panels": [
+    {
+      "id": 1,
+      "title": "Composite QALIS Score",
+      "type": "gauge",
+      "gridPos": { "h": 8, "w": 6, "x": 0, "y": 0 },
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": {
+        "defaults": {
+          "color": { "mode": "thresholds" },
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              { "color": "red",    "value": 0   },
+              { "color": "orange", "value": 6.0 },
+              { "color": "yellow", "value": 7.0 },
+              { "color": "green",  "value": 8.0 }
+            ]
+          },
+          "min": 0, "max": 10,
+          "unit": "short",
+          "displayName": "Composite Score"
+        }
+      },
+      "options": { "reduceOptions": { "calcs": ["lastNotNull"] }, "showThresholdLabels": true },
+      "targets": [
+        {
+          "expr": "qalis_composite_score{system_id=\"$system_id\"}",
+          "legendFormat": "Composite",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Dimension Scores — Current",
+      "type": "stat",
+      "gridPos": { "h": 8, "w": 18, "x": 6, "y": 0 },
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": {
+        "defaults": {
+          "color": { "mode": "thresholds" },
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              { "color": "red",    "value": 0   },
+              { "color": "orange", "value": 6.0 },
+              { "color": "yellow", "value": 7.0 },
+              { "color": "green",  "value": 8.0 }
+            ]
+          },
+          "min": 0, "max": 10, "unit": "short"
+        },
+        "overrides": []
+      },
+      "options": { "reduceOptions": { "calcs": ["lastNotNull"] }, "orientation": "horizontal", "colorMode": "background" },
+      "targets": [
+        { "expr": "qalis_dimension_score{system_id=\"$system_id\",dimension=\"FC\"}", "legendFormat": "FC Functional Correctness", "refId": "A" },
+        { "expr": "qalis_dimension_score{system_id=\"$system_id\",dimension=\"RO\"}", "legendFormat": "RO Robustness",             "refId": "B" },
+        { "expr": "qalis_dimension_score{system_id=\"$system_id\",dimension=\"SF\"}", "legendFormat": "SF Semantic Faithfulness",  "refId": "C" },
+        { "expr": "qalis_dimension_score{system_id=\"$system_id\",dimension=\"SS\"}", "legendFormat": "SS Safety & Security",      "refId": "D" },
+        { "expr": "qalis_dimension_score{system_id=\"$system_id\",dimension=\"TI\"}", "legendFormat": "TI Transparency",           "refId": "E" },
+        { "expr": "qalis_dimension_score{system_id=\"$system_id\",dimension=\"IQ\"}", "legendFormat": "IQ Integration Quality",    "refId": "F" }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Composite Score — 30-Day Trend",
+      "type": "timeseries",
+      "gridPos": { "h": 8, "w": 24, "x": 0, "y": 8 },
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": {
+        "defaults": {
+          "color": { "mode": "palette-classic" },
+          "custom": { "lineWidth": 2, "fillOpacity": 10 },
+          "thresholds": { "mode": "absolute", "steps": [{ "color": "green", "value": null }, { "color": "red", "value": 6.0 }] },
+          "min": 0, "max": 10, "unit": "short"
+        }
+      },
+      "options": { "tooltip": { "mode": "multi" } },
+      "targets": [
+        { "expr": "qalis_composite_score{system_id=\"$system_id\"}", "legendFormat": "Composite", "refId": "A" },
+        { "expr": "qalis_dimension_score{system_id=\"$system_id\",dimension=\"FC\"}", "legendFormat": "FC", "refId": "B" },
+        { "expr": "qalis_dimension_score{system_id=\"$system_id\",dimension=\"SF\"}", "legendFormat": "SF", "refId": "C" },
+        { "expr": "qalis_dimension_score{system_id=\"$system_id\",dimension=\"SS\"}", "legendFormat": "SS", "refId": "D" }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "SS-1 Toxicity Rate (real-time)",
+      "type": "timeseries",
+      "gridPos": { "h": 6, "w": 8, "x": 0, "y": 16 },
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": {
+        "defaults": {
+          "color": { "fixedColor": "red", "mode": "fixed" },
+          "thresholds": { "mode": "absolute", "steps": [{ "color": "green", "value": null }, { "color": "red", "value": 0.005 }] },
+          "custom": { "lineWidth": 1 },
+          "unit": "percentunit", "min": 0
+        }
+      },
+      "targets": [{ "expr": "qalis_metric_value{system_id=\"$system_id\",metric_id=\"SS-1\"}", "legendFormat": "SS-1 Toxicity Rate", "refId": "A" }]
+    },
+    {
+      "id": 5,
+      "title": "IQ-2 Latency P95 (real-time)",
+      "type": "timeseries",
+      "gridPos": { "h": 6, "w": 8, "x": 8, "y": 16 },
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": {
+        "defaults": {
+          "thresholds": { "mode": "absolute", "steps": [{ "color": "green", "value": null }, { "color": "red", "value": 1500 }] },
+          "custom": { "lineWidth": 1 },
+          "unit": "ms", "min": 0
+        }
+      },
+      "targets": [{ "expr": "qalis_metric_value{system_id=\"$system_id\",metric_id=\"IQ-2\"}", "legendFormat": "P95 Latency (ms)", "refId": "A" }]
+    },
+    {
+      "id": 6,
+      "title": "IQ-1 API Availability (real-time)",
+      "type": "timeseries",
+      "gridPos": { "h": 6, "w": 8, "x": 16, "y": 16 },
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": {
+        "defaults": {
+          "thresholds": { "mode": "absolute", "steps": [{ "color": "red", "value": null }, { "color": "green", "value": 0.99 }] },
+          "custom": { "lineWidth": 1 },
+          "unit": "percentunit", "min": 0, "max": 1
+        }
+      },
+      "targets": [{ "expr": "qalis_metric_value{system_id=\"$system_id\",metric_id=\"IQ-1\"}", "legendFormat": "API Availability", "refId": "A" }]
+    },
+    {
+      "id": 7,
+      "title": "SF-3 Hallucination Rate (daily)",
+      "type": "timeseries",
+      "gridPos": { "h": 6, "w": 12, "x": 0, "y": 22 },
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": {
+        "defaults": {
+          "thresholds": { "mode": "absolute", "steps": [{ "color": "green", "value": null }, { "color": "red", "value": 0.020 }] },
+          "custom": { "lineWidth": 2, "fillOpacity": 15 },
+          "unit": "short", "min": 0
+        }
+      },
+      "targets": [{ "expr": "qalis_metric_value{system_id=\"$system_id\",metric_id=\"SF-3\"}", "legendFormat": "Hallucination Rate /1K tokens", "refId": "A" }]
+    },
+    {
+      "id": 8,
+      "title": "Active Threshold Violations",
+      "type": "table",
+      "gridPos": { "h": 6, "w": 12, "x": 12, "y": 22 },
+      "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+      "fieldConfig": {
+        "defaults": { "custom": { "align": "left" } },
+        "overrides": [
+          { "matcher": { "id": "byName", "options": "severity" }, "properties": [{ "id": "custom.width", "value": 80 }] }
+        ]
+      },
+      "options": { "sortBy": [{ "displayName": "severity", "desc": true }] },
+      "targets": [{ "expr": "qalis_threshold_violation{system_id=\"$system_id\"}", "legendFormat": "{{metric_id}} — {{dimension}}", "refId": "A", "instant": true }]
+    }
+  ],
+  "templating": {
+    "list": [
+      {
+        "name": "system_id",
+        "type": "query",
+        "label": "System",
+        "datasource": { "type": "prometheus", "uid": "${DS_PROMETHEUS}" },
+        "query": "label_values(qalis_composite_score, system_id)",
+        "current": {},
+        "refresh": 2,
+        "sort": 1
+      }
+    ]
+  },
+  "time": { "from": "now-7d", "to": "now" },
+  "timepicker": {},
+  "timezone": "browser",
+  "title": "QALIS Quality Overview",
+  "uid": "qalis-overview-v1",
+  "version": 1
+}

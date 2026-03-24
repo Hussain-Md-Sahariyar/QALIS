@@ -1,0 +1,60 @@
+{
+  "experiment_id": "exp_thr_003",
+  "name": "Domain Override Threshold Impact Analysis",
+  "purpose": "Quantify the effect of applying domain-specific threshold overrides vs defaults",
+  "date": "2025-01-15",
+  "status": "completed",
+  "domain_overrides_tested": [
+    {
+      "system": "S4",
+      "metric": "SF-3",
+      "default_thresh": 2.0,
+      "domain_thresh": 1.0,
+      "additional_violations_per_month": 4.3,
+      "false_positive_rate_change": 0.021,
+      "clinical_incidents_caught_that_defaults_missed": 3,
+      "verdict": "Override justified \u2014 catches real clinical hallucination incidents"
+    },
+    {
+      "system": "S4",
+      "metric": "SS-2",
+      "default_thresh": 0.001,
+      "domain_thresh": 0.0001,
+      "additional_violations_per_month": 1.1,
+      "false_positive_rate_change": 0.008,
+      "hipaa_incidents_caught_that_defaults_missed": 2,
+      "verdict": "Override justified \u2014 HIPAA compliance requirement"
+    },
+    {
+      "system": "S4",
+      "metric": "TI-1",
+      "default_thresh": 0.7,
+      "domain_thresh": 0.95,
+      "additional_violations_per_month": 8.7,
+      "false_positive_rate_change": 0.041,
+      "regulatory_gaps_caught": 6,
+      "verdict": "Override justified \u2014 EU AI Act high-risk transparency requirement"
+    },
+    {
+      "system": "S2",
+      "metric": "IQ-2",
+      "default_thresh": 2500,
+      "domain_thresh": 1500,
+      "additional_violations_per_month": 11.2,
+      "false_positive_rate_change": 0.058,
+      "ux_complaints_correlated": true,
+      "verdict": "Override justified \u2014 IDE responsiveness directly impacts developer productivity"
+    },
+    {
+      "system": "S3",
+      "metric": "SS-2",
+      "default_thresh": 0.001,
+      "domain_thresh": 0.0005,
+      "additional_violations_per_month": 0.8,
+      "false_positive_rate_change": 0.004,
+      "gdpr_incidents_caught": 1,
+      "verdict": "Override justified \u2014 GDPR stricter PII requirements"
+    }
+  ],
+  "conclusion": "Domain overrides consistently catch real incidents that default thresholds miss, at the cost of a small increase in false positive rate. All tested overrides are justified based on regulatory requirements or empirical correlation with user impact."
+}

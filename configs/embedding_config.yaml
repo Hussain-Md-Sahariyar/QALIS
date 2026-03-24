@@ -1,0 +1,68 @@
+primary_model:
+  name: "all-mpnet-base-v2"
+  huggingface_id: "sentence-transformers/all-mpnet-base-v2"
+  embedding_dim: 768                 
+  stored_dim: 512                     
+  truncation_method: "PCA"        
+  pca_model_path: "data/processed/embeddings/pca_768_to_512.pkl"
+  max_seq_length: 384
+  batch_size: 64
+  device: "cuda"
+  normalize: true                    
+  pooling: "mean"
+
+secondary_model:
+  name: "paraphrase-multilingual-mpnet-base-v2"
+  huggingface_id: "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+  embedding_dim: 768
+  use_case: "multilingual_ood_detection"
+
+embedding_files:
+  query_embeddings:
+    S1: "data/raw/S1_Customer_Support_Chatbot/embeddings/S1_query_embeddings.npy"
+    S2: "data/raw/S2_AI_Code_Assistant_IDE_Plugin/embeddings/S2_query_embeddings.npy"
+    S3: "data/raw/S3_Document_Summarization_and_QA/embeddings/S3_query_embeddings.npy"
+    S4: "data/raw/S4_Medical_Triage_Assistant/embeddings/S4_query_embeddings.npy"
+    shape: [50000, 512]
+    dtype: float32
+    size_mb_approx: 98
+
+  response_embeddings:
+    S1: "data/raw/S1_Customer_Support_Chatbot/embeddings/S1_response_embeddings.npy"
+    S2: "data/raw/S2_AI_Code_Assistant_IDE_Plugin/embeddings/S2_response_embeddings.npy"
+    S3: "data/raw/S3_Document_Summarization_and_QA/embeddings/S3_response_embeddings.npy"
+    S4: "data/raw/S4_Medical_Triage_Assistant/embeddings/S4_response_embeddings.npy"
+    shape: [50000, 512]
+    dtype: float32
+    size_mb_approx: 98
+
+  context_embeddings:
+    S1: "data/raw/S1_Customer_Support_Chatbot/embeddings/S1_context_embeddings.npy"
+    S3: "data/raw/S3_Document_Summarization_and_QA/embeddings/S3_context_embeddings.npy"
+    shape: [50000, 512]
+    dtype: float32
+    size_mb_approx: 98
+    note: "Not available for S2 (no RAG) or S4 (no RAG)"
+
+  in_distribution_centroids:
+    path: "data/processed/embeddings/in_distribution_centroids.npy"
+    description: "Per-system cluster centroids for OOD detection (RO-3)"
+    n_clusters_per_system: 4
+    cluster_labels:
+      S1: [informational, transactional, navigational, troubleshooting]
+      S2: [code_completion, bug_fix, explanation_request, test_generation]
+      S3: [summarisation, qa_factoid, qa_inferential, multi_doc_synthesis]
+      S4: [symptom_description, triage_decision, medication_query, escalation_check]
+
+similarity_thresholds:
+  high_similarity: 0.85              
+  moderate_similarity: 0.70          
+  low_similarity: 0.65              
+  ood_threshold: 0.65                 
+
+performance:
+  cache_embeddings: true
+  cache_backend: "disk"              
+  cache_dir: ".embedding_cache/"
+  cache_ttl_hours: 168                
+  preload_centroids_on_startup: true

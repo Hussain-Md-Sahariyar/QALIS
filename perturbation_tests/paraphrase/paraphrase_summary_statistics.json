@@ -1,0 +1,51 @@
+{
+  "dataset": "paraphrase_invariance_dataset.csv",
+  "total_pairs": 4000,
+  "n_systems": 4,
+  "pairs_per_system": 1000,
+  "paraphrase_methods": [
+    "back_translation",
+    "lexical_substitution",
+    "syntactic_transformation",
+    "human_paraphrase"
+  ],
+  "method_weights": {
+    "back_translation": 0.4,
+    "lexical_substitution": 0.3,
+    "syntactic_transformation": 0.2,
+    "human_paraphrase": 0.1
+  },
+  "embedding_model": "sentence-transformers/all-mpnet-base-v2",
+  "similarity_discard_threshold": 0.75,
+  "overall": {
+    "mean_cosine_similarity": 0.8708,
+    "pct_above_threshold": 63.8
+  },
+  "per_system": {
+    "S1": {
+      "n_pairs": 988,
+      "mean_cosine_similarity": 0.8701,
+      "passes_ro4_threshold": true
+    },
+    "S2": {
+      "n_pairs": 990,
+      "mean_cosine_similarity": 0.8712,
+      "passes_ro4_threshold": true
+    },
+    "S3": {
+      "n_pairs": 1009,
+      "mean_cosine_similarity": 0.87,
+      "passes_ro4_threshold": true
+    },
+    "S4": {
+      "n_pairs": 1013,
+      "mean_cosine_similarity": 0.8719,
+      "passes_ro4_threshold": true
+    }
+  },
+  "ro4_threshold": 0.85,
+  "sf3_ro4_pearson_r": -0.61,
+  "paper_note": "r=0.61 correlation with SF-3 hallucination rate (Section 6.2, Figure 4)",
+  "paper_reference": "Section 4.3, Table 3 (RO-4)",
+  "config_reference": "configs/perturbation_config.yaml > paraphrase_perturbations"
+}

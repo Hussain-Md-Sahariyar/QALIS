@@ -1,0 +1,140 @@
+{
+  "coding_protocol": "Framework method thematic analysis (Ritchie & Spencer, 1994)",
+  "overall_kappa": 0.81,
+  "n_sessions": 12,
+  "interpretation": "Substantial agreement (Landis & Koch, 1977)",
+  "sessions": [
+    {
+      "session_id": "COD-01",
+      "date": "2024-11-15",
+      "coder_1": "Researcher A",
+      "coder_2": "Researcher B",
+      "n_excerpts": 20,
+      "agreements": 18,
+      "cohen_kappa": 0.806,
+      "disagreements_resolved": true,
+      "resolution_method": "consensus_discussion"
+    },
+    {
+      "session_id": "COD-02",
+      "date": "2024-11-18",
+      "coder_1": "Researcher A",
+      "coder_2": "Researcher B",
+      "n_excerpts": 19,
+      "agreements": 18,
+      "cohen_kappa": 0.805,
+      "disagreements_resolved": true,
+      "resolution_method": "consensus_discussion"
+    },
+    {
+      "session_id": "COD-03",
+      "date": "2024-11-21",
+      "coder_1": "Researcher A",
+      "coder_2": "Researcher B",
+      "n_excerpts": 22,
+      "agreements": 17,
+      "cohen_kappa": 0.806,
+      "disagreements_resolved": true,
+      "resolution_method": "consensus_discussion"
+    },
+    {
+      "session_id": "COD-04",
+      "date": "2024-11-24",
+      "coder_1": "Researcher A",
+      "coder_2": "Researcher B",
+      "n_excerpts": 22,
+      "agreements": 20,
+      "cohen_kappa": 0.765,
+      "disagreements_resolved": true,
+      "resolution_method": "consensus_discussion"
+    },
+    {
+      "session_id": "COD-05",
+      "date": "2024-11-27",
+      "coder_1": "Researcher A",
+      "coder_2": "Researcher B",
+      "n_excerpts": 19,
+      "agreements": 21,
+      "cohen_kappa": 0.823,
+      "disagreements_resolved": true,
+      "resolution_method": "consensus_discussion"
+    },
+    {
+      "session_id": "COD-06",
+      "date": "2024-11-30",
+      "coder_1": "Researcher A",
+      "coder_2": "Researcher B",
+      "n_excerpts": 22,
+      "agreements": 17,
+      "cohen_kappa": 0.813,
+      "disagreements_resolved": true,
+      "resolution_method": "consensus_discussion"
+    },
+    {
+      "session_id": "COD-07",
+      "date": "2024-12-03",
+      "coder_1": "Researcher A",
+      "coder_2": "Researcher B",
+      "n_excerpts": 23,
+      "agreements": 21,
+      "cohen_kappa": 0.766,
+      "disagreements_resolved": true,
+      "resolution_method": "consensus_discussion"
+    },
+    {
+      "session_id": "COD-08",
+      "date": "2024-12-06",
+      "coder_1": "Researcher A",
+      "coder_2": "Researcher B",
+      "n_excerpts": 21,
+      "agreements": 18,
+      "cohen_kappa": 0.792,
+      "disagreements_resolved": true,
+      "resolution_method": "consensus_discussion"
+    },
+    {
+      "session_id": "COD-09",
+      "date": "2024-12-09",
+      "coder_1": "Researcher A",
+      "coder_2": "Researcher B",
+      "n_excerpts": 24,
+      "agreements": 17,
+      "cohen_kappa": 0.787,
+      "disagreements_resolved": true,
+      "resolution_method": "consensus_discussion"
+    },
+    {
+      "session_id": "COD-10",
+      "date": "2024-12-12",
+      "coder_1": "Researcher A",
+      "coder_2": "Researcher B",
+      "n_excerpts": 24,
+      "agreements": 18,
+      "cohen_kappa": 0.818,
+      "disagreements_resolved": true,
+      "resolution_method": "consensus_discussion"
+    },
+    {
+      "session_id": "COD-11",
+      "date": "2024-12-15",
+      "coder_1": "Researcher A",
+      "coder_2": "Researcher B",
+      "n_excerpts": 19,
+      "agreements": 18,
+      "cohen_kappa": 0.801,
+      "disagreements_resolved": true,
+      "resolution_method": "consensus_discussion"
+    },
+    {
+      "session_id": "COD-12",
+      "date": "2024-12-18",
+      "coder_1": "Researcher A",
+      "coder_2": "Researcher B",
+      "n_excerpts": 24,
+      "agreements": 19,
+      "cohen_kappa": 0.784,
+      "disagreements_resolved": true,
+      "resolution_method": "consensus_discussion"
+    }
+  ]
+}

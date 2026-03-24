@@ -1,0 +1,133 @@
+general:
+  random_seed: 42
+  run_cadence: weekly
+  output_dir: "data/perturbation_tests/"
+  n_workers: 4
+
+typographical_perturbations:
+  # Perturbation Sensitivity Score
+  total_cases_per_system: 1250       
+  perturbation_types:
+
+    character_swap:
+      enabled: true
+      weight: 0.20
+      description: "Swap two adjacent characters within a word"
+      min_word_length: 4
+      swap_probability_per_word: 0.15
+      example_before: "What is the return policy?"
+      example_after:  "Waht is the reutrn policy?"
+
+    character_deletion:
+      enabled: true
+      weight: 0.15
+      description: "Delete a random non-initial character from a word"
+      deletion_probability_per_word: 0.10
+      example_before: "How do I cancel my subscription?"
+      example_after:  "How do I cancl my subscripton?"
+
+    character_insertion:
+      enabled: true
+      weight: 0.15
+      description: "Insert a random adjacent-keyboard character"
+      insertion_probability_per_word: 0.10
+      keyboard_layout: "qwerty"
+
+    case_variation:
+      enabled: true
+      weight: 0.15
+      description: "Random case changes to non-initial letters"
+      mutation_probability: 0.20
+      example_before: "What are the business hours?"
+      example_after:  "what ARE the BUSINESS hours?"
+
+    punctuation_removal:
+      enabled: true
+      weight: 0.15
+      description: "Remove punctuation marks"
+      removal_probability: 0.60
+      example_before: "Hello, can you help me? I've lost my password."
+      example_after:  "Hello can you help me Ive lost my password"
+
+    word_repetition:
+      enabled: true
+      weight: 0.10
+      description: "Repeat a random word (simulates mobile keyboard double-tap)"
+      repetition_probability: 0.08
+      example_before: "I need to track my order."
+      example_after:  "I need to to track my order."
+
+    homophone_substitution:
+      enabled: true
+      weight: 0.10
+      description: "Replace a word with its common homophone"
+      homophones:
+        their: there
+        there: their
+        your: you're
+        its: it's
+        then: than
+        to: too
+        two: to
+        by: buy
+        weather: whether
+
+  evaluation:
+    similarity_model: "sentence-transformers/all-mpnet-base-v2"
+    accuracy_metric: "task_specific" # FC-1 score on perturbed vs clean input
+    sensitivity_formula: "(acc_clean - acc_perturbed) / acc_clean"
+    threshold: 0.10                    
+    include_control_set: true          
+    control_set_fraction: 0.20
+
+paraphrase_perturbations:
+  # Semantic Invariance Score
+  total_pairs_per_system: 1000       
+  paraphrase_methods:
+
+    back_translation:
+      enabled: true
+      weight: 0.40
+      description: "English to German to English via Helsinki-NLP models"
+      pivot_languages: [de, fr, es]
+      translation_model_fwd: "Helsinki-NLP/opus-mt-en-de"
+      translation_model_bwd: "Helsinki-NLP/opus-mt-de-en"
+
+    lexical_substitution:
+      enabled: true
+      weight: 0.30
+      description: "Synonym replacement using WordNet"
+      substitution_rate: 0.25
+      pos_tags: [NOUN, VERB, ADJ, ADV]
+      preserve_proper_nouns: true
+
+    syntactic_transformation:
+      enabled: true
+      weight: 0.20
+      description: "Active/passive voice, sentence reordering"
+      transformations:
+        - active_to_passive
+        - split_compound_sentence
+        - nominalization
+
+    human_paraphrase:
+      enabled: true
+      weight: 0.10
+      description: "Crowdsourced paraphrases (collected during study onboarding)"
+      source_file: "data/perturbation_tests/human_paraphrase_pool.csv"
+
+  evaluation:
+    similarity_model: "sentence-transformers/all-mpnet-base-v2"
+    similarity_threshold: 0.75        
+    invariance_metric: "cosine_similarity_delta"
+    invariance_formula: "mean(|sim(response_orig, response_paraphrase)|)"
+    threshold: 0.85                   
+    note: "r=0.61 correlation with SF-3 (hallucination rate)"
+
+ood_test_set:
+  # OOD Detection Rate
+  total_samples_per_system: 750      
+  samples_per_category: 75
+  categories: 10                     
+  hold_out_fraction: 0.20            
+  refresh_cadence: monthly          

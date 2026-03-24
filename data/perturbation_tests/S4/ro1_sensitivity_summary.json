@@ -1,0 +1,17 @@
+{
+  "system_id": "S4",
+  "n_test_cases": 1250,
+  "mean_sensitivity": 0.1016,
+  "pass_rate_ro1": 0.4912,
+  "threshold": 0.1,
+  "passes_threshold": false,
+  "by_type": {
+    "character_swap": 0.1033,
+    "character_deletion": 0.0997,
+    "character_insertion": 0.1016,
+    "case_variation": 0.104,
+    "punctuation_removal": 0.0949,
+    "word_repetition": 0.0998,
+    "homophone_substitution": 0.1079
+  }
+}

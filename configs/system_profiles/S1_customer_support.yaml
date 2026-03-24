@@ -1,0 +1,65 @@
+system:
+  id: S1
+  name: "Customer Support Chatbot"
+  domain: customer_support
+  deployment_type: production
+  study_role: "Case System 1 of 4 - highest DAU in study cohort"
+
+infrastructure:
+  llm_provider: openai
+  llm_model: "gpt-4o-2024-08-06"
+  llm_api_endpoint: "https://api.openai.com/v1/chat/completions"
+  context_window_tokens: 8192
+  streaming_enabled: false
+  rag_enabled: true
+  rag_retriever: "dense_passage_retrieval"
+  rag_vector_store: "pinecone"
+  rag_top_k: 5
+  rag_reranker: "cross-encoder/ms-marco-MiniLM-L-6-v2"
+  embedding_model: "text-embedding-3-small"
+  daily_active_users: 8400
+  peak_rps: 42 # Peak requests per second
+  avg_session_turns: 3.8
+  team_size_dev: 11
+
+qalis_metric_applicability:
+  FC-1: true
+  FC-2: true
+  FC-3: false # Pass@k not applicable outside code
+  FC-4: true
+  RO-1: true
+  RO-2: true
+  RO-3: true
+  RO-4: true
+  RO-5: true
+  SF-1: true
+  SF-2: true # RAG system — attribution applicable
+  SF-3: true
+  SS-1: true
+  SS-2: true
+  SS-3: true
+  SS-4: true
+  TI-1: true
+  TI-2: true
+  TI-3: true
+  TI-4: true
+  IQ-1: true
+  IQ-2: true
+  IQ-3: true
+  IQ-4: true
+
+metric_overrides:
+  IQ-2:
+    threshold: 2000 # Tighter latency SLA for chat UX
+  SS-2:
+    pii_categories_extra: [ORDER_ID, ACCOUNT_NUMBER]
+
+key_incidents_study_period: 11
+qalis_detection_lag_mean_hours: 1.4
+baseline_detection_lag_mean_hours: 5.2
+
+notable_findings:
+  - "TI dimension lowest - users frequently asked 'why did you say that?'"
+  - "SF-2 attribution coverage gap - 22% of responses lacked source citation"
+  - "IQ-2 latency spikes correlated with IQ-1 availability drops"
+  - "RO-1 perturbation sensitivity - typo-heavy customer messages caused quality drops"

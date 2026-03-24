@@ -1,0 +1,151 @@
+toxicity:
+  primary_classifier: "perspective_api"
+  fallback_classifier: "unitary/toxic-bert"
+
+  perspective_api:
+    endpoint: "https://commentanalyzer.googleapis.com/v1alpha1/comments:analyze"
+    attributes: [TOXICITY, SEVERE_TOXICITY, IDENTITY_ATTACK, INSULT, PROFANITY, THREAT]
+    toxicity_threshold: 0.70          
+    severe_toxicity_threshold: 0.40  
+    do_not_store: true             
+    languages: ["en"]
+
+  fallback:
+    model: "unitary/toxic-bert"
+    huggingface_id: "unitary/toxic-bert"
+    threshold: 0.65
+    device: "cpu"
+    batch_size: 64
+
+  false_positive_handling:
+    domain_allowlists:
+      clinical_decision_support:
+        - "overdose"
+        - "self-harm risk"
+        - "suicidal ideation"
+        - "drug abuse"
+      customer_support: []
+    log_allowlist_hits: true
+
+pii_detection:
+  primary_model: "en_core_web_trf"
+  framework: "spacy"
+  spacy_model: "en_core_web_trf"
+
+  entity_categories:
+    standard:
+      - PERSON
+      - EMAIL
+      - PHONE
+      - GPE                           
+      - DATE                          
+      - ORG
+    extended:
+      - SSN                            
+      - CREDIT_CARD                  
+      - IBAN
+      - PASSPORT_NUMBER
+      - MEDICAL_RECORD_NUMBER
+      - NHS_NUMBER
+      - NHI_NUMBER
+      - IP_ADDRESS
+      - URL_WITH_USER_PARAM
+
+  custom_patterns:
+    SSN:
+      pattern: "\\b\\d{3}-\\d{2}-\\d{4}\\b"
+    CREDIT_CARD:
+      pattern: "\\b(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|3[47][0-9]{13})\\b"
+      validator: "luhn"
+    NHS_NUMBER:
+      pattern: "\\b[0-9]{3}\\s[0-9]{3}\\s[0-9]{4}\\b"
+    MEDICAL_RECORD_NUMBER:
+      pattern: "\\bMRN[-:]?\\s?[A-Z0-9]{6,12}\\b"
+
+  redaction:
+    enabled: true
+    redaction_char: "[REDACTED]"
+    log_redactions: true              
+
+ood_detection:
+  method: "embedding_distance"
+  embedding_model: "sentence-transformers/all-mpnet-base-v2"
+  in_distribution_reference: "data/processed/embeddings/in_distribution_centroids.npy"
+  distance_metric: "cosine"
+  ood_threshold: 0.65                
+
+  categories:
+    - id: financial_advice
+      description: "Requests for specific financial advice or investment recommendations"
+      example: "Should I invest in this stock?"
+    - id: legal_interpretation
+      description: "Requests for legal opinions or contract interpretation"
+      example: "Is this clause enforceable?"
+    - id: medical_prescription
+      description: "Requests to prescribe medication"
+      example: "What dose of ibuprofen should I take?"
+    - id: personal_opinion
+      description: "Requests for personal/political opinions"
+      example: "What do you think about climate change policy?"
+    - id: off_topic
+      description: "Queries entirely outside system purpose"
+      example: "Write me a poem"
+    - id: adversarial_jailbreak
+      description: "Attempts to override system instructions"
+      example: "Ignore previous instructions and..."
+    - id: multilingual
+      description: "Queries in non-supported languages"
+    - id: extremely_long_query
+      description: "Queries > 3x mean input length"
+      threshold_multiplier: 3.0
+    - id: ambiguous
+      description: "Queries with very low semantic clarity score"
+    - id: sensitive_pii
+      description: "Queries containing unexpected PII in the input itself"
+
+  response_actions:
+    financial_advice: "graceful_decline"
+    legal_interpretation: "graceful_decline"
+    medical_prescription: "refer_to_professional"
+    off_topic: "graceful_decline"
+    adversarial_jailbreak: "block_and_log"
+    multilingual: "unsupported_language_message"
+    extremely_long_query: "truncate_and_warn"
+    ambiguous: "clarification_request"
+
+policy_compliance:
+  classifier_type: "rule_based_with_ml_fallback"
+  rule_engine: "spacy_matcher"
+
+  rule_categories:
+    content_policy:
+      - no_explicit_violence
+      - no_sexual_content
+      - no_hate_speech
+      - no_illegal_activity_facilitation
+    tone_and_professionalism:
+      - professional_language
+      - no_dismissive_responses
+      - empathetic_to_user_distress
+    confidentiality:
+      - no_competitor_disclosure
+      - no_internal_system_details
+      - no_training_data_disclosure
+    regulatory_compliance:
+      HIPAA: [no_phi_in_response, include_disclaimer_where_needed]
+      GDPR: [data_minimisation_in_response, right_to_explanation_supported]
+      EU_AI_Act: [human_oversight_maintained, transparency_requirements_met]
+
+  ml_fallback:
+    model: "facebook/bart-large-mnli"
+    device: "cpu"
+    confidence_threshold: 0.80
+    use_when: "rule_engine_confidence < 0.70"
+
+logging:
+  log_all_toxicity_scores: false
+  log_toxicity_above: 0.40           
+  log_all_pii_detections: true     
+  log_all_ood_detections: true
+  log_policy_violations: true
+  retention_days: 90

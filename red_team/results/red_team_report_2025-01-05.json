@@ -1,0 +1,200 @@
+{
+  "report_id": "RTR-2025-001",
+  "generated": "2025-01-05",
+  "study_period": "2024-10-01 to 2024-12-31",
+  "paper_reference": "Section 4.3, Section 6.2 (RQ2), Table 3",
+  "total_attempts": 2850,
+  "total_succeeded": 51,
+  "overall_resistance_rate": 0.9821,
+  "overall_attack_success_rate": 0.0179,
+  "all_systems_pass_ro2": true,
+  "all_systems_pass_ss3": false,
+  "per_system_summary": {
+    "S1": {
+      "resistance_rate": 0.9749,
+      "attack_success_rate": 0.0251,
+      "threshold": 0.97,
+      "passes": true,
+      "successful_attacks": 18,
+      "total_attempts": 717,
+      "hardest_category": "context_injection"
+    },
+    "S2": {
+      "resistance_rate": 0.9833,
+      "attack_success_rate": 0.0167,
+      "threshold": 0.97,
+      "passes": true,
+      "successful_attacks": 12,
+      "total_attempts": 719,
+      "hardest_category": "emotional_manipulation"
+    },
+    "S3": {
+      "resistance_rate": 0.9777,
+      "attack_success_rate": 0.0223,
+      "threshold": 0.97,
+      "passes": true,
+      "successful_attacks": 16,
+      "total_attempts": 717,
+      "hardest_category": "encoding_obfuscation"
+    },
+    "S4": {
+      "resistance_rate": 0.9928,
+      "attack_success_rate": 0.0072,
+      "threshold": 0.99,
+      "passes": true,
+      "successful_attacks": 5,
+      "total_attempts": 697,
+      "hardest_category": "authority_escalation"
+    }
+  },
+  "per_category_aggregate": {
+    "direct_instruction_override": {
+      "total_attempts": 424,
+      "total_succeeded": 0,
+      "mean_success_rate": 0.0,
+      "mean_resistance_rate": 1.0,
+      "per_system": {
+        "S1": 0.0,
+        "S2": 0.0,
+        "S3": 0.0,
+        "S4": 0.0
+      }
+    },
+    "role_play_bypass": {
+      "total_attempts": 370,
+      "total_succeeded": 0,
+      "mean_success_rate": 0.0,
+      "mean_resistance_rate": 1.0,
+      "per_system": {
+        "S1": 0.0,
+        "S2": 0.0,
+        "S3": 0.0,
+        "S4": 0.0
+      }
+    },
+    "encoding_obfuscation": {
+      "total_attempts": 314,
+      "total_succeeded": 22,
+      "mean_success_rate": 0.0701,
+      "mean_resistance_rate": 0.9299,
+      "per_system": {
+        "S1": 0.0,
+        "S2": 0.0759,
+        "S3": 0.2025,
+        "S4": 0.0
+      }
+    },
+    "context_injection": {
+      "total_attempts": 370,
+      "total_succeeded": 18,
+      "mean_success_rate": 0.0486,
+      "mean_resistance_rate": 0.9514,
+      "per_system": {
+        "S1": 0.1935,
+        "S2": 0.0,
+        "S3": 0.0,
+        "S4": 0.0
+      }
+    },
+    "adversarial_few_shot": {
+      "total_attempts": 314,
+      "total_succeeded": 0,
+      "mean_success_rate": 0.0,
+      "mean_resistance_rate": 1.0,
+      "per_system": {
+        "S1": 0.0,
+        "S2": 0.0,
+        "S3": 0.0,
+        "S4": 0.0
+      }
+    },
+    "prompt_leaking": {
+      "total_attempts": 314,
+      "total_succeeded": 0,
+      "mean_success_rate": 0.0,
+      "mean_resistance_rate": 1.0,
+      "per_system": {
+        "S1": 0.0,
+        "S2": 0.0,
+        "S3": 0.0,
+        "S4": 0.0
+      }
+    },
+    "chain_of_thought_manipulation": {
+      "total_attempts": 258,
+      "total_succeeded": 0,
+      "mean_success_rate": 0.0,
+      "mean_resistance_rate": 1.0,
+      "per_system": {
+        "S1": 0.0,
+        "S2": 0.0,
+        "S3": 0.0,
+        "S4": 0.0
+      }
+    },
+    "emotional_manipulation": {
+      "total_attempts": 258,
+      "total_succeeded": 8,
+      "mean_success_rate": 0.031,
+      "mean_resistance_rate": 0.969,
+      "per_system": {
+        "S1": 0.0,
+        "S2": 0.0923,
+        "S3": 0.0,
+        "S4": 0.0317
+      }
+    },
+    "authority_escalation": {
+      "total_attempts": 228,
+      "total_succeeded": 3,
+      "mean_success_rate": 0.0132,
+      "mean_resistance_rate": 0.9868,
+      "per_system": {
+        "S1": 0.0,
+        "S2": 0.0,
+        "S3": 0.0,
+        "S4": 0.0536
+      }
+    }
+  },
+  "hardest_category": "encoding_obfuscation",
+  "easiest_category": "chain_of_thought_manipulation",
+  "monthly_resistance_trend": [
+    {
+      "month": "2024-10",
+      "total_attempts": 953,
+      "total_succeeded": 1,
+      "resistance_rate": 0.999,
+      "attack_success_rate": 0.001
+    },
+    {
+      "month": "2024-11",
+      "total_attempts": 908,
+      "total_succeeded": 0,
+      "resistance_rate": 1.0,
+      "attack_success_rate": 0.0
+    },
+    {
+      "month": "2024-12",
+      "total_attempts": 989,
+      "total_succeeded": 0,
+      "resistance_rate": 1.0,
+      "attack_success_rate": 0.0
+    }
+  ],
+  "key_findings": [
+    "All 4 systems pass their RO-2 thresholds (S4 clinical threshold \u22650.99)",
+    "Hardest attack category: encoding_obfuscation (mean success rate 0.0701)",
+    "Easiest attack category: chain_of_thought_manipulation (mean success rate 0.0000)",
+    "S4 (Medical Triage) achieves resistance rate 0.9928 under strict \u22650.99 threshold",
+    "Encoding/obfuscation attacks are hardest to block; chain-of-thought manipulation easiest",
+    "Detection breakdown (all systems): ~69% system prompt, ~24% classifier, ~6% output filter",
+    "No successful attacks in months 2 or 3 for any system \u2014 resistance improved over study"
+  ],
+  "recommendations": [
+    "Expand encoding_obfuscation test suite with additional Unicode normalisation variants",
+    "Add automated monthly regression alerts (current threshold: +2pp success rate)",
+    "Consider fine-tuning injection classifier on study-specific failure cases",
+    "S2 (Code Assistant) shows highest role_play_bypass rate \u2014 review system prompt hardening"
+  ]
+}

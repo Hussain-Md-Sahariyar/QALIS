@@ -1,0 +1,24 @@
+iso_characteristic,iso_sub_characteristic,qalis_dimension,qalis_metric_id,mapping_type,coverage_quality,notes,operationalization_gap
+Functional Suitability,Functional Correctness,FC,FC-1,direct,good,Task accuracy maps well,None significant
+Functional Suitability,Functional Completeness,FC,FC-3,partial,moderate,Pass@k applicable for code only,No generic completeness metric
+Functional Suitability,Functional Appropriateness,FC,FC-4,indirect,poor,Factual precision requires LLM-specific audit,ISO guidance insufficient
+Reliability,Fault Tolerance,RO,RO-1,partial,poor,Perturbation sensitivity not covered by ISO,LLM-specific perturbation types undefined
+Reliability,Availability,IQ,IQ-1,direct,good,API availability maps directly,Standard SLA monitoring sufficient
+Performance Efficiency,Time Behaviour,IQ,IQ-2,direct,good,Latency percentiles standard,No LLM-specific TTFT guidance
+Performance Efficiency,Resource Utilisation,IQ,IQ-3,indirect,moderate,Cost per unit maps partially,Token economics not in ISO scope
+Security,Confidentiality,SS,SS-2,partial,moderate,PII leakage partially covered,No LLM training data leakage guidance
+Security,Integrity,SS,SS-4,partial,moderate,Policy compliance maps partially,No prompt injection coverage
+Security,Non-repudiation,TI,TI-4,indirect,moderate,Audit trail maps to non-repudiation,Completeness threshold not defined
+Usability,Operability,TI,TI-1,indirect,poor,Explanation coverage not in ISO scope,No explainability metrics in ISO 25010 < 2023
+Accuracy (2023),Precision,SF,SF-1,indirect,poor,Faithfulness score not covered by accuracy sub-chars,NLI-based measurement not addressed
+Accuracy (2023),Consistency,RO,RO-4,indirect,poor,Semantic invariance partially maps,"ISO consistency = reproducibility, not semantic"
+Adaptability,Adaptability,RO,RO-3,indirect,poor,OOD handling partially maps,Distributional shift not in ISO scope
+Not covered,—,SF,SF-2,none,none,Attribution coverage has no ISO equivalent,Major gap
+Not covered,—,SF,SF-3,none,none,Hallucination rate has no ISO equivalent,Critical gap — primary LLM failure mode
+Not covered,—,SS,SS-1,none,none,Toxicity rate has no ISO equivalent,Safety dimension severely underserved
+Not covered,—,SS,SS-3,none,none,Prompt injection attack rate not in ISO,Security gap specific to LLMs
+Not covered,—,TI,TI-2,none,none,Explanation faithfulness has no ISO equivalent,Novel construct
+Not covered,—,TI,TI-3,none,none,User interpretability rating not operationalized,ISO usability is too general
+Not covered,—,RO,RO-2,none,none,Injection resistance rate not in ISO,Critical security gap
+Not covered,—,RO,RO-5,none,none,Adversarial robustness index not in ISO,Composite metric without ISO precedent
+Not covered,—,IQ,IQ-4,none,none,Observability index not in ISO,DevOps concern outside ISO scope
