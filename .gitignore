@@ -9,3 +9,11 @@ build/
 *.log
 .idea/
 .vscode/
+
+# Add to .gitignore
+echo "large-file.zip" >> .gitignore
+echo "*.psd" >> .gitignore
+echo "datasets/" >> .gitignore
+
+git add .gitignore
+git commit -m "Ignore large files"
