@@ -120,7 +120,6 @@ paths:
   raw_data: "data/raw/"
   processed_data: "data/processed/"
   baselines: "baselines/"
-  analysis_output: "analysis/figures/"
   supplementary: "supplementary/"
   logs: "logs/"
 
