@@ -128,5 +128,4 @@ logging:
   level: INFO                 
   format: "%(asctime)s [%(levelname)s] %(name)s: %(message)s"
   file: "logs/qalis.log"
-  rotate_mb: 100
   backup_count: 5
